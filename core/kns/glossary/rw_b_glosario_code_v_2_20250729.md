@@ -39,7 +39,7 @@
 | B10 | STA | State | Estado (WIP, FINAL, ARCH). | Transversal | metadata.status |
 | B11 | ID  | Identifier | UID global. | Transversal | run.id |
 | B12 | TYP | Type | Extensión/formato. | Transversal | mime awareness |
-| B13 | BK  | Backup | Snapshot crítico. | Universal | archival storage |
+| B13 | BK  | <a id="bk-backup"></a>Backup | Snapshot crítico. | Universal | archival storage |
 | B14 | ACTV| ActiveAsset | Asset vivo/actual. | Transversal | live editor |
 | B15 | PURG| Purgatory | Directorio de obsoletos. | Transversal | cold storage |
 | B16 | DIFF| DiffAsset | Archivo de diferencias entre versiones. | Transversal | diff analysis |
@@ -64,7 +64,7 @@
 ## D. WORKFLOW & PIPELINES
 | ID | CODE | Name | Descripción | Relación | Features (OpenAI) |
 |----|------|------|-------------|----------|--------------------|
-| D01 | WF   | Workflow | Macro‑orquestación de procesos. | Raíz | run sequences |
+| D01 | WF   | <a id="wf-workflow"></a>Workflow | Macro‑orquestación de procesos. | Raíz | run sequences |
 | D02 | WF_M | WorkflowMacro | Orquesta múltiples WF. | Superior | orchestrator agent |
 | D03 | MPLN | MasterPlan | Blueprint estratégico global. | Hijo WF | plan generation |
 | D04 | PLN  | Plan | Cronograma específico. | Hijo MPLN | calendar tool |
@@ -77,7 +77,7 @@
 | D11 | VALD | Validation | Validación técnica. | Cierre WF | unit tests |
 | D12 | TMPLG| TemplateGenerator | Genera scaffolds/plantillas. | Secundario | assistants.tools.generate |
 | D13 | TUNG | Tuning | Ajuste iterativo de parámetros. | Secundario | hyper‑param search |
-| D14 | MIG  | Migration | Migración legacy→nuevo. | Hijo WF | data migration tool |
+| D14 | MIG  | <a id="mig-migration"></a>Migration | Migración legacy→nuevo. | Hijo WF | data migration tool |
 | D15 | MAP  | Mapping | Mapeo de correspondencias. | Sec MIG | mapping table |
 | D16 | CLSS | Classification | Taxonomía automática. | Sec MAP | classification models |
 | D17 | FBCK | FeedbackEval | Evaluación estructurada de feedback. | Herm REVP | evals API |
@@ -157,6 +157,12 @@
 | I09 | BRAIN | Brainstorm | Baseline brainstorming. | ideation tool |
 | I10 | IDEA | IdeaDraft | Draft incremental de ideas. | ideation tool |
 | I11 | KNX | KnowledgeExtract | Extracto de conocimiento aplicado. | vector extract |
+
+## J. REPO STRUCTURE
+| ID | CODE | Name | Descripción | Features (OpenAI) |
+|----|------|------|-------------|-------------------|
+| J01 | BUCK | <a id="buck-bucket"></a>Bucket | Contenedor lógico que agrupa módulos y datos. | storage buckets |
+| J02 | PIPE | <a id="pipe-pipeline"></a>Pipeline | Flujo secuencial de procesamiento de datos. | pipeline orchestration |
 
 ---
 

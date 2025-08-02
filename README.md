@@ -1,30 +1,30 @@
 # AingZ_Platform_main — README v1
 
-> **STATUS:** `ACTUALIZADO`
-> **Última actualización:** 2025-08-02 | Autor: ChatGPT
+> **STATUS:** `UPDATED`
+> **Last update:** 2025-08-02 | Author: ChatGPT
 
 ---
 
-## 1. Resumen
-Bucket raíz que organiza los módulos principales de la plataforma.
+## 1. Summary
+Root bucket that organizes the platform's main modules.
 
-## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: [BACKUP/](BACKUP/)
-- Enlaces a versiones relevantes o backups IA: [backup/](backup/)
+## 2. Backups / Context
+- Related backup folder: [BACKUP/](BACKUP/)
+- Links to relevant versions or AI backups: [backup/](backup/)
 
-## 3. Crossref y Mapping
-- **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [./.git/], [./.pytest_cache/], [./BACKUP/], [./__pycache__/], [./apps/], [./backup/], [./connectors/], [./core/], [./infra/], [./legacy/], [./legacy_old/], [./log/], [./mig/], [./packages/], [./scripts/], [./tmp_staging/]
-- **Buckets destino típicos:** `[../DESTINO/]`
-- **Crossref central:** [Mapa Global](core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
-- **Flujos/Pipelines relevantes:** [infra/pipelines/README.md](infra/pipelines/README.md)
+## 3. Cross‑references and Mapping
+- **Upward reference:** `[../]`
+- **Lateral references:** [./.git/], [./.pytest_cache/], [./BACKUP/], [./__pycache__/], [./apps/], [./backup/], [./connectors/], [./core/], [./infra/], [./legacy/], [./legacy_old/], [./log/], [./mig/], [./packages/], [./scripts/], [./tmp_staging/]
+- **Typical destination buckets:** `[../DESTINATION/]`
+- **Central crossref:** [Global Map](core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
+- **Relevant pipelines:** [infra/pipelines/README.md](infra/pipelines/README.md)
 
-## 4. Precedencia en el Árbol de Directorios
+## 4. Directory Tree Precedence
 ```text
 AingZ_Platform_main/
 ```
 
-## 4.1 Procedencia en el Árbol de Directorios
+## 4.1 Directory Tree Origin
 ```text
 AingZ_Platform_main/
 ├── .git/
@@ -45,17 +45,22 @@ AingZ_Platform_main/
 └── tmp_staging/
 ```
 
-## 5. Pipeline y Workflows (Ciclo de Vida)
-Describe los pasos clave del ciclo de vida para los archivos de este bucket:
-1. **Ingreso / LEGACY o TMP:** [legacy/](legacy/) o [tmp_staging/](tmp_staging/)
+## 5. Pipeline and Workflows (Lifecycle)
+Describes key steps in the lifecycle for the files in this bucket:
+1. **Input / LEGACY or TMP:** [legacy/](legacy/) or [tmp_staging/](tmp_staging/)
 2. **Staging / MIG:** [mig/](mig/)
-3. **Consolidación / CORE:** [core/](core/)
-4. **Backup / Eliminación:** [backup/](backup/) y/o [BACKUP/](BACKUP/)
+3. **Consolidation / CORE:** [core/](core/)
+4. **Backup / Deletion:** [backup/](backup/) and/or [BACKUP/](BACKUP/)
 
-
-Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
+Adjust links according to the official pipeline and stages of `LEGACY→TMP→MIG→CORE→BACKUP`.
 
 ---
 
-Completar todos los campos con links activos una vez creada la estructura real.
+Fill all fields with active links once the real structure is created.
 
+## Terminology
+- [Bucket](core/kns/glossary/rw_b_glosario_code_v_2_20250729.md#buck-bucket)
+- [Pipeline](core/kns/glossary/rw_b_glosario_code_v_2_20250729.md#pipe-pipeline)
+- [Workflow](core/kns/glossary/rw_b_glosario_code_v_2_20250729.md#wf-workflow)
+- [Migration](core/kns/glossary/rw_b_glosario_code_v_2_20250729.md#mig-migration)
+- [Backup](core/kns/glossary/rw_b_glosario_code_v_2_20250729.md#bk-backup)
