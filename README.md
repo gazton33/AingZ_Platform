@@ -46,7 +46,7 @@ Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 1. **Ingreso** — [LEGACY](./legacy/) o [TMP](./tmp_staging/) `[../WF/wf_ingreso_AingZ_Platform_main.md]`
 2. **Staging** — [MIG](./mig/) `[../WF/wf_staging_AingZ_Platform_main.md]`
 3. **Consolidación** — [CORE](./core/) `[../WF/wf_consolidacion_AingZ_Platform_main.md]`
-4. **Backup / Eliminación** — [BACKUP](./backup/) y/o [BACKUP final](./BACKUP/) `[../WF/wf_backup_AingZ_Platform_main.md]`
+4. **Backup / Eliminación** — [backup](./backup/) y/o [BACKUP final](./BACKUP/) `[../WF/wf_backup_AingZ_Platform_main.md]`
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 
