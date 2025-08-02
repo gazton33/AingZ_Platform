@@ -43,6 +43,7 @@ Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 3. **Consolidación / CORE:** [../core/](../core/)
 4. **Backup / Eliminación:** [../backup/](../backup/) y/o [../BACKUP/](../BACKUP/)
 
+
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 
 ---

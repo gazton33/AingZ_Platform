@@ -19,6 +19,7 @@ Almacén de respaldo final y archivo definitivo de la plataforma.
 - **Crossref central:** [Mapa Global](../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
 - **Flujos/Pipelines relevantes:** [../infra/pipelines/README.md](../infra/pipelines/README.md)
 
+
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
@@ -41,6 +42,7 @@ Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 4. **Backup / Eliminación:** [../backup/](../backup/) y/o [./](./)
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
+
 
 ---
 Completar todos los campos con links activos una vez creada la estructura real.

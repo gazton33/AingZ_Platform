@@ -3,6 +3,7 @@
 > **STATUS:** `ACTUALIZADO`
 > **Última actualización:** 2025-08-02 | Autor: ChatGPT
 
+
 ---
 
 ## 1. Resumen
@@ -18,6 +19,7 @@ Espacio de respaldo temporal previo a consolidación.
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** [Mapa Global](../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
 - **Flujos/Pipelines relevantes:** [../infra/pipelines/README.md](../infra/pipelines/README.md)
+
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
@@ -39,6 +41,7 @@ Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 2. **Staging / MIG:** [../mig/](../mig/)
 3. **Consolidación / CORE:** [../core/](../core/)
 4. **Backup / Eliminación:** [./](./) y/o [../BACKUP/](../BACKUP/)
+
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 

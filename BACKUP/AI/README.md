@@ -19,6 +19,7 @@ Descripción pendiente.
 - **Crossref central:** [Mapa Global](../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
 - **Flujos/Pipelines relevantes:** [../../infra/pipelines/README.md](../../infra/pipelines/README.md)
 
+
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
@@ -37,6 +38,7 @@ AI/
 2. **Staging / MIG:** [../../mig/](../../mig/)
 3. **Consolidación / CORE:** [../../core/](../../core/)
 4. **Backup / Eliminación:** [../../backup/](../../backup/) y/o [../](../)
+
 
 ---
 Completar todos los campos con links activos una vez creada la estructura real.
