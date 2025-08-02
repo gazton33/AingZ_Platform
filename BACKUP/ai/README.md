@@ -1,4 +1,4 @@
-# BACKUP/ai — README v1
+# backup/ai — README v1
 
 > **STATUS:** `ACTUALIZADO`
 > **Última actualización:** 2025-08-02 | Autor: ChatGPT
