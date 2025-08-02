@@ -14,7 +14,7 @@ Almacén consolidado de datos y recursos centrales.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../conectors/], [../infra/], [../legacy/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
+- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../connectors/], [../infra/], [../legacy/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
 - **Flujos/Pipelines relevantes:** `[../WF/pipeline_core.md]`, `[../PIPELINES/pipeline_core.md]`

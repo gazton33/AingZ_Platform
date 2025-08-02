@@ -14,7 +14,7 @@ Paquetes reutilizables y librerías.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../conectors/], [../core/], [../infra/], [../legacy/], [../log/], [../mig/], [../scripts/], [../tmp_staging/]
+- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../connectors/], [../core/], [../infra/], [../legacy/], [../log/], [../mig/], [../scripts/], [../tmp_staging/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
 - **Flujos/Pipelines relevantes:** `[../WF/pipeline_packages.md]`, `[../PIPELINES/pipeline_packages.md]`

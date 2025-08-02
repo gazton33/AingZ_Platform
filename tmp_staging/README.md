@@ -14,7 +14,7 @@ Zona de staging temporal para validaciones.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../conectors/], [../core/], [../infra/], [../legacy/], [../log/], [../mig/], [../packages/], [../scripts/]
+- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../connectors/], [../core/], [../infra/], [../legacy/], [../log/], [../mig/], [../packages/], [../scripts/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
 - **Flujos/Pipelines relevantes:** `[../WF/pipeline_tmp_staging.md]`, `[../PIPELINES/pipeline_tmp_staging.md]`

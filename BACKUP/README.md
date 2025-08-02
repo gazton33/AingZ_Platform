@@ -14,7 +14,7 @@ Almacén de respaldo final y archivo definitivo de la plataforma.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../backup/], [../apps/], [../conectors/], [../core/], [../infra/], [../legacy/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
+- **Referencias laterales:** [../backup/], [../apps/], [../connectors/], [../core/], [../infra/], [../legacy/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
 - **Flujos/Pipelines relevantes:** `[../WF/pipeline_BACKUP_final.md]`, `[../PIPELINES/pipeline_BACKUP_final.md]`
