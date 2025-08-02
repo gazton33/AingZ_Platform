@@ -1,4 +1,4 @@
-# backup — README v1
+# bk_temp — README v1
 
 > **STATUS:** `ACTUALIZADO`
 > **Última actualización:** 2025-08-02 | Autor: ChatGPT
@@ -7,15 +7,15 @@
 ---
 
 ## 1. Resumen
-Espacio de respaldo temporal previo a consolidación.
+Espacio temporal para respaldos antes de moverlos a almacenamiento externo.
 
 ## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: [../BACKUP/](../BACKUP/)
+- Carpeta de snapshots relacionada: [../bk_temp/](../bk_temp/)
 - Enlaces a versiones relevantes o backups IA: [./](./)
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../.git/], [../.pytest_cache/], [../BACKUP/], [../__pycache__/], [../apps/], [../connectors/], [../core/], [../infra/], [../legacy/], [../legacy_old/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
+- **Referencias laterales:** [../.git/], [../.pytest_cache/], [../bk_temp/], [../__pycache__/], [../apps/], [../connectors/], [../core/], [../infra/], [../legacy/], [../legacy_old/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** [Mapa Global](../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
 - **Flujos/Pipelines relevantes:** [../infra/pipelines/README.md](../infra/pipelines/README.md)
@@ -24,12 +24,12 @@ Espacio de respaldo temporal previo a consolidación.
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
-└── backup/
+└── bk_temp/
 ```
 
 ## 4.1 Procedencia en el Árbol de Directorios
 ```text
-backup/
+bk_temp/
 ├── ai/
 ├── ext/
 └── int/
@@ -40,15 +40,14 @@ Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 1. **Ingreso / LEGACY o TMP:** [../legacy/](../legacy/) o [../tmp_staging/](../tmp_staging/)
 2. **Staging / MIG:** [../mig/](../mig/)
 3. **Consolidación / CORE:** [../core/](../core/)
-4. **Backup / Eliminación:** [./](./) y/o [../BACKUP/](../BACKUP/)
+4. **bk_temp / Eliminación:** [./](./) y/o [../bk_temp/](../bk_temp/)
 
 
-Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
+Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→bk_temp`.
 
 ## 6. Etapas previas y finales
 - [CORE](../core/)
-- [backup](./)
-- [BACKUP final](../BACKUP/)
+- [bk_temp](./)
 
 ---
 

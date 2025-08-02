@@ -102,12 +102,12 @@ Formato de código compuesto final: `SRC·STG·ROLE` (ej. `INT·DR·TL`).
 3. Auditoría trimestral `WF_AUDIT_EXT_OFF`.
 
 ### INT·BK·REF — Respaldo interno de referencia
-1. Guardar en `/BACKUP/int/`.
+1. Guardar en `/bk_temp/int/`.
 2. Etiquetar `STA=BCK` y registrar en BIT.
-3. Auditoría semestral `WF_AUDIT_BACKUP`.
+3. Auditoría semestral `WF_AUDIT_bk_temp`.
 
 ### EXT‑OFF·BK·CORE — Respaldo externo oficial
-1. Almacenar en `/BACKUP/ext_off/` con checksum.
+1. Almacenar en `/bk_temp/ext_off/` con checksum.
 2. Revisar licencias antes de archivarlo.
 3. Auditoría anual `WF_AUDIT_EXT_OFF`.
 
@@ -132,14 +132,14 @@ Formato de código compuesto final: `SRC·STG·ROLE` (ej. `INT·DR·TL`).
 3. Auditoría `WF_AUDIT_LEGACY`.
 
 ### EXT‑COM·BK·REF — Respaldo comunidad externa
-1. Guardar en `/BACKUP/ext_com/`.
+1. Guardar en `/bk_temp/ext_com/`.
 2. Verificar checksum y procedencia.
-3. Auditoría anual `WF_AUDIT_BACKUP`.
+3. Auditoría anual `WF_AUDIT_bk_temp`.
 
 ### AI·BK·TL — Respaldo IA para entrenamiento
-1. Archivar en `/BACKUP/ai/` con versión.
+1. Archivar en `/bk_temp/ai/` con versión.
 2. Registrar en BIT con `STA=BCK`.
-3. Auditoría `WF_AUDIT_BACKUP`.
+3. Auditoría `WF_AUDIT_bk_temp`.
 
 ### AI·PG·TL — Purgatorio de entrenamiento IA
 1. Mover a `/PURGATORIO/ai/` cuando queda obsoleto.

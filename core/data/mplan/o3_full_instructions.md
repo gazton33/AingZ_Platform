@@ -34,7 +34,7 @@ This document consolidates important instructions, context, and file snapshots f
 ├── SCR/
 ├── DATA/
 ├── LOG/
-├── BACKUP/
+├── bk_temp/
 ├── PURGATORIO/
 ├── TMP/
 └── MIG/
@@ -283,7 +283,7 @@ Repo Root /
 ├── DATA/                  # Matrices, datasets, CSV/Parquet
 ├── LOG/                   # Logs, changelogs, bitácoras (E01)
 │   └── AUDT/              # Audit logs pesados (E06)
-├── BACKUP/                # Snapshots y BLN (B13)
+├── bk_temp/                # Snapshots y BLN (B13)
 ├── PURGATORIO/            # Obsoletos/legacy (B15)
 │   └── LEGACY/            # Activos antiguos/externos para migración
 ├── TMP/                   # Temp files, scratchpads, procesamiento previo consolidación
@@ -306,7 +306,7 @@ Repo Root /
 | R08 | `/DATA`              | CORE      | MTR       | Matrices, datasets, CSV/Parquet.                                            | H01             |
 | R09 | `/LOG`               | CORE      | LOG       | Logs, changelogs, bitácoras.                                                | E01             |
 | R10 | `/LOG/AUDT`          | AU        | ADT       | Audit logs detallados (pesados).                                            | E06             |
-| R11 | `/BACKUP`            | BK        | BK        | Snapshots BLN y backups comprimidos.                                        | B13             |
+| R11 | `/bk_temp`            | BK        | BK        | Snapshots BLN y backups comprimidos.                                        | B13             |
 | R12 | `/PURGATORIO`        | PG        | PURG      | Stage de obsoletos antes de eliminación o migración legacy.                 | B15             |
 | R13 | `/PURGATORIO/LEGACY` | LG        | LEGACY    | Activos antiguos/externos para migración.                                   | LEGACY          |
 | R14 | `/TMP`               | TEMP      | TMP       | Archivos temporales y scratchpad de dictado/auditoría.                      | TMP             |
@@ -343,7 +343,7 @@ Repo Root /
 3. Consolidado/manual mapping → `/DOC` o `/KNS`
 4. Migración literal → `/MIG`
 5. Auditoría final → `/LOG/AUDT`
-6. Si se archiva, pasa a `/PURGATORIO` o `/BACKUP`
+6. Si se archiva, pasa a `/PURGATORIO` o `/bk_temp`
 
 ---
 
@@ -422,7 +422,7 @@ Repo Root /
 | B17 | TRG_AUDIT_TL | TriggerAuditTL | Disparador auditoría TL | Ciclo TL | event hooks |
 | B18 | TRG_CONSOLIDATE_TL | TriggerConsolidateTL | Disparador consolidación TL | Ciclo TL | event hooks |
 | B19 | TRG_AUDIT_EXT_OFF | TriggerAuditExternalOfficial | Disparador auditoría de assets externos oficiales | Ciclo EXT | event hooks |
-| B20 | TRG_AUDIT_BACKUP | TriggerAuditBackup | Disparador auditoría de respaldos | Ciclo BK | event hooks |
+| B20 | TRG_AUDIT_bk_temp | TriggerAuditBackup | Disparador auditoría de respaldos | Ciclo BK | event hooks |
 | B21 | TRG_TRAIN_EXT_COM | TriggerTrainExternalCommunity | Disparador training assets comunidad externa | Ciclo TL | event hooks |
 | B22 | TRG_AUDIT_LEGACY | TriggerAuditLegacy | Disparador auditoría de archivos legacy | Ciclo LEG | event hooks |
 | B23 | TRG_PURGE_AI | TriggerPurgeAI | Disparador purga de datos IA | Ciclo AI | event hooks |
@@ -572,7 +572,7 @@ Repo Root /
 | B17 | TRG_AUDIT_TL | TriggerAuditTL | "🔔 TRG_AUDIT_TL" | Trigger | MD | audit_tl.md |
 | B18 | TRG_CONSOLIDATE_TL | TriggerConsolidateTL | "🔔 TRG_CONSOLIDATE_TL" | Trigger | MD | consolidate_tl.md |
 | B19 | TRG_AUDIT_EXT_OFF | TriggerAuditExternalOfficial | "🔔 TRG_AUDIT_EXT_OFF" | Trigger | MD | audit_ext_off.md |
-| B20 | TRG_AUDIT_BACKUP | TriggerAuditBackup | "🔔 TRG_AUDIT_BACKUP" | Trigger | MD | audit_backup.md |
+| B20 | TRG_AUDIT_bk_temp | TriggerAuditBackup | "🔔 TRG_AUDIT_bk_temp" | Trigger | MD | audit_backup.md |
 | B21 | TRG_TRAIN_EXT_COM | TriggerTrainExternalCommunity | "🔔 TRG_TRAIN_EXT_COM" | Trigger | MD | train_ext_com.md |
 | B22 | TRG_AUDIT_LEGACY | TriggerAuditLegacy | "🔔 TRG_AUDIT_LEGACY" | Trigger | MD | audit_legacy.md |
 | B23 | TRG_PURGE_AI | TriggerPurgeAI | "🔔 TRG_PURGE_AI" | Trigger | MD | purge_ai.md |
