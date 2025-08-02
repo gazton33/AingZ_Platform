@@ -16,5 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+      - name: Audit naming
+        run: python scripts/audit_naming.py
       - name: Run KPI report
         run: python scripts/report_kpis.py

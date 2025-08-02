@@ -89,7 +89,7 @@ from pathlib import Path
 
 BUCKETS = [
     'packages', 'WF', 'DOC', 'KNS', 'KNS/LEARN', 'SCR', 'DATA', 'LOG', 'LOG/AUDT',
-    'BACKUP', 'BACKUP/INT', 'BACKUP/EXT', 'BACKUP/AI', 'LEGACY', 'TMP', 'MIG', 'CORE',
+    'BACKUP', 'BACKUP/int', 'BACKUP/ext', 'BACKUP/ai', 'LEGACY', 'TMP', 'MIG', 'CORE',
     'CONNECTORS', 'APPS', 'PIPELINES', 'SNAPSHOTS_CTX', 'SNAPSHOTS_CTX/o3',
     'SNAPSHOTS_CTX/gpt4', 'SNAPSHOTS_CTX/turbo', 'SNAPSHOTS_CTX/custom', 'INFRA'
 ]

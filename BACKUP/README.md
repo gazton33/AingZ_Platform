@@ -30,9 +30,9 @@ AingZ_Platform_main/
 ## 4.1 Procedencia en el Árbol de Directorios
 ```text
 backup/
-├── AI/
-├── EXT/
-└── INT/
+├── ai/
+├── ext/
+└── int/
 ```
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)

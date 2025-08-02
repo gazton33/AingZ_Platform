@@ -50,22 +50,22 @@ Repo Root /
 | R02   | `/DOC`               | INT/EXT | AC    | BLUE | Documentación y blueprints          | -               |
 | R03   | `/KNS/LEARN`         | INT     | DR    | TL   | Lessons, drafts, feedback           | -               |
 | R04   | `/KNS/TL`            | INT/AI  | TL    | TL   | Training interno y outputs IA       | -               |
-| 🟩R05 | `/KNS/EXT_COM`       | EXT-COM | AC/TL | TL   | Training comunidad externa (Matrix) | 🟩 nuevo        |
-| 🟩R06 | `/KNS/EXT_OFF`       | EXT-OFF | AC/TL | TL   | Training externo oficial (Matrix)   | 🟩 nuevo        |
+| 🟩R05 | `/KNS/ext_com`       | EXT-COM | AC/TL | TL   | Training comunidad externa (Matrix) | 🟩 nuevo        |
+| 🟩R06 | `/KNS/ext_off`       | EXT-OFF | AC/TL | TL   | Training externo oficial (Matrix)   | 🟩 nuevo        |
 | R07   | `/AUDIT_LIGHT`       | INT/EXT | AU    | REF  | Auditoría liviana                   | -               |
 | R08   | `/SCR`               | INT     | AC    | CORE | Scripts globales                    | -               |
 | R09   | `/DATA`              | INT/EXT | AC    | REF  | Datasets, matrices, etc.            | -               |
 | R10   | `/LOG`               | INT     | AC    | LOG  | Logs generales                      | -               |
 | R11   | `/LOG/AUDT`          | INT     | AU    | LOG  | Logs de auditoría pesada            | -               |
-| R12   | `/BACKUP/INT`        | INT     | BK    | CORE | Snapshots internos                  | 🟩 split Matrix |
-| 🟩R13 | `/BACKUP/EXT_OFF`    | EXT-OFF | BK    | CORE | Snapshots externos oficiales        | 🟩 nuevo        |
-| 🟩R14 | `/BACKUP/EXT_COM`    | EXT-COM | BK    | REF  | Snapshots comunidad externa         | 🟩 nuevo        |
-| 🟩R15 | `/BACKUP/AI`         | AI      | BK    | TL   | Snapshots/backup outputs IA         | 🟩 nuevo        |
+| R12   | `/BACKUP/int`        | INT     | BK    | CORE | Snapshots internos                  | 🟩 split Matrix |
+| 🟩R13 | `/BACKUP/ext_off`    | EXT-OFF | BK    | CORE | Snapshots externos oficiales        | 🟩 nuevo        |
+| 🟩R14 | `/BACKUP/ext_com`    | EXT-COM | BK    | REF  | Snapshots comunidad externa         | 🟩 nuevo        |
+| 🟩R15 | `/BACKUP/ai`         | AI      | BK    | TL   | Snapshots/backup outputs IA         | 🟩 nuevo        |
 | R16   | `/PURGATORIO/LEGACY` | INT-LEG | PG    | CORE | Purgatorio legacy interno           | -               |
-| 🟩R17 | `/PURGATORIO/AI`     | AI      | PG    | TL   | Purgatorio IA                       | 🟩 nuevo        |
+| 🟩R17 | `/PURGATORIO/ai`     | AI      | PG    | TL   | Purgatorio IA                       | 🟩 nuevo        |
 | R18   | `/TMP`               | INT/AI  | DR    | TL   | Archivos temporales y drafts        | -               |
-| 🟩R19 | `/TMP/AI`            | AI      | DR    | TL   | Drafts IA                           | 🟩 nuevo        |
-| 🟩R20 | `/CORE/INT_LEG`      | INT-LEG | AC    | CORE | Consolidado legacy interno          | 🟩 nuevo        |
+| 🟩R19 | `/TMP/ai`            | AI      | DR    | TL   | Drafts IA                           | 🟩 nuevo        |
+| 🟩R20 | `/CORE/int_leg`      | INT-LEG | AC    | CORE | Consolidado legacy interno          | 🟩 nuevo        |
 
 ---
 
@@ -81,7 +81,7 @@ Repo Root /
 
 ## 4. Diferencias clave v5 vs v4
 
-- 🟩 Buckets nuevos: `/KNS/EXT_COM`, `/KNS/EXT_OFF`, `/BACKUP/EXT_COM`, `/BACKUP/EXT_OFF`, `/BACKUP/AI`, `/PURGATORIO/AI`, `/TMP/AI`, `/CORE/INT_LEG`.
+- 🟩 Buckets nuevos: `/KNS/ext_com`, `/KNS/ext_off`, `/BACKUP/ext_com`, `/BACKUP/ext_off`, `/BACKUP/ai`, `/PURGATORIO/ai`, `/TMP/ai`, `/CORE/int_leg`.
 - 🟩 Tabla de buckets ahora referencia explícita a combinaciones Matrix y procedimiento.
 - 🟩 Flujos de integración IA y training comunitario referenciados en triggers y workflows.
 - 🟩 Naming reforzado y obligatorio con código Matrix en toda la infraestructura.
