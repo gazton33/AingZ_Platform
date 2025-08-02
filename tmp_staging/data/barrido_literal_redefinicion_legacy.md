@@ -59,7 +59,7 @@
 - **Workflow visible:**
   - Indicar pasos para curaduría, triggers y responsables.
 - **Tags/estado:**
-  - `STA=PENDING` hasta migrar; luego `STA=ACTV/BACKUP/PURG` según ciclo.
+  - `STA=PENDING` hasta migrar; luego `STA=ACTV/bk_temp/PURG` según ciclo.
 
 ---
 

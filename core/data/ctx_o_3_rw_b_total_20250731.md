@@ -14,9 +14,9 @@
 
 ## 2. PRINCIPIOS Y REGLAS BASE
 
-- Arquitectura Monorepo Modular: cada package independiente, buckets y recursos compartidos (`WF/`, `DOC/`, `KNS/`, `SCR/`, `DATA/`, `LOG/`, `BACKUP/`, `TMP/`, `MIG/`).
+- Arquitectura Monorepo Modular: cada package independiente, buckets y recursos compartidos (`WF/`, `DOC/`, `KNS/`, `SCR/`, `DATA/`, `LOG/`, `bk_temp/`, `TMP/`, `MIG/`).
 - Naming obligatorio `SRC·STG·ROLE` (ver Matrix y glosario).
-- Flujos: LEGACY→STAGING→ACTIVO/CORE→BACKUP/ELIMINACIÓN.
+- Flujos: LEGACY→STAGING→ACTIVO/CORE→bk_temp/ELIMINACIÓN.
 - Prohibido citar legacy en activos, consolidar y eliminar residuos tras merge.
 - Workflows y scripts siempre alineados a arquitectura y límites de tokens IA.
 
@@ -41,7 +41,7 @@ Repo Root /
 ├── DATA/                     # Matrices y datasets
 ├── LOG/                      # Logs y changelogs
 │   └── AUDT/                 # Audit logs pesados
-├── BACKUP/                   # Snapshots/Backups (INT/EXT_COM/EXT_OFF/AI)
+├── bk_temp/                   # Snapshots/Backups (INT/EXT_COM/EXT_OFF/AI)
 ├── PURGATORIO/               # Staging de legacy, obsoletos
 │   ├── LEGACY/               # Zona exclusiva de activos antiguos/externos
 │   └── AI/                   # Purgatorio IA (Matrix)
@@ -65,12 +65,12 @@ Repo Root /
 2. **Auditoría y procesamiento:** En STAGING/TMP según workflow, naming provisional.
 3. **Validación QA:** Checklist, feedback, triggers (ver diccionario y glosario).
 4. **Consolidación:** Movimiento a CORE/ASSETS/KNS/ según naturaleza y rol.
-5. **Backup/Eliminación:** Snapshots en BACKUP si aplica, eliminación física tras merge.
+5. **Backup/Eliminación:** Snapshots en bk_temp si aplica, eliminación física tras merge.
 
 - **LEGACY:** zona cuarentena, todo archivo pendiente, sólo usable tras migración y QA.
 - **STAGING:** todo asset en revisión, testing o feedback, prohibido mover a activos sin cumplir QA y naming RwB.
 - **CORE/ASSETS/KNS:** solo activos validados, versionados y referenciados.
-- **BACKUP:** compresión solo para externos o por requerimiento legal.
+- **bk_temp:** compresión solo para externos o por requerimiento legal.
 
 ---
 
@@ -125,7 +125,7 @@ Repo Root /
 ## 11. NOTAS Y CHECKLIST DE COBERTURA (BARRIDO\_LITERAL)
 
 - ¿Blueprint, Matrix y Glosario referenciados y actualizados?
-- ¿Flujo de LEGACY→STAGING→ACTIVO/CORE→BACKUP/ELIMINACIÓN operativo y sin residuos?
+- ¿Flujo de LEGACY→STAGING→ACTIVO/CORE→bk_temp/ELIMINACIÓN operativo y sin residuos?
 - ¿Naming universal y triggers integrados?
 - ¿Snapshots y contextos curados bajo límite tokens?
 - ¿Workflows y logs actualizados y trazables?
