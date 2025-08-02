@@ -17,12 +17,12 @@ Descripción pendiente.
 - **Referencias laterales:** [../AI/], [../EXT/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../WF/pipeline_INT.md]`, `[../PIPELINES/pipeline_INT.md]`
+- **Flujos/Pipelines relevantes:** `[../WF/pipeline_BACKUP_INT.md]`, `[../PIPELINES/pipeline_BACKUP_INT.md]`
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
-└── backup/
+└── BACKUP/
     └── INT/
 ```
 
@@ -34,10 +34,10 @@ INT/
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
 Describe los pasos clave del ciclo de vida para los archivos de este bucket:
-1. **Ingreso / LEGACY o TMP:** `[../WF/wf_ingreso_INT.md]`
-2. **Staging / MIG:** `[../WF/wf_staging_INT.md]`
-3. **Consolidación / CORE:** `[../WF/wf_consolidacion_INT.md]`
-4. **Backup / Eliminación:** `[../WF/wf_backup_INT.md]`
+1. **Ingreso / LEGACY o TMP:** `[../WF/wf_ingreso_BACKUP_INT.md]`
+2. **Staging / MIG:** `[../WF/wf_staging_BACKUP_INT.md]`
+3. **Consolidación / CORE:** `[../WF/wf_consolidacion_BACKUP_INT.md]`
+4. **Backup / Eliminación:** `[../WF/wf_backup_BACKUP_INT.md]`
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 
