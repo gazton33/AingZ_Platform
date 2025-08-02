@@ -1,4 +1,4 @@
-# BACKUP/AI — README v1
+# backup/AI — README v1
 
 > **STATUS:** `PENDIENTE`
 > **Última actualización:** 2025-08-02 | Autor: Gastón Zelechower
@@ -17,12 +17,12 @@ Descripción pendiente.
 - **Referencias laterales:** [../EXT/], [../INT/]
 - **Buckets destino típicos:** `[../../PURGATORIO/AI/]`, `[../../CORE/]`
 - **Crossref central:** `[Mapa Global](../../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../../WF/pipeline_BACKUP_ai.md]`, `[../../PIPELINES/pipeline_BACKUP_ai.md]`
+- **Flujos/Pipelines relevantes:** `[../../WF/pipeline_backup_ai.md]`, `[../../PIPELINES/pipeline_backup_ai.md]`
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
-└── BACKUP/
+└── backup/
     └── AI/
 ```
 
@@ -33,10 +33,10 @@ AI/
 ```
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
-1. **Ingreso / LEGACY o TMP:** `[../../WF/wf_ingreso_BACKUP_ai.md]`
-2. **Staging / MIG:** `[../../WF/wf_staging_BACKUP_ai.md]`
-3. **Consolidación / CORE:** `[../../WF/wf_consolidacion_BACKUP_ai.md]`
-4. **Backup / Eliminación:** `[../../WF/wf_backup_BACKUP_ai.md]`
+1. **Ingreso / LEGACY o TMP:** `[../../WF/wf_ingreso_backup_ai.md]`
+2. **Staging / MIG:** `[../../WF/wf_staging_backup_ai.md]`
+3. **Consolidación / CORE:** `[../../WF/wf_consolidacion_backup_ai.md]`
+4. **Backup / Eliminación:** `[../../WF/wf_backup_backup_ai.md]`
 
 ---
 Completar todos los campos con links activos una vez creada la estructura real.
