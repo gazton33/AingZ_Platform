@@ -1,7 +1,8 @@
 # EXT — README v1
 
-> **STATUS:** `PENDIENTE`
-> **Última actualización:** 2025-08-02 | Autor: Gastón Zelechower
+> **STATUS:** `ACTUALIZADO`
+> **Última actualización:** 2025-08-02 | Autor: ChatGPT
+
 
 ---
 
@@ -9,15 +10,17 @@
 Descripción pendiente.
 
 ## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: `[./SNAPSHOTS/]` (ajustar si aplica)
-- Enlaces a versiones relevantes o backups IA: `[./SNAPSHOTS_CTX/]` (opcional)
+- Carpeta de snapshots relacionada: [../../BACKUP/](../../BACKUP/)
+- Enlaces a versiones relevantes o backups IA: [../](../)
+
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
 - **Referencias laterales:** [../AI/], [../INT/]
 - **Buckets destino típicos:** `[../DESTINO/]`
-- **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../WF/pipeline_EXT.md]`, `[../PIPELINES/pipeline_EXT.md]`
+- **Crossref central:** [Mapa Global](../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
+- **Flujos/Pipelines relevantes:** [../../infra/pipelines/README.md](../../infra/pipelines/README.md)
+
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
@@ -34,10 +37,11 @@ EXT/
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
 Describe los pasos clave del ciclo de vida para los archivos de este bucket:
-1. **Ingreso / LEGACY o TMP:** `[../WF/wf_ingreso_EXT.md]`
-2. **Staging / MIG:** `[../WF/wf_staging_EXT.md]`
-3. **Consolidación / CORE:** `[../WF/wf_consolidacion_EXT.md]`
-4. **Backup / Eliminación:** `[../WF/wf_backup_EXT.md]`
+1. **Ingreso / LEGACY o TMP:** [../../legacy/](../../legacy/) o [../../tmp_staging/](../../tmp_staging/)
+2. **Staging / MIG:** [../../mig/](../../mig/)
+3. **Consolidación / CORE:** [../../core/](../../core/)
+4. **Backup / Eliminación:** [../](../) y/o [../../BACKUP/](../../BACKUP/)
+
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 

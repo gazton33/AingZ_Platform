@@ -1,4 +1,4 @@
-# DATA — README v1
+# TRAZABILIDAD TOTAL — README v1
 
 > **STATUS:** `ACTUALIZADO`
 > **Última actualización:** 2025-08-02 | Autor: ChatGPT
@@ -14,7 +14,7 @@ Descripción pendiente.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../doc/], [../kns/], [../log/], [../scr/], [../wf/]
+- **Referencias laterales:** [../bitacoras/], [../changelog/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** [Mapa Global](../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
 - **Flujos/Pipelines relevantes:** [../../infra/pipelines/README.md](../../infra/pipelines/README.md)
@@ -22,23 +22,20 @@ Descripción pendiente.
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
-└── mig/
-    └── data/
+└── log/
+    └── trazabilidad_total/
 ```
 
 ## 4.1 Procedencia en el Árbol de Directorios
 ```text
-data/
-├── mplan/
-├── mtx/
-├── rulset/
-└── template/
+trazabilidad_total/
+└── (sin subdirectorios)
 ```
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
 Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 1. **Ingreso / LEGACY o TMP:** [../../legacy/](../../legacy/) o [../../tmp_staging/](../../tmp_staging/)
-2. **Staging / MIG:** [../](../)
+2. **Staging / MIG:** [../../mig/](../../mig/)
 3. **Consolidación / CORE:** [../../core/](../../core/)
 4. **Backup / Eliminación:** [../../backup/](../../backup/) y/o [../../BACKUP/](../../BACKUP/)
 
