@@ -2,18 +2,18 @@ import argparse
 import datetime
 from pathlib import Path
 
-# Adapted from Legacy/Aud_3/Legacy_Original/Lote_scripts/mapping.py
+# Adapted from legacy_old/audit/originals/Lote_scripts/mapping.py
 #
 """Utilities to generate mapping tables for legacy files.
 
 Expected repository layout::
 
-    AUDT/
-      LOTE_1/
-        Legacy_Original/  # default scanned by this script
+    legacy_old/
+      lote_1/
+        originals/  # default scanned by this script
 """
 
-LEGACY_DIR = Path('AUDT/LOTE_1/Legacy_Original')
+LEGACY_DIR = Path('legacy_old/lote_1/originals')
 REGISTRY_FILE = Path('registro_trazabilidad_total.md')
 
 
@@ -83,7 +83,7 @@ def parse_args(args=None):
         "directory",
         nargs="?",
         default=str(LEGACY_DIR),
-        help="Carpeta a escanear (por defecto 'AUDT/LOTE_1/Legacy_Original/')",
+        help="Carpeta a escanear (por defecto 'legacy_old/lote_1/originals/')",
     )
     parser.add_argument(
         "-o",
