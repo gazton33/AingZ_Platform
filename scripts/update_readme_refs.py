@@ -3,10 +3,10 @@ import os
 from pathlib import Path
 import re
 
-root_dir = Path(__file__).resolve().parents[1]  # AingZ_Platform_main
+root_dir = Path(__file__).resolve().parents[1]  # Repo root
 
-# Ensure root_dir points to AingZ_Platform_main
-if root_dir.name != 'AingZ_Platform_main':
+# Ensure root_dir points to expected project directory
+if root_dir.name not in {'AingZ_Platform_main', 'AingZ_Platform'}:
     raise SystemExit('Script must reside under AingZ_Platform_main/scripts/')
 
 

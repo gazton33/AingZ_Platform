@@ -1,7 +1,7 @@
 # LEGACY — README v1
 
-> **STATUS:** `PENDIENTE`
-> **Última actualización:** 2025-08-02 | Autor: Gastón Zelechower
+> **STATUS:** `ACTUALIZADO`
+> **Última actualización:** 2025-08-02 | Autor: ChatGPT
 
 ---
 
@@ -9,15 +9,15 @@
 Fuentes legadas pendientes de migración.
 
 ## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: `[./SNAPSHOTS/]` (ajustar si aplica)
-- Enlaces a versiones relevantes o backups IA: `[./SNAPSHOTS_CTX/]` (opcional)
+- Carpeta de snapshots relacionada: [../BACKUP/](../BACKUP/)
+- Enlaces a versiones relevantes o backups IA: [../backup/](../backup/)
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../BACKUP/], [../apps/], [../backup/], [../connectors/], [../core/], [../infra/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
+- **Referencias laterales:** [../.git/], [../.pytest_cache/], [../BACKUP/], [../__pycache__/], [../apps/], [../backup/], [../connectors/], [../core/], [../infra/], [../legacy_old/], [../log/], [../mig/], [../packages/], [../scripts/], [../tmp_staging/]
 - **Buckets destino típicos:** `[../DESTINO/]`
-- **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../WF/pipeline_legacy.md]`, `[../PIPELINES/pipeline_legacy.md]`
+- **Crossref central:** [Mapa Global](../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
+- **Flujos/Pipelines relevantes:** [../infra/pipelines/README.md](../infra/pipelines/README.md)
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
@@ -38,10 +38,10 @@ legacy/
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
 Describe los pasos clave del ciclo de vida para los archivos de este bucket:
-1. **Ingreso / [LEGACY](./) o [TMP](../tmp_staging/):** `[../WF/wf_ingreso_legacy.md]`
-2. **Staging / [MIG](../mig/):** `[../WF/wf_staging_legacy.md]`
-3. **Consolidación / [CORE](../core/):** `[../WF/wf_consolidacion_legacy.md]`
-4. **Backup / Eliminación / [backup](../backup/) o [BACKUP final](../BACKUP/):** `[../WF/wf_backup_legacy.md]`
+1. **Ingreso / LEGACY o TMP:** [./](./) o [../tmp_staging/](../tmp_staging/)
+2. **Staging / MIG:** [../mig/](../mig/)
+3. **Consolidación / CORE:** [../core/](../core/)
+4. **Backup / Eliminación:** [../backup/](../backup/) y/o [../BACKUP/](../BACKUP/)
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 

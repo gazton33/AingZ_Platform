@@ -1,7 +1,7 @@
 # AingZ_Platform_main — README v1
 
-> **STATUS:** `PENDIENTE`
-> **Última actualización:** 2025-08-02 | Autor: Gastón Zelechower
+> **STATUS:** `ACTUALIZADO`
+> **Última actualización:** 2025-08-02 | Autor: ChatGPT
 
 ---
 
@@ -9,15 +9,15 @@
 Bucket raíz que organiza los módulos principales de la plataforma.
 
 ## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: `[./SNAPSHOTS/]` (ajustar si aplica)
-- Enlaces a versiones relevantes o backups IA: `[./SNAPSHOTS_CTX/]` (opcional)
+- Carpeta de snapshots relacionada: [BACKUP/](BACKUP/)
+- Enlaces a versiones relevantes o backups IA: [backup/](backup/)
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [./BACKUP/], [./apps/], [./backup/], [./connectors/], [./core/], [./infra/], [./legacy/], [./log/], [./mig/], [./packages/], [./scripts/], [./tmp_staging/]
+- **Referencias laterales:** [./.git/], [./.pytest_cache/], [./BACKUP/], [./__pycache__/], [./apps/], [./backup/], [./connectors/], [./core/], [./infra/], [./legacy/], [./legacy_old/], [./log/], [./mig/], [./packages/], [./scripts/], [./tmp_staging/]
 - **Buckets destino típicos:** `[../DESTINO/]`
-- **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../WF/pipeline_AingZ_Platform_main.md]`, `[../PIPELINES/pipeline_AingZ_Platform_main.md]`
+- **Crossref central:** [Mapa Global](core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
+- **Flujos/Pipelines relevantes:** [infra/pipelines/README.md](infra/pipelines/README.md)
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
@@ -27,13 +27,17 @@ AingZ_Platform_main/
 ## 4.1 Procedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
+├── .git/
+├── .pytest_cache/
 ├── BACKUP/
+├── __pycache__/
 ├── apps/
 ├── backup/
 ├── connectors/
 ├── core/
 ├── infra/
 ├── legacy/
+├── legacy_old/
 ├── log/
 ├── mig/
 ├── packages/
@@ -43,10 +47,10 @@ AingZ_Platform_main/
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
 Describe los pasos clave del ciclo de vida para los archivos de este bucket:
-1. **Ingreso** — [LEGACY](./legacy/) o [TMP](./tmp_staging/) `[../WF/wf_ingreso_AingZ_Platform_main.md]`
-2. **Staging** — [MIG](./mig/) `[../WF/wf_staging_AingZ_Platform_main.md]`
-3. **Consolidación** — [CORE](./core/) `[../WF/wf_consolidacion_AingZ_Platform_main.md]`
-4. **Backup / Eliminación** — [backup](./backup/) y/o [BACKUP final](./BACKUP/) `[../WF/wf_backup_AingZ_Platform_main.md]`
+1. **Ingreso / LEGACY o TMP:** [legacy/](legacy/) o [tmp_staging/](tmp_staging/)
+2. **Staging / MIG:** [mig/](mig/)
+3. **Consolidación / CORE:** [core/](core/)
+4. **Backup / Eliminación:** [backup/](backup/) y/o [BACKUP/](BACKUP/)
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 
