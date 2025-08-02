@@ -20,9 +20,9 @@
 | --------------- | --------------------- | ----------------------- | ----------------------- | --------------- |
 | LEGACY/         | Ingreso manual/auto   | TMP/, MIG/              | TMP/, MIG/              | Sí              |
 | TMP/            | LEGACY/, scripts dev  | MIG/, CORE/             | MIG/, CORE/             | Sí              |
-| MIG/            | LEGACY/, TMP/         | CORE/, BACKUP/          | CORE/, BACKUP/          | Sí              |
-| CORE/           | MIG/                  | BACKUP/, LOG/           | BACKUP/                 | Sí              |
-| BACKUP/         | CORE/, MIG/           | -                       | -                       | Sí              |
+| MIG/            | LEGACY/, TMP/         | CORE/, bk_temp/          | CORE/, bk_temp/          | Sí              |
+| CORE/           | MIG/                  | bk_temp/, LOG/           | bk_temp/                 | Sí              |
+| bk_temp/         | CORE/, MIG/           | -                       | -                       | Sí              |
 | LOG/            | Todos                 | AUDT/, KNS/LEARN/       | -                       | Sí              |
 | KNS/            | Todos (insights)      | LEARN/                  | -                       | Sí              |
 | DATA/           | CORE/, TMP/, MIG/     | -                       | -                       | Sí              |
@@ -67,8 +67,8 @@ flowchart TD
     LEGACY --> TMP
     TMP --> MIG
     MIG --> CORE
-    CORE --> BACKUP
-    MIG --> BACKUP
+    CORE --> bk_temp
+    MIG --> bk_temp
     ALL --> LOG
     ALL --> KNS
 ```
@@ -89,7 +89,7 @@ from pathlib import Path
 
 BUCKETS = [
     'packages', 'WF', 'DOC', 'KNS', 'KNS/LEARN', 'SCR', 'DATA', 'LOG', 'LOG/AUDT',
-    'BACKUP', 'BACKUP/int', 'BACKUP/ext', 'BACKUP/ai', 'LEGACY', 'TMP', 'MIG', 'CORE',
+    'bk_temp', 'bk_temp/int', 'bk_temp/ext', 'bk_temp/ai', 'LEGACY', 'TMP', 'MIG', 'CORE',
     'CONNECTORS', 'APPS', 'PIPELINES', 'SNAPSHOTS_CTX', 'SNAPSHOTS_CTX/o3',
     'SNAPSHOTS_CTX/gpt4', 'SNAPSHOTS_CTX/turbo', 'SNAPSHOTS_CTX/custom', 'INFRA'
 ]

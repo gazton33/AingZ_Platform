@@ -34,7 +34,7 @@ Repo Root /
 ├── SCR/                       # Scripts de soporte
 ├── DATA/                      # Datasets y matrices comunes
 ├── LOG/                       # Logs y changelogs
-├── BACKUP/                    # Snapshots periódicos
+├── bk_temp/                    # Snapshots periódicos
 ├── TMP/                       # Scratchpad y archivos temporales
 └── MIG/                    # Outputs de migración
 ```
@@ -63,7 +63,7 @@ packages/pkg_nombre/
 
 1. **Desarrollo local** en `packages/pkg_x/src` con seguimiento de tests.
 2. **Auditoría ligera** mediante scripts en `WF/` y registros en `LOG/`.
-3. **Consolidación** del package: cuando se estabiliza, se integran snapshots en `BACKUP/`.
+3. **Consolidación** del package: cuando se estabiliza, se integran snapshots en `bk_temp/`.
 4. **Migración** o integración mayor se gestiona desde `MIG/` siguiendo el DirArchPlan v5.
 
 ---

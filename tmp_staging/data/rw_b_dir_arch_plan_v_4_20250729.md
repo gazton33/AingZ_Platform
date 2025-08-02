@@ -33,7 +33,7 @@ Repo Root /
 ├── DATA/                  # Matrices, datasets, CSV/Parquet
 ├── LOG/                   # Logs, changelogs, bitácoras (E01)
 │   └── AUDT/              # Audit logs pesados (E06)
-├── BACKUP/                # Snapshots y BLN (B13)
+├── bk_temp/                # Snapshots y BLN (B13)
 ├── PURGATORIO/            # Obsoletos/legacy (B15)
 │   └── LEGACY/            # Activos antiguos/externos para migración
 ├── TMP/                   # Temp files, scratchpads, procesamiento previo consolidación
@@ -56,7 +56,7 @@ Repo Root /
 | R08 | `/DATA`              | CORE      | MTR       | Matrices, datasets, CSV/Parquet.                                            | H01             |
 | R09 | `/LOG`               | CORE      | LOG       | Logs, changelogs, bitácoras.                                                | E01             |
 | R10 | `/LOG/AUDT`          | AU        | ADT       | Audit logs detallados (pesados).                                            | E06             |
-| R11 | `/BACKUP`            | BK        | BK        | Snapshots BLN y backups comprimidos.                                        | B13             |
+| R11 | `/bk_temp`            | BK        | BK        | Snapshots BLN y backups comprimidos.                                        | B13             |
 | R12 | `/PURGATORIO`        | PG        | PURG      | Stage de obsoletos antes de eliminación o migración legacy.                 | B15             |
 | R13 | `/PURGATORIO/LEGACY` | LG        | LEGACY    | Activos antiguos/externos para migración.                                   | LEGACY          |
 | R14 | `/TMP`               | TEMP      | TMP       | Archivos temporales y scratchpad de dictado/auditoría.                      | TMP             |
@@ -93,7 +93,7 @@ Repo Root /
 3. Consolidado/manual mapping → `/DOC` o `/KNS`
 4. Migración literal → `/MIG`
 5. Auditoría final → `/LOG/AUDT`
-6. Si se archiva, pasa a `/PURGATORIO` o `/BACKUP`
+6. Si se archiva, pasa a `/PURGATORIO` o `/bk_temp`
 
 ---
 

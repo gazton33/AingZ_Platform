@@ -32,9 +32,9 @@ Describe los pasos clave del ciclo de vida para los archivos de este bucket:
 1. **Ingreso / LEGACY o TMP:** `[../WF/wf_ingreso_BUCKET.md]`
 2. **Staging / MIG:** `[../WF/wf_staging_BUCKET.md]`
 3. **Consolidación / CORE:** `[../WF/wf_consolidacion_BUCKET.md]`
-4. **Backup / Eliminación:** `[../WF/wf_backup_BUCKET.md]`
+4. **bk_temp / Eliminación:** `[../WF/wf_backup_BUCKET.md]`
 
-Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
+Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→bk_temp`.
 
 ---
 
