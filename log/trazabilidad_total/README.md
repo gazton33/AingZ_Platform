@@ -14,30 +14,30 @@ Descripción pendiente.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../bitacoras/], [../changlog/]
+- **Referencias laterales:** [../bitacoras/], [../changelog/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../WF/pipeline_trazabilidad total.md]`, `[../PIPELINES/pipeline_trazabilidad total.md]`
+- **Flujos/Pipelines relevantes:** `[../WF/pipeline_trazabilidad_total.md]`, `[../PIPELINES/pipeline_trazabilidad_total.md]`
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
 └── log/
-    └── trazabilidad total/
+    └── trazabilidad_total/
 ```
 
 ## 4.1 Procedencia en el Árbol de Directorios
 ```text
-trazabilidad total/
+trazabilidad_total/
 └── (sin subdirectorios)
 ```
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
 Describe los pasos clave del ciclo de vida para los archivos de este bucket:
-1. **Ingreso / LEGACY o TMP:** `[../WF/wf_ingreso_trazabilidad total.md]`
-2. **Staging / MIG:** `[../WF/wf_staging_trazabilidad total.md]`
-3. **Consolidación / CORE:** `[../WF/wf_consolidacion_trazabilidad total.md]`
-4. **Backup / Eliminación:** `[../WF/wf_backup_trazabilidad total.md]`
+1. **Ingreso / LEGACY o TMP:** `[../WF/wf_ingreso_trazabilidad_total.md]`
+2. **Staging / MIG:** `[../WF/wf_staging_trazabilidad_total.md]`
+3. **Consolidación / CORE:** `[../WF/wf_consolidacion_trazabilidad_total.md]`
+4. **Backup / Eliminación:** `[../WF/wf_backup_trazabilidad_total.md]`
 
 Ajustar enlaces de acuerdo al pipeline oficial y etapas de `LEGACY→TMP→MIG→CORE→BACKUP`.
 

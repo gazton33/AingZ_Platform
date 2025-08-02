@@ -14,7 +14,7 @@ Descripción pendiente.
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
-- **Referencias laterales:** [../changlog/], [../trazabilidad total/]
+- **Referencias laterales:** [../changelog/], [../trazabilidad_total/]
 - **Buckets destino típicos:** `[../DESTINO/]`
 - **Crossref central:** `[Mapa Global](../DOC/MPLN/crossref_global.md)`
 - **Flujos/Pipelines relevantes:** `[../WF/pipeline_bitacoras.md]`, `[../PIPELINES/pipeline_bitacoras.md]`
