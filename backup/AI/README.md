@@ -1,7 +1,7 @@
 # backup/AI — README v1
 
-> **STATUS:** `PENDIENTE`
-> **Última actualización:** 2025-08-02 | Autor: Gastón Zelechower
+> **STATUS:** `ACTUALIZADO`
+> **Última actualización:** 2025-08-02 | Autor: ChatGPT
 
 ---
 
@@ -9,15 +9,15 @@
 Descripción pendiente.
 
 ## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: `[./SNAPSHOTS/]`
-- Enlaces a versiones relevantes o backups IA: `[./SNAPSHOTS_CTX/]`
+- Carpeta de snapshots relacionada: [../../BACKUP/](../../BACKUP/)
+- Enlaces a versiones relevantes o backups IA: [../](../)
 
 ## 3. Crossref y Mapping
 - **Referencia ascendente:** `[../]`
 - **Referencias laterales:** [../EXT/], [../INT/]
 - **Buckets destino típicos:** `[../../PURGATORIO/AI/]`, `[../../CORE/]`
-- **Crossref central:** `[Mapa Global](../../DOC/MPLN/crossref_global.md)`
-- **Flujos/Pipelines relevantes:** `[../../WF/pipeline_backup_ai.md]`, `[../../PIPELINES/pipeline_backup_ai.md]`
+- **Crossref central:** [Mapa Global](../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
+- **Flujos/Pipelines relevantes:** [../../infra/pipelines/README.md](../../infra/pipelines/README.md)
 
 ## 4. Precedencia en el Árbol de Directorios
 ```text
@@ -33,10 +33,10 @@ AI/
 ```
 
 ## 5. Pipeline y Workflows (Ciclo de Vida)
-1. **Ingreso / LEGACY o TMP:** `[../../WF/wf_ingreso_backup_ai.md]`
-2. **Staging / MIG:** `[../../WF/wf_staging_backup_ai.md]`
-3. **Consolidación / CORE:** `[../../WF/wf_consolidacion_backup_ai.md]`
-4. **Backup / Eliminación:** `[../../WF/wf_backup_backup_ai.md]`
+1. **Ingreso / LEGACY o TMP:** [../../legacy/](../../legacy/) o [../../tmp_staging/](../../tmp_staging/)
+2. **Staging / MIG:** [../../mig/](../../mig/)
+3. **Consolidación / CORE:** [../../core/](../../core/)
+4. **Backup / Eliminación:** [../](../) y/o [../../BACKUP/](../../BACKUP/)
 
 ---
 Completar todos los campos con links activos una vez creada la estructura real.
