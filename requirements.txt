@@ -1,5 +1,5 @@
 psutil
 py-cpuinfo
 GPUtil
-wmi
-pywin32
+wmi; platform_system == "Windows"
+pywin32; platform_system == "Windows"
