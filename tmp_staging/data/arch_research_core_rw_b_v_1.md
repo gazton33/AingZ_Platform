@@ -26,7 +26,7 @@ Repo Root /
 │   ├── DATA/              # Bibliotecas internas, datasets, recursos técnicos
 │   ├── AUDIT/             # Resultados de auditoría interna, QA, logs extendidos
 │   ├── RESEARCH/          # Research interna, benchmarks, papers, deep docs
-│   ├── BACKUP/            # Snapshots/versiones internas validadas
+│   ├── bk_temp/            # Snapshots/versiones internas validadas
 │   ├── PURG/              # Activos en staging previo a purga/migración
 └── MIG/                   # Outputs temporales de migración/consolidación
 ```
@@ -39,7 +39,7 @@ Repo Root /
 2. Validación/Auditoría → `MAIN/AUDIT/`
 3. Consolidación/activo → `MAIN/ASSETS/`
 4. Research avanzado → `MAIN/RESEARCH/`
-5. Backup periódico → `MAIN/BACKUP/`
+5. Backup periódico → `MAIN/bk_temp/`
 6. Purga/Migración → `MAIN/PURG/` o `MIG/`
 
 ---
@@ -60,7 +60,7 @@ Repo Root /
 - **MAIN/DATA/**: Bibliotecas internas, datasets, recursos crudos/procesados.
 - **MAIN/AUDIT/**: Informes QA, validaciones, logs extendidos.
 - **MAIN/RESEARCH/**: Research profundo, papers, benchmarks internos.
-- **MAIN/BACKUP/**: Snapshots internos, restauraciones.
+- **MAIN/bk_temp/**: Snapshots internos, restauraciones.
 - **MAIN/PURG/**: Staging para activos antes de migración o purga.
 - **MIG/**: Outputs de migración/consolidación, staging para integración definitiva.
 

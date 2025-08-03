@@ -18,7 +18,7 @@
 - **Ruleset:** Extiende RAW BASE RwB, ahora como “AingZ\_Platform Ruleset” (RWB+).
   - **Literalidad, trazabilidad y chunking máximo.**
   - **Naming universal**: SRC·STG·ROLE siempre obligatorio, mapeo a Matrix y glosario CODE.
-  - **Ciclo de vida estricto**: LEGACY→STAGING→CORE→BACKUP/ELIMINACIÓN, sin residuos ni referencias grises.
+  - **Ciclo de vida estricto**: LEGACY→STAGING→CORE→bk_temp/ELIMINACIÓN, sin residuos ni referencias grises.
   - **Integración IA ready**: toda estructura preparada para chunking, feedback, snapshot y automatización IA.
   - **Control de conectores/apps:** cada integración documentada con reglas, scripts, templates, tokens y buenas prácticas.
   - **Seguridad y compliance:** versionado, backups, control de acceso y logs de auditoría globales.
@@ -44,7 +44,7 @@ AingZ_Platform/
 ├── DATA/                      # Matrices, datasets, mappings, versus
 ├── LOG/                       # Logs, changelogs, bitácoras
 │   └── AUDT/                  # Audit logs pesados
-├── BACKUP/                    # Snapshots/Backups (INT/EXT_COM/EXT_OFF/AI)
+├── bk_temp/                    # Snapshots/Backups (INT/EXT_COM/EXT_OFF/AI)
 │   ├── INT/                   # Backups internos
 │   ├── EXT_OFF/               # Backups externos oficiales
 │   ├── EXT_COM/               # Backups comunidad externa

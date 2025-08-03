@@ -9,12 +9,12 @@
 Root bucket that organizes the platform's main modules.
 
 ## 2. Backups / Context
-- Related backup folder: [BACKUP/](BACKUP/)
+- Related backup folder: [bk_temp/](bk_temp/)
 - Links to relevant versions or AI backups: [backup/](backup/)
 
 ## 3. Cross‑references and Mapping
 - **Upward reference:** `[../]`
-- **Lateral references:** [./.git/], [./.pytest_cache/], [./BACKUP/], [./__pycache__/], [./apps/], [./backup/], [./connectors/], [./core/], [./infra/], [./legacy/], [./legacy_old/], [./log/], [./mig/], [./packages/], [./scripts/], [./tmp_staging/]
+- **Lateral references:** [./.git/], [./.pytest_cache/], [./bk_temp/], [./__pycache__/], [./apps/], [./backup/], [./connectors/], [./core/], [./infra/], [./legacy/], [./legacy_old/], [./log/], [./mig/], [./packages/], [./scripts/], [./tmp_staging/]
 - **Typical destination buckets:** `[../DESTINATION/]`
 - **Central crossref:** [Global Map](core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md)
 - **Relevant pipelines:** [infra/pipelines/README.md](infra/pipelines/README.md)
@@ -29,7 +29,7 @@ AingZ_Platform_main/
 AingZ_Platform_main/
 ├── .git/
 ├── .pytest_cache/
-├── BACKUP/
+├── bk_temp/
 ├── __pycache__/
 ├── apps/
 ├── backup/
@@ -50,9 +50,9 @@ Describes key steps in the lifecycle for the files in this bucket:
 1. **Input / LEGACY or TMP:** [legacy/](legacy/) or [tmp_staging/](tmp_staging/)
 2. **Staging / MIG:** [mig/](mig/)
 3. **Consolidation / CORE:** [core/](core/)
-4. **Backup / Deletion:** [backup/](backup/) and/or [BACKUP/](BACKUP/)
+4. **bk_temp / Deletion:** [backup/](backup/) and/or [bk_temp/](bk_temp/)
 
-Adjust links according to the official pipeline and stages of `LEGACY→TMP→MIG→CORE→BACKUP`.
+Adjust links according to the official pipeline and stages of `LEGACY→TMP→MIG→CORE→bk_temp`.
 
 ---
 

@@ -1,4 +1,4 @@
-# backup/ai — README v1
+# bk_temp/ai — README v1
 
 > **STATUS:** `ACTUALIZADO`
 > **Última actualización:** 2025-08-02 | Autor: ChatGPT
@@ -10,7 +10,7 @@
 Descripción pendiente.
 
 ## 2. Snapshots / Contexto
-- Carpeta de snapshots relacionada: [../../BACKUP/](../../BACKUP/)
+- Carpeta de snapshots relacionada: [../../bk_temp/](../../bk_temp/)
 - Enlaces a versiones relevantes o backups IA: [../](../)
 
 
@@ -25,7 +25,7 @@ Descripción pendiente.
 ## 4. Precedencia en el Árbol de Directorios
 ```text
 AingZ_Platform_main/
-└── backup/
+└── bk_temp/
     └── ai/
 ```
 
@@ -39,7 +39,7 @@ ai/
 1. **Ingreso / LEGACY o TMP:** [../../legacy/](../../legacy/) o [../../tmp_staging/](../../tmp_staging/)
 2. **Staging / MIG:** [../../mig/](../../mig/)
 3. **Consolidación / CORE:** [../../core/](../../core/)
-4. **Backup / Eliminación:** [../](../) y/o [../../BACKUP/](../../BACKUP/)
+4. **bk_temp / Eliminación:** [../](../) y/o [../../bk_temp/](../../bk_temp/)
 
 
 ---
