@@ -6,7 +6,7 @@ from pathlib import Path
 PIPELINE_STAGES = {"LEGACY", "TMP", "MIG", "CORE", "bk_temp"}
 ALLOWED_FILES = {"README.md", "LICENSE", ".gitignore", ".gitattributes", ".editorconfig"}
 SNAKE_RE = re.compile(r"^[a-z0-9_]+(?:\.[a-z0-9_]+)?$")
-EXCLUDE_DIRS = {".git", "legacy_old"}
+EXCLUDE_DIRS = {".git", "legacy_old", "venv", "SNAPSHOTS_CTX"}
 
 def main() -> None:
     root = Path(__file__).resolve().parent.parent
