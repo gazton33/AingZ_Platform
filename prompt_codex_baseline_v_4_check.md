@@ -52,7 +52,7 @@ Toda acción que realices debe respetar la **Regla de Máxima Jerarquía**: *Nam
 
 ### 2. Diagnóstico & clasificación
 
-2.1 Clasifica cada discrepancia: `MISSING`, `RENAME`, `LEGACY`, `DUPLICATE`, `INVALID_ROUTE`. 2.2 Genera reporte `diagnosis.md` en `core/kns/audit/` con tablas resumen y enlaces a cada ítem.
+2.1 Clasifica cada discrepancia: `MISSING`, `RENAME`, `LEGACY`, `DUPLICATE`, `INVALID_ROUTE`. 2.2 Genera reporte `diagnosis_baseline.md` en `ops/log/` con tablas resumen y enlaces a cada ítem.
 
 ### 3. Creación / corrección de estructura
 
@@ -69,7 +69,7 @@ Toda acción que realices debe respetar la **Regla de Máxima Jerarquía**: *Nam
 ### 6. Entregables
 
 - `baseline.csv` · snapshot BLN ✔️
-- `diagnosis.md` · reporte auditoría ✔️
+- `diagnosis_baseline.md` · reporte auditoría ✔️
 - Folders & README creados/actualizados ✔️
 - `CHANGELOG`, `LESSONS_LEARNED`, `CHECKLIST` incrementados ✔️
 - Log de triggers ejecutados (`valog.log`) ✔️
@@ -83,7 +83,7 @@ LOT_ID: <datetime‑ISO>
 SUMMARY: "Folders creados: X | READMEs actualizados: Y | Legacy movidos: Z"
 DETAILS:
   BASELINE: baseline.csv
-  REPORT: core/kns/audit/diagnosis.md
+  REPORT: ops/log/diagnosis_baseline.md
   CHANGELOG: core/log/changelog.md
   CHECKLIST: core/log/checklist.md
   LESSONS_LEARNED: core/kns/lessons_learned.md

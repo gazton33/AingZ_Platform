@@ -99,6 +99,7 @@ $ cat chglog_main_rwb_v_5_*.md
 | Fecha      | Versión | Autor       | Cambios                      |
 | ---------- | ------- | ----------- | ---------------------------- |
 | 2025-08-05 | v3.1    | ChatGPT 4.1 | README inicial log/ enriched |
+| 2025-08-07 | v3.1    | ChatGPT 4.1 | Migración de `audit/` desde `core/kns/`; reporte en `ops/log/` |
 
 ---
 
