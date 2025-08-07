@@ -66,6 +66,7 @@ graph TD;
 ## 5. Changelog local
 
 - 2025-08-06: Versión v3.2, integración de glosario y triggers vivos, ajuste compliance.
+- 2025-08-07: Deprecado submódulo `audit/`; scripts y reportes migrados a `ops/`.
 
 ## 6. Observaciones / Lessons learned
 
