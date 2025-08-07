@@ -54,6 +54,10 @@ Describes key steps in the lifecycle for the files in this bucket:
 
 Adjust links according to the official pipeline and stages of `LEGACY→TMP→MIG→CORE→bk_temp`.
 
+## 6. v4-migration Branch
+Dedicated branch for migrating the platform to version 4. Commit and PR rules are detailed in [.github/branch_policies/v4-migration.md](.github/branch_policies/v4-migration.md).
+
+
 ---
 
 Fill all fields with active links once the real structure is created.
