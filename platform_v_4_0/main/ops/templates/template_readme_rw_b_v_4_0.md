@@ -1,21 +1,16 @@
 ---
+version: "4.0"
+status: "draft"
+crossref: "../../../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md"
+---
 
-file: template\_readme\_rw\_b\_v3\_1.md version: v3.1-2025-08-06 status: template role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- rw\_b\_glosario\_code\_v\_2\_20250729.md
-- rw\_b\_diccionario\_code\_triggers\_v\_2\_20250729.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md  # Ruta y referencia definitiva en ops/templates changelog:
-- 2025-08-06: Creación del template universal README v3.1 (alineado blueprint/master plan)
+- 2025-08-06: Creación del template universal README v4.0 (alineado blueprint/master plan)
 - 2025-08-06: Update — descripción extendida, objetivos, sistemas relacionados, contexto humano/IA.
 - 2025-08-06: Ruta definitiva confirmada → ops/templates/
 
 ---
 
-# 📘 [RwB] README Universal — v3.1
+# 📘 [RwB] README Universal — v4.0
 
 ## 1. Descripción, función, objetivos y contexto
 
@@ -60,5 +55,5 @@ done
 
 ---
 
-**FIN TEMPLATE UNIVERSAL README v3.1 (ops/templates, versión activa)**
+**FIN TEMPLATE UNIVERSAL README v4.0 (ops/templates, versión activa)**
 

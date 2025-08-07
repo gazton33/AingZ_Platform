@@ -1,3 +1,9 @@
+---
+version: "1.0"
+status: "updated"
+crossref: "core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md"
+---
+
 # AingZ_Platform_main — README v1
 
 > **STATUS:** `UPDATED`
