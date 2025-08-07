@@ -1,4 +1,4 @@
-name: validation
+name: tests
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 jobs:
-  kpi-report:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -18,7 +18,5 @@ jobs:
       - name: Install dependencies
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-      - name: Audit naming
-        run: python ops/scripts/audit_naming.py
-      - name: Run KPI report
-        run: python ops/scripts/report_kpis.py
+      - name: Run tests
+        run: pytest

@@ -2,8 +2,9 @@ name: codex-baseline-check
 
 on:
   push:
-    branches:
-      - v4-migration
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   run-codex-baseline:
@@ -18,4 +19,4 @@ jobs:
         run: |
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Codex baseline check
-        run: python ops/run_codex_baseline_v4_check.py --repo-root .
+        run: python ops/scripts/run_codex_baseline_v4_check.py
