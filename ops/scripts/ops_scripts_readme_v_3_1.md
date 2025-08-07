@@ -1,6 +1,6 @@
 ---
 
-## file: README.md version: v3.1-2025-08-05 bucket: ops/scripts blueprint: ../../../blueprint\_rw\_b\_platform\_v\_3\_20250803.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
+## file: README.md version: v3.1-2025-08-05 bucket: ops/scripts blueprint: ../../rw_b_blueprint_v_4_extendido_2025_08_06.md status: active updated: 2025-08-05 role: documentation owner: AingZ_Platform · RwB
 
 # [RwB] ops/scripts/ — README (v3.1)
 
@@ -35,13 +35,22 @@ Carpeta que centraliza scripts reutilizables para automatización, mantenimiento
 | ./           | Contenedor | README + metadatos                              |
 | \*.sh, \*.py | Script     | Scripts Bash/Python de automatización y soporte |
 
+### Scripts disponibles
+
+| Script | Descripción breve |
+| ------ | ----------------- |
+| [audit_naming.py](audit_naming.py) | Valida convenciones de nombres en assets |
+| [diagnose_baseline.py](diagnose_baseline.py) | Genera reporte diagnóstico a partir de `baseline.csv` |
+| [report_kpis.py](report_kpis.py) | Produce métricas clave de operación |
+| [run_codex_baseline_v4_check.py](run_codex_baseline_v4_check.py) | Ejecuta chequeo Codex sobre baseline v4 |
+
 ---
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
-- **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
+- **Blueprint v4** → [`../../rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v4** → [`../../rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- **Checklist Root v3** → [`../../checklist_root_rw_b_v_3_20250803.md`](../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
 ---
@@ -106,7 +115,8 @@ $ python migrate_assets.py
 bucket: ops/scripts
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
+blueprint_ref: ../../rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
