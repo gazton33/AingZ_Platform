@@ -1,8 +1,10 @@
 ---
+version: "4.0"
+status: "draft"
+crossref: "../../../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md"
+---
 
-## file: README.md version: v3.1-2025-08-05 bucket: ops/scripts blueprint: ../../../blueprint\_rw\_b\_platform\_v\_3\_20250803.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
-
-# [RwB] ops/scripts/ — README (v3.1)
+# [RwB] ops/scripts/ — README (v4.0)
 
 > **Tagline:** Scripts automáticos de soporte, mantenimiento, procesamiento y utilidades para toda la plataforma.
 

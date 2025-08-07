@@ -1,8 +1,10 @@
 ---
+version: "4.0"
+status: "draft"
+crossref: "../../../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md"
+---
 
-## file: README.md version: v3.1-2025-08-05 bucket: ops/test blueprint: ../../../blueprint\_rw\_b\_platform\_v\_3\_20250803.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
-
-# [RwB] ops/test/ — README (v3.1)
+# [RwB] ops/test/ — README (v4.0)
 
 > **Tagline:** Testing y QA automatizado para cada asset, workflow y pipeline; matriz de pruebas y logs de resultados.
 

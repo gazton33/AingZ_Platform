@@ -1,15 +1,11 @@
 ---
-file: README.md
-version: v3.1-2025-08-05
-bucket: ops
-blueprint: ../../blueprint_rw_b_platform_v_3_20250803.md
-status: active
-updated: 2025-08-05
-role: documentation
-owner: AingZ_Platform · RwB
+version: "4.0"
+status: "draft"
+crossref: "../../../core/data/crossref_mapping_buckets_aingz_platform_v_1_20250731.md"
 ---
 
-# [RwB] ops/ — README (v3.1)
+
+# [RwB] ops/ — README (v4.0)
 
 > **Tagline:** Orquestador operativo: scripts, pipelines, testing, logs y plantillas para automatización y soporte de la plataforma.
 
