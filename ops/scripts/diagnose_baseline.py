@@ -1,14 +1,9 @@
 from __future__ import annotations
 
-"""Baseline diagnosis report generator.
+"""Generate a baseline diagnosis report.
 
-Reads ``baseline.csv`` at the repository root, categorises entries by
-file extension and writes a Markdown report to
-``ops/log/diagnosis_baseline.md``.
-
-Metadata:
-    author: Gastón Zelechower
-    path: ops/scripts/diagnose_baseline.py
+This script reads ``baseline.csv`` in the repository root and writes a
+Markdown file with tables grouped by simple file categories.
 """
 
 from collections import defaultdict
@@ -16,7 +11,6 @@ import csv
 from pathlib import Path
 from typing import Dict, Iterable, List
 
-# Sets of file extensions for simple categorisation
 CODE_EXTS = {"py"}
 DOC_EXTS = {"md"}
 CONFIG_EXTS = {"txt", "ini", "yml", "yaml"}
@@ -67,7 +61,7 @@ def main() -> None:
     baseline_path = repo_root / "baseline.csv"
     rows = _read_baseline(baseline_path)
     groups = _group_by_category(rows)
-    output_path = repo_root / "ops" / "log" / "diagnosis_baseline.md"
+    output_path = Path(__file__).with_name("diagnosis.md")
     _write_markdown(groups, output_path)
 
 
