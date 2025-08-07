@@ -1,6 +1,6 @@
 ---
 
-## file: README.md version: v3.1-2025-08-05 bucket: ops/log blueprint: ../../../blueprint\_rw\_b\_platform\_v\_3\_20250803.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
+## file: README.md version: v3.1-2025-08-05 bucket: ops/log blueprint: ../../rw_b_blueprint_v_4_extendido_2025_08_06.md status: active updated: 2025-08-05 role: documentation owner: AingZ_Platform · RwB
 
 # [RwB] ops/log/ — README (v3.1)
 
@@ -36,13 +36,19 @@ Directorio para todos los logs, bitácoras y registros cronológicos generados p
 | \*.log | Log        | Logs automáticos/manuales   |
 | \*.md  | Docs       | Logs extendidos, changelogs |
 
+### Logs destacados
+
+| Archivo | Descripción breve |
+| ------- | ----------------- |
+| [diagnosis_baseline.md](diagnosis_baseline.md) | Resultado de [diagnose_baseline.py](../scripts/diagnose_baseline.py) sobre `baseline.csv` |
+
 ---
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
-- **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
+- **Blueprint v4** → [`../../rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v4** → [`../../rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- **Checklist Root v3** → [`../../checklist_root_rw_b_v_3_20250803.md`](../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
 ---
@@ -102,7 +108,8 @@ $ cat chglog_main_rwb_v_5_*.md
 bucket: ops/log
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
+blueprint_ref: ../../rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
