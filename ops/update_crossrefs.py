@@ -1,4 +1,5 @@
 import json
+import subprocess
 from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -57,6 +58,40 @@ def log_updates(root: Path, updates: List[Tuple[str, str, str]]) -> None:
 
 ROOT = Path(__file__).resolve().parent.parent
 
+TRIGGERS = ["TRG_AUDIT_TL", "TRG_CONSOLIDATE_TL", "TRG_LSWP"]
+
+
+def run_trigger(name: str) -> str:
+    """Execute a trigger command and return its stdout.
+
+    Raises:
+        RuntimeError: If the command exits with a non-zero status.
+        FileNotFoundError: If the command is missing.
+    """
+    result = subprocess.run([name], capture_output=True, text=True)
+    if result.returncode != 0:
+        stderr = result.stderr.strip() or f"exit code {result.returncode}"
+        raise RuntimeError(stderr)
+    return result.stdout.strip() or "success"
+
+
+def execute_triggers(root: Path, file_path: Path) -> None:
+    """Run predefined triggers for a given file and log outcomes.
+
+    All results are written to ``changelog.md``. Any exceptions are also
+    recorded in ``lessons_learned.md``.
+    """
+    rel = str(file_path.relative_to(root))
+    for trig in TRIGGERS:
+        try:
+            output = run_trigger(trig)
+            action = f"{trig} succeeded: {output}"
+            append_log_entry(root / "changelog.md", rel, action)
+        except Exception as exc:  # noqa: BLE001
+            action = f"{trig} failed: {exc}"
+            append_log_entry(root / "changelog.md", rel, action)
+            append_log_entry(root / "lessons_learned.md", rel, action)
+
 
 def main() -> None:
     cache_path = ROOT / 'ops/paths_cache.json'
@@ -65,7 +100,10 @@ def main() -> None:
     readmes = find_readme_files(ROOT)
     all_updates: List[Tuple[str, str, str]] = []
     for readme in readmes:
-        all_updates.extend(update_file(readme, mappings))
+        updates = update_file(readme, mappings)
+        if updates:
+            all_updates.extend(updates)
+            execute_triggers(ROOT, readme)
 
     log_updates(ROOT, all_updates)
 
