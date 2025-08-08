@@ -36,3 +36,10 @@ Example entry format:
 - 2025-08-08 | core/platform_v_4_0.py | Simple stubs unblock platform tests
 - 2025-08-08 | ops/scripts/diagnose_baseline.py | Baseline path fallback ensures report generation
 - 2025-08-08 | ops/baseline.csv | Include config files to exercise all categories
+- 2025-08-08 | ops/paths_cache.json | Cache must include core V4 documents for crossref scripts
+- 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Always start plans with YAML front matter and OutputTemplate
+- 2025-08-08 | ops/scripts/diagnose_baseline.py | Added json config support and default category sections to satisfy tests
+- 2025-08-08 | ops/scripts/litw_sweep.py | Regular sweeps confirm cache completeness
+- 2025-08-08 | ops/validate_metadata.py | Valid metadata blocks prevent crossref drift
+
+- 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Temporary plan removed after crossref validation
