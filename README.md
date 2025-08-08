@@ -6,7 +6,7 @@ ROUTE: README.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-  - Prompt_Codex_Baseline_V4_Check.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - core/rulset/RULE_CODING_COMPLIANCE_V4.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-07
@@ -27,7 +27,7 @@ DATE: 2025-08-07
 
 ## 3. Crossref dinámico y referencia clave
 - Todos los scripts y README **deben detectar automáticamente** la ruta actual de:
-  - `Prompt_Codex_Baseline_V4_Check.md`
+  - `lifecycle/temp/prompt_codex_baseline_v_4_check.md`
   - `lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`
   - `lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`
   - Cualquier README clave y ruleset (`core/rulset/RULE_CODING_COMPLIANCE_V4.md`)
@@ -69,7 +69,7 @@ file: readme.md
 version: v4.0-20250807
 crossref_blueprint: lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 crossref_masterplan: lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-crossref_prompt_codex: null
+crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md
 crossref_ruleset: core/rulset/RULE_CODING_COMPLIANCE_V4.md
 status: migracion-actualizacion-v4
 note: "Validar crossref dinámico y barrido 100% repo tras cada ciclo."

@@ -23,3 +23,8 @@ Example entry format:
 - 2025-08-08 | README.md | Updated crossref: crossref_blueprint: (DETECTAR Y ACTUALIZAR RUTA REAL) -> crossref_blueprint: lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 - 2025-08-08 | README.md | Updated crossref: crossref_masterplan: (DETECTAR Y ACTUALIZAR RUTA REAL) -> crossref_masterplan: lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 - 2025-08-08 | README.md | Updated crossref: crossref_prompt_codex: (DETECTAR Y ACTUALIZAR RUTA REAL) -> crossref_prompt_codex: null
+- 2025-08-08 | README.md | TRG_AUDIT_TL failed: [Errno 2] No such file or directory: 'TRG_AUDIT_TL'
+- 2025-08-08 | README.md | TRG_CONSOLIDATE_TL failed: [Errno 2] No such file or directory: 'TRG_CONSOLIDATE_TL'
+- 2025-08-08 | README.md | TRG_LSWP failed: [Errno 2] No such file or directory: 'TRG_LSWP'
+- 2025-08-08 | README.md | Updated crossref: Prompt_Codex_Baseline_V4_Check.md -> lifecycle/temp/prompt_codex_baseline_v_4_check.md
+- 2025-08-08 | README.md | Updated crossref: crossref_prompt_codex: null -> crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md
