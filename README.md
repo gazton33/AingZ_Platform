@@ -1,6 +1,17 @@
-# [RwB] README.md — Platform ROOT (V4, 2025-08-07, versión reforzada)
-
 ---
+CODE: README_ROOT
+ID: root_readme
+VERSION: v4.0-2025-08-07
+ROUTE: README.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - Prompt_Codex_Baseline_V4_Check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-07
+---
+# [RwB] README.md — Platform ROOT (V4, 2025-08-07, versión reforzada)
 
 ## 1. Estado y advertencia
 *Este README ha sido reforzado para operar bajo arquitectura V4, con instrucciones explícitas para Codex u otros agentes LLM. Debe escanear y actualizar dinámicamente cualquier referencia o crossref afectada por el movimiento de archivos clave.*
@@ -68,3 +79,13 @@ note: "Validar crossref dinámico y barrido 100% repo tras cada ciclo."
 
 **Fin README raíz V4 (con crossref dinámico)**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
