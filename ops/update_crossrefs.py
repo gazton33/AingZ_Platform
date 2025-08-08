@@ -1,4 +1,5 @@
 import json
+import re
 import subprocess
 from datetime import datetime
 from pathlib import Path
@@ -33,6 +34,18 @@ def update_file(path: Path, mappings: Dict[str, str]) -> List[Tuple[str, str, st
             content = content.replace(old, new)
             updates.append((str(path.relative_to(ROOT)), old, new))
 
+    # Update dedicated YAML crossref fields if present
+    for key, filename in CROSSREF_FIELDS.items():
+        new_path = mappings.get(filename)
+        replacement = new_path if new_path else "null"
+        pattern = rf"^({key}:\s*).*$"
+        match = re.search(pattern, content, flags=re.MULTILINE)
+        if match and match.group(1) + replacement != match.group(0):
+            old_line = match.group(0)
+            new_line = f"{key}: {replacement}"
+            content = re.sub(pattern, new_line, content, flags=re.MULTILINE)
+            updates.append((str(path.relative_to(ROOT)), old_line, new_line))
+
     if content != original:
         path.write_text(content, encoding='utf-8')
     return updates
@@ -59,6 +72,14 @@ def log_updates(root: Path, updates: List[Tuple[str, str, str]]) -> None:
 ROOT = Path(__file__).resolve().parent.parent
 
 TRIGGERS = ["TRG_AUDIT_TL", "TRG_CONSOLIDATE_TL", "TRG_LSWP"]
+
+# Mapping from YAML crossref keys to file names expected in ``paths_cache.json``
+CROSSREF_FIELDS = {
+    "crossref_blueprint": "rw_b_blueprint_v_4_extendido_2025_08_06.md",
+    "crossref_masterplan": "rw_b_master_plan_v_4_extendido_2025_08_06.md",
+    "crossref_prompt_codex": "Prompt_Codex_Baseline_V4_Check.md",
+    "crossref_ruleset": "RULE_CODING_COMPLIANCE_V4.md",
+}
 
 
 def run_trigger(name: str) -> str:
