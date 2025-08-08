@@ -14,5 +14,5 @@
 ## 3. Validación dinámica de crossrefs
 - Mantener referencias vivas a archivos críticos en todos los README.
 - Después de mover o crear archivos, correr `python ops/update_crossrefs.py`.
-- Verificar los cambios generados en `README.md`, `changelog.md` y `lessons_learned.md`.
+- Verificar los cambios generados en `README.md`, `ops/changelog.md` y `ops/lessons_learned.md`.
 
