@@ -41,3 +41,4 @@ Example entry format:
 - 2025-08-08 | ops/scripts/diagnose_baseline.py | Added json config support and default category sections to satisfy tests
 - 2025-08-08 | ops/scripts/litw_sweep.py | Regular sweeps confirm cache completeness
 - 2025-08-08 | ops/validate_metadata.py | Valid metadata blocks prevent crossref drift
+- 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Temporary plan removed after crossref validation
