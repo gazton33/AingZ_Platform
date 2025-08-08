@@ -4,8 +4,10 @@ ID: core_readme
 VERSION: v3.2-2025-08-06
 ROUTE: core/readme_core_rw_b_v_3_2.md
 CROSSREF:
-  - blueprint_rw_b_platform_v_3_20250803.md
-  - mpln_master_plan_rw_b_v_3_20250803.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-06
 ---
