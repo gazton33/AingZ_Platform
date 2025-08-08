@@ -17,8 +17,8 @@
 ## 3. Crossref dinámico y referencia clave
 - Todos los scripts y README **deben detectar automáticamente** la ruta actual de:
   - `Prompt_Codex_Baseline_V4_Check.md`
-  - `rw_b_blueprint_v_4_extendido_2025_08_06.md`
-  - `rw_b_master_plan_v_4_extendido_2025_08_06.md`
+  - `lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`
+  - `lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`
   - Cualquier README clave y ruleset (`RULE_CODING_COMPLIANCE_V4.md`)
 - Al detectar cambios de ubicación:
   - **Actualizar crossref en todos los README afectados**

@@ -1,6 +1,6 @@
 ---
 
-## file: README.md version: v3.1-2025-08-05 bucket: ops/scripts blueprint: ../../rw_b_blueprint_v_4_extendido_2025_08_06.md status: active updated: 2025-08-05 role: documentation owner: AingZ_Platform · RwB
+## file: README.md version: v3.1-2025-08-05 bucket: ops/scripts blueprint: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md status: active updated: 2025-08-05 role: documentation owner: AingZ_Platform · RwB
 
 # [RwB] ops/scripts/ — README (v3.1)
 
@@ -48,8 +48,8 @@ Carpeta que centraliza scripts reutilizables para automatización, mantenimiento
 
 ## 3. Cross‑References
 
-- **Blueprint v4** → [`../../rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../rw_b_blueprint_v_4_extendido_2025_08_06.md)
-- **Master Plan v4** → [`../../rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- **Blueprint v4** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v4** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../checklist_root_rw_b_v_3_20250803.md`](../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
@@ -115,8 +115,8 @@ $ python migrate_assets.py
 bucket: ops/scripts
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../rw_b_blueprint_v_4_extendido_2025_08_06.md
-master_plan_ref: ../../rw_b_master_plan_v_4_extendido_2025_08_06.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
