@@ -69,7 +69,7 @@
 | D25 | WF_INIT | WorkflowInit | "🔎 WF_INIT check" | Workflow | MD | wf_inicio_repo_check_v_1_20250731.md |
 | E01 | LOG | Log | "📜 LOG view" | Log | LOG | app.log |
 | E02 | BIT | Logbook | "📚 BIT add" | Log | LOG | bit.log |
-| E03 | CHG | Changelog | "🕰️ CHG bump" | Log | MD | changelog.md |
+| E03 | CHG | Changelog | "🕰️ CHG bump" | Log | MD | ops/changelog.md |
 | E04 | TRC | Trace | "🔗 TRC id:123" | Log | MD | trace.md |
 | E05 | XRF | CrossRef | "🔗 XRF link" | Log | MD | xrf.md |
 | E06 | ADT | AuditLog | "🔒 ADT view" | Log | LOG | audit.log |

@@ -1,18 +1,20 @@
 ---
-
-file: readme\_core\_data\_dicts\_rw\_b\_v3\_2.md version: v3.2-2025-08-06 status: active role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- rw\_b\_glosario\_code\_v\_2\_20250729.md
-- rw\_b\_diccionario\_code\_triggers\_v\_2\_20250729.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md changelog:
-- 2025-08-06: Consolidación árbol y README dicts/ core/data v3.2, compliance diccionarios y triggers.
-
+file: readme_core_data_dicts_rw_b_v_3_2.md
+version: v3.2-2025-08-06
+status: active
+role: readme
+owner: AingZ_Platform · RwB
+crossref:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - core/kns/glossary/rw_b_glosario_code_v_2_20250729.md
+  - core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
+  - ops/templates/template_readme_rw_b_v_4.md
+changelog:
+  - 2025-08-06: Consolidación árbol y README dicts/ core/data v3.2, compliance diccionarios y triggers.
 ---
-
 # 📚 core/data/dicts/ — Diccionarios técnicos, de triggers y dominio (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto

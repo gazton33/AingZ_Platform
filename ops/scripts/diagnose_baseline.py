@@ -14,7 +14,7 @@ from typing import Dict, Iterable, List
 
 CODE_EXTS = {"py"}
 DOC_EXTS = {"md"}
-CONFIG_EXTS = {"txt", "ini", "yml", "yaml"}
+CONFIG_EXTS = {"txt", "ini", "yml", "yaml", "json"}
 
 
 def _categorise(ext: str) -> str:
@@ -64,6 +64,8 @@ def main() -> None:
         baseline_path = repo_root / "ops" / "baseline.csv"
     rows = _read_baseline(baseline_path)
     groups = _group_by_category(rows)
+    for name in ["code", "documentation", "configuration", "other"]:
+        groups.setdefault(name, [])
     output_path = Path(__file__).with_name("diagnosis.md")
     _write_markdown(groups, output_path)
 
