@@ -47,5 +47,4 @@ Example entry format:
 - 2025-08-08 | ops/scripts/diagnose_baseline.py | Included json config type and ensured all category sections
 - 2025-08-08 | ops/scripts/litw_sweep.py | Executed repository sweep; no missing paths detected
 - 2025-08-08 | README.md & pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Metadata validated; no issues
-
 - 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Removed temporary plan after crossref updates
