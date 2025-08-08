@@ -7,8 +7,37 @@ from typing import Dict, List, Tuple
 
 
 def load_paths_cache(cache_path: Path) -> Dict[str, str]:
-    with cache_path.open('r', encoding='utf-8') as f:
-        return json.load(f)
+    """Load path mappings normalizing keys to lowercase.
+
+    The cache file can contain either a mapping of filenames to paths or a
+    simple list of paths. In both cases the resulting dictionary maps the
+    lower‑cased filename to the path stored in the cache.
+    """
+    with cache_path.open("r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    if isinstance(data, dict):
+        return {k.lower(): v for k, v in data.items()}
+    return {Path(p).name.lower(): p for p in data}
+
+
+def load_crossref_fields(mappings: Dict[str, str]) -> Dict[str, str]:
+    """Derive YAML crossref field names from cached paths.
+
+    The function inspects known keywords in the available filenames to map
+    crossref field identifiers to their corresponding filenames.
+    """
+    fields: Dict[str, str] = {}
+    for filename in mappings.keys():
+        if "blueprint" in filename:
+            fields["crossref_blueprint"] = filename
+        elif "master_plan" in filename:
+            fields["crossref_masterplan"] = filename
+        elif "prompt_codex" in filename:
+            fields["crossref_prompt_codex"] = filename
+        elif "rule_coding_compliance" in filename or "ruleset" in filename:
+            fields["crossref_ruleset"] = filename
+    return fields
 
 
 def find_readme_files(root: Path) -> List[Path]:
@@ -22,20 +51,25 @@ def find_readme_files(root: Path) -> List[Path]:
     return files
 
 
-def update_file(path: Path, mappings: Dict[str, str]) -> List[Tuple[str, str, str]]:
-    content = path.read_text(encoding='utf-8')
+def update_file(
+    path: Path, mappings: Dict[str, str], crossref_fields: Dict[str, str]
+) -> List[Tuple[str, str, str]]:
+    content = path.read_text(encoding="utf-8")
     original = content
     updates: List[Tuple[str, str, str]] = []
 
     for old, new in mappings.items():
         if not new:
             continue
-        if old in content and new not in content:
-            content = content.replace(old, new)
+        pattern = re.compile(re.escape(old), re.IGNORECASE)
+        if pattern.search(content) and not re.search(
+            re.escape(new), content, flags=re.IGNORECASE
+        ):
+            content = pattern.sub(new, content)
             updates.append((str(path.relative_to(ROOT)), old, new))
 
     # Update dedicated YAML crossref fields if present
-    for key, filename in CROSSREF_FIELDS.items():
+    for key, filename in crossref_fields.items():
         new_path = mappings.get(filename)
         replacement = new_path if new_path else "null"
         pattern = rf"^({key}:\s*).*$"
@@ -47,7 +81,7 @@ def update_file(path: Path, mappings: Dict[str, str]) -> List[Tuple[str, str, st
             updates.append((str(path.relative_to(ROOT)), old_line, new_line))
 
     if content != original:
-        path.write_text(content, encoding='utf-8')
+        path.write_text(content, encoding="utf-8")
     return updates
 
 
@@ -72,14 +106,6 @@ def log_updates(root: Path, updates: List[Tuple[str, str, str]]) -> None:
 ROOT = Path(__file__).resolve().parent.parent
 
 TRIGGERS = ["TRG_AUDIT_TL", "TRG_CONSOLIDATE_TL", "TRG_LSWP"]
-
-# Mapping from YAML crossref keys to file names expected in ``paths_cache.json``
-CROSSREF_FIELDS = {
-    "crossref_blueprint": "rw_b_blueprint_v_4_extendido_2025_08_06.md",
-    "crossref_masterplan": "rw_b_master_plan_v_4_extendido_2025_08_06.md",
-    "crossref_prompt_codex": "Prompt_Codex_Baseline_V4_Check.md",
-    "crossref_ruleset": "RULE_CODING_COMPLIANCE_V4.md",
-}
 
 
 def run_trigger(name: str) -> str:
@@ -117,11 +143,12 @@ def execute_triggers(root: Path, file_path: Path) -> None:
 def main() -> None:
     cache_path = ROOT / 'ops/paths_cache.json'
     mappings = load_paths_cache(cache_path)
+    crossref_fields = load_crossref_fields(mappings)
 
     readmes = find_readme_files(ROOT)
     all_updates: List[Tuple[str, str, str]] = []
     for readme in readmes:
-        updates = update_file(readme, mappings)
+        updates = update_file(readme, mappings, crossref_fields)
         if updates:
             all_updates.extend(updates)
             execute_triggers(ROOT, readme)
