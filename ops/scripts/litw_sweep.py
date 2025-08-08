@@ -91,6 +91,8 @@ LINE_RE = re.compile(r"([\s│]*)(├──|└──) (.*)")
 
 
 def parse_blueprint() -> Set[str]:
+    if not BLUEPRINT_FILE.exists():
+        return set()
     text = BLUEPRINT_FILE.read_text(encoding="utf-8")
     match = TREE_BLOCK_RE.search(text)
     if not match:

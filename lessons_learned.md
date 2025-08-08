@@ -28,3 +28,5 @@ Example entry format:
 - 2025-08-08 | README.md | TRG_LSWP failed: [Errno 2] No such file or directory: 'TRG_LSWP'
 - 2025-08-08 | README.md | Updated crossref: Prompt_Codex_Baseline_V4_Check.md -> lifecycle/temp/prompt_codex_baseline_v_4_check.md
 - 2025-08-08 | README.md | Updated crossref: crossref_prompt_codex: null -> crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md
+- 2025-08-08 | ops/scripts/litw_sweep.py | Handling missing blueprint files prevents sweep failure
+- 2025-08-08 | ops/validate_metadata.py | Repository READMEs lack required metadata and OutputTemplate sections

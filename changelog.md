@@ -33,3 +33,6 @@ Example entry format:
 - 2025-08-08 | packages/packages_readme_v_3_1.md | Updated crossrefs to v4 docs
 - 2025-08-08 | packages/vds_core/vds_core_readme_v_3_1.md | Updated crossrefs to v4 docs
 - 2025-08-08 | ops/ops_readme_v_3_1.md | Added prompt codex and ruleset references
+- 2025-08-08 | ops/scripts/litw_sweep.py | Added fallback when blueprint file is missing
+- 2025-08-08 | ops/paths_cache.json | Cached README paths for metadata validation
+- 2025-08-08 | ops/validate_metadata.py | Detected missing metadata in 6 README files

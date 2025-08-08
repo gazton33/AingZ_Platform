@@ -1,6 +1,8 @@
-{
-  "Prompt_Codex_Baseline_V4_Check.md": "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
-  "rw_b_blueprint_v_4_extendido_2025_08_06.md": "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
-  "rw_b_master_plan_v_4_extendido_2025_08_06.md": "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
-  "RULE_CODING_COMPLIANCE_V4.md": "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
-}
+[
+  "ops/ops_readme_v_3_1.md",
+  "ops/pipelines/ops_pipelines_readme_v_3_1.md",
+  "ops/test/ops_test_readme_v_3_1.md",
+  "ops/templates/template_readme_rw_b_v_3_1.md",
+  "ops/scripts/ops_scripts_readme_v_3_1.md",
+  "ops/log/ops_log_readme_v_3_1.md"
+]
