@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -36,17 +37,22 @@ def update_file(path: Path, mappings: Dict[str, str]) -> List[Tuple[str, str, st
     return updates
 
 
+def append_log_entry(log_path: Path, file: str, action: str) -> None:
+    date = datetime.now().strftime("%Y-%m-%d")
+    entry = f"- {date} | {file} | {action}"
+    existing = ''
+    if log_path.exists():
+        existing = log_path.read_text(encoding='utf-8').rstrip('\n') + '\n'
+    log_path.write_text(existing + entry + '\n', encoding='utf-8')
+
+
 def log_updates(root: Path, updates: List[Tuple[str, str, str]]) -> None:
     if not updates:
         return
-    lines = [f"- Updated crossref in {file}: {old} -> {new}" for file, old, new in updates]
-
-    for log_name in ['changelog.md', 'lessons_learned.md']:
-        log_path = root / log_name
-        existing = ''
-        if log_path.exists():
-            existing = log_path.read_text(encoding='utf-8').rstrip('\n') + '\n'
-        log_path.write_text(existing + '\n'.join(lines) + '\n', encoding='utf-8')
+    for file, old, new in updates:
+        action = f"Updated crossref: {old} -> {new}"
+        for log_name in ['changelog.md', 'lessons_learned.md']:
+            append_log_entry(root / log_name, file, action)
 
 
 ROOT = Path(__file__).resolve().parent.parent
