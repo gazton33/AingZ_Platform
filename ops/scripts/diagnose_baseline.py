@@ -2,8 +2,9 @@ from __future__ import annotations
 
 """Generate a baseline diagnosis report.
 
-This script reads ``baseline.csv`` in the repository root and writes a
-Markdown file with tables grouped by simple file categories.
+The script searches for ``baseline.csv`` in the repository root and falls
+back to ``ops/baseline.csv``. It then writes a Markdown file with tables
+grouped by simple file categories.
 """
 
 from collections import defaultdict
@@ -59,6 +60,8 @@ def _write_markdown(groups: Dict[str, List[Dict[str, str]]], output_path: Path) 
 def main() -> None:
     repo_root = Path(__file__).resolve().parents[2]
     baseline_path = repo_root / "baseline.csv"
+    if not baseline_path.exists():
+        baseline_path = repo_root / "ops" / "baseline.csv"
     rows = _read_baseline(baseline_path)
     groups = _group_by_category(rows)
     output_path = Path(__file__).with_name("diagnosis.md")

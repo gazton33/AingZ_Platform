@@ -32,3 +32,7 @@ Example entry format:
 - 2025-08-08 | ops/validate_metadata.py | Repository READMEs lack required metadata and OutputTemplate sections
 
 - 2025-08-08 | .github/workflows/* | All workflows require GH_TOKEN_RW_B_CI for authenticated checkout and scripts
+- 2025-08-08 | ops/__init__.py | Missing __init__ files prevent package imports
+- 2025-08-08 | core/platform_v_4_0.py | Simple stubs unblock platform tests
+- 2025-08-08 | ops/scripts/diagnose_baseline.py | Baseline path fallback ensures report generation
+- 2025-08-08 | ops/baseline.csv | Include config files to exercise all categories

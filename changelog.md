@@ -38,3 +38,7 @@ Example entry format:
 - 2025-08-08 | ops/validate_metadata.py | Detected missing metadata in 6 README files
 
 - 2025-08-08 | .github/workflows/* | Verified GH_TOKEN_RW_B_CI secret usage in CI workflows
+- 2025-08-08 | ops/__init__.py | Declared ops as package for test imports
+- 2025-08-08 | core/platform_v_4_0.py | Added minimal run entry point
+- 2025-08-08 | ops/scripts/diagnose_baseline.py | Added fallback baseline path
+- 2025-08-08 | ops/baseline.csv | Added configuration example to cover tests
