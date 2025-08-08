@@ -19,7 +19,7 @@
   - `Prompt_Codex_Baseline_V4_Check.md`
   - `lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`
   - `lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`
-  - Cualquier README clave y ruleset (`RULE_CODING_COMPLIANCE_V4.md`)
+  - Cualquier README clave y ruleset (`core/rulset/RULE_CODING_COMPLIANCE_V4.md`)
 - Al detectar cambios de ubicación:
   - **Actualizar crossref en todos los README afectados**
   - Registrar cambio en changelog y lessons learned
@@ -59,7 +59,7 @@ version: v4.0-20250807
 crossref_blueprint: (DETECTAR Y ACTUALIZAR RUTA REAL)
 crossref_masterplan: (DETECTAR Y ACTUALIZAR RUTA REAL)
 crossref_prompt_codex: (DETECTAR Y ACTUALIZAR RUTA REAL)
-crossref_ruleset: (DETECTAR Y ACTUALIZAR RUTA REAL)
+crossref_ruleset: core/rulset/RULE_CODING_COMPLIANCE_V4.md
 status: migracion-actualizacion-v4
 note: "Validar crossref dinámico y barrido 100% repo tras cada ciclo."
 ```
