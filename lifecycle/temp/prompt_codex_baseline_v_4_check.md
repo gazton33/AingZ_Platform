@@ -1,6 +1,16 @@
-# [RwB] PROMPT — Codex TaskSet · Baseline & Structure Compliance V4
-
 ---
+CODE: PROMPT_CODEX_BASELINE_V4_CHECK
+ID: prompt_codex_baseline_v4_check
+VERSION: v4.0-2025-08-07
+ROUTE: lifecycle/temp/prompt_codex_baseline_v_4_check.md
+CROSSREF:
+  - ops/changelog.md
+  - ops/lessons_learned.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-08
+---
+
+# [RwB] PROMPT — Codex TaskSet · Baseline & Structure Compliance V4
 
 ## 📌 Contexto
 
@@ -84,9 +94,9 @@ SUMMARY: "Folders creados: X | READMEs actualizados: Y | Legacy movidos: Z"
 DETAILS:
   BASELINE: baseline.csv
   REPORT: ops/log/diagnosis_baseline.md
-  CHANGELOG: core/log/changelog.md
+  CHANGELOG: ops/changelog.md
   CHECKLIST: core/log/checklist.md
-  LESSONS_LEARNED: core/kns/lessons_learned.md
+  LESSONS_LEARNED: ops/lessons_learned.md
   LOG: ops/logs/valog.log
 STATUS: OK
 ```
@@ -114,3 +124,13 @@ STATUS: OK
 
 > **Fin del Prompt — Codex TaskSet Baseline & Compliance V4**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

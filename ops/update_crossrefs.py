@@ -99,7 +99,7 @@ def log_updates(root: Path, updates: List[Tuple[str, str, str]]) -> None:
         return
     for file, old, new in updates:
         action = f"Updated crossref: {old} -> {new}"
-        for log_name in ['changelog.md', 'lessons_learned.md']:
+        for log_name in ["ops/changelog.md", "ops/lessons_learned.md"]:
             append_log_entry(root / log_name, file, action)
 
 
@@ -125,19 +125,19 @@ def run_trigger(name: str) -> str:
 def execute_triggers(root: Path, file_path: Path) -> None:
     """Run predefined triggers for a given file and log outcomes.
 
-    All results are written to ``changelog.md``. Any exceptions are also
-    recorded in ``lessons_learned.md``.
+    All results are written to ``ops/changelog.md``. Any exceptions are also
+    recorded in ``ops/lessons_learned.md``.
     """
     rel = str(file_path.relative_to(root))
     for trig in TRIGGERS:
         try:
             output = run_trigger(trig)
             action = f"{trig} succeeded: {output}"
-            append_log_entry(root / "changelog.md", rel, action)
+            append_log_entry(root / "ops/changelog.md", rel, action)
         except Exception as exc:  # noqa: BLE001
             action = f"{trig} failed: {exc}"
-            append_log_entry(root / "changelog.md", rel, action)
-            append_log_entry(root / "lessons_learned.md", rel, action)
+            append_log_entry(root / "ops/changelog.md", rel, action)
+            append_log_entry(root / "ops/lessons_learned.md", rel, action)
 
 
 def main() -> None:

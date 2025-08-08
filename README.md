@@ -33,7 +33,7 @@ DATE: 2025-08-07
   - Cualquier README clave y ruleset (`core/rulset/RULE_CODING_COMPLIANCE_V4.md`)
 - Al detectar cambios de ubicación:
   - **Actualizar crossref en todos los README afectados**
-  - Registrar cambio en changelog y lessons learned
+  - Registrar cambio en `ops/changelog.md` y `ops/lessons_learned.md`
 
 ---
 
@@ -45,8 +45,8 @@ DATE: 2025-08-07
    - Descripción y objetivos actuales (no legacy)
    - Crossref vivo (ruta exacta a blueprint, masterplan, prompt Codex, ruleset)
    - Metadatos YAML y OutputTemplate, alineados a V4
-5. Ejecuta triggers QA (`TRG_AUDIT_TL`, `TRG_CONSOLIDATE_TL`, `TRG_LSWP`) y registra resultado en changelog.
-6. Documenta cada ciclo, excepción y workaround en lessons learned y checklist incremental.
+5. Ejecuta triggers QA (`TRG_AUDIT_TL`, `TRG_CONSOLIDATE_TL`, `TRG_LSWP`) y registra resultado en `ops/changelog.md`.
+6. Documenta cada ciclo, excepción y workaround en `ops/lessons_learned.md` y checklist incremental.
 
 ---
 
@@ -55,7 +55,7 @@ DATE: 2025-08-07
 - [ ] Implementar barrido literal 100% repo antes de cualquier edición de crossref.
 - [ ] Generar/actualizar `core/rulset/RULE_CODING_COMPLIANCE_V4.md` y referenciarlo dinámicamente en los README.
 - [ ] Validar que todos los README, assets y workflows tengan metadatos YAML, descripción actualizada y OutputTemplate.
-- [ ] Registrar todo fix o hallazgo en changelog y lessons learned.
+- [ ] Registrar todo fix o hallazgo en `ops/changelog.md` y `ops/lessons_learned.md`.
 - [ ] Configurar y testear cualquier secret/token necesario para GitHub Actions o CI:
     - Si CI/CD automático: crear secret `GH_TOKEN_RW_B_CI` con permisos `repo, workflow`.
     - Si solo trabajo local/manual: omitir (no es requerido para Codex local).
