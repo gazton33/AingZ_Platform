@@ -28,3 +28,8 @@ Example entry format:
 - 2025-08-08 | README.md | TRG_LSWP failed: [Errno 2] No such file or directory: 'TRG_LSWP'
 - 2025-08-08 | README.md | Updated crossref: Prompt_Codex_Baseline_V4_Check.md -> lifecycle/temp/prompt_codex_baseline_v_4_check.md
 - 2025-08-08 | README.md | Updated crossref: crossref_prompt_codex: null -> crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md
+- 2025-08-08 | core/readme_core_rw_b_v_3_2.md | Updated crossrefs to v4 docs
+- 2025-08-08 | library/readme_library_rw_b_v_3_1.md | Updated crossrefs to v4 docs
+- 2025-08-08 | packages/packages_readme_v_3_1.md | Updated crossrefs to v4 docs
+- 2025-08-08 | packages/vds_core/vds_core_readme_v_3_1.md | Updated crossrefs to v4 docs
+- 2025-08-08 | ops/ops_readme_v_3_1.md | Added prompt codex and ruleset references

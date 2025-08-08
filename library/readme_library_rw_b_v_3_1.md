@@ -28,10 +28,12 @@ Bucket para almacenamiento, consulta y versionado de **recursos de referencia**:
 - Versionado semántico y metadatos YAML obligatorios.
 
 ## 4. Crossref obligatoria
-- [Blueprint v3](../../blueprint_rw_b_platform_v_3_20250803.md)
-- [Master Plan v3](../../mpln_master_plan_rw_b_v_3_20250803.md)
-- [Checklist Root](../../checklist_root_rw_b_v_3_20250805.md)
-- [Workflow Naming/Creación](../../wf_pipeline_creacion_archivos_rw_b_v_3_20250805.md)
+- [Blueprint v4](../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- [Master Plan v4](../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- [Prompt Codex Baseline v4](../lifecycle/temp/prompt_codex_baseline_v_4_check.md)
+- [Ruleset Coding Compliance v4](../core/rulset/RULE_CODING_COMPLIANCE_V4.md)
+- [Checklist Root](../checklist_root_rw_b_v_3_20250805.md)
+- [Workflow Naming/Creación](../wf_pipeline_creacion_archivos_rw_b_v_3_20250805.md)
 
 ## 5. Flujo y ciclo de vida (PDCA)
 
