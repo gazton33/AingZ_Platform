@@ -30,3 +30,5 @@ Example entry format:
 - 2025-08-08 | README.md | Updated crossref: crossref_prompt_codex: null -> crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md
 - 2025-08-08 | ops/scripts/litw_sweep.py | Handling missing blueprint files prevents sweep failure
 - 2025-08-08 | ops/validate_metadata.py | Repository READMEs lack required metadata and OutputTemplate sections
+
+- 2025-08-08 | .github/workflows/* | All workflows require GH_TOKEN_RW_B_CI for authenticated checkout and scripts

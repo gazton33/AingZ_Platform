@@ -36,3 +36,5 @@ Example entry format:
 - 2025-08-08 | ops/scripts/litw_sweep.py | Added fallback when blueprint file is missing
 - 2025-08-08 | ops/paths_cache.json | Cached README paths for metadata validation
 - 2025-08-08 | ops/validate_metadata.py | Detected missing metadata in 6 README files
+
+- 2025-08-08 | .github/workflows/* | Verified GH_TOKEN_RW_B_CI secret usage in CI workflows
