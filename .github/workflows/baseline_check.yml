@@ -24,3 +24,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: Run Codex baseline check
         run: python ops/scripts/run_codex_baseline_v4_check.py
+        continue-on-error: false
