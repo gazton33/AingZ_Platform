@@ -1,6 +1,18 @@
-# PLN · Primeros pasos Codex — Update Crossref y Compliance V4 (2025-08-07)
-
 ---
+CODE: PLN_PRIMEROS_PASOS_CROSSREF
+ID: pln_primeros_pasos_codex
+VERSION: v4.0-2025-08-07
+ROUTE: pln_primeros_pasos_codex_crossref_update_v_4_20250807.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-07
+---
+
+# PLN · Primeros pasos Codex — Update Crossref y Compliance V4 (2025-08-07)
 
 ## Objetivo
 Automatizar la actualización dinámica de crossref, metadatos y validación compliance en TODO el árbol del repo, tras cualquier movimiento de archivos clave o cambios en la estructura.
@@ -57,4 +69,15 @@ Automatizar la actualización dinámica de crossref, metadatos y validación com
 ---
 
 **Fin PLN primeros pasos Codex para compliance V4**
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
