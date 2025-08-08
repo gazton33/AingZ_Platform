@@ -1,107 +1,70 @@
-
-# [RwB] README.md — Platform ROOT (V3.x.x auditado · roadmap V4, 2025-08-06)
-
----
-
-## 1. Estado Actual
-Este repositorio contiene la **versión operativa V3.x.x** de la plataforma AingZ/RwB. Toda la arquitectura, carpetas y naming actual corresponden al estándar v3.x, salvo los siguientes archivos raíz que preparan la transición y documentación para V4:
-
-- `rw_b_blueprint_v_4_extendido_2025_08_06.md` (blueprint futuro)
-- `rw_b_master_plan_v_4_extendido_2025_08_06.md` (master plan futuro)
-- `prompt_codex_baseline_v_4_check.md` (prompt Codex para migración/chequeo)
-- `readme.md` (este archivo)
-
-**IMPORTANTE:** El árbol `core/`, `data/`, `doc/`, `kns/` y subcarpetas mantienen metadatos y naming de V3.x.x.
+# [RwB] README.md — Platform ROOT (V4, 2025-08-07, versión reforzada)
 
 ---
 
-## 2. Estructura real del repo (auditada)
-
-```plaintext
-platform/
-  prompt_codex_baseline_v_4_check.md
-  readme.md
-  rw_b_blueprint_v_4_extendido_2025_08_06.md
-  rw_b_master_plan_v_4_extendido_2025_08_06.md
-  core/
-    readme_core_rw_b_v_3_2.md
-    data/
-      readme_core_data_rw_b_v_3_2.md
-      dicts/
-        readme_core_data_dicts_rw_b_v_3_2.md
-        rw_b_diccionario_code_triggers_v_2_20250729.md
-      mplan/
-        readme_core_data_mplan_rw_b_v_3_2.md
-      mtx/
-        readme_core_data_mtx_rw_b_v_3_2.md
-      rulset/
-        readme_core_data_rulset_rw_b_v_3_2.md
-      template/
-        readme_core_data_template_rw_b_v_3_2.md
-    doc/
-      readme_core_doc_audio_rw_b_v_3_2.md
-      readme_core_doc_image_rw_b_v_3_2.md
-      readme_core_doc_onbrd_rw_b_v_3_2.md
-      readme_core_doc_rw_b_v_3_2.md
-      readme_core_doc_template_rw_b_v_3_2.md
-      readme_core_doc_video_rw_b_v_3_2.md
-    kns/
-      readme_core_kns_rw_b_v_3_2.md
-      ai_learn/
-        readme_core_kns_ai_learn_rw_b_v_3_2.md
-        eval/
-          readme_core_kns_ai_learn_eval_rw_b_v_3_2.md
-        feed/
-          readme_core_kns_ai_learn_feed_rw_b_v_3_2.md
-        insi/
-          readme_core_kns_ai_learn_insi_rw_b_v_3_2.md
-        learn/
-          readme_core_kns_ai_learn_learn_rw_b_v_3_2.md
-```
+## 1. Estado y advertencia
+*Este README ha sido reforzado para operar bajo arquitectura V4, con instrucciones explícitas para Codex u otros agentes LLM. Debe escanear y actualizar dinámicamente cualquier referencia o crossref afectada por el movimiento de archivos clave.*
 
 ---
 
-## 3. Limitaciones actuales y advertencias
-- Todo el core, naming, crossref y templates siguen la lógica V3.x.x.
-- No se encuentran carpetas ni readme estandarizados bajo reglas V4 (naming, outputtemplate, metadatos YAML, crossref V4).
-- **No realizar cambios estructurales sin checklist y plan de migración.**
+## 2. Propósito y situación del repo
+- El objetivo es alcanzar compliance V4, consolidando el árbol y todos los assets según blueprint y master plan vigentes.
+- Se detectó que archivos críticos (blueprint, master plan, prompt Codex, este README) pueden haber sido movidos de la raíz a subcarpetas (`core/lifecycle/temp`, `ops/`, etc.).
+- Los crossref deben reflejar siempre la **ubicación real** y actualizada de estos archivos en todo el repo.
 
 ---
 
-## 4. Objetivo inmediato: transición y compliance V4
-### El objetivo clave es:
-- Migrar 100% del repo a estándar **V4** según blueprint y master plan adjuntos.
-- Ejecutar el Prompt Codex Baseline para:
-    1. Barrido literal (listar todo el árbol y archivos, identificar faltantes para V4)
-    2. Detectar y crear carpetas y README bajo estándar V4 (naming, metadatos, crossref)
-    3. Generar diagnóstico de discrepancias y registrar en checklist
-    4. Versionar y documentar cada migración/cambio en changelog y lessons learned
-- Eliminar toda referencia y asset legacy V3.x.x una vez migrado el árbol completo.
+## 3. Crossref dinámico y referencia clave
+- Todos los scripts y README **deben detectar automáticamente** la ruta actual de:
+  - `Prompt_Codex_Baseline_V4_Check.md`
+  - `rw_b_blueprint_v_4_extendido_2025_08_06.md`
+  - `rw_b_master_plan_v_4_extendido_2025_08_06.md`
+  - Cualquier README clave y ruleset (`RULE_CODING_COMPLIANCE_V4.md`)
+- Al detectar cambios de ubicación:
+  - **Actualizar crossref en todos los README afectados**
+  - Registrar cambio en changelog y lessons learned
 
 ---
 
-## 5. Pendientes críticos para alcanzar V4
-- [ ] Crear todas las carpetas, buckets y subcarpetas faltantes según Blueprint V4
-- [ ] Reescribir todos los README usando outputtemplate y crossref estándar V4
-- [ ] Normalizar naming y rutas bajo la regla de máxima jerarquía (naming universal, outputtemplate, versionado, crossref)
-- [ ] Implementar metadatos YAML y bloques outputtemplate en todos los activos
-- [ ] Estandarizar onboarding, feedback y workflows con referencia directa a blueprint, masterplan y glosario V4
-- [ ] Automatizar triggers y reporting según diccionario CODE_TRIGGERS v2
-- [ ] Validar todo asset, carpeta y pipeline con el prompt Codex Baseline
-- [ ] Actualizar este README a formato V4 y migrar a ruta/documento definitivo
+## 4. ⚠️ Validación Automática (para Codex y humanos)
+1. Ejecuta barrido completo del repo (`LITW //sweep`, o script Python de walk).
+2. Detecta la ubicación real de todos los archivos clave listados arriba.
+3. Actualiza el bloque crossref de este y todos los README, usando la ruta real detectada.
+4. Refuerza que todos los README incluyan:
+   - Descripción y objetivos actuales (no legacy)
+   - Crossref vivo (ruta exacta a blueprint, masterplan, prompt Codex, ruleset)
+   - Metadatos YAML y OutputTemplate, alineados a V4
+5. Ejecuta triggers QA (`TRG_AUDIT_TL`, `TRG_CONSOLIDATE_TL`, `TRG_LSWP`) y registra resultado en changelog.
+6. Documenta cada ciclo, excepción y workaround en lessons learned y checklist incremental.
+
+---
+
+## 5. Pendientes críticos y acciones recomendadas inmediatas (para Codex)
+- [ ] Buscar y actualizar crossref en todos los README del repo (no solo raíz) tras cualquier cambio de ubicación de archivo clave.
+- [ ] Implementar barrido literal 100% repo antes de cualquier edición de crossref.
+- [ ] Generar/actualizar `core/rulset/RULE_CODING_COMPLIANCE_V4.md` y referenciarlo dinámicamente en los README.
+- [ ] Validar que todos los README, assets y workflows tengan metadatos YAML, descripción actualizada y OutputTemplate.
+- [ ] Registrar todo fix o hallazgo en changelog y lessons learned.
+- [ ] Configurar y testear cualquier secret/token necesario para GitHub Actions o CI:
+    - Si CI/CD automático: crear secret `GH_TOKEN_RW_B_CI` con permisos `repo, workflow`.
+    - Si solo trabajo local/manual: omitir (no es requerido para Codex local).
+- [ ] Actualizar/crear `requirements.txt` con dependencias (`openai`, `pyyaml`, `pytest`, etc.) si vas a correr CI/CD.
 
 ---
 
 ## 6. Bloque IA / ingestión automática
 ```yaml
 file: readme.md
-version: v3.xx-audit-20250806
-blueprint: rw_b_blueprint_v_4_extendido_2025_08_06.md
-masterplan: rw_b_master_plan_v_4_extendido_2025_08_06.md
-prompt_codex: prompt_codex_baseline_v_4_check.md
-status: migracion-pendiente-v4
-note: "Toda la estructura core sigue V3.xx. Roadmap de migración y compliance activo."
+version: v4.0-20250807
+crossref_blueprint: (DETECTAR Y ACTUALIZAR RUTA REAL)
+crossref_masterplan: (DETECTAR Y ACTUALIZAR RUTA REAL)
+crossref_prompt_codex: (DETECTAR Y ACTUALIZAR RUTA REAL)
+crossref_ruleset: (DETECTAR Y ACTUALIZAR RUTA REAL)
+status: migracion-actualizacion-v4
+note: "Validar crossref dinámico y barrido 100% repo tras cada ciclo."
 ```
+
 ---
 
-**Fin README raíz V3.x.x + objetivos V4**
+**Fin README raíz V4 (con crossref dinámico)**
+
