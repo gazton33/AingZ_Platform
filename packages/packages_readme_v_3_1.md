@@ -1,7 +1,20 @@
 ---
-
-## file: README.md version: v3.1-2025-08-05 bucket: packages blueprint: ../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
-
+file: packages_readme_v_3_1.md
+version: v3.1-2025-08-05
+status: active
+role: documentation
+owner: AingZ_Platform · RwB
+bucket: packages
+updated: 2025-08-05
+crossref:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - core/kns/glossary/rw_b_glosario_code_v_2_20250729.md
+  - core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
+  - ops/templates/template_readme_rw_b_v_4.md
+---
 # [RwB] packages/ — README (v3.1)
 
 > **Tagline:** Ecosistema de packages, core+plugins y módulos funcionales autocontenidos; punto de expansión para lógica y servicios de la plataforma.
@@ -54,7 +67,6 @@ El bucket `packages/` agrupa todos los paquetes funcionales autocontenidos de la
 - **Master Plan v4** → [`../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Prompt Codex Baseline v4** → [`../lifecycle/temp/prompt_codex_baseline_v_4_check.md`](../lifecycle/temp/prompt_codex_baseline_v_4_check.md)
 - **Ruleset Coding Compliance v4** → [`../core/rulset/RULE_CODING_COMPLIANCE_V4.md`](../core/rulset/RULE_CODING_COMPLIANCE_V4.md)
-- **Checklist Root v3** → [`../checklist_root_rw_b_v_3_20250803.md`](../checklist_root_rw_b_v_3_20250803.md)
 - **Glosario CODE v2** → [`../core/kns/glossary/rw_b_glosario_code_v_2_20250729.md`](../core/kns/glossary/rw_b_glosario_code_v_2_20250729.md)
 - **Diccionario CODE\_TRIGGERS v2** → [`../core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md`](../core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
