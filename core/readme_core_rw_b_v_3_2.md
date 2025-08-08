@@ -1,16 +1,13 @@
 ---
-
-file: readme\_core\_rw\_b\_v3\_2.md version: v3.2-2025-08-06 status: active role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- rw\_b\_glosario\_code\_v\_2\_20250729.md
-- rw\_b\_diccionario\_code\_triggers\_v\_2\_20250729.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md changelog:
-- 2025-08-06: Consolidación árbol y README core v3.2, integración data/dicts, triggers y glosario activos.
-
+CODE: README_CORE
+ID: core_readme
+VERSION: v3.2-2025-08-06
+ROUTE: core/readme_core_rw_b_v_3_2.md
+CROSSREF:
+  - blueprint_rw_b_platform_v_3_20250803.md
+  - mpln_master_plan_rw_b_v_3_20250803.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-06
 ---
 
 # 🏛️ core/ — Núcleo estructural AingZ/RwB (v3.2)
@@ -76,3 +73,13 @@ graph TD;
 
 **FIN README core/ v3.2 (versión activa)**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
