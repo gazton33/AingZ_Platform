@@ -1,18 +1,21 @@
-# RULE_CODING_COMPLIANCE_V4 (draft)
+# RULE_CODING_COMPLIANCE_V4
 
-## 1. Lineamientos de estilo
-- Adoptar convenciones PEP8 para Python.
-- Incluir docstrings claros en funciones y módulos.
-- Favorecer estructuras modulares y reutilizables.
-- Nombrar commits y ramas siguiendo un formato descriptivo.
+## 1. Mandatos (obligatorios)
+- Todo README/asset debe incluir **front-matter YAML** con: `CODE, ID, VERSION, ROUTE, CROSSREF, AUTHOR, DATE`.
+- Cada README debe cerrar con **OutputTemplate**.
+- Crossrefs obligatorios a: **Blueprint V4**, **Master Plan V4**, **Prompt Codex v4**, **Glosario v2** y **Diccionario CODE_TRIGGERS v2**.
+- Ningún PR puede mergearse si `TRG_AUDIT_TL` reporta fallos o si `ci_audit.yml` falla.
 
-## 2. Lineamientos de pruebas
-- Toda nueva funcionalidad debe acompañarse de pruebas `pytest`.
-- Ejecutar `pytest` localmente antes de cada commit.
-- Validar casos edge y comportamiento esperado ante errores.
+## 2. Triggers requeridos
+- `TRG_CONSOLIDATE_TL`, `TRG_AUDIT_TL`, `TRG_LSWP`.
 
-## 3. Validación dinámica de crossrefs
-- Mantener referencias vivas a archivos críticos en todos los README.
-- Después de mover o crear archivos, correr `python ops/update_crossrefs.py`.
-- Verificar los cambios generados en `README.md`, `ops/changelog.md` y `ops/lessons_learned.md`.
+## 3. Hooks locales (sugeridos)
+- `ops/hooks/pre-commit`: ejecuta `python ops/run_codex_baseline_v4_check.py` y `pytest`.
+- `ops/hooks/pre-push`: re-ejecuta validaciones para garantizar consistencia.
+
+## 4. Criterio de aceptación
+- `ops/validate_metadata.py` retorna **OK** para todos los READMEs.
+- `ops/update_crossrefs.py` no deja cambios pendientes.
+- CI (`ci_audit.yml`) en **verde**.
+- Lessons/changelog/checklist actualizados por lote (PDCA).
 

@@ -1,64 +1,39 @@
 ---
-file: template_readme_rw_b_v_4.md
-version: v4.0-2025-08-07
-status: template
-role: readme
-owner: AingZ_Platform · RwB
-crossref:
-  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-  - core/kns/glossary/rw_b_glosario_code_v_2_20250729.md
-  - core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
-  - ops/templates/template_readme_rw_b_v_4.md
-changelog:
-  - 2025-08-07: Creación del template universal README v4.0 (alineado blueprint/master plan y nuevo prompt codex)
+
+CODE: \<CODE\_5CH> ID: \<id\_readme\_v4> VERSION: v4.0- ROUTE: \<ruta/relativa/al/archivo.md> CROSSREF:
+
+- lifecycle/temp/rw\_b\_blueprint\_v\_4\_extendido\_2025\_08\_06.md
+- lifecycle/temp/rw\_b\_master\_plan\_v\_4\_extendido\_2025\_08\_06.md
+- lifecycle/temp/prompt\_codex\_baseline\_v\_4\_check.md
+- core/rulset/RULE\_CODING\_COMPLIANCE\_V4.md
+- core/kns/glossary/rw\_b\_glosario\_code\_v\_2\_20250729.md
+- core/data/dicts/rw\_b\_diccionario\_code\_triggers\_v\_2\_20250729.md AUTHOR: AingZ\_Platform DATE:&#x20;
+
 ---
 
-# 📘 [RwB] README Universal — v4.0
+# \<Título — Bucket/Rama> (v4)
 
-## 1. Descripción, función, objetivos y contexto
+## Descripción
 
-_Descripción **detallada** del bucket, carpeta o subnivel. Explicar su función principal dentro del repositorio, los objetivos y metas que cumple, su relación e integración con otros sistemas, módulos y buckets. Incluir:_
+Breve propósito y alcance.
 
-- Rol operativo y alcance (qué resuelve o centraliza)
-- Tipo de assets (docs, scripts, datasets, workflows, matrices...)
-- Sistemas/plataformas relacionados (cómo interactúa o se integra)
-- Objetivos estratégicos, dependencia de flujos, crossref críticos
-- Contexto suficiente para onboarding completo (humano/IA), garantizando que cualquier usuario (humano o IA) entienda el propósito, uso y relevancia de todos los files y subfolders en este bucket
+## Estructura interna
 
-## 2. Estructura interna (tabla)
+- Subcarpeta/Archivo → Propósito
 
-| Subcarpeta / Archivo | Propósito | Estado |
-| -------------------- | --------- | ------ |
-| ejemplo/             | ...       | ...    |
-| ...                  | ...       | ...    |
+## Crossref
 
-## 3. Metadatos y compliance
+Revisión de dependencias y referencias activas.
 
-- **Versión**: Indicar semver y fecha.
-- **Owner/Responsable**: Responsable del bucket.
-- **Crossref obligatoria**: Blueprint, master plan, prompt codex, ruleset, triggers y glosario.
-- **Naming/Versionado**: Cumplimiento estricto de políticas RwB.
-- **Estado**: (Activo/WIP/Legacy/Final)
+## OutputTemplate
 
-## 4. Ciclo de vida y flujos (Mermaid/Tabla)
-
-```mermaid
-done
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
 ```
 
-*O incluir tabla de ciclo PDCA o pipeline operativo clave.*
-
-## 5. Changelog local
-
-- Fecha y resumen de cambios relevantes.
-
-## 6. Observaciones / Lessons learned
-
-- Notas de integración, problemas, workaround, feedback de uso, etc.
-
----
-
-**FIN TEMPLATE UNIVERSAL README v4.0 (ops/templates, versión activa)**
