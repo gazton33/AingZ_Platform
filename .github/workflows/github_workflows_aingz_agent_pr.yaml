@@ -1,0 +1,71 @@
+name: AingZ Agent PR
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Reason for patch
+        required: true
+        default: "baseline/update"
+
+permissions:
+  contents: write
+  pull-requests: write
+  workflows: write
+
+jobs:
+  agent-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          installation-id: ${{ secrets.INSTALLATION_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout with app token
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pyyaml pytest
+
+      - name: Configure bot identity
+        run: |
+          git config user.name "aingz-agent-bot[app]"
+          git config user.email "bot+aingz-agent@users.noreply.github.com"
+
+      - name: Apply patches (agent dry-run)
+        run: |
+          python ops/run_codex_baseline_v4_check.py || true
+
+      - name: Create branch and commit
+        run: |
+          BR="bot/aingz/$(date +%Y%m%d-%H%M%S)"
+          git checkout -b "$BR"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "AingZ Agent: ${{ github.event.inputs.reason }}"
+          git push --set-upstream origin "$BR"
+
+      - name: Open PR
+        env:
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
+        run: |
+          gh pr create \
+            --title "Agent: ${{ github.event.inputs.reason }}" \
+            --body "Cambios generados por aingz-agent-bot." \
+            --base main --head "$(git branch --show-current)"
