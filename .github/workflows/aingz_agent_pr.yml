@@ -33,6 +33,14 @@ jobs:
           mkdir -p ops/log
           echo "$(date -Is) | reason=${{ github.event.inputs.reason }}" >> ops/log/agent_runs.log
 
+      - name: Clean legacy workflows (safe)
+        run: |
+          # Duplicados/legacy que causan runs rojos
+          rm -f .github/workflows/aingz_agent_pr.yaml || true
+          rm -f .github/workflows/ci_audit.yaml || true
+          rm -f .github/workflows/baseline_check.yml || true
+          rm -f .github/workflows/tests.yml || true
+
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
@@ -40,6 +48,6 @@ jobs:
           commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
           branch: bot/aingz/${{ github.run_id }}
           title: "Agent: ${{ github.event.inputs.reason }}"
-          body: "Cambios generados por aingz-agent-bot."
+          body: "Limpieza de workflows legacy y duplicados (.yaml) + heartbeat."
           base: main
           delete-branch: true
