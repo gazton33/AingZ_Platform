@@ -1,0 +1,22 @@
+name: CI Audit V4
+on: [pull_request]
+permissions:
+  contents: read
+  pull-requests: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pyyaml pytest
+      - name: Codex baseline dry-run
+        run: python ops/run_codex_baseline_v4_check.py
+      - name: Unit tests
+        run: pytest -q

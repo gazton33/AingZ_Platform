@@ -1,0 +1,57 @@
+name: AingZ Agent PR
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: Reason for patch
+        required: true
+        default: "bootstrap"
+
+permissions:
+  contents: write
+  pull-requests: write
+  workflows: write
+
+jobs:
+  agent-pr:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create App token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          installation-id: ${{ secrets.INSTALLATION_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout with app token
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pyyaml pytest
+
+      - name: Make minimal change (heartbeat)
+        run: |
+          mkdir -p ops/log
+          echo "$(date -Is) | reason=${{ github.event.inputs.reason }}" >> ops/log/agent_runs.log
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
+          branch: bot/aingz/${{ github.run_id }}
+          title: "Agent: ${{ github.event.inputs.reason }}"
+          body: "Cambios generados por aingz-agent-bot."
+          base: main
+          delete-branch: true

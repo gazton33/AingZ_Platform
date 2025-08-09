@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+set -euo pipefail
+python ops/run_codex_baseline_v4_check.py
+pytest -q
