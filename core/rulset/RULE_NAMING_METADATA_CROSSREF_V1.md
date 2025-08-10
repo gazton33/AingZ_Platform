@@ -14,19 +14,25 @@ DATE: 2025-08-10
 Políticas globales para convenciones de naming, metadatos YAML y mantenimiento de referencias cruzadas.
 
 ## 1. Naming
-- Archivos y directorios en inglés o español claro.
-- Usar `_` como separador y mayúsculas para acrónimos clave (`RULE`, `README`).
+- Idioma: inglés o español claro.
+- Formato recomendado: *snake_case* (`[a-z0-9_]+`).
+- Usar `_` como separador y mayúsculas solo para acrónimos clave (`RULE`, `README`).
+- Prohibidos espacios, caracteres especiales o nombres genéricos (`final.md`, `temp.txt`).
 - Incluir sufijo de versión al final (`_v1`, `_v2_20250810`).
 
 **Conforme**
 - `core/data/readme_core_data_rw_b_v_3_2.md`
+- `ops/scripts/deploy_pipeline_v1.sh`
 
 **No Conforme**
 - `core/data/ReadMeCoreData.md`
+- `ops/scripts/deploy pipeline.sh`
 
 ## 2. Metadatos YAML
-- Todos los archivos de documentación deben iniciar con bloque YAML con campos: `CODE`, `ID`, `VERSION`, `ROUTE`, `CROSSREF`, `AUTHOR`, `DATE`.
-- Mantener rutas absolutas en `ROUTE` y listas reales en `CROSSREF`.
+- Todo archivo de documentación inicia con bloque YAML con campos obligatorios:
+  `CODE`, `ID`, `VERSION`, `ROUTE`, `CROSSREF`, `AUTHOR`, `DATE`.
+- `ROUTE` debe ser absoluta; `CROSSREF` una lista de rutas relativas existentes.
+- `DATE` en formato ISO (`YYYY-MM-DD`).
 
 **Conforme**
 ```yaml
@@ -46,18 +52,20 @@ DATE: 2025-08-10
 ```yaml
 CODE: ejemplo
 VERSION: 1.0
+ROUTE: relative/path.md
 ---
 ```
 
 ## 3. Crossref
-- Al mover o renombrar archivos citados, actualizar todas las rutas en `CROSSREF` y en el cuerpo del documento.
-- Las listas `CROSSREF` deben apuntar a rutas relativas válidas dentro del repo.
+- Al mover o renombrar archivos citados, actualizar rutas en `CROSSREF` y en el cuerpo del documento.
+- Las rutas deben ser relativas al repo y resolver a archivos existentes.
+- Evitar URLs externas o rutas rotas.
 
 **Conforme**
 - `CROSSREF: [README.md, core/rulset/RULE_CODING_COMPLIANCE_V4.md]`
 
 **No Conforme**
-- `CROSSREF: [http://externo.com/doc.md]`
+- `CROSSREF: [docs/old_readme.md, http://externo.com/doc.md]`
 
 ---
 ## OutputTemplate
