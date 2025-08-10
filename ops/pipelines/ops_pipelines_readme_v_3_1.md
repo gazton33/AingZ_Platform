@@ -43,8 +43,8 @@ Carpeta destinada a la definición y ejecución de pipelines automáticos: integ
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
@@ -105,7 +105,7 @@ $ cat pipeline_onboarding.md
 bucket: ops/pipelines
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL

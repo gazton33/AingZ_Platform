@@ -3012,7 +3012,7 @@ Subcarpeta dedicada al almacenamiento, organización y versionado de **libros y 
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned
@@ -3073,7 +3073,7 @@ Subcarpeta destinada a la gestión, trazabilidad y versionado de **datasets** ut
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned
@@ -3134,7 +3134,7 @@ Subcarpeta dedicada a almacenamiento, consulta y versionado de **licencias de us
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned
@@ -3195,7 +3195,7 @@ Subcarpeta para almacenamiento y gestión de **manuales técnicos, guías y docu
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned
@@ -3256,7 +3256,7 @@ Subcarpeta dedicada a la gestión y trazabilidad de **normas técnicas, estánda
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned
@@ -3317,7 +3317,7 @@ Subcarpeta para gestión, referencia y trazabilidad de **papers científicos, ar
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned
@@ -3384,8 +3384,8 @@ Bucket para almacenamiento, consulta y versionado de **recursos de referencia**:
 - Versionado semántico y metadatos YAML obligatorios.
 
 ## 4. Crossref obligatoria
-- [Blueprint v4](../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
-- [Master Plan v4](../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- [Blueprint v4](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- [Master Plan v4](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - [Prompt Codex Baseline v4](../lifecycle/temp/prompt_codex_baseline_v_4_check.md)
 - [Ruleset Coding Compliance v4](../core/rulset/RULE_CODING_COMPLIANCE_V4.md)
 - [Checklist Root](../checklist_root_rw_b_v_3_20250805.md)
@@ -3468,8 +3468,8 @@ Carpeta para staging temporal de backups críticos, snapshots y respaldos de wor
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -3502,8 +3502,8 @@ Carpeta para staging temporal de backups críticos, snapshots y respaldos de wor
 bucket: lifecycle/bk_temp
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -3568,8 +3568,8 @@ Carpeta para staging de activos heredados o desfasados, en espera de auditoría,
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -3602,8 +3602,8 @@ Carpeta para staging de activos heredados o desfasados, en espera de auditoría,
 bucket: lifecycle/legacy
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -3672,8 +3672,8 @@ Bucket para gestión, staging y control del ciclo de vida de todos los activos d
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../blueprint_rw_b_platform_v_3_20250803.md`](../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../mpln_master_plan_rw_b_v_3_20250803.md`](../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../checklist_root_rw_b_v_3_20250803.md`](../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
@@ -3717,8 +3717,8 @@ flowchart TD
 bucket: lifecycle
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -3785,8 +3785,8 @@ Espacio de staging y ejecución de workflows/scripts para migrar, transformar y 
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
@@ -3819,8 +3819,8 @@ Espacio de staging y ejecución de workflows/scripts para migrar, transformar y 
 bucket: lifecycle/mig
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -4011,8 +4011,8 @@ Carpeta para staging temporal de activos en proceso de auditoría, validación, 
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`
 
@@ -4043,8 +4043,8 @@ Carpeta para staging temporal de activos en proceso de auditoría, validación, 
 bucket: lifecycle/temp
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -4731,8 +4731,8 @@ El bucket `ops/` centraliza todos los recursos de operación y soporte: scripts,
 
 ## 3. Cross‑References
 
-- **Blueprint v4** → [`../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
-- **Master Plan v4** → [`../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- **Blueprint v4** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v4** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Prompt Codex Baseline v4** → [`../lifecycle/temp/prompt_codex_baseline_v_4_check.md`](../lifecycle/temp/prompt_codex_baseline_v_4_check.md)
 - **Ruleset Coding Compliance v4** → [`../core/rulset/RULE_CODING_COMPLIANCE_V4.md`](../core/rulset/RULE_CODING_COMPLIANCE_V4.md)
 - **Checklist Root v3** → [`checklist_root_rw_b_v_3_20250803.md`](../checklist_root_rw_b_v_3_20250803.md)
@@ -4813,8 +4813,8 @@ $ bash scripts/<script>.sh
 bucket: ops
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-master_plan_ref: ../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 prompt_codex_ref: ../lifecycle/temp/prompt_codex_baseline_v_4_check.md
 ruleset_ref: ../core/rulset/RULE_CODING_COMPLIANCE_V4.md
 triggers:
@@ -4886,8 +4886,8 @@ Carpeta destinada a la definición y ejecución de pipelines automáticos: integ
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
@@ -4948,7 +4948,7 @@ $ cat pipeline_onboarding.md
 bucket: ops/pipelines
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -5281,8 +5281,8 @@ Repositorio central para scripts y assets de testing automatizado: matrices de p
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_CONSOLIDATE_TL`, `TRG_PURGE_AI`
 
@@ -5343,7 +5343,7 @@ $ python test_<asset>.py
 bucket: ops/test
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -5429,8 +5429,8 @@ El bucket `packages/` agrupa todos los paquetes funcionales autocontenidos de la
 
 ## 3. Cross‑References
 
-- **Blueprint v4** → [`../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
-- **Master Plan v4** → [`../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
+- **Blueprint v4** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v4** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Prompt Codex Baseline v4** → [`../lifecycle/temp/prompt_codex_baseline_v_4_check.md`](../lifecycle/temp/prompt_codex_baseline_v_4_check.md)
 - **Ruleset Coding Compliance v4** → [`../core/rulset/RULE_CODING_COMPLIANCE_V4.md`](../core/rulset/RULE_CODING_COMPLIANCE_V4.md)
 - **Glosario CODE v2** → [`../core/kns/glossary/rw_b_glosario_code_v_2_20250729.md`](../core/kns/glossary/rw_b_glosario_code_v_2_20250729.md)
@@ -5502,8 +5502,8 @@ $ python main.py
 bucket: packages
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-master_plan_ref: ../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 prompt_codex_ref: ../lifecycle/temp/prompt_codex_baseline_v_4_check.md
 ruleset_ref: ../core/rulset/RULE_CODING_COMPLIANCE_V4.md
 triggers:
@@ -5578,8 +5578,8 @@ Repositorio dedicado a toda la documentación, scripts y ejemplos de onboarding 
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Core README** → [`../README.md`](../README.md)
 
@@ -5645,8 +5645,8 @@ $ bash onboarding_example.sh
 bucket: packages/vds_core/onboarding
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -5719,8 +5719,8 @@ Carpeta destinada a alojar plugins autocontenidos de la plataforma: cada subcarp
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Core README** → [`../README.md`](../README.md)
 
@@ -5765,8 +5765,8 @@ Carpeta destinada a alojar plugins autocontenidos de la plataforma: cada subcarp
 bucket: packages/vds_core/plugins
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -5836,8 +5836,8 @@ Repositorio de plantillas parametrizables (Jinja, Bash, Markdown, YAML, Python) 
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Core README** → [`../README.md`](../README.md)
 
@@ -5893,8 +5893,8 @@ $ cp script_base.tpl nuevo_script.sh
 bucket: packages/vds_core/templates
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -5964,8 +5964,8 @@ Directorio para scripts, assets y registros de testing del core y sus plugins. A
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Core README** → [`../README.md`](../README.md)
 
@@ -6019,8 +6019,8 @@ $ python test_<modulo>.py
 bucket: packages/vds_core/tests
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
@@ -6247,8 +6247,8 @@ Bucket principal para almacenamiento y versionado de snapshots de contexto, dump
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../blueprint_rw_b_platform_v_3_20250803.md`](../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../mpln_master_plan_rw_b_v_3_20250803.md`](../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../checklist_root_rw_b_v_3_20250803.md`](../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -6288,8 +6288,8 @@ flowchart TD
 bucket: snapshots_ctx
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -6354,8 +6354,8 @@ Espacio centralizado para snapshots, dumps y registros de contexto generados en 
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -6388,8 +6388,8 @@ Espacio centralizado para snapshots, dumps y registros de contexto generados en 
 bucket: snapshots_ctx/common
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -6454,8 +6454,8 @@ Repositorio específico para snapshots, dumps de contexto, logs y outputs genera
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -6488,8 +6488,8 @@ Repositorio específico para snapshots, dumps de contexto, logs y outputs genera
 bucket: snapshots_ctx/gpt_4_1
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -6554,8 +6554,8 @@ Repositorio específico para snapshots, dumps de contexto, logs y outputs genera
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -6588,8 +6588,8 @@ Repositorio específico para snapshots, dumps de contexto, logs y outputs genera
 bucket: snapshots_ctx/gpt_4o
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -6654,8 +6654,8 @@ Repositorio específico para snapshots, dumps de contexto, logs y outputs genera
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -6688,8 +6688,8 @@ Repositorio específico para snapshots, dumps de contexto, logs y outputs genera
 bucket: snapshots_ctx/gpt_o3
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
@@ -6759,8 +6759,8 @@ Bucket principal para almacenamiento y versionado de snapshots de contexto, dump
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../blueprint_rw_b_platform_v_3_20250803.md`](../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../mpln_master_plan_rw_b_v_3_20250803.md`](../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../checklist_root_rw_b_v_3_20250803.md`](../checklist_root_rw_b_v_3_20250803.md)
 - **Triggers**: `TRG_AUDIT_LEGACY`, `TRG_PURGE_AI`
 
@@ -6800,8 +6800,8 @@ flowchart TD
 bucket: snapshots_ctx
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_PURGE_AI
