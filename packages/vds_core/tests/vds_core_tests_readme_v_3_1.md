@@ -1,13 +1,16 @@
 ---
-
-## file: README.md version: v3.1-2025-08-05 bucket: packages/vds\_core/tests blueprint: ../../../blueprint\_rw\_b\_platform\_v\_3\_20250803.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
-
-# [RwB] packages/vds\_core/tests/ — README (v3.1)
-
-> **Tagline:** Scripts, matrices y registros de testing automatizado para lógica y extensiones del core (vds\_core/plugins).
-
+CODE: PACKA
+ID: vds_core_tests_readme_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: packages/vds_core/tests/vds_core_tests_readme_v_3_1.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 ## Índice
 
 1. [Descripción General](#1-descripción-general)
@@ -107,3 +110,13 @@ triggers:
 
 **FIN README packages/vds\_core/tests/ v3.1**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
