@@ -27,7 +27,7 @@ Subcarpeta dedicada a almacenamiento, consulta y versionado de **licencias de us
 
 ## 4. Crossref obligatoria
 - [README library/](../readme_library_rw_b_v_3_1.md)
-- [Blueprint v3](../../../blueprint_rw_b_platform_v_3_20250803.md)
+- [Blueprint v3](../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
 - [Checklist Root](../../../checklist_root_rw_b_v_3_20250805.md)
 
 ## 5. Buenas prácticas y lessons learned

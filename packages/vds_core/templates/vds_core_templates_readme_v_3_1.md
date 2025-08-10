@@ -43,8 +43,8 @@ Repositorio de plantillas parametrizables (Jinja, Bash, Markdown, YAML, Python) 
 
 ## 3. Cross‑References
 
-- **Blueprint v3** → [`../../../blueprint_rw_b_platform_v_3_20250803.md`](../../../blueprint_rw_b_platform_v_3_20250803.md)
-- **Master Plan v3** → [`../../../mpln_master_plan_rw_b_v_3_20250803.md`](../../../mpln_master_plan_rw_b_v_3_20250803.md)
+- **Blueprint v3** → [`../../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`](../../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md)
+- **Master Plan v3** → [`../../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`](../../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md)
 - **Checklist Root v3** → [`../../../checklist_root_rw_b_v_3_20250803.md`](../../../checklist_root_rw_b_v_3_20250803.md)
 - **Core README** → [`../README.md`](../README.md)
 
@@ -100,8 +100,8 @@ $ cp script_base.tpl nuevo_script.sh
 bucket: packages/vds_core/templates
 version: v3.1
 updated: 2025-08-05
-blueprint_ref: ../../../blueprint_rw_b_platform_v_3_20250803.md
-master_plan_ref: ../../../mpln_master_plan_rw_b_v_3_20250803.md
+blueprint_ref: ../../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+master_plan_ref: ../../../lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 triggers:
   - TRG_AUDIT_LEGACY
   - TRG_CONSOLIDATE_TL
