@@ -2,7 +2,7 @@
 CODE: LIBRA
 ID: readme_library_licencias_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/licencias/readme_library_licencias_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/licencias/readme_library_licencias_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md

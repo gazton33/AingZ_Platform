@@ -1,48 +1,16 @@
 ---
-
-## file: core/wf/INTG\_ReadAll\_Consolidate\_V4.md code: INTG4 name: IntegracionLecturaConsolidacionV4 version: v4.0 date: 2025-08-09 owner: AingZ\_Platform · RwB status: active xrf: blueprint: RwB\_Blueprint\_V4 mplan: RwB\_MasterPlan\_V4 glossary: CODE\_Glossary\_v2 dictionary: CODE\_Triggers\_v2 triggers: [TRG\_CONSOLIDATE\_TL, TRG\_AUDIT\_TL, TRG\_LSWP, TRG\_PURGE\_AI] chg: CHG\_main.md#intg\_readall\_consolidate\_v4 chk: CHK\_root.md#intg\_readall\_consolidate\_v4
-
-# WF — Integración, lectura total y consolidación V4 (sin pérdida de información)
-
-## Objetivo
-
-Integrar **todo el conocimiento** de la plataforma (README de cada bucket/asset, Blueprint V4, Master Plan V4, prompts y rulesets), **sin pérdida**, generando un **Corpus V4** único para análisis, detección de incoherencias y posterior purga/normalización. Salida **GPT‑5 / Codex‑ready**.
-
-## Alcance
-
-- Árbol completo: `core/`, `ops/`, `packages/`, `lifecycle/`, `snapshots_ctx/`, `library/`.
-- Archivos foco: `README*.md`, `readme*.md`, `*_blueprint_*`, `*_master_plan_*`, `prompt_*`, `RULE_*`.
-
-## Roles
-
-- **Agent**: orquestación (workflows, harvest, diffs, PRs).
-- **Codex**: tallado masivo/estandarización.
-- **Usuario**: aprobaciones/merge y resolución de conflictos semánticos.
-
-## Flujo (alto nivel)
-
-1. **Tallado V4** de READMEs legacy → normalizar front‑matter + OutputTemplate.
-2. **Crossref Fix** → rutas vivas, sin links rotos.
-3. **Harvest** → indexar y consolidar todo en un **Corpus V4** (sin perder texto).
-4. **Diff & Checks** → confirmar **0 pérdida** de líneas/secciones; listar incoherencias.
-5. **Purga** → proponer merges/splits/renames con PRs atómicos.
-6. **Endurecer CI** → bloquear regresiones.
-
-## Entradas
-
-- `ops/paths_cache.json` (mapeo nombre→ruta canónica).
-- Reglas: `core/rulset/RULE_CODING_COMPLIANCE_V4.md`.
-
-## Salidas (artefactos)
-
-- `ops/data/index/knowledge_index.json` (índice completo).
-- `ops/log/harvest_readmes.md` (inventario literal).
-- `library/intg/Corpus_Platform_V4.md` (consolidado textual).
-- `ops/log/diff_summary.md` + `ops/data/diff_report.json` (no‑regresión).
-- PRs: *tallado*, *crossref-fix*, *cleanup*, *purga*.
-
+CODE: DOC
+ID: core_wf_intg_read_all_consolidate_v_4_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core_wf_intg_read_all_consolidate_v_4.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 ## Procedimiento detallado (paso a paso)
 
 ### Paso A — Tallado (Codex‑ready)
@@ -227,3 +195,13 @@ jobs:
 
 output\_example: status: OK id\_asset: intg\_readall\_consolidate\_v4 generated\_by: ai created\_at: 2025-08-09T00:00:00-03:00 params: - mode: full - preserve\_loss: true result: - indexed\_files: 0 - corpus\_path: library/intg/Corpus\_Platform\_V4.md - inventory\_path: ops/log/harvest\_readmes.md log: - step1: tallado - step2: crossref - step3: harvest - step4: diff\_guard
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

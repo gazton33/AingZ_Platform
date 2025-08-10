@@ -1,8 +1,8 @@
 ---
-CODE: README_CORE
+CODE: READM
 ID: core_readme
 VERSION: v3.2-2025-08-06
-ROUTE: core/readme_core_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/readme_core_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -14,7 +14,6 @@ CROSSREF:
 AUTHOR: AingZ_Platform
 DATE: 2025-08-06
 ---
-
 # 🏛️ core/ — Núcleo estructural AingZ/RwB (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto

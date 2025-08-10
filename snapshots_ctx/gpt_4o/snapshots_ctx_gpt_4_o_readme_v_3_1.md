@@ -2,7 +2,7 @@
 CODE: SNAPS
 ID: snapshots_ctx_gpt_4_o_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
