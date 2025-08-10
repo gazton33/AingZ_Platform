@@ -1,3 +1,16 @@
+---
+CODE: OPS
+ID: harvest_readmes_v4
+VERSION: v4.0-2025-08-10
+ROUTE: ops/log/harvest_readmes.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Harvest — Inventario
 
 - README.md | sha1:94b0825f8b34a740aa7b06bb751f887b1f1306f9 | fm:True
@@ -73,3 +86,14 @@
 - snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md | sha1:8f9a5c6d5409bdcbe8682df70251f418b1a24805 | fm:True
 - snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md | sha1:bd897fbd79c5e6939e7aedf07a44010033eaec33 | fm:True
 - snapshots_ctx/snapshots_ctx_readme_v_3_1.md | sha1:e46a55b5ca0f8e16902e3485fedadd8cc6af7425 | fm:True
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
