@@ -1,10 +1,29 @@
-name: AingZ Orchestrator V4
+# ---
+# file: .github/workflows/aingz_orchestrator.yml
+# code: ORCH
+# name: AingZ_Orchestrator_V4
+# version: v4.0
+# date: 2025-08-10
+# owner: AingZ_Platform · RwB
+# status: active
+# xrf:
+#   blueprint: RwB_Blueprint_V4
+#   mplan: RwB_MasterPlan_V4
+#   glossary: CODE_Glossary_v2
+#   dictionary: CODE_Triggers_v2
+# triggers: [TRG_CONSOLIDATE_TL]
+# chg: CHG_main.md#orch_v4
+# chk: CHK_root.md#orch_v4
+# ---
+
+name: "AingZ Orchestrator V4"
+
 on:
   workflow_dispatch:
     inputs:
       reason:
-        description: motivo
-        required: true
+        description: "Motivo de ejecución (p.ej. orchestrate-v4)"
+        required: false
         default: orchestrate-v4
 
 permissions:
@@ -12,180 +31,150 @@ permissions:
   contents: write
   pull-requests: write
 
+concurrency:
+  group: orchestrator-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  ORCH_REASON: ${{ github.event.inputs.reason || 'orchestrate-v4' }}
+
 jobs:
-  orchestrate:
+  preflight:
+    name: "Preflight · validación mínima"
     runs-on: ubuntu-latest
     steps:
-      - name: App token
-        id: app
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          installation_id: ${{ secrets.INSTALLATION_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
-      # Despachos SEGUROS usando github-script (evita problemas de quoting con curl)
-      - name: Dispatch Tallado READMEs V4
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app.outputs.token }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'aingz_tallado_readmes.yml',
-              ref: 'main',
-              inputs: { reason: 'tallado-readmes' }
-            });
-      - name: Wait 60s (tallado)
-        run: sleep 60
-
-      - name: Dispatch Crossref Fix
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app.outputs.token }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'aingz_crossref_fix.yml',
-              ref: 'main',
-              inputs: { reason: 'crossref-fix' }
-            });
-      - name: Wait 60s (crossref)
-        run: sleep 60
-
-      - name: Dispatch Harvest Knowledge
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app.outputs.token }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'aingz_harvest_knowledge.yml',
-              ref: 'main',
-              inputs: { reason: 'harvest' }
-            });
-      - name: Wait 60s (harvest)
-        run: sleep 60
-
-      - name: Dispatch Incoherence Report
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app.outputs.token }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'aingz_incoherence_report.yml',
-              ref: 'main',
-              inputs: { reason: 'incoherences-scan' }
-            });
-      - name: Wait 60s (incoherences)
-        run: sleep 60
-
-      - name: Dispatch Purge Fixes v2
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ steps.app.outputs.token }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'aingz_purge_fixes_v2.yml',
-              ref: 'main',
-              inputs: { reason: 'purge-fixes' }
-            });
-
-      # Validación inmediata del README.md raíz (front‑matter V4 + CROSSREF canónicos)
-      - name: Checkout main for validation
+      - name: Checkout
         uses: actions/checkout@v4
+
+      - name: List workflows (debug)
+        uses: actions/github-script@v7
         with:
-          token: ${{ steps.app.outputs.token }}
-          fetch-depth: 0
+          script: |
+            const { owner, repo } = context.repo;
+            const res = await github.rest.actions.listRepoWorkflows({ owner, repo });
+            core.info(`Workflows detectados: ${res.data.workflows.map(w=>`${w.name} -> ${w.path}`).join('\n')}`);
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Verificar presencia de workflows requeridos
+        uses: actions/github-script@v7
         with:
-          python-version: '3.11'
+          script: |
+            const required = [
+              '.github/workflows/aingz_tallado_readmes.yml',
+              '.github/workflows/aingz_crossref_fix.yml',
+              '.github/workflows/aingz_harvest_knowledge.yml',
+              '.github/workflows/aingz_incoherence_report.yml',
+              '.github/workflows/aingz_purge_fixes_v2.yml'
+            ];
+            const { owner, repo } = context.repo;
+            const { data } = await github.rest.actions.listRepoWorkflows({ owner, repo });
+            const paths = new Set(data.workflows.map(w=>w.path));
+            const missing = required.filter(p => !paths.has(p));
+            if (missing.length) {
+              core.setFailed(`Faltan workflows requeridos o están deshabilitados: \n${missing.join('\n')}\n` +
+                             `Asegurá que existan y tengan 'on: workflow_dispatch'.`);
+            } else {
+              core.info('OK · Todos los workflows requeridos existen.');
+            }
 
-      - name: Install deps
+  orchestrate:
+    name: "Orchestrate · encadenar WFs (dispatch + wait)"
+    needs: preflight
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Encadenar workflows
+        id: chain
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { owner, repo } = context.repo;
+            const ref = context.ref.replace('refs/heads/','');
+            const reason = process.env.ORCH_REASON || 'orchestrate-v4';
+
+            const chain = [
+              '.github/workflows/aingz_tallado_readmes.yml',
+              '.github/workflows/aingz_crossref_fix.yml',
+              '.github/workflows/aingz_harvest_knowledge.yml',
+              '.github/workflows/aingz_incoherence_report.yml',
+              '.github/workflows/aingz_purge_fixes_v2.yml'
+            ];
+
+            async function findWorkflowIdByPath(path) {
+              const { data } = await github.rest.actions.listRepoWorkflows({ owner, repo });
+              const wf = data.workflows.find(w => w.path === path);
+              return wf ? wf.id : null;
+            }
+
+            async function dispatch(wfId) {
+              await github.rest.actions.createWorkflowDispatch({
+                owner, repo, workflow_id: wfId, ref,
+                inputs: { reason }
+              });
+            }
+
+            async function waitForRun(wfId) {
+              const start = Date.now();
+              const timeoutMs = 60 * 60 * 1000; // 60 min
+              const sleep = ms => new Promise(r => setTimeout(r, ms));
+
+              let runId = null;
+              // Espera a que aparezca un run
+              while (Date.now() - start < timeoutMs) {
+                const { data } = await github.rest.actions.listWorkflowRuns({ owner, repo, workflow_id: wfId, branch: ref, per_page: 10 });
+                const run = data.workflow_runs.find(r => r.head_branch === ref);
+                if (run) { runId = run.id; break; }
+                await sleep(5000);
+              }
+              if (!runId) core.setFailed('Timeout esperando inicio de run');
+
+              // Espera a la finalización
+              while (Date.now() - start < timeoutMs) {
+                const { data } = await github.rest.actions.getWorkflowRun({ owner, repo, run_id: runId });
+                core.info(`Estado: ${data.name} -> ${data.status}/${data.conclusion || ''}`);
+                if (data.status === 'completed') {
+                  if (data.conclusion !== 'success') {
+                    core.setFailed(`Concluyó con estado: ${data.conclusion}`);
+                  }
+                  return;
+                }
+                await sleep(15000);
+              }
+              core.setFailed('Timeout esperando finalización de run');
+            }
+
+            for (const path of chain) {
+              const wfId = await findWorkflowIdByPath(path);
+              if (!wfId) core.setFailed(`Workflow no encontrado: ${path}`);
+              core.info(`Dispatch → ${path} @ ${ref} (reason=${reason})`);
+              await dispatch(wfId);
+              await waitForRun(wfId);
+            }
+
+      - name: Resultado
+        if: always()
         run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml
+          echo "Motivo: $ORCH_REASON"
+          echo "Cadena completada (ver historial en Actions)."
 
-      - name: Validate root README V4 + CROSSREF
-        run: |
-          python - <<'PY'
-          from pathlib import Path
-          import re, sys, json
-          import yaml
-
-          ROOT = Path('.')
-          readme = ROOT/'README.md'
-          cache = ROOT/'ops'/'paths_cache.json'
-          errors = []
-
-          if not readme.exists():
-              print('README.md no encontrado en raíz')
-              sys.exit(1)
-
-          txt = readme.read_text(encoding='utf-8', errors='ignore')
-          m = re.match(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", txt, re.S)
-          if not m:
-              errors.append('Front-matter YAML ausente en README.md')
-              fm = {}
-          else:
-              fm = yaml.safe_load(m.group(1)) or {}
-
-          REQUIRED = ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]
-          for k in REQUIRED:
-              if k not in fm:
-                  errors.append(f"Campo requerido faltante en README.md: {k}")
-
-          code = str(fm.get('CODE',''))
-          if not re.fullmatch(r"[A-Z0-9_]{1,5}", code):
-              errors.append(f"CODE inválido en README.md: '{code}' (<=5, SCREAMING_SNAKE)")
-
-          route = fm.get('ROUTE')
-          if route != 'README.md':
-              errors.append(f"ROUTE incorrecto en README.md: '{route}' (debe ser 'README.md')")
-
-          # CROSSREF: existencia y canónicos
-          cr = fm.get('CROSSREF')
-          if isinstance(cr, list):
-              cr_list = [str(x) for x in cr]
-          elif isinstance(cr, str):
-              cr_list = [cr]
-          else:
-              cr_list = []
-
-          required = []
-          if cache.exists():
-              try:
-                  data = json.loads(cache.read_text('utf-8'))
-                  required = sorted(set(data.values()))
-              except Exception:
-                  required = []
-
-          for ref in cr_list:
-              p = ROOT / ref
-              if not p.exists():
-                  errors.append(f"CROSSREF apunta a un archivo inexistente: {ref}")
-
-          missing_req = [r for r in required if r not in cr_list]
-          if required and missing_req:
-              errors.append(f"Faltan referencias canónicas en README.md: {missing_req}")
-
-          if errors:
-              print("VALIDACION README.md — ERRORES:")
-              for e in errors:
-                  print("- ", e)
-              sys.exit(1)
-          else:
-              print('README.md V4 OK + CROSSREF válidos')
-          PY
-
-      - name: Done
-        run: echo "Dispatched: tallado → crossref → harvest → incoherences → purge. README.md validado. Revisar PRs y checks."
+# ---
+# OutputTemplate (obligatorio / comentado para GH Actions)
+# output_example:
+#   status: OK
+#   id_asset: orch_v4
+#   generated_by: ai
+#   created_at: 2025-08-10T00:00:00-03:00
+#   params:
+#     - reason: orchestrate-v4
+#   result:
+#     - chain:
+#       - aingz_tallado_readmes.yml
+#       - aingz_crossref_fix.yml
+#       - aingz_harvest_knowledge.yml
+#       - aingz_incoherence_report.yml
+#       - aingz_purge_fixes_v2.yml
+#   log:
+#     - step1: preflight check
+#     - step2: dispatch chain
+#     - step3: wait & validate
