@@ -69,6 +69,8 @@ Example entry format:
 
 - 2025-08-10 | ops/log/purge/readme_ops_log_purge_v_4.md | Added purge log subbucket README
 
+- 2025-08-10 | ops/sweep_paths.py | Added explicit os import and regenerated paths cache
+
 
 ## OutputTemplate
 ```yaml
