@@ -70,7 +70,8 @@ jobs:
           targets = []
           for p in ROOT.rglob('*.md'):
             low = p.name.lower()
-            if ('readme' in low) or ('blueprint' in low) or ('master_plan' in low) or ('prompt' in low) or low.startswith('rule_') or low.startswith('ruleset') or low.startswith('rule'):
+            if ('readme' in low) or ('blueprint' in low) or ('master_plan' in low) or ('prompt' in low) \
+               or low.startswith('rule_') or low.startswith('ruleset') or low.startswith('rule'):
               targets.append(p)
           targets = sorted(targets, key=lambda q: q.as_posix())
 
