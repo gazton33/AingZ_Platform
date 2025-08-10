@@ -8,6 +8,7 @@ CROSSREF:
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-07
 ---
@@ -30,7 +31,7 @@ DATE: 2025-08-07
   - `lifecycle/temp/prompt_codex_baseline_v_4_check.md`
   - `lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md`
   - `lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`
-  - Cualquier README clave y ruleset (`core/rulset/RULE_CODING_COMPLIANCE_V4.md`)
+  - Cualquier README clave y ruleset (`core/rulset/RULE_CODING_COMPLIANCE_V4.md`, `core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md`)
 - Al detectar cambios de ubicación:
   - **Actualizar crossref en todos los README afectados**
   - Registrar cambio en `ops/changelog.md` y `ops/lessons_learned.md`
@@ -70,7 +71,7 @@ version: v4.0-20250807
 crossref_blueprint: lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 crossref_masterplan: lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 crossref_prompt_codex: null
-crossref_ruleset: core/rulset/RULE_CODING_COMPLIANCE_V4.md
+crossref_ruleset: core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md
 status: migracion-actualizacion-v4
 note: "Validar crossref dinámico y barrido 100% repo tras cada ciclo."
 ```
