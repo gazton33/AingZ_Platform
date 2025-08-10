@@ -39,7 +39,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      - name: Apply non-destructive fixes from incoherencias (CRITICO/ALTO) + sync index
+      - name: Apply non-destructive fixes (CRITICO/ALTO) + sync index
         run: |
           python - <<'PY'
           from pathlib import Path
@@ -54,7 +54,7 @@ jobs:
           idx_path = ROOT / 'ops' / 'data' / 'index' / 'knowledge_index.json'
           harvest_md = ROOT / 'ops' / 'log' / 'harvest_readmes.md'
 
-          # Cargar cache de rutas canónicas para CROSSREF
+          # Cache de rutas canónicas
           paths_cache = {}
           cache_path = ROOT / 'ops' / 'paths_cache.json'
           if cache_path.exists():
@@ -120,6 +120,17 @@ jobs:
                        "```yaml\nCODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n```\n")
               return body.rstrip()+"\n"+block
 
+          # Util para serializar JSON (convierte date/datetime a string)
+          def jsonable(obj):
+              import datetime as _dt
+              if isinstance(obj, (_dt.date, _dt.datetime)):
+                  return obj.isoformat()
+              if isinstance(obj, dict):
+                  return {k: jsonable(v) for k,v in obj.items()}
+              if isinstance(obj, list):
+                  return [jsonable(v) for v in obj]
+              return obj
+
           fixes = 0
           # 1) Forzar FM en harvest_readmes.md (caso especial)
           if harvest_md.exists():
@@ -139,7 +150,6 @@ jobs:
                   sev = it.get('severity', 'MEDIO')
                   if sev not in {'CRITICO','ALTO'}:
                       continue
-                  # Tipos auto-corregibles
                   if it.get('type') not in {
                       'front_matter_missing','front_matter_incomplete','outputtemplate_missing',
                       'route_mismatch','crossref_missing','crossref_required_missing','crossref_broken','code_rule'
@@ -158,7 +168,6 @@ jobs:
               if not fm:
                   fm = build_fm(p)
               else:
-                  # completar faltantes
                   base = build_fm(p)
                   for k in REQUIRED:
                       if k not in fm:
@@ -194,6 +203,7 @@ jobs:
               except Exception:
                   items = []
               changed = False
+
               def parse_meta(text):
                   fm, _ = parse_fm(text)
                   if not fm:
@@ -206,9 +216,12 @@ jobs:
                       fm['CROSSREF'] = [cr]
                   else:
                       fm['CROSSREF'] = []
+                  # convertir tipos no JSON (p.ej. date) a string
+                  fm = jsonable(fm)
                   return True, fm
+
               # re-scan de paths presentes en index (idempotente)
-              m = {it.get('path'): it for it in items if isinstance(it, dict)}
+              m = {it.get('path'): it for it in items if isinstance(it, dict) and 'path' in it}
               for path, it in m.items():
                   p = ROOT / path
                   if not p.exists():
@@ -219,7 +232,7 @@ jobs:
                   it['meta'] = meta
                   changed = True
               if changed:
-                  write(idx_path, json.dumps(list(m.values()), indent=2))
+                  write(idx_path, json.dumps(list(m.values()), indent=2, ensure_ascii=False, default=str))
 
           print(f"Archivos corregidos automáticamente: {fixes}")
           PY
