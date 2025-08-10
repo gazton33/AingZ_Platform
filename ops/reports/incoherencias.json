@@ -1,6 +1,12 @@
 {
   "issues": [
     {
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md",
+      "type": "crossref_required_missing",
+      "msg": "Faltan refs canónicas: ['lifecycle/temp/prompt_codex_baseline_v_4_check.md', 'lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md', 'lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md']",
+      "severity": "ALTO"
+    },
+    {
       "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/intg/Corpus_Platform_V4.md",
       "type": "front_matter_missing",
       "msg": "Sin front-matter YAML al inicio",
@@ -8,36 +14,30 @@
     },
     {
       "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/harvest_readmes.md",
-      "type": "front_matter_missing",
-      "msg": "Sin front-matter YAML al inicio",
+      "type": "route_mismatch",
+      "msg": "ROUTE='ops/log/harvest_readmes.md' no coincide con path real",
       "severity": "CRITICO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/harvest_readmes.md",
-      "type": "outputtemplate_missing",
-      "msg": "Falta sección '## OutputTemplate'",
-      "severity": "CRITICO"
-    },
-    {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10T19:22:44Z.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10.md",
       "type": "front_matter_incomplete",
       "msg": "Faltan campos ['CODE', 'ID', 'VERSION', 'ROUTE', 'CROSSREF', 'AUTHOR', 'DATE']",
       "severity": "ALTO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10T19:22:44Z.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10.md",
       "type": "code_rule",
       "msg": "CODE inválido 'None' (<=5, SCREAMING_SNAKE)",
       "severity": "CRITICO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10T19:22:44Z.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10.md",
       "type": "crossref_missing",
       "msg": "CROSSREF ausente",
       "severity": "ALTO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10T19:22:44Z.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/purge_fixes_v2_2025-08-10.md",
       "type": "outputtemplate_missing",
       "msg": "Falta sección '## OutputTemplate'",
       "severity": "CRITICO"
@@ -85,15 +85,15 @@
       "severity": "MEDIO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/template/readme_core_data_template_rw_b_v_3_2.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/template/readme_core_doc_template_rw_b_v_3_2.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/glossary/rw_b_glosario_code_v_2_20250729.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/triggers/rw_b_diccionario_code_triggers_v_2_20250729.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_CODING_COMPLIANCE_V4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core_wf_intg_read_all_consolidate_v_4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/informe_tareas_pendientes_v4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/analisis_errors_agent_mode_config_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/plan_agent_mode_scan_repo_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/reporte_coherencia_instrucciones_crossref_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/bootstrap_v_4_readme.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/changelog.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/lessons_learned.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/diagnosis_baseline.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/templates/vds_core_templates_readme_v_3_1.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/template/readme_core_data_template_rw_b_v_3_2.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/template/readme_core_doc_template_rw_b_v_3_2.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/glossary/rw_b_glosario_code_v_2_20250729.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/triggers/rw_b_diccionario_code_triggers_v_2_20250729.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_CODING_COMPLIANCE_V4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/core_wf_intg_read_all_consolidate_v_4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/informe_tareas_pendientes_v4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/analisis_errors_agent_mode_config_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/plan_agent_mode_scan_repo_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/reporte_coherencia_instrucciones_crossref_v_4_20250807.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md, /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/changelog.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/lessons_learned.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/diagnosis_baseline.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/templates/vds_core_templates_readme_v_3_1.md",
       "type": "code_duplicate",
       "msg": "Duplicado 'DOC' en 21 archivos",
       "severity": "MEDIO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/books/readme_library_books_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/datasets/readme_library_datasets_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/licencias/readme_library_licencias_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/manuals/readme_library_manuals_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/normas/readme_library_normas_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/papers/readme_library_papers_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/readme_library_rw_b_v_3_1.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/books/readme_library_books_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/datasets/readme_library_datasets_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/intg/readme_library_intg_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/licencias/readme_library_licencias_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/manuals/readme_library_manuals_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/normas/readme_library_normas_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/papers/readme_library_papers_rw_b_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/library/readme_library_rw_b_v_3_1.md",
       "type": "code_duplicate",
-      "msg": "Duplicado 'LIBRA' en 7 archivos",
+      "msg": "Duplicado 'LIBRA' en 8 archivos",
       "severity": "MEDIO"
     },
     {
@@ -103,9 +103,9 @@
       "severity": "MEDIO"
     },
     {
-      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/bootstrap_v_4_readme.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/ops_log_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/ops_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/pipelines/ops_pipelines_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/scripts/ops_scripts_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/test/ops_test_readme_v_3_1.md",
+      "path": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/bootstrap_v_4_readme.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/harvest_readmes.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/ops_log_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/purge/readme_ops_log_purge_v_4.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/ops_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/pipelines/ops_pipelines_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/scripts/ops_scripts_readme_v_3_1.md, /home/runner/work/AingZ_Platform/AingZ_Platform/ops/test/ops_test_readme_v_3_1.md",
       "type": "code_duplicate",
-      "msg": "Duplicado 'OPS' en 6 archivos",
+      "msg": "Duplicado 'OPS' en 8 archivos",
       "severity": "MEDIO"
     },
     {
@@ -128,21 +128,22 @@
     }
   ],
   "summary_by_type": {
-    "front_matter_missing": 3,
-    "outputtemplate_missing": 4,
+    "crossref_required_missing": 1,
+    "front_matter_missing": 2,
+    "route_mismatch": 2,
     "front_matter_incomplete": 1,
     "code_rule": 1,
     "crossref_missing": 1,
-    "route_mismatch": 1,
+    "outputtemplate_missing": 3,
     "id_duplicate": 1,
     "code_duplicate": 8,
     "h1_duplicate": 1
   },
   "summary_by_severity": {
-    "CRITICO": 9,
-    "ALTO": 2,
+    "ALTO": 3,
+    "CRITICO": 8,
     "MEDIO": 9,
     "BAJO": 1
   },
-  "scanned": 89
+  "scanned": 91
 }
