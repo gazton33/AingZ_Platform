@@ -60,6 +60,19 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_harvest_knowledge.yml/dispatches \
             -d '{"ref":"main","inputs":{"reason":"harvest"}}'
 
+      - name: Wait 60s (let harvest create PR)
+        run: sleep 60
+
+      - name: Dispatch Incoherence Report
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_incoherence_report.yml/dispatches \
+            -d '{"ref":"main","inputs":{"reason":"incoherences-scan"}}'
+
       - name: Orchestration done
         run: |
-          echo "Dispatched: tallado → crossref → harvest. Revisar PRs abiertos y checks."
+          echo "Dispatched: tallado → crossref → harvest → incoherences. Revisar PRs abiertos y checks."
