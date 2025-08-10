@@ -1,16 +1,16 @@
 ---
-
-file: readme\_core\_kns\_ideas\_brainstorm\_rw\_b\_v3\_2.md version: v3.2-2025-08-06 status: active role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md changelog:
-- 2025-08-06: Consolidación README ideas\_brainstorm/ kns v3.2, compliance brainstorming e ideación incremental.
-
+CODE: CORE
+ID: readme_core_kns_ideas_brainstorm_rw_b_v_3_2_v4
+VERSION: v4.0-2025-08-10
+ROUTE: core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 💡 core/kns/ideas\_brainstorm/ — Brainstorming e Ideación Incremental (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto
@@ -67,3 +67,13 @@ graph TD;
 
 **FIN README core/kns/ideas\_brainstorm/ v3.2**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

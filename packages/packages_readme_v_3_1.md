@@ -1,19 +1,15 @@
 ---
-file: packages_readme_v_3_1.md
-version: v3.1-2025-08-05
-status: active
-role: documentation
-owner: AingZ_Platform · RwB
-bucket: packages
-updated: 2025-08-05
-crossref:
+CODE: PACKA
+ID: packages_readme_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: packages/packages_readme_v_3_1.md
+CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-  - core/kns/glossary/rw_b_glosario_code_v_2_20250729.md
-  - core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
-  - ops/templates/template_readme_rw_b_v_4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
 # [RwB] packages/ — README (v3.1)
 
@@ -150,3 +146,13 @@ triggers:
 
 **FIN README packages/ v3.1**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
