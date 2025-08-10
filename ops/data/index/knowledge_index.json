@@ -767,6 +767,13 @@
     }
   },
   {
+    "path": "ops/log/harvest_readmes.md",
+    "sha1": "7d5f1396a5cc04659caaa9f835f823604d63938e",
+    "bytes": 8179,
+    "has_front_matter": false,
+    "meta": {}
+  },
+  {
     "path": "ops/log/ops_log_readme_v_3_1.md",
     "sha1": "4e886bb0bda911a4f8e58b39cff60604de07bfa5",
     "bytes": 3845,
