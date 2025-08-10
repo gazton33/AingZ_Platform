@@ -71,6 +71,8 @@ Example entry format:
 
 - 2025-08-10 | ops/sweep_paths.py | Added explicit os import and regenerated paths cache
 
+- 2025-08-10 | core/rulset/RULE_CODING_COMPLIANCE_V4.md | Added detailed coding compliance rules with examples
+
 
 ## OutputTemplate
 ```yaml
