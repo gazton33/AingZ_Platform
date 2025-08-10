@@ -1,0 +1,1050 @@
+[
+  {
+    "path": "README.md",
+    "sha1": "94b0825f8b34a740aa7b06bb751f887b1f1306f9",
+    "bytes": 4121,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "README_ROOT",
+      "ID": "root_readme",
+      "VERSION": "v4.0-2025-08-07",
+      "ROUTE": "README.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-07"
+    }
+  },
+  {
+    "path": "core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md",
+    "sha1": "6cb6b239689f374a977a49d68cc142c68aee0d59",
+    "bytes": 3147,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_data_dicts_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md",
+    "sha1": "2b02f4e68299b5b42d0a4b4b8f6b27d169599120",
+    "bytes": 2754,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_data_mplan_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md",
+    "sha1": "ef0e2ccc46a7fadbc53e09b45eee18b26c2de96e",
+    "bytes": 2926,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_data_mtx_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/data/readme_core_data_rw_b_v_3_2.md",
+    "sha1": "8d81ef9b7140dd063b9b76c2b0388c56216d61d4",
+    "bytes": 3208,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_data_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/data/readme_core_data_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/data/rulset/readme_core_data_rulset_rw_b_v_3_2.md",
+    "sha1": "552a45f007af62991e956bae25cfa0597ebd3e78",
+    "bytes": 2892,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_data_rulset_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/data/rulset/readme_core_data_rulset_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/data/template/readme_core_data_template_rw_b_v_3_2.md",
+    "sha1": "7c32c2420c9f958614d66ad8a14fccc75106297f",
+    "bytes": 2972,
+    "has_front_matter": true,
+    "meta": {
+      "file": "readme_core_data_template_rw_b_v3_2.md",
+      "version": "v3.2-2025-08-06",
+      "status": "active",
+      "role": "readme",
+      "owner": "AingZ_Platform \u00b7 RwB",
+      "crossref": "",
+      "changelog": "",
+      "- 2025-08-06": "Consolidaci\u00f3n \u00e1rbol y README template/ core/data v3.2, compliance scaffolds estructurales."
+    }
+  },
+  {
+    "path": "core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md",
+    "sha1": "c777ef416057b0683210cba6db765c1938f45b58",
+    "bytes": 2688,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_doc_audio_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/doc/image/readme_core_doc_image_rw_b_v_3_2.md",
+    "sha1": "ffd0ef5a1caf5b5ebb331233eba2ed19f04fd0de",
+    "bytes": 2759,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_doc_image_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/doc/image/readme_core_doc_image_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/doc/onbrd/readme_core_doc_onbrd_rw_b_v_3_2.md",
+    "sha1": "f89e3447154f6c92edb0d29e8b346e5441e6d123",
+    "bytes": 2772,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_doc_onbrd_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/doc/onbrd/readme_core_doc_onbrd_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/doc/readme_core_doc_rw_b_v_3_2.md",
+    "sha1": "008cb3cee65c548fa58581c530268f87c2481bc2",
+    "bytes": 3141,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_doc_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/doc/readme_core_doc_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/doc/template/readme_core_doc_template_rw_b_v_3_2.md",
+    "sha1": "50116246b151b6daae8d8da8ae247883812edb20",
+    "bytes": 2742,
+    "has_front_matter": true,
+    "meta": {
+      "file": "readme\\_core\\_doc\\_template\\_rw\\_b\\_v3\\_2.md version: v3.2-2025-08-06 status: active role: readme owner: AingZ\\_Platform \u00b7 RwB crossref:",
+      "- ops/templates/template\\_readme\\_rw\\_b\\_v3\\_1.md changelog": "",
+      "- 2025-08-06": "Consolidaci\u00f3n \u00e1rbol y README template/ core/doc v3.2, compliance plantillas modelo docs."
+    }
+  },
+  {
+    "path": "core/doc/video/readme_core_doc_video_rw_b_v_3_2.md",
+    "sha1": "4e6f4fc8f9c13aeed26d1fa6fd6c298504b600ff",
+    "bytes": 2746,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_doc_video_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/doc/video/readme_core_doc_video_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/eval/readme_core_kns_ai_learn_eval_rw_b_v_3_2.md",
+    "sha1": "340136efed9297799ff6b66444e9c7c36cb986c9",
+    "bytes": 2740,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_eval_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/eval/readme_core_kns_ai_learn_eval_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/feed/readme_core_kns_ai_learn_feed_rw_b_v_3_2.md",
+    "sha1": "43fb665ed1713501516017b1c4564fe5ee6a20d6",
+    "bytes": 2850,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_feed_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/feed/readme_core_kns_ai_learn_feed_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/insi/readme_core_kns_ai_learn_insi_rw_b_v_3_2.md",
+    "sha1": "e9ce2f616c93e76309f8b1362ca3e9547a0cc719",
+    "bytes": 2904,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_insi_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/insi/readme_core_kns_ai_learn_insi_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/learn/readme_core_kns_ai_learn_learn_rw_b_v_3_2.md",
+    "sha1": "ec79f9a6431825a7546777692afc0d778890bdd0",
+    "bytes": 2862,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_learn_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/learn/readme_core_kns_ai_learn_learn_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/readme_core_kns_ai_learn_rw_b_v_3_2.md",
+    "sha1": "115d15abcdb3537ff0488753ca13123c3c6bdb1e",
+    "bytes": 3350,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/readme_core_kns_ai_learn_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/rel/readme_core_kns_ai_learn_rel_rw_b_v_3_2.md",
+    "sha1": "d67f47aa5c472bc9f61e06216b885597a501ccb7",
+    "bytes": 2903,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_rel_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/rel/readme_core_kns_ai_learn_rel_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/shot/readme_core_kns_ai_learn_shot_rw_b_v_3_2.md",
+    "sha1": "9fea8315bdecee2fae9229eb6ddb11566462c52c",
+    "bytes": 2820,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_shot_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/shot/readme_core_kns_ai_learn_shot_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/trn/readme_core_kns_ai_learn_trn_rw_b_v_3_2.md",
+    "sha1": "ec13c7bd5d78928bc937220a873aa263f6365800",
+    "bytes": 2799,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_trn_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/trn/readme_core_kns_ai_learn_trn_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ai_learn/tune/readme_core_kns_ai_learn_tune_rw_b_v_3_2.md",
+    "sha1": "4d636bff02400b85e67e386398b5bf5ec363e169",
+    "bytes": 2772,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ai_learn_tune_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ai_learn/tune/readme_core_kns_ai_learn_tune_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/chkp/aingz_platform/readme_core_kns_chkp_aingz_platform_rw_b_v_3_2.md",
+    "sha1": "e5e6eaf346dc7a0a9026c6cca07b71e128b2af8c",
+    "bytes": 2781,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_chkp_aingz_platform_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/chkp/aingz_platform/readme_core_kns_chkp_aingz_platform_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/chkp/projects/readme_core_kns_chkp_projects_rw_b_v_3_2.md",
+    "sha1": "428818f87f9f72332bf68d2b5a00682df1c2cb90",
+    "bytes": 2646,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_chkp_projects_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/chkp/projects/readme_core_kns_chkp_projects_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/chkp/readme_core_kns_chkp_rw_b_v_3_2.md",
+    "sha1": "968fc8fef67da0a26381e2425ed3902cfa34a625",
+    "bytes": 2701,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_chkp_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/chkp/readme_core_kns_chkp_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ctx/aingz_platform/readme_core_kns_ctx_aingz_platform_rw_b_v_3_2.md",
+    "sha1": "49013e6d969b157395de76acb4205615d3647445",
+    "bytes": 2883,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ctx_aingz_platform_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ctx/aingz_platform/readme_core_kns_ctx_aingz_platform_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ctx/projects/readme_core_kns_ctx_projects_rw_b_v_3_2.md",
+    "sha1": "ea2878e5537b30a4ddd5cf380c0917a0738352cc",
+    "bytes": 2883,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ctx_projects_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ctx/projects/readme_core_kns_ctx_projects_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ctx/readme_core_kns_ctx_rw_b_v_3_2.md",
+    "sha1": "967af8d44680ded1f8d120076b66fd9db4ea2349",
+    "bytes": 2864,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ctx_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ctx/readme_core_kns_ctx_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/glossary/readme_core_kns_glossary_rw_b_v_3_2.md",
+    "sha1": "b77d309e77664c04f1253b59f3df38b56aec6254",
+    "bytes": 2700,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_glossary_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/glossary/readme_core_kns_glossary_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md",
+    "sha1": "0644ef38f351c17d391356ba415ca0d0250c867e",
+    "bytes": 2781,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_ideas_brainstorm_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/metrics/readme_core_kns_metrics_rw_b_v_3_2.md",
+    "sha1": "02e5d604c6001d7164a097081cb2ae1900ffab01",
+    "bytes": 2726,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_metrics_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/metrics/readme_core_kns_metrics_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/readme_core_kns_rw_b_v_3_2.md",
+    "sha1": "4c76aa004a0544117748d951a4f23702d2f4e724",
+    "bytes": 3596,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/readme_core_kns_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md",
+    "sha1": "bcac78d66a49f3f5da1552d4027206ce22114f25",
+    "bytes": 2756,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_kns_triggers_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "core/readme_core_rw_b_v_3_2.md",
+    "sha1": "1926c622674d5c66a249b24231033168232c6083",
+    "bytes": 3795,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "README_CORE",
+      "ID": "core_readme",
+      "VERSION": "v3.2-2025-08-06",
+      "ROUTE": "core/readme_core_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-06"
+    }
+  },
+  {
+    "path": "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+    "sha1": "d631150cf72f6aa07a6daee3168d8f61d1bb40e1",
+    "bytes": 65,
+    "has_front_matter": false,
+    "meta": {}
+  },
+  {
+    "path": "core/wf/readme_core_wf_rw_b_v_3_2.md",
+    "sha1": "acd335a5227750709e53427dffdf197fbc6cc14a",
+    "bytes": 3025,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "CORE",
+      "ID": "readme_core_wf_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "core/wf/readme_core_wf_rw_b_v_3_2.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/books/readme_library_books_rw_b_v_3_1.md",
+    "sha1": "5a5a24decab2cc21ab3cb4cd31892204d5cb6228",
+    "bytes": 2055,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_books_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/books/readme_library_books_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/datasets/readme_library_datasets_rw_b_v_3_1.md",
+    "sha1": "80c236bedfc8bc26a59f10d9212acfa677f8b29f",
+    "bytes": 2037,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_datasets_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/datasets/readme_library_datasets_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/licencias/readme_library_licencias_rw_b_v_3_1.md",
+    "sha1": "e45d139f247f6ea4857fd65f73527c68c207bf74",
+    "bytes": 2073,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_licencias_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/licencias/readme_library_licencias_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/manuals/readme_library_manuals_rw_b_v_3_1.md",
+    "sha1": "b939e9c6dd155a3fa131e590b8d381887a7c6873",
+    "bytes": 1927,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_manuals_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/manuals/readme_library_manuals_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/normas/readme_library_normas_rw_b_v_3_1.md",
+    "sha1": "b157d32eb97ea4a77ac2e4ee5e0264cf7a850dcd",
+    "bytes": 1986,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_normas_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/normas/readme_library_normas_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/papers/readme_library_papers_rw_b_v_3_1.md",
+    "sha1": "f2dc5ce311f02c260bff157bacf6b20e30750051",
+    "bytes": 2107,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_papers_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/papers/readme_library_papers_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "library/readme_library_rw_b_v_3_1.md",
+    "sha1": "9c5e3e1f5220144170ccc338af1eddfeb8a7ffe3",
+    "bytes": 2705,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIBRA",
+      "ID": "readme_library_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "library/readme_library_rw_b_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md",
+    "sha1": "1ac175f0a229c8c2544a3ba8533c70b269223e55",
+    "bytes": 2901,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIFEC",
+      "ID": "lifecycle_bk_temp_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md",
+    "sha1": "3c630e0f1c7491ed7a626003a773e0abfe4ee2fb",
+    "bytes": 2793,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIFEC",
+      "ID": "lifecycle_legacy_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "lifecycle/lifecycle_readme_v_3_1.md",
+    "sha1": "91fc425fa13984bb5e7f4a73875aa414061ed7cb",
+    "bytes": 3377,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIFEC",
+      "ID": "lifecycle_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "lifecycle/lifecycle_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "lifecycle/mig/lifecycle_mig_readme_v_3_1.md",
+    "sha1": "86e5c00f7d55718935741d324ea240e7279c26fa",
+    "bytes": 3058,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIFEC",
+      "ID": "lifecycle_mig_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "lifecycle/mig/lifecycle_mig_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md",
+    "sha1": "a54a8e4bc587b6a253cdbad8649ef6cce8e1c698",
+    "bytes": 4861,
+    "has_front_matter": false,
+    "meta": {}
+  },
+  {
+    "path": "lifecycle/temp/lifecycle_temp_readme_v_3_1.md",
+    "sha1": "e5777469dc40972bd53009255cccc3161fb5cc9c",
+    "bytes": 3057,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "LIFEC",
+      "ID": "lifecycle_temp_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "lifecycle/temp/lifecycle_temp_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+    "sha1": "4ba7fc48491eb39df0c48bfb50123766461523e6",
+    "bytes": 5487,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "PROMPT_CODEX_BASELINE_V4_CHECK",
+      "ID": "prompt_codex_baseline_v4_check",
+      "VERSION": "v4.0-2025-08-07",
+      "ROUTE": "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-08"
+    }
+  },
+  {
+    "path": "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+    "sha1": "bfc84498cad0963772fa54ed5d9843f392b45650",
+    "bytes": 6269,
+    "has_front_matter": false,
+    "meta": {}
+  },
+  {
+    "path": "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+    "sha1": "b71487347b95a53f5e2bd04d8187489495e79f07",
+    "bytes": 3705,
+    "has_front_matter": false,
+    "meta": {}
+  },
+  {
+    "path": "ops/BOOTSTRAP_V4_README.md",
+    "sha1": "7156c215d7787901c5f56cad0fb18a7d28653d9c",
+    "bytes": 15,
+    "has_front_matter": false,
+    "meta": {}
+  },
+  {
+    "path": "ops/bootstrap_v_4_readme.md",
+    "sha1": "557c5da20d5c5ea6a5a1da25ff829d4d8fe541c3",
+    "bytes": 1179,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "bootstrap_v_4_readme_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/bootstrap_v_4_readme.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "ops/log/ops_log_readme_v_3_1.md",
+    "sha1": "4e886bb0bda911a4f8e58b39cff60604de07bfa5",
+    "bytes": 3845,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "ops_log_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/log/ops_log_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "ops/ops_readme_v_3_1.md",
+    "sha1": "109d8921ca8c3ad4ec085b3aab554e7e9f9c4ed7",
+    "bytes": 5936,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "ops_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/ops_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "ops/pipelines/ops_pipelines_readme_v_3_1.md",
+    "sha1": "6160d9a137b2f44d619cd4aac33957321591b69b",
+    "bytes": 3343,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "ops_pipelines_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/pipelines/ops_pipelines_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "ops/scripts/ops_scripts_readme_v_3_1.md",
+    "sha1": "3e4f0622517a64d94b9e67ac2d7dc47a113adca5",
+    "bytes": 4334,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "ops_scripts_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/scripts/ops_scripts_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "ops/templates/template_readme_rw_b_v_3_1.md",
+    "sha1": "0ec72daa9f3b3083555f5079d5fc0eaa840fc62a",
+    "bytes": 2502,
+    "has_front_matter": true,
+    "meta": {
+      "file": "template\\_readme\\_rw\\_b\\_v3\\_1.md version: v3.1-2025-08-06 status: template role: readme owner: AingZ\\_Platform \u00b7 RwB crossref:",
+      "- ops/templates/template\\_readme\\_rw\\_b\\_v3\\_1.md  # Ruta y referencia definitiva en ops/templates changelog": "",
+      "- 2025-08-06": "Ruta definitiva confirmada \u2192 ops/templates/"
+    }
+  },
+  {
+    "path": "ops/templates/template_readme_rw_b_v_4.md",
+    "sha1": "e2bf10ccf13d8769178b1b8d51b0a2acce138860",
+    "bytes": 2487,
+    "has_front_matter": true,
+    "meta": {
+      "- **ROUTE**": "`<ruta_relativa_al_readme>`",
+      "- Sub\u00e1rbol cubierto": "`core/|ops/|packages/|lifecycle/|snapshots_ctx/|library/` (elegir)",
+      "- Debe cubrir": "entradas, proceso, salidas, errores comunes, KPIs.",
+      "- **Inputs**": "\u2026",
+      "- **Outputs**": "\u2026",
+      "- **Triggers**": "TRG\\_CONSOLIDATE\\_TL \u00b7 TRG\\_AUDIT\\_TL \u00b7 TRG\\_LSWP (ajustar)",
+      "- **Conectores**": "github / notion (si aplica)",
+      "legacy_control": "",
+      "source_path": "<ruta_del_readme_legacy_si_aplica>",
+      "legacy_sha1": "<sha1_del_texto_legacy>",
+      "legacy_lines": "<conteo_lineas_legacy>",
+      "merged_at": "<ISO8601>",
+      "reviewer": "<usuario>"
+    }
+  },
+  {
+    "path": "ops/test/ops_test_readme_v_3_1.md",
+    "sha1": "969c0515b66d4fe44b037d1d9d52f720467eed45",
+    "bytes": 3314,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "ops_test_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/test/ops_test_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "packages/packages_readme_v_3_1.md",
+    "sha1": "2bf4fd35f8be59b49c3c67f1b7330a520cf88c62",
+    "bytes": 6213,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "PACKA",
+      "ID": "packages_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "packages/packages_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md",
+    "sha1": "8c15fafe25067845240962c096e090811f0ff9e4",
+    "bytes": 4324,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "PACKA",
+      "ID": "vds_core_onboarding_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md",
+    "sha1": "c2b721178de504fc16dc89bb6dbba796cae1170d",
+    "bytes": 4002,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "PACKA",
+      "ID": "vds_core_plugins_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "packages/vds_core/templates/vds_core_templates_readme_v_3_1.md",
+    "sha1": "71ec70660c1612141f3f94c882dea86aff867946",
+    "bytes": 3568,
+    "has_front_matter": true,
+    "meta": {
+      "> **Tagline": "** Plantillas, scaffolds y modelos t\u00e9cnicos para generaci\u00f3n r\u00e1pida y estandarizada de scripts, docs y assets de core/plugins."
+    }
+  },
+  {
+    "path": "packages/vds_core/tests/vds_core_tests_readme_v_3_1.md",
+    "sha1": "93e237656bae8849041d34cc4d4b31c93605fbcc",
+    "bytes": 3568,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "PACKA",
+      "ID": "vds_core_tests_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "packages/vds_core/tests/vds_core_tests_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "packages/vds_core/vds_core_readme_v_3_1.md",
+    "sha1": "2caccba30a26445ad598384616446c24bc0b4170",
+    "bytes": 5335,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "PACKA",
+      "ID": "vds_core_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "packages/vds_core/vds_core_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md",
+    "sha1": "ad8b00d214874209e8636cd4c551d3c7d0129179",
+    "bytes": 3312,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "SNAPS",
+      "ID": "snapshots_ctx_codex_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md",
+    "sha1": "b1f4033d4e1ef0ea0c23aecfcc2afd02f3638ec2",
+    "bytes": 2879,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "SNAPS",
+      "ID": "snapshots_ctx_common_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md",
+    "sha1": "bdda11a7c43e989ed52a9c8c7bb23beea6c5d938",
+    "bytes": 2903,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "SNAPS",
+      "ID": "snapshots_ctx_gpt_4_1_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md",
+    "sha1": "8f9a5c6d5409bdcbe8682df70251f418b1a24805",
+    "bytes": 2959,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "SNAPS",
+      "ID": "snapshots_ctx_gpt_4_o_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md",
+    "sha1": "bd897fbd79c5e6939e7aedf07a44010033eaec33",
+    "bytes": 2928,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "SNAPS",
+      "ID": "snapshots_ctx_gpt_o_3_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  },
+  {
+    "path": "snapshots_ctx/snapshots_ctx_readme_v_3_1.md",
+    "sha1": "e46a55b5ca0f8e16902e3485fedadd8cc6af7425",
+    "bytes": 3294,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "SNAPS",
+      "ID": "snapshots_ctx_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "snapshots_ctx/snapshots_ctx_readme_v_3_1.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
+  }
+]
