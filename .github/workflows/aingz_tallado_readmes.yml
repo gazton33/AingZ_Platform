@@ -1,0 +1,136 @@
+name: AingZ Tallado READMEs V4
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: motivo
+        required: true
+        default: "tallado-readmes"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  tallado:
+    runs-on: ubuntu-latest
+    steps:
+      - name: App token
+        id: app
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          installation_id: ${{ secrets.INSTALLATION_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app.outputs.token }}
+
+      - name: Tallar READMEs (V4)
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re, datetime
+
+          ROOT = Path('.')
+          REQUIRED = ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]
+
+          def read(p): return p.read_text(encoding='utf-8', errors='ignore')
+          def write(p,s): p.write_text(s, encoding='utf-8')
+
+          def parse_fm(txt):
+            if not txt.startswith('---\n'): return None, txt
+            end = txt.find('\n---', 4)
+            if end == -1: return None, txt
+            fm = txt[4:end]
+            body = txt[end+4:].lstrip('\n')
+            data = {}
+            for line in fm.splitlines():
+              if ':' in line and not line.strip().startswith('#'):
+                k,v = line.split(':',1)
+                data[k.strip()] = v.strip()
+            return data, body
+
+          def has_output_tpl(txt):
+            return re.search(r"^##\s*OutputTemplate\s*$", txt, flags=re.M) is not None
+
+          # Cargar crossrefs desde cache
+          crossrefs = []
+          try:
+            cache = json.loads(read(ROOT/"ops/paths_cache.json"))
+            crossrefs = [cache.get(k,k) for k in list(cache.keys())]
+          except Exception:
+            pass
+
+          today = datetime.date.today().isoformat()
+
+          def mk_code(path: Path):
+            base = (path.parts[0] if len(path.parts)>1 else path.stem)
+            base = re.sub(r"[^A-Za-z0-9]", "", base).upper()[:5] or "DOC"
+            return base
+
+          changed = 0
+          for p in ROOT.rglob("*readme*.md"):
+            if not p.is_file():
+              continue
+            # Excluir README raíz
+            if p.name == 'README.md' and p.parent == ROOT:
+              continue
+            # Excluir plantillas e informes
+            low = p.name.lower()
+            if 'template' in low or low.startswith('informe_'):
+              continue
+
+            txt = read(p)
+            fm, body = parse_fm(txt)
+            if fm and all(k in fm for k in REQUIRED) and has_output_tpl(txt):
+              continue  # ya V4
+
+            CODE = mk_code(p)
+            ID = p.stem + "_v4"
+            VERSION = f"v4.0-{today}"
+            ROUTE = str(p.as_posix())
+            AUTHOR = "AingZ_Platform"
+            DATE = today
+
+            if not body or not body.strip():
+              body = f"# {p.stem} (v4)\n\n"
+
+            # Construir front‑matter
+            fm_lines = [
+              '---',
+              f'CODE: {CODE}',
+              f'ID: {ID}',
+              f'VERSION: {VERSION}',
+              f'ROUTE: {ROUTE}',
+              'CROSSREF:',
+            ] + [f'  - {cr}' for cr in crossrefs] + [
+              f'AUTHOR: {AUTHOR}',
+              f'DATE: {DATE}',
+              '---',
+              ''
+            ]
+
+            # Asegurar OutputTemplate
+            if not has_output_tpl(body):
+              body = body.rstrip() + "\n\n## OutputTemplate\n```yaml\nCODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n```\n"
+
+            new_txt = "\n".join(fm_lines) + body
+            write(p, new_txt)
+            changed += 1
+
+          print(f"Tallado V4 aplicado a {changed} archivo(s)")
+          PY
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.app.outputs.token }}
+          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
+          branch: bot/aingz/tallado-${{ github.run_id }}
+          title: "Agent: ${{ github.event.inputs.reason }}"
+          body: "Tallado automático de READMEs a formato V4 (front-matter + OutputTemplate + crossref desde paths_cache)."
+          base: main
+          delete-branch: true
