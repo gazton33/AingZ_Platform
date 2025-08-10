@@ -1,26 +1,13 @@
----
-CODE: DOC
-ID: Corpus_Platform_V4_v4
-VERSION: v4.0-2025-08-10
-ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/intg/Corpus_Platform_V4.md
-CROSSREF:
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-AUTHOR: AingZ_Platform
-DATE: 2025-08-10
----
 # Corpus_Platform_V4
 
 
 ## README.md
 
 ---
-CODE: README_ROOT
+CODE: READM
 ID: root_readme
 VERSION: v4.0-2025-08-07
-ROUTE: README.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/README.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -115,7 +102,7 @@ DATE:
 CODE: CORE
 ID: readme_core_data_dicts_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -200,7 +187,7 @@ DATE:
 CODE: CORE
 ID: readme_core_data_mplan_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -281,7 +268,7 @@ DATE:
 CODE: CORE
 ID: readme_core_data_mtx_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -366,7 +353,7 @@ DATE:
 CODE: CORE
 ID: readme_core_data_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/data/readme_core_data_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/readme_core_data_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -453,7 +440,7 @@ DATE:
 CODE: CORE
 ID: readme_core_data_rulset_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/data/rulset/readme_core_data_rulset_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/rulset/readme_core_data_rulset_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -534,21 +521,18 @@ DATE:
 ## core/data/template/readme_core_data_template_rw_b_v_3_2.md
 
 ---
-file: readme_core_data_template_rw_b_v3_2.md
-version: v3.2-2025-08-06
-status: active
-role: readme
-owner: AingZ_Platform · RwB
-crossref:
-  - blueprint_rw_b_platform_v_3_20250803.md
-  - mpln_master_plan_rw_b_v_3_20250803.md
-  - checklist_root_rw_b_v_3_20250805.md
-  - wf_pipeline_creacion_archivos_rw_b_v_3_20250805.md
-  - ops/templates/template_readme_rw_b_v3_1.md
-changelog:
-  - 2025-08-06: Consolidación árbol y README template/ core/data v3.2, compliance scaffolds estructurales.
+CODE: DOC
+ID: readme_core_data_template_rw_b_v_3_2_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/template/readme_core_data_template_rw_b_v_3_2.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 📑 core/data/template/ — Plantillas estructurales del Core (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto
@@ -601,6 +585,16 @@ graph TD;
 
 **FIN README core/data/template/ v3.2**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md
@@ -609,7 +603,7 @@ graph TD;
 CODE: CORE
 ID: readme_core_doc_audio_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -692,7 +686,7 @@ DATE:
 CODE: CORE
 ID: readme_core_doc_image_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/doc/image/readme_core_doc_image_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/image/readme_core_doc_image_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -775,7 +769,7 @@ DATE:
 CODE: CORE
 ID: readme_core_doc_onbrd_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/doc/onbrd/readme_core_doc_onbrd_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/onbrd/readme_core_doc_onbrd_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -858,7 +852,7 @@ DATE:
 CODE: CORE
 ID: readme_core_doc_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/doc/readme_core_doc_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/readme_core_doc_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -942,18 +936,18 @@ DATE:
 ## core/doc/template/readme_core_doc_template_rw_b_v_3_2.md
 
 ---
-
-file: readme\_core\_doc\_template\_rw\_b\_v3\_2.md version: v3.2-2025-08-06 status: active role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md changelog:
-- 2025-08-06: Consolidación árbol y README template/ core/doc v3.2, compliance plantillas modelo docs.
-
+CODE: DOC
+ID: readme_core_doc_template_rw_b_v_3_2_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/template/readme_core_doc_template_rw_b_v_3_2.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 📑 core/doc/template/ — Plantillas Modelo de Documentación (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto
@@ -1010,6 +1004,16 @@ graph TD;
 
 **FIN README core/doc/template/ v3.2**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## core/doc/video/readme_core_doc_video_rw_b_v_3_2.md
@@ -1018,7 +1022,7 @@ graph TD;
 CODE: CORE
 ID: readme_core_doc_video_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/doc/video/readme_core_doc_video_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/video/readme_core_doc_video_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1101,7 +1105,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_eval_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/eval/readme_core_kns_ai_learn_eval_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/eval/readme_core_kns_ai_learn_eval_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1184,7 +1188,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_feed_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/feed/readme_core_kns_ai_learn_feed_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/feed/readme_core_kns_ai_learn_feed_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1268,7 +1272,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_insi_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/insi/readme_core_kns_ai_learn_insi_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/insi/readme_core_kns_ai_learn_insi_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1351,7 +1355,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_learn_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/learn/readme_core_kns_ai_learn_learn_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/learn/readme_core_kns_ai_learn_learn_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1434,7 +1438,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/readme_core_kns_ai_learn_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/readme_core_kns_ai_learn_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1523,7 +1527,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_rel_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/rel/readme_core_kns_ai_learn_rel_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/rel/readme_core_kns_ai_learn_rel_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1606,7 +1610,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_shot_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/shot/readme_core_kns_ai_learn_shot_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/shot/readme_core_kns_ai_learn_shot_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1689,7 +1693,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_trn_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/trn/readme_core_kns_ai_learn_trn_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/trn/readme_core_kns_ai_learn_trn_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1772,7 +1776,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ai_learn_tune_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ai_learn/tune/readme_core_kns_ai_learn_tune_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/tune/readme_core_kns_ai_learn_tune_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1855,7 +1859,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_chkp_aingz_platform_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/chkp/aingz_platform/readme_core_kns_chkp_aingz_platform_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/chkp/aingz_platform/readme_core_kns_chkp_aingz_platform_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -1938,7 +1942,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_chkp_projects_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/chkp/projects/readme_core_kns_chkp_projects_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/chkp/projects/readme_core_kns_chkp_projects_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2020,7 +2024,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_chkp_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/chkp/readme_core_kns_chkp_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/chkp/readme_core_kns_chkp_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2103,7 +2107,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ctx_aingz_platform_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ctx/aingz_platform/readme_core_kns_ctx_aingz_platform_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ctx/aingz_platform/readme_core_kns_ctx_aingz_platform_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2186,7 +2190,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ctx_projects_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ctx/projects/readme_core_kns_ctx_projects_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ctx/projects/readme_core_kns_ctx_projects_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2269,7 +2273,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ctx_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ctx/readme_core_kns_ctx_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ctx/readme_core_kns_ctx_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2352,7 +2356,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_glossary_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/glossary/readme_core_kns_glossary_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/glossary/readme_core_kns_glossary_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2434,7 +2438,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_ideas_brainstorm_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2517,7 +2521,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_metrics_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/metrics/readme_core_kns_metrics_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/metrics/readme_core_kns_metrics_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2600,7 +2604,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/readme_core_kns_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/readme_core_kns_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2691,7 +2695,7 @@ DATE:
 CODE: CORE
 ID: readme_core_kns_triggers_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2770,10 +2774,10 @@ DATE:
 ## core/readme_core_rw_b_v_3_2.md
 
 ---
-CODE: README_CORE
+CODE: READM
 ID: core_readme
 VERSION: v3.2-2025-08-06
-ROUTE: core/readme_core_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/readme_core_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2785,7 +2789,6 @@ CROSSREF:
 AUTHOR: AingZ_Platform
 DATE: 2025-08-06
 ---
-
 # 🏛️ core/ — Núcleo estructural AingZ/RwB (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto
@@ -2863,9 +2866,33 @@ DATE:
 
 ## core/rulset/RULE_CODING_COMPLIANCE_V4.md
 
+---
+CODE: DOC
+ID: RULE_CODING_COMPLIANCE_V4_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_CODING_COMPLIANCE_V4.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # RULE_CODING_COMPLIANCE_V4
 
 (bootstrap ruleset; completa en PR)
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## core/wf/readme_core_wf_rw_b_v_3_2.md
@@ -2874,7 +2901,7 @@ DATE:
 CODE: CORE
 ID: readme_core_wf_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: core/wf/readme_core_wf_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/wf/readme_core_wf_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -2960,7 +2987,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_books_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/books/readme_library_books_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/books/readme_library_books_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3021,7 +3048,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_datasets_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/datasets/readme_library_datasets_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/datasets/readme_library_datasets_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3082,7 +3109,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_licencias_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/licencias/readme_library_licencias_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/licencias/readme_library_licencias_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3143,7 +3170,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_manuals_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/manuals/readme_library_manuals_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/manuals/readme_library_manuals_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3204,7 +3231,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_normas_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/normas/readme_library_normas_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/normas/readme_library_normas_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3265,7 +3292,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_papers_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/papers/readme_library_papers_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/papers/readme_library_papers_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3326,7 +3353,7 @@ DATE:
 CODE: LIBRA
 ID: readme_library_rw_b_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: library/readme_library_rw_b_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/library/readme_library_rw_b_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3404,7 +3431,7 @@ DATE:
 CODE: LIFEC
 ID: lifecycle_bk_temp_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3504,7 +3531,7 @@ DATE:
 CODE: LIFEC
 ID: lifecycle_legacy_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3604,7 +3631,7 @@ DATE:
 CODE: LIFEC
 ID: lifecycle_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: lifecycle/lifecycle_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/lifecycle_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3720,7 +3747,7 @@ DATE:
 CODE: LIFEC
 ID: lifecycle_mig_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: lifecycle/mig/lifecycle_mig_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/mig/lifecycle_mig_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -3818,6 +3845,19 @@ DATE:
 
 ## lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md
 
+---
+CODE: DOC
+ID: informe_reforzar_readme_crossref_v_4_20250807_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Informe · Refuerzo README & Ruleset — Transición V3.x ➜ V4 (2025‑08‑07)
 
 ---
@@ -3911,6 +3951,16 @@ Kanban simplificado)
 
 **FIN — Informe de refuerzo README & Ruleset V4**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## lifecycle/temp/lifecycle_temp_readme_v_3_1.md
@@ -3919,7 +3969,7 @@ Kanban simplificado)
 CODE: LIFEC
 ID: lifecycle_temp_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: lifecycle/temp/lifecycle_temp_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/lifecycle_temp_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -4019,17 +4069,20 @@ DATE:
 ## lifecycle/temp/prompt_codex_baseline_v_4_check.md
 
 ---
-CODE: PROMPT_CODEX_BASELINE_V4_CHECK
+CODE: PROMP
 ID: prompt_codex_baseline_v4_check
 VERSION: v4.0-2025-08-07
-ROUTE: lifecycle/temp/prompt_codex_baseline_v_4_check.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/prompt_codex_baseline_v_4_check.md
 CROSSREF:
   - ops/changelog.md
   - ops/lessons_learned.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-08
 ---
-
 # [RwB] PROMPT — Codex TaskSet · Baseline & Structure Compliance V4
 
 ## 📌 Contexto
@@ -4158,6 +4211,19 @@ DATE:
 
 ## lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
 
+---
+CODE: DOC
+ID: rw_b_blueprint_v_4_extendido_2025_08_06_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # [RwB] Blueprint — Plataforma AingZ/RwB V4 (EXTENDIDO 2025-08-06)
 
 ---
@@ -4245,10 +4311,33 @@ Cada rama/asset cumple naming y ruta exacta, con README, workflow, OutputTemplat
 
 **FIN — Blueprint RwB V4 EXTENDIDO**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 
+---
+CODE: DOC
+ID: rw_b_master_plan_v_4_extendido_2025_08_06_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # [RwB] Master Plan — Plataforma AingZ/RwB V4 (EXTENDIDO 2025-08-06)
 
 ---
@@ -4306,11 +4395,45 @@ La etapa V4 marca el cierre de toda la legacy y la apertura de una plataforma au
 
 **FIN — Master Plan RwB V4 EXTENDIDO**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## ops/BOOTSTRAP_V4_README.md
 
+---
+CODE: DOC
+ID: BOOTSTRAP_V4_README_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/BOOTSTRAP_V4_README.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Bootstrap V4
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## ops/bootstrap_v_4_readme.md
@@ -4319,7 +4442,7 @@ La etapa V4 marca el cierre de toda la legacy y la apertura de una plataforma au
 CODE: OPS
 ID: bootstrap_v_4_readme_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/bootstrap_v_4_readme.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/bootstrap_v_4_readme.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -4367,12 +4490,12 @@ DATE:
 CODE: OPS
 ID: harvest_readmes_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/log/harvest_readmes.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/harvest_readmes.md
 CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-10
 ---
@@ -4432,7 +4555,7 @@ DATE: 2025-08-10
 - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md | sha1:b71487347b95a53f5e2bd04d8187489495e79f07 | fm:False
 - ops/BOOTSTRAP_V4_README.md | sha1:7156c215d7787901c5f56cad0fb18a7d28653d9c | fm:False
 - ops/bootstrap_v_4_readme.md | sha1:557c5da20d5c5ea6a5a1da25ff829d4d8fe541c3 | fm:True
-- ops/log/harvest_readmes.md | sha1:7d5f1396a5cc04659caaa9f835f823604d63938e | fm:False
+- ops/log/harvest_readmes.md | sha1:712edabc441cbd438718b8342bb72c49612adbe4 | fm:True
 - ops/log/ops_log_readme_v_3_1.md | sha1:4e886bb0bda911a4f8e58b39cff60604de07bfa5 | fm:True
 - ops/ops_readme_v_3_1.md | sha1:109d8921ca8c3ad4ec085b3aab554e7e9f9c4ed7 | fm:True
 - ops/pipelines/ops_pipelines_readme_v_3_1.md | sha1:6160d9a137b2f44d619cd4aac33957321591b69b | fm:True
@@ -4471,7 +4594,7 @@ DATE:
 CODE: OPS
 ID: ops_log_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/log/ops_log_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/ops_log_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -4611,7 +4734,7 @@ DATE:
 CODE: OPS
 ID: ops_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/ops_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/ops_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -4776,7 +4899,7 @@ DATE:
 CODE: OPS
 ID: ops_pipelines_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/pipelines/ops_pipelines_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/pipelines/ops_pipelines_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -4908,7 +5031,7 @@ DATE:
 CODE: OPS
 ID: ops_scripts_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/scripts/ops_scripts_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/scripts/ops_scripts_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -5051,22 +5174,18 @@ DATE:
 ## ops/templates/template_readme_rw_b_v_3_1.md
 
 ---
-
-file: template\_readme\_rw\_b\_v3\_1.md version: v3.1-2025-08-06 status: template role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- rw\_b\_glosario\_code\_v\_2\_20250729.md
-- rw\_b\_diccionario\_code\_triggers\_v\_2\_20250729.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md  # Ruta y referencia definitiva en ops/templates changelog:
-- 2025-08-06: Creación del template universal README v3.1 (alineado blueprint/master plan)
-- 2025-08-06: Update — descripción extendida, objetivos, sistemas relacionados, contexto humano/IA.
-- 2025-08-06: Ruta definitiva confirmada → ops/templates/
-
+CODE: DOC
+ID: template_readme_rw_b_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_3_1.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 📘 [RwB] README Universal — v3.1
 
 ## 1. Descripción, función, objetivos y contexto
@@ -5114,80 +5233,33 @@ done
 
 **FIN TEMPLATE UNIVERSAL README v3.1 (ops/templates, versión activa)**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## ops/templates/template_readme_rw_b_v_4.md
 
 ---
-
-## file: \<ruta\_relativa\_al\_readme> code: \<CODE\_≤5\_SCREAMING\_SNAKE> name:  version: v4.0 date:  owner: AingZ\_Platform · RwB status: active xrf: blueprint: RwB\_Blueprint\_V4 mplan: RwB\_MasterPlan\_V4 glossary: CODE\_Glossary\_v2 dictionary: CODE\_Triggers\_v2 triggers: [TRG\_CONSOLIDATE\_TL, TRG\_AUDIT\_TL, TRG\_LSWP] chg: CHG\_main.md#\<id\_cambio> chk: CHK\_root.md#\<id\_check>
-
-# \<Título — Bucket/Asset> (v4)
-
-## Objetivo (GPT‑5 / Codex‑ready)
-
-- Describir **qué** hace el asset, **para qué**, **quién** lo usa y **criterios de done**.
-- Evitar ambigüedad; usar verbos imperativos.
-
-## Alcance y Ruta
-
-- **ROUTE**: `<ruta_relativa_al_readme>`
-- Subárbol cubierto: `core/|ops/|packages/|lifecycle/|snapshots_ctx/|library/` (elegir)
-
-## Instrucciones Operativas — **No‑Loss Merge** (pegar legacy íntegro)
-
-> **Pega aquí el contenido anterior (legacy) completo, sin editar.** Este bloque sirve como fuente canónica para el análisis y comparación; no se pierde información.
-
-```legacy
-<PEGA_AQUI_TODO_EL_CONTENIDO_LEGACY_DEL_README_ANTERIOR_SIN_RECORTES>
-```
-
-## Síntesis Ejecutiva (derivada del legacy)
-
-- Lista breve y accionable **para modelos GPT‑5/Codex**.
-- Debe cubrir: entradas, proceso, salidas, errores comunes, KPIs.
-
-## Flujos / Lógicas de Plataforma
-
-```mermaid
-flowchart TD
-  A[Trigger] --> B[Paso 1]
-  B --> C{Condición}
-  C -->|sí| D[Paso 2]
-  C -->|no| E[Alternativa]
-```
-
-## Entradas / Salidas / Triggers / Conectores
-
-- **Inputs**: …
-- **Outputs**: …
-- **Triggers**: TRG\_CONSOLIDATE\_TL · TRG\_AUDIT\_TL · TRG\_LSWP (ajustar)
-- **Conectores**: github / notion (si aplica)
-
-## Crossref (canónico)
-
-- Blueprint V4 · Master Plan V4 · Prompt Codex v4 · Glosario v2 · Diccionario CODE\_TRIGGERS v2
-
-## Integración de Legacy — Control de No Pérdida
-
-```yaml
-legacy_control:
-  source_path: <ruta_del_readme_legacy_si_aplica>
-  legacy_sha1: <sha1_del_texto_legacy>
-  legacy_lines: <conteo_lineas_legacy>
-  merged_at: <ISO8601>
-  reviewer: <usuario>
-```
-
-## Validación
-
-- `python ops/validate_metadata.py` → **OK**
-- `python ops/update_crossrefs.py` → sin pendientes
-- **CI** `CI Audit V4` → verde
-- **Diff Guard** → sin pérdida (`removed <= added`)
-
+CODE: DOC
+ID: template_readme_rw_b_v_4_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_4.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 ## OutputTemplate (obligatorio)
 
 ```yaml
@@ -5204,6 +5276,16 @@ output_example:
     - step1: <detalle>
 ```
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## ops/test/ops_test_readme_v_3_1.md
@@ -5212,7 +5294,7 @@ output_example:
 CODE: OPS
 ID: ops_test_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: ops/test/ops_test_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/test/ops_test_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -5344,7 +5426,7 @@ DATE:
 CODE: PACKA
 ID: packages_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: packages/packages_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/packages/packages_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -5506,7 +5588,7 @@ DATE:
 CODE: PACKA
 ID: vds_core_onboarding_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -5647,7 +5729,7 @@ DATE:
 CODE: PACKA
 ID: vds_core_plugins_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -5764,15 +5846,18 @@ DATE:
 ## packages/vds_core/templates/vds_core_templates_readme_v_3_1.md
 
 ---
-
-## file: README.md version: v3.1-2025-08-05 bucket: packages/vds\_core/templates blueprint: ../../../blueprint\_rw\_b\_platform\_v\_3\_20250803.md status: active updated: 2025-08-05 role: documentation owner: AingZ\_Platform · RwB
-
-# [RwB] packages/vds\_core/templates/ — README (v3.1)
-
-> **Tagline:** Plantillas, scaffolds y modelos técnicos para generación rápida y estandarizada de scripts, docs y assets de core/plugins.
-
+CODE: DOC
+ID: vds_core_templates_readme_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/templates/vds_core_templates_readme_v_3_1.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 ## Índice
 
 1. [Descripción General](#1-descripción-general)
@@ -5874,6 +5959,16 @@ triggers:
 
 **FIN README packages/vds\_core/templates/ v3.1**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
 
 
 ## packages/vds_core/tests/vds_core_tests_readme_v_3_1.md
@@ -5882,7 +5977,7 @@ triggers:
 CODE: PACKA
 ID: vds_core_tests_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: packages/vds_core/tests/vds_core_tests_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/tests/vds_core_tests_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6008,7 +6103,7 @@ DATE:
 CODE: PACKA
 ID: vds_core_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: packages/vds_core/vds_core_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/vds_core_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6164,7 +6259,7 @@ DATE:
 CODE: SNAPS
 ID: snapshots_ctx_codex_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6276,7 +6371,7 @@ DATE:
 CODE: SNAPS
 ID: snapshots_ctx_common_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6376,7 +6471,7 @@ DATE:
 CODE: SNAPS
 ID: snapshots_ctx_gpt_4_1_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6476,7 +6571,7 @@ DATE:
 CODE: SNAPS
 ID: snapshots_ctx_gpt_4_o_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6576,7 +6671,7 @@ DATE:
 CODE: SNAPS
 ID: snapshots_ctx_gpt_o_3_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -6676,7 +6771,7 @@ DATE:
 CODE: SNAPS
 ID: snapshots_ctx_readme_v_3_1_v4
 VERSION: v4.0-2025-08-10
-ROUTE: snapshots_ctx/snapshots_ctx_readme_v_3_1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/snapshots_ctx_readme_v_3_1.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
