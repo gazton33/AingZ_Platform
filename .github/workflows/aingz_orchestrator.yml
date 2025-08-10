@@ -34,7 +34,7 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_tallado_readmes.yml/dispatches \
             -d '{"ref":"main","inputs":{"reason":"tallado-readmes"}}'
 
-      - name: Wait 60s (let tallado create PR)
+      - name: Wait 60s (tallado)
         run: sleep 60
 
       - name: Dispatch Crossref Fix
@@ -47,7 +47,7 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_crossref_fix.yml/dispatches \
             -d '{"ref":"main","inputs":{"reason":"crossref-fix"}}'
 
-      - name: Wait 60s (let crossref create PR)
+      - name: Wait 60s (crossref)
         run: sleep 60
 
       - name: Dispatch Harvest Knowledge
@@ -60,7 +60,7 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_harvest_knowledge.yml/dispatches \
             -d '{"ref":"main","inputs":{"reason":"harvest"}}'
 
-      - name: Wait 60s (let harvest create PR)
+      - name: Wait 60s (harvest)
         run: sleep 60
 
       - name: Dispatch Incoherence Report
@@ -73,6 +73,107 @@ jobs:
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_incoherence_report.yml/dispatches \
             -d '{"ref":"main","inputs":{"reason":"incoherences-scan"}}'
 
-      - name: Orchestration done
+      - name: Wait 60s (incoherences)
+        run: sleep 60
+
+      - name: Dispatch Purge Fixes v2
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
         run: |
-          echo "Dispatched: tallado → crossref → harvest → incoherences. Revisar PRs abiertos y checks."
+          curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_purge_fixes_v2.yml/dispatches \
+            -d '{"ref":"main","inputs":{"reason":"purge-fixes"}}'
+
+      - name: Wait 20s (purge dispatch)
+        run: sleep 20
+
+      # Validación inmediata del README.md de la raíz y sus CROSSREF tras los despachos
+      - name: Checkout main for validation
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app.outputs.token }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Validate root README V4 + CROSSREF
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re, sys, json
+          import yaml
+
+          ROOT = Path('.')
+          readme = ROOT/'README.md'
+          cache = ROOT/'ops'/'paths_cache.json'
+          errors = []
+
+          if not readme.exists():
+            print('README.md no encontrado en raíz')
+            sys.exit(1)
+
+          txt = readme.read_text(encoding='utf-8', errors='ignore')
+          m = re.match(r"^---\s*\n(.*?)\n---\s*\n?(.*)$", txt, re.S)
+          if not m:
+            errors.append('Front-matter YAML ausente en README.md')
+            fm = {}
+            body = txt
+          else:
+            fm = yaml.safe_load(m.group(1)) or {}
+            body = m.group(2)
+
+          REQUIRED = ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]
+          for k in REQUIRED:
+            if k not in fm:
+              errors.append(f"Campo requerido faltante en README.md: {k}")
+
+          code = fm.get('CODE','')
+          if not re.fullmatch(r"[A-Z0-9_]{1,5}", str(code)):
+            errors.append(f"CODE inválido en README.md: '{code}' (<=5, SCREAMING_SNAKE)")
+
+          route = fm.get('ROUTE')
+          if route != 'README.md':
+            errors.append(f"ROUTE incorrecto en README.md: '{route}' (debe ser 'README.md')")
+
+          # CROSSREF: existencia y canónicos
+          cr = fm.get('CROSSREF')
+          cr_list = cr if isinstance(cr, list) else ([cr] if isinstance(cr, str) else [])
+          # cargar canónicos desde paths_cache.json si existe
+          required = []
+          if cache.exists():
+            try:
+              data = json.loads(cache.read_text('utf-8'))
+              required = sorted(set(data.values()))
+            except Exception:
+              required = []
+          # validar existencia de referencias
+          for ref in cr_list:
+            p = ROOT / str(ref)
+            if not p.exists():
+              errors.append(f"CROSSREF apunta a un archivo inexistente: {ref}")
+          # validar canónicos
+          missing_req = [r for r in required if r not in cr_list]
+          if required and missing_req:
+            errors.append(f"Faltan referencias canónicas en README.md: {missing_req}")
+
+          if errors:
+            print("VALIDACION README.md — ERRORES:")
+            for e in errors:
+              print("- ", e)
+            sys.exit(1)
+          else:
+            print('README.md V4 OK + CROSSREF válidos')
+          PY
+
+      - name: Done
+        run: echo "Dispatched: tallado → crossref → harvest → incoherences → purge. README.md validado. Revisar PRs abiertos y checks."
