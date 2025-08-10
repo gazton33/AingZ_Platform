@@ -1,0 +1,65 @@
+name: AingZ Orchestrator
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: motivo
+        required: true
+        default: "orchestrate-v4"
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+jobs:
+  orchestrate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: App token
+        id: app
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          installation_id: ${{ secrets.INSTALLATION_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Dispatch Tallado READMEs V4
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_tallado_readmes.yml/dispatches \
+            -d '{"ref":"main","inputs":{"reason":"tallado-readmes"}}'
+
+      - name: Wait 60s (let tallado create PR)
+        run: sleep 60
+
+      - name: Dispatch Crossref Fix
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_crossref_fix.yml/dispatches \
+            -d '{"ref":"main","inputs":{"reason":"crossref-fix"}}'
+
+      - name: Wait 60s (let crossref create PR)
+        run: sleep 60
+
+      - name: Dispatch Harvest Knowledge
+        env:
+          GH_TOKEN: ${{ steps.app.outputs.token }}
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/${{ github.repository }}/actions/workflows/aingz_harvest_knowledge.yml/dispatches \
+            -d '{"ref":"main","inputs":{"reason":"harvest"}}'
+
+      - name: Orchestration done
+        run: |
+          echo "Dispatched: tallado → crossref → harvest. Revisar PRs abiertos y checks."
