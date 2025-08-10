@@ -70,7 +70,6 @@ jobs:
             ];
             const purgeCandidates = [
               '.github/workflows/aingz_purge_fixes_v2.yml',
-              '.github/workflows/aingz_purge_fixes_v_2.yml'
             ];
             const { data } = await github.rest.actions.listRepoWorkflows({ owner, repo });
             const paths = new Set(data.workflows.map(w=>w.path));
