@@ -8,6 +8,7 @@ CROSSREF:
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-10
 ---

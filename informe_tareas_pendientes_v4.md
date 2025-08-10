@@ -5,6 +5,7 @@ VERSION: v4.0-2025-08-10
 ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/informe_tareas_pendientes_v4.md
 CROSSREF:
   - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
@@ -32,6 +33,7 @@ Archivos como `core/readme_core_rw_b_v_3_2.md` mantienen referencias a blueprint
    - `lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md`
    - `lifecycle/temp/prompt_codex_baseline_v_4_check.md`
    - `core/rulset/RULE_CODING_COMPLIANCE_V4.md`
+   - `core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md`
 3. Verificar metadatos y registrar cambios en `changelog.md`.
 :::
 
