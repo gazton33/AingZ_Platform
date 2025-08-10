@@ -780,21 +780,6 @@
     }
   },
   {
-    "path": "ops/BOOTSTRAP_V4_README.md",
-    "sha1": "5a363429fbfa2fb9d0b0c6ce9bd3e57a08d85b48",
-    "bytes": 523,
-    "has_front_matter": true,
-    "meta": {
-      "CODE": "DOC",
-      "ID": "BOOTSTRAP_V4_README_v4",
-      "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/BOOTSTRAP_V4_README.md",
-      "CROSSREF": "",
-      "AUTHOR": "AingZ_Platform",
-      "DATE": "2025-08-10"
-    }
-  },
-  {
     "path": "ops/bootstrap_v_4_readme.md",
     "sha1": "f683d5990c631a7fd24000e021b2121afb25ace0",
     "bytes": 1227,

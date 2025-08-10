@@ -65,7 +65,6 @@ DATE: 2025-08-10
 - lifecycle/temp/prompt_codex_baseline_v_4_check.md | sha1:bc5f6b12d1f4148e85365c94a20fa93658fb078d | fm:True
 - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md | sha1:b1da1a8ebfea29b62d3483843449eaf79646e13e | fm:True
 - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md | sha1:f683624069cf5689d86018e7ed6f32d3ca39a536 | fm:True
-- ops/BOOTSTRAP_V4_README.md | sha1:5a363429fbfa2fb9d0b0c6ce9bd3e57a08d85b48 | fm:True
 - ops/bootstrap_v_4_readme.md | sha1:f683d5990c631a7fd24000e021b2121afb25ace0 | fm:True
 - ops/log/harvest_readmes.md | sha1:dd6a19306f7c0dc2e2b079602c2426301ff398c3 | fm:False
 - ops/log/ops_log_readme_v_3_1.md | sha1:da654bd5eb4e0e1ffccf55cf41082b4842e611e0 | fm:True
