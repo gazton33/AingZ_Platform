@@ -1,19 +1,16 @@
 ---
-file: readme_core_data_template_rw_b_v3_2.md
-version: v3.2-2025-08-06
-status: active
-role: readme
-owner: AingZ_Platform · RwB
-crossref:
-  - blueprint_rw_b_platform_v_3_20250803.md
-  - mpln_master_plan_rw_b_v_3_20250803.md
-  - checklist_root_rw_b_v_3_20250805.md
-  - wf_pipeline_creacion_archivos_rw_b_v_3_20250805.md
-  - ops/templates/template_readme_rw_b_v3_1.md
-changelog:
-  - 2025-08-06: Consolidación árbol y README template/ core/data v3.2, compliance scaffolds estructurales.
+CODE: DOC
+ID: readme_core_data_template_rw_b_v_3_2_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/template/readme_core_data_template_rw_b_v_3_2.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 📑 core/data/template/ — Plantillas estructurales del Core (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto
@@ -66,3 +63,13 @@ graph TD;
 
 **FIN README core/data/template/ v3.2**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

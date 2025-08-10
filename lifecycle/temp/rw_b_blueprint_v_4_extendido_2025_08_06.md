@@ -1,3 +1,16 @@
+---
+CODE: DOC
+ID: rw_b_blueprint_v_4_extendido_2025_08_06_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # [RwB] Blueprint — Plataforma AingZ/RwB V4 (EXTENDIDO 2025-08-06)
 
 ---
@@ -85,3 +98,13 @@ Cada rama/asset cumple naming y ruta exacta, con README, workflow, OutputTemplat
 
 **FIN — Blueprint RwB V4 EXTENDIDO**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

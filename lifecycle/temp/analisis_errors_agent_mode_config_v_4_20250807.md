@@ -1,3 +1,16 @@
+---
+CODE: DOC
+ID: analisis_errors_agent_mode_config_v_4_20250807_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/analisis_errors_agent_mode_config_v_4_20250807.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Análisis y ajustes críticos · Configuración AgentMode, Repo y CI (2025-08-07)
 
 ---
@@ -71,3 +84,13 @@ Actualizar la plataforma a estándar V4 siguiendo Blueprint y MasterPlan, operan
 
 **¿Desea que genere los scripts de barrido + validador de README + plantilla actualizada de README raíz con las rutas correctas?**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

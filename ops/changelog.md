@@ -1,3 +1,16 @@
+---
+CODE: DOC
+ID: changelog_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/changelog.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Changelog
 
 Example entry format:
@@ -49,3 +62,14 @@ Example entry format:
 - 2025-08-08 | README.md & pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Metadata validated; no issues
 - 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Removed temporary plan after crossref updates
 - 2025-08-08 | repo | Moved changelog and lessons_learned to ops bucket and updated references
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

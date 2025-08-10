@@ -1,20 +1,16 @@
 ---
-
-file: template\_readme\_rw\_b\_v3\_1.md version: v3.1-2025-08-06 status: template role: readme owner: AingZ\_Platform · RwB crossref:
-
-- blueprint\_rw\_b\_platform\_v\_3\_20250803.md
-- mpln\_master\_plan\_rw\_b\_v\_3\_20250803.md
-- checklist\_root\_rw\_b\_v\_3\_20250805.md
-- wf\_pipeline\_creacion\_archivos\_rw\_b\_v\_3\_20250805.md
-- rw\_b\_glosario\_code\_v\_2\_20250729.md
-- rw\_b\_diccionario\_code\_triggers\_v\_2\_20250729.md
-- ops/templates/template\_readme\_rw\_b\_v3\_1.md  # Ruta y referencia definitiva en ops/templates changelog:
-- 2025-08-06: Creación del template universal README v3.1 (alineado blueprint/master plan)
-- 2025-08-06: Update — descripción extendida, objetivos, sistemas relacionados, contexto humano/IA.
-- 2025-08-06: Ruta definitiva confirmada → ops/templates/
-
+CODE: DOC
+ID: template_readme_rw_b_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_3_1.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 📘 [RwB] README Universal — v3.1
 
 ## 1. Descripción, función, objetivos y contexto
@@ -62,3 +58,13 @@ done
 
 **FIN TEMPLATE UNIVERSAL README v3.1 (ops/templates, versión activa)**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

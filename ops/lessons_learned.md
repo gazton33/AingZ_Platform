@@ -1,3 +1,16 @@
+---
+CODE: DOC
+ID: lessons_learned_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/lessons_learned.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Lessons Learned
 
 Example entry format:
@@ -44,3 +57,14 @@ Example entry format:
 
 - 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Temporary plan removed after crossref validation
 - 2025-08-08 | repo | Centralizing changelog and lessons_learned under ops simplifies maintenance of dynamic crossrefs
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

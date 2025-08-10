@@ -1,11 +1,16 @@
 ---
-file: informe_tareas_pendientes_v4.md
-version: v4.0-2025-08-07
-status: record
-role: report
-owner: AingZ_Platform · RwB
+CODE: DOC
+ID: informe_tareas_pendientes_v4_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/informe_tareas_pendientes_v4.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 ### 1. `Prompt_Codex_Baseline_V4_Check.md` no está referenciado  
 `ops/paths_cache.json` define `Prompt_Codex_Baseline_V4_Check.md` como `null`, dejando el campo `crossref_prompt_codex` vacío en `README.md`.  
 
@@ -83,3 +88,14 @@ Estas tareas priorizan la trazabilidad y la sostenibilidad operativa del reposit
 - Mantener seguimiento de referencias dinámicas permite **in-context learning** estable y evita drift semántico.
 - La estandarización de metadatos facilita el fine-tuning responsable y mejora la capacidad de auditoría.
 - Recomendación: validar este listado con pruebas automáticas en cada commit para sostener calidad y reproducibilidad.
+
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

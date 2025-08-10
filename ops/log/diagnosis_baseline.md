@@ -1,3 +1,16 @@
+---
+CODE: DOC
+ID: diagnosis_baseline_v4
+VERSION: v4.0-2025-08-10
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/diagnosis_baseline.md
+CROSSREF:
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 ## Code
 
 | path | ext | version | size | date | sha1 |
@@ -116,3 +129,13 @@
 | .gitignore |  | 929ab60 | 248 | 2025-08-07T18:15:30.922641 | 44e1ce8f6d8ba1b53f2ac0fcfd89e4529f1ddc76 |
 | LICENSE |  | 1a7b075 | 1056 | 2025-08-07T18:15:30.922641 | d83d9cea70a541a2d0d460586d9743932a963436 |
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

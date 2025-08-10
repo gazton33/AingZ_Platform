@@ -5,11 +5,16 @@
     "bytes": 4121,
     "has_front_matter": true,
     "meta": {
-      "CODE": "README_ROOT",
+      "CODE": "READM",
       "ID": "root_readme",
       "VERSION": "v4.0-2025-08-07",
-      "ROUTE": "README.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/README.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-07"
     }
@@ -23,8 +28,13 @@
       "CODE": "CORE",
       "ID": "readme_core_data_dicts_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -38,8 +48,13 @@
       "CODE": "CORE",
       "ID": "readme_core_data_mplan_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -53,8 +68,13 @@
       "CODE": "CORE",
       "ID": "readme_core_data_mtx_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -68,8 +88,13 @@
       "CODE": "CORE",
       "ID": "readme_core_data_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/data/readme_core_data_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/readme_core_data_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -83,8 +108,13 @@
       "CODE": "CORE",
       "ID": "readme_core_data_rulset_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/data/rulset/readme_core_data_rulset_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/rulset/readme_core_data_rulset_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -95,14 +125,18 @@
     "bytes": 2972,
     "has_front_matter": true,
     "meta": {
-      "file": "readme_core_data_template_rw_b_v3_2.md",
-      "version": "v3.2-2025-08-06",
-      "status": "active",
-      "role": "readme",
-      "owner": "AingZ_Platform \u00b7 RwB",
-      "crossref": "",
-      "changelog": "",
-      "- 2025-08-06": "Consolidaci\u00f3n \u00e1rbol y README template/ core/data v3.2, compliance scaffolds estructurales."
+      "CODE": "DOC",
+      "ID": "readme_core_data_template_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/data/template/readme_core_data_template_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
     }
   },
   {
@@ -114,8 +148,13 @@
       "CODE": "CORE",
       "ID": "readme_core_doc_audio_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/audio/readme_core_doc_audio_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -129,8 +168,13 @@
       "CODE": "CORE",
       "ID": "readme_core_doc_image_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/doc/image/readme_core_doc_image_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/image/readme_core_doc_image_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -144,8 +188,13 @@
       "CODE": "CORE",
       "ID": "readme_core_doc_onbrd_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/doc/onbrd/readme_core_doc_onbrd_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/onbrd/readme_core_doc_onbrd_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -159,8 +208,13 @@
       "CODE": "CORE",
       "ID": "readme_core_doc_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/doc/readme_core_doc_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/readme_core_doc_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -171,9 +225,18 @@
     "bytes": 2742,
     "has_front_matter": true,
     "meta": {
-      "file": "readme\\_core\\_doc\\_template\\_rw\\_b\\_v3\\_2.md version: v3.2-2025-08-06 status: active role: readme owner: AingZ\\_Platform \u00b7 RwB crossref:",
-      "- ops/templates/template\\_readme\\_rw\\_b\\_v3\\_1.md changelog": "",
-      "- 2025-08-06": "Consolidaci\u00f3n \u00e1rbol y README template/ core/doc v3.2, compliance plantillas modelo docs."
+      "CODE": "DOC",
+      "ID": "readme_core_doc_template_rw_b_v_3_2_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/template/readme_core_doc_template_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
     }
   },
   {
@@ -185,8 +248,13 @@
       "CODE": "CORE",
       "ID": "readme_core_doc_video_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/doc/video/readme_core_doc_video_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/doc/video/readme_core_doc_video_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -200,8 +268,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_eval_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/eval/readme_core_kns_ai_learn_eval_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/eval/readme_core_kns_ai_learn_eval_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -215,8 +288,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_feed_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/feed/readme_core_kns_ai_learn_feed_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/feed/readme_core_kns_ai_learn_feed_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -230,8 +308,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_insi_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/insi/readme_core_kns_ai_learn_insi_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/insi/readme_core_kns_ai_learn_insi_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -245,8 +328,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_learn_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/learn/readme_core_kns_ai_learn_learn_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/learn/readme_core_kns_ai_learn_learn_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -260,8 +348,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/readme_core_kns_ai_learn_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/readme_core_kns_ai_learn_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -275,8 +368,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_rel_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/rel/readme_core_kns_ai_learn_rel_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/rel/readme_core_kns_ai_learn_rel_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -290,8 +388,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_shot_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/shot/readme_core_kns_ai_learn_shot_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/shot/readme_core_kns_ai_learn_shot_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -305,8 +408,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_trn_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/trn/readme_core_kns_ai_learn_trn_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/trn/readme_core_kns_ai_learn_trn_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -320,8 +428,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ai_learn_tune_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ai_learn/tune/readme_core_kns_ai_learn_tune_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ai_learn/tune/readme_core_kns_ai_learn_tune_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -335,8 +448,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_chkp_aingz_platform_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/chkp/aingz_platform/readme_core_kns_chkp_aingz_platform_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/chkp/aingz_platform/readme_core_kns_chkp_aingz_platform_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -350,8 +468,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_chkp_projects_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/chkp/projects/readme_core_kns_chkp_projects_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/chkp/projects/readme_core_kns_chkp_projects_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -365,8 +488,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_chkp_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/chkp/readme_core_kns_chkp_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/chkp/readme_core_kns_chkp_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -380,8 +508,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ctx_aingz_platform_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ctx/aingz_platform/readme_core_kns_ctx_aingz_platform_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ctx/aingz_platform/readme_core_kns_ctx_aingz_platform_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -395,8 +528,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ctx_projects_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ctx/projects/readme_core_kns_ctx_projects_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ctx/projects/readme_core_kns_ctx_projects_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -410,8 +548,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ctx_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ctx/readme_core_kns_ctx_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ctx/readme_core_kns_ctx_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -425,8 +568,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_glossary_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/glossary/readme_core_kns_glossary_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/glossary/readme_core_kns_glossary_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -440,8 +588,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_ideas_brainstorm_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/ideas_brainstorm/readme_core_kns_ideas_brainstorm_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -455,8 +608,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_metrics_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/metrics/readme_core_kns_metrics_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/metrics/readme_core_kns_metrics_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -470,8 +628,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/readme_core_kns_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/readme_core_kns_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -485,8 +648,13 @@
       "CODE": "CORE",
       "ID": "readme_core_kns_triggers_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -497,11 +665,19 @@
     "bytes": 3795,
     "has_front_matter": true,
     "meta": {
-      "CODE": "README_CORE",
+      "CODE": "READM",
       "ID": "core_readme",
       "VERSION": "v3.2-2025-08-06",
-      "ROUTE": "core/readme_core_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/readme_core_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "core/kns/glossary/rw_b_glosario_code_v_2_20250729.md",
+        "core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md",
+        "ops/templates/template_readme_rw_b_v_4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-06"
     }
@@ -510,8 +686,21 @@
     "path": "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
     "sha1": "d631150cf72f6aa07a6daee3168d8f61d1bb40e1",
     "bytes": 65,
-    "has_front_matter": false,
-    "meta": {}
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "DOC",
+      "ID": "RULE_CODING_COMPLIANCE_V4_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
   },
   {
     "path": "core/wf/readme_core_wf_rw_b_v_3_2.md",
@@ -522,8 +711,13 @@
       "CODE": "CORE",
       "ID": "readme_core_wf_rw_b_v_3_2_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "core/wf/readme_core_wf_rw_b_v_3_2.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/core/wf/readme_core_wf_rw_b_v_3_2.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -537,8 +731,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_books_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/books/readme_library_books_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/books/readme_library_books_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -552,8 +751,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_datasets_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/datasets/readme_library_datasets_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/datasets/readme_library_datasets_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -567,8 +771,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_licencias_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/licencias/readme_library_licencias_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/licencias/readme_library_licencias_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -582,8 +791,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_manuals_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/manuals/readme_library_manuals_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/manuals/readme_library_manuals_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -597,8 +811,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_normas_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/normas/readme_library_normas_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/normas/readme_library_normas_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -612,8 +831,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_papers_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/papers/readme_library_papers_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/papers/readme_library_papers_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -627,8 +851,13 @@
       "CODE": "LIBRA",
       "ID": "readme_library_rw_b_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "library/readme_library_rw_b_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/library/readme_library_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -642,8 +871,13 @@
       "CODE": "LIFEC",
       "ID": "lifecycle_bk_temp_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -657,8 +891,13 @@
       "CODE": "LIFEC",
       "ID": "lifecycle_legacy_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -672,8 +911,13 @@
       "CODE": "LIFEC",
       "ID": "lifecycle_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "lifecycle/lifecycle_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/lifecycle_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -687,8 +931,13 @@
       "CODE": "LIFEC",
       "ID": "lifecycle_mig_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "lifecycle/mig/lifecycle_mig_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/mig/lifecycle_mig_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -697,8 +946,21 @@
     "path": "lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md",
     "sha1": "a54a8e4bc587b6a253cdbad8649ef6cce8e1c698",
     "bytes": 4861,
-    "has_front_matter": false,
-    "meta": {}
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "DOC",
+      "ID": "informe_reforzar_readme_crossref_v_4_20250807_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
   },
   {
     "path": "lifecycle/temp/lifecycle_temp_readme_v_3_1.md",
@@ -709,8 +971,13 @@
       "CODE": "LIFEC",
       "ID": "lifecycle_temp_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "lifecycle/temp/lifecycle_temp_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/lifecycle_temp_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -721,11 +988,18 @@
     "bytes": 5487,
     "has_front_matter": true,
     "meta": {
-      "CODE": "PROMPT_CODEX_BASELINE_V4_CHECK",
+      "CODE": "PROMP",
       "ID": "prompt_codex_baseline_v4_check",
       "VERSION": "v4.0-2025-08-07",
-      "ROUTE": "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+      "CROSSREF": [
+        "ops/changelog.md",
+        "ops/lessons_learned.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-08"
     }
@@ -734,22 +1008,61 @@
     "path": "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
     "sha1": "bfc84498cad0963772fa54ed5d9843f392b45650",
     "bytes": 6269,
-    "has_front_matter": false,
-    "meta": {}
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "DOC",
+      "ID": "rw_b_blueprint_v_4_extendido_2025_08_06_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
   },
   {
     "path": "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
     "sha1": "b71487347b95a53f5e2bd04d8187489495e79f07",
     "bytes": 3705,
-    "has_front_matter": false,
-    "meta": {}
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "DOC",
+      "ID": "rw_b_master_plan_v_4_extendido_2025_08_06_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
   },
   {
     "path": "ops/BOOTSTRAP_V4_README.md",
     "sha1": "7156c215d7787901c5f56cad0fb18a7d28653d9c",
     "bytes": 15,
-    "has_front_matter": false,
-    "meta": {}
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "DOC",
+      "ID": "BOOTSTRAP_V4_README_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/BOOTSTRAP_V4_README.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
   },
   {
     "path": "ops/bootstrap_v_4_readme.md",
@@ -760,8 +1073,13 @@
       "CODE": "OPS",
       "ID": "bootstrap_v_4_readme_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/bootstrap_v_4_readme.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/bootstrap_v_4_readme.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -775,8 +1093,13 @@
       "CODE": "OPS",
       "ID": "harvest_readmes_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/log/harvest_readmes.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/harvest_readmes.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -790,8 +1113,13 @@
       "CODE": "OPS",
       "ID": "ops_log_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/log/ops_log_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/ops_log_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -805,8 +1133,13 @@
       "CODE": "OPS",
       "ID": "ops_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/ops_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/ops_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -820,8 +1153,13 @@
       "CODE": "OPS",
       "ID": "ops_pipelines_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/pipelines/ops_pipelines_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/pipelines/ops_pipelines_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -835,8 +1173,13 @@
       "CODE": "OPS",
       "ID": "ops_scripts_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/scripts/ops_scripts_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/scripts/ops_scripts_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -847,9 +1190,18 @@
     "bytes": 2502,
     "has_front_matter": true,
     "meta": {
-      "file": "template\\_readme\\_rw\\_b\\_v3\\_1.md version: v3.1-2025-08-06 status: template role: readme owner: AingZ\\_Platform \u00b7 RwB crossref:",
-      "- ops/templates/template\\_readme\\_rw\\_b\\_v3\\_1.md  # Ruta y referencia definitiva en ops/templates changelog": "",
-      "- 2025-08-06": "Ruta definitiva confirmada \u2192 ops/templates/"
+      "CODE": "DOC",
+      "ID": "template_readme_rw_b_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_3_1.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
     }
   },
   {
@@ -858,19 +1210,18 @@
     "bytes": 2487,
     "has_front_matter": true,
     "meta": {
-      "- **ROUTE**": "`<ruta_relativa_al_readme>`",
-      "- Sub\u00e1rbol cubierto": "`core/|ops/|packages/|lifecycle/|snapshots_ctx/|library/` (elegir)",
-      "- Debe cubrir": "entradas, proceso, salidas, errores comunes, KPIs.",
-      "- **Inputs**": "\u2026",
-      "- **Outputs**": "\u2026",
-      "- **Triggers**": "TRG\\_CONSOLIDATE\\_TL \u00b7 TRG\\_AUDIT\\_TL \u00b7 TRG\\_LSWP (ajustar)",
-      "- **Conectores**": "github / notion (si aplica)",
-      "legacy_control": "",
-      "source_path": "<ruta_del_readme_legacy_si_aplica>",
-      "legacy_sha1": "<sha1_del_texto_legacy>",
-      "legacy_lines": "<conteo_lineas_legacy>",
-      "merged_at": "<ISO8601>",
-      "reviewer": "<usuario>"
+      "CODE": "DOC",
+      "ID": "template_readme_rw_b_v_4_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/templates/template_readme_rw_b_v_4.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
     }
   },
   {
@@ -882,8 +1233,13 @@
       "CODE": "OPS",
       "ID": "ops_test_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "ops/test/ops_test_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/test/ops_test_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -897,8 +1253,13 @@
       "CODE": "PACKA",
       "ID": "packages_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "packages/packages_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/packages/packages_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -912,8 +1273,13 @@
       "CODE": "PACKA",
       "ID": "vds_core_onboarding_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -927,8 +1293,13 @@
       "CODE": "PACKA",
       "ID": "vds_core_plugins_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -939,7 +1310,18 @@
     "bytes": 3568,
     "has_front_matter": true,
     "meta": {
-      "> **Tagline": "** Plantillas, scaffolds y modelos t\u00e9cnicos para generaci\u00f3n r\u00e1pida y estandarizada de scripts, docs y assets de core/plugins."
+      "CODE": "DOC",
+      "ID": "vds_core_templates_readme_v_3_1_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/templates/vds_core_templates_readme_v_3_1.md",
+      "CROSSREF": [
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md"
+      ],
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
     }
   },
   {
@@ -951,8 +1333,13 @@
       "CODE": "PACKA",
       "ID": "vds_core_tests_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "packages/vds_core/tests/vds_core_tests_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/tests/vds_core_tests_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -966,8 +1353,13 @@
       "CODE": "PACKA",
       "ID": "vds_core_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "packages/vds_core/vds_core_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/packages/vds_core/vds_core_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -981,8 +1373,13 @@
       "CODE": "SNAPS",
       "ID": "snapshots_ctx_codex_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -996,8 +1393,13 @@
       "CODE": "SNAPS",
       "ID": "snapshots_ctx_common_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -1011,8 +1413,13 @@
       "CODE": "SNAPS",
       "ID": "snapshots_ctx_gpt_4_1_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -1026,8 +1433,13 @@
       "CODE": "SNAPS",
       "ID": "snapshots_ctx_gpt_4_o_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -1041,8 +1453,13 @@
       "CODE": "SNAPS",
       "ID": "snapshots_ctx_gpt_o_3_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }
@@ -1056,8 +1473,13 @@
       "CODE": "SNAPS",
       "ID": "snapshots_ctx_readme_v_3_1_v4",
       "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "snapshots_ctx/snapshots_ctx_readme_v_3_1.md",
-      "CROSSREF": "",
+      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/snapshots_ctx/snapshots_ctx_readme_v_3_1.md",
+      "CROSSREF": [
+        "lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md",
+        "lifecycle/temp/prompt_codex_baseline_v_4_check.md",
+        "core/rulset/RULE_CODING_COMPLIANCE_V4.md"
+      ],
       "AUTHOR": "AingZ_Platform",
       "DATE": "2025-08-10"
     }

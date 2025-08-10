@@ -1,15 +1,18 @@
 ---
-CODE: PROMPT_CODEX_BASELINE_V4_CHECK
+CODE: PROMP
 ID: prompt_codex_baseline_v4_check
 VERSION: v4.0-2025-08-07
-ROUTE: lifecycle/temp/prompt_codex_baseline_v_4_check.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/lifecycle/temp/prompt_codex_baseline_v_4_check.md
 CROSSREF:
   - ops/changelog.md
   - ops/lessons_learned.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-08
 ---
-
 # [RwB] PROMPT — Codex TaskSet · Baseline & Structure Compliance V4
 
 ## 📌 Contexto

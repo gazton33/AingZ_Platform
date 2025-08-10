@@ -1,8 +1,8 @@
 ---
-CODE: README_ROOT
+CODE: READM
 ID: root_readme
 VERSION: v4.0-2025-08-07
-ROUTE: README.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/README.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
