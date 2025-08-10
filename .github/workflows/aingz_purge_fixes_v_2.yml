@@ -1,4 +1,4 @@
-name: AingZ Purge Fixes
+name: AingZ Purge Fixes v2 (debug)
 on:
   workflow_dispatch:
     inputs:
@@ -39,11 +39,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install pyyaml
 
-      - name: Apply non-destructive fixes (CRITICO/ALTO) + sync index
+      - name: Apply non-destructive fixes (CRITICO/ALTO) + sync index (v2, debug)
         run: |
           python - <<'PY'
           from pathlib import Path
-          import json, re, datetime, hashlib
+          import json, re, datetime, hashlib, sys
           try:
               import yaml
           except Exception:
@@ -120,18 +120,32 @@ jobs:
                        "```yaml\nCODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n```\n")
               return body.rstrip()+"\n"+block
 
-          # Util para serializar JSON (convierte date/datetime a string)
-          def jsonable(obj):
+          # Normalizador: convierte date/datetime a str y CROSSREF -> lista de str
+          def to_stringy(x):
               import datetime as _dt
-              if isinstance(obj, (_dt.date, _dt.datetime)):
-                  return obj.isoformat()
-              if isinstance(obj, dict):
-                  return {k: jsonable(v) for k,v in obj.items()}
-              if isinstance(obj, list):
-                  return [jsonable(v) for v in obj]
-              return obj
+              if isinstance(x, (_dt.date, _dt.datetime)):
+                  return x.isoformat()
+              if isinstance(x, list):
+                  return [to_stringy(v) for v in x]
+              if isinstance(x, dict):
+                  out = {}
+                  for k,v in x.items():
+                      if k == 'CROSSREF':
+                          if isinstance(v, list):
+                              out[k] = [str(i) for i in v]
+                          elif isinstance(v, str):
+                              out[k] = [v]
+                          else:
+                              out[k] = []
+                      else:
+                          out[k] = to_stringy(v)
+                  return out
+              return x
 
           fixes = 0
+          # 0) Debug contexto
+          print(f"required_crossrefs={required_crossrefs}")
+
           # 1) Forzar FM en harvest_readmes.md (caso especial)
           if harvest_md.exists():
               txt = read(harvest_md)
@@ -141,15 +155,18 @@ jobs:
                   body = ensure_output_template(body)
                   write(harvest_md, dump_fm(fm)+body)
                   fixes += 1
+                  print("fix: added FM to ops/log/harvest_readmes.md")
 
           # 2) Cargar incoherencias y filtrar CRITICO/ALTO
           targets = {}
+          crit_alto = 0
           if rep_json.exists():
               report = json.loads(rep_json.read_text('utf-8'))
               for it in report.get('issues', []):
                   sev = it.get('severity', 'MEDIO')
                   if sev not in {'CRITICO','ALTO'}:
                       continue
+                  crit_alto += 1
                   if it.get('type') not in {
                       'front_matter_missing','front_matter_incomplete','outputtemplate_missing',
                       'route_mismatch','crossref_missing','crossref_required_missing','crossref_broken','code_rule'
@@ -157,6 +174,8 @@ jobs:
                       continue
                   for rel in it.get('path','').split(', '):
                       targets.setdefault(rel, set()).add(it.get('type'))
+          print(f"issues CRITICO/ALTO detectados={crit_alto}")
+          print(f"targets={list(targets.keys())[:20]}{' ...' if len(targets)>20 else ''}")
 
           # 3) Aplicar fixes
           for rel, types in targets.items():
@@ -197,53 +216,43 @@ jobs:
                   fixes += 1
 
           # 4) Sincronizar knowledge_index.json (si existe)
+          synced = 0
           if idx_path.exists():
               try:
                   items = json.loads(idx_path.read_text('utf-8'))
               except Exception:
                   items = []
-              changed = False
-
-              def parse_meta(text):
-                  fm, _ = parse_fm(text)
-                  if not fm:
-                      return False, {}
-                  # normalizar CROSSREF a lista
-                  cr = fm.get('CROSSREF')
-                  if isinstance(cr, list):
-                      fm['CROSSREF'] = [str(x) for x in cr]
-                  elif isinstance(cr, str):
-                      fm['CROSSREF'] = [cr]
-                  else:
-                      fm['CROSSREF'] = []
-                  # convertir tipos no JSON (p.ej. date) a string
-                  fm = jsonable(fm)
-                  return True, fm
-
-              # re-scan de paths presentes en index (idempotente)
               m = {it.get('path'): it for it in items if isinstance(it, dict) and 'path' in it}
               for path, it in m.items():
                   p = ROOT / path
                   if not p.exists():
                       continue
                   text = read(p)
-                  has, meta = parse_meta(text)
+                  fm, _ = parse_fm(text)
+                  has = bool(fm)
+                  meta = to_stringy(fm or {})
+                  # asegurar lista de strings en CROSSREF
+                  cr = meta.get('CROSSREF', [])
+                  if isinstance(cr, list):
+                      meta['CROSSREF'] = [str(x) for x in cr]
+                  elif isinstance(cr, str):
+                      meta['CROSSREF'] = [cr]
+                  else:
+                      meta['CROSSREF'] = []
                   it['has_front_matter'] = has
                   it['meta'] = meta
-                  changed = True
-              if changed:
-                  write(idx_path, json.dumps(list(m.values()), indent=2, ensure_ascii=False, default=str))
-
-          print(f"Archivos corregidos automáticamente: {fixes}")
+                  synced += 1
+              write(idx_path, json.dumps(list(m.values()), indent=2, ensure_ascii=False))
+          print(f"Archivos corregidos automáticamente: {fixes}; entradas index sincronizadas: {synced}")
           PY
 
       - name: Create PR
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ steps.app.outputs.token }}
-          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }} (auto-fixes CRITICO/ALTO + index sync)"
+          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }} (auto-fixes CRITICO/ALTO + index sync v2)"
           branch: bot/aingz/purge-${{ github.run_id }}
           title: "Agent: ${{ github.event.inputs.reason }}"
-          body: "Auto-fixes no-destructivos (solo CRITICO/ALTO) + front-matter para ops/log/harvest_readmes.md y sincronización de ops/data/index/knowledge_index.json. Duplicados (ID/CODE/H1) quedan para resolución manual."
+          body: "Auto-fixes no-destructivos (solo CRITICO/ALTO) + front-matter para ops/log/harvest_readmes.md y sincronización de ops/data/index/knowledge_index.json. Incluye debug y normalización estricta de tipos JSON."
           base: main
           delete-branch: true
