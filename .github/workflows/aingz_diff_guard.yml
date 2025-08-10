@@ -32,13 +32,13 @@ jobs:
 
           added=0
           removed=0
-          while read -r a r path; do
+          set +m
+          shopt -s lastpipe
+          printf '%s\n' "$ns" | while read -r a r path; do
             # los binarios aparecen como '-'
             [[ "$a" =~ ^[0-9]+$ ]] && added=$((added + a))
             [[ "$r" =~ ^[0-9]+$ ]] && removed=$((removed + r))
-          done <<'EOF'
-          '"$ns"'
-          EOF
+          done
 
           echo "added=$added removed=$removed"
           # margen de 10 líneas para evitar falsos positivos
