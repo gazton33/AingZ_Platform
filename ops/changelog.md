@@ -86,3 +86,8 @@ DATE:
 - 2025-08-10 | README.md | TRG_CONSOLIDATE_TL failed: [Errno 2] No such file or directory: 'TRG_CONSOLIDATE_TL'
 - 2025-08-10 | README.md | TRG_LSWP failed: [Errno 2] No such file or directory: 'TRG_LSWP'
 - 2025-08-10 | README.md | Updated crossref: crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md -> crossref_prompt_codex: null
+- 2025-08-10 | README.md | TRG_AUDIT_TL failed: [Errno 2] No such file or directory: 'TRG_AUDIT_TL'
+- 2025-08-10 | README.md | TRG_CONSOLIDATE_TL failed: [Errno 2] No such file or directory: 'TRG_CONSOLIDATE_TL'
+- 2025-08-10 | README.md | TRG_LSWP failed: [Errno 2] No such file or directory: 'TRG_LSWP'
+- 2025-08-10 | README.md | Updated crossref: crossref_prompt_codex: null -> crossref_prompt_codex: lifecycle/temp/prompt_codex_baseline_v_4_check.md
+- 2025-08-10 | README.md | Updated crossref: crossref_ruleset: core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md -> crossref_ruleset: core/rulset/RULE_CODING_COMPLIANCE_V4.md
