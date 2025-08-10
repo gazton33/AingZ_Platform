@@ -3,7 +3,7 @@ import os
 from pathlib import Path
 
 TARGETS = [
-    "Prompt_Codex_Baseline_V4_Check.md",
+    "prompt_codex_baseline_v_4_check.md",
     "rw_b_blueprint_v_4_extendido_2025_08_06.md",
     "rw_b_master_plan_v_4_extendido_2025_08_06.md",
     "core/rulset/RULE_CODING_COMPLIANCE_V4.md",
