@@ -115,7 +115,11 @@ jobs:
 
             # Asegurar OutputTemplate
             if not has_output_tpl(body):
-              body = body.rstrip() + "\n\n## OutputTemplate\n```yaml\nCODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n```\n"
+              body = body.rstrip() + (
+                "\n\n## OutputTemplate\n```yaml\n"
+                "CODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n"
+                "```\n"
+              )
 
             new_txt = "\n".join(fm_lines) + body
             write(p, new_txt)
