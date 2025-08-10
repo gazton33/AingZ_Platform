@@ -1,258 +1,121 @@
-name: AingZ Purge Fixes v2 (debug)
+# ---
+# file: .github/workflows/aingz_purge_fixes_v2.yml
+# code: PURG2
+# name: AingZ_Purge_Fixes_V2
+# version: v4.0
+# date: 2025-08-10
+# owner: AingZ_Platform · RwB
+# status: active
+# xrf:
+#   blueprint: RwB_Blueprint_V4
+#   mplan: RwB_MasterPlan_V4
+#   glossary: CODE_Glossary_v2
+#   dictionary: CODE_Triggers_v2
+# triggers: [TRG_CONSOLIDATE_TL]
+# chg: CHG_main.md#purge_fixes_v2
+# chk: CHK_root.md#purge_fixes_v2
+# ---
+
+name: "AingZ Purge Fixes V2"
+
 on:
   workflow_dispatch:
     inputs:
       reason:
-        description: motivo
-        required: true
-        default: "purge-fixes"
+        description: "Motivo de ejecución (p.ej. purge-fixes)"
+        required: false
+        default: purge-fixes-v2
 
 permissions:
+  actions: write
   contents: write
   pull-requests: write
 
+concurrency:
+  group: purge-fixes-v2-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  REASON: ${{ github.event.inputs.reason || 'purge-fixes-v2' }}
+  BRANCH_BASENAME: purge/fixes-v2
+
 jobs:
   purge:
+    name: "Purge · consolidación y PR"
     runs-on: ubuntu-latest
     steps:
-      - name: App token
-        id: app
-        uses: tibdex/github-app-token@v2
-        with:
-          app_id: ${{ secrets.APP_ID }}
-          installation_id: ${{ secrets.INSTALLATION_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ steps.app.outputs.token }}
           fetch-depth: 0
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install deps
+      - name: Preparar estructura de logs
         run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml
+          mkdir -p ops/log/purge
 
-      - name: Apply non-destructive fixes (CRITICO/ALTO) + sync index (v2, debug)
+      - name: Generar reporte de purge
+        id: gen
+        shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-          import json, re, datetime, hashlib, sys
-          try:
-              import yaml
-          except Exception:
-              yaml = None
+          stamp=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+          file="ops/log/purge/purge_fixes_v2_${stamp}.md"
+          {
+            echo "---";
+            echo "file: purge_fixes_v2_${stamp}.md";
+            echo "code: PURG2";
+            echo "name: PurgeFixesV2Report";
+            echo "version: v4.0";
+            echo "date: ${stamp}";
+            echo "owner: AingZ_Platform · RwB";
+            echo "status: generated";
+            echo "xrf:";
+            echo "  blueprint: RwB_Blueprint_V4";
+            echo "  mplan: RwB_MasterPlan_V4";
+            echo "  glossary: CODE_Glossary_v2";
+            echo "  dictionary: CODE_Triggers_v2";
+            echo "triggers: [TRG_CONSOLIDATE_TL]";
+            echo "chg: CHG_main.md#purge_fixes_v2_${stamp}";
+            echo "chk: CHK_root.md#purge_fixes_v2_${stamp}";
+            echo "---";
+            echo "# Purge Fixes V2";
+            echo "- created_at: ${stamp}";
+            echo "- reason: ${REASON}";
+            echo "- actor: ${GITHUB_ACTOR}";
+            echo "\n## Checklist";
+            echo "- [ ] Eliminar duplicados y artefactos legacy";
+            echo "- [ ] Normalizar rutas V4 y crossrefs";
+            echo "- [ ] Actualizar índices y README de bucket";
+          } > "$file"
+          echo "file=$file" >> "$GITHUB_OUTPUT"
 
-          ROOT = Path('.')
-          rep_json = ROOT / 'ops' / 'reports' / 'incoherencias.json'
-          idx_path = ROOT / 'ops' / 'data' / 'index' / 'knowledge_index.json'
-          harvest_md = ROOT / 'ops' / 'log' / 'harvest_readmes.md'
-
-          # Cache de rutas canónicas
-          paths_cache = {}
-          cache_path = ROOT / 'ops' / 'paths_cache.json'
-          if cache_path.exists():
-              try:
-                  paths_cache = json.loads(cache_path.read_text('utf-8'))
-              except Exception:
-                  paths_cache = {}
-          required_crossrefs = sorted(set(paths_cache.values())) if isinstance(paths_cache, dict) else []
-
-          REQUIRED = ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]
-          today = datetime.date.today().isoformat()
-
-          def read(p): return p.read_text(encoding='utf-8', errors='ignore')
-          def write(p,s):
-              p.parent.mkdir(parents=True, exist_ok=True)
-              p.write_text(s, encoding='utf-8')
-
-          def parse_fm(txt):
-              if not txt.startswith('---\n'): return None, txt
-              j = txt.find('\n---',4)
-              if j == -1: return None, txt
-              fm = txt[4:j]
-              body = txt[j+4:].lstrip('\n')
-              data = {}
-              if yaml:
-                  try: data = yaml.safe_load(fm) or {}
-                  except Exception: data = {}
-              else:
-                  for line in fm.splitlines():
-                      if ':' in line and not line.strip().startswith('#'):
-                          k,v = line.split(':',1)
-                          data[k.strip()] = v.strip()
-              return data, body
-
-          def build_fm(path: Path):
-              code = re.sub(r"[^A-Za-z0-9_]","", (path.parts[0] if len(path.parts)>1 else path.stem).upper())[:5] or 'DOC'
-              return {
-                  'CODE': code,
-                  'ID': f"{path.stem}_v4",
-                  'VERSION': f"v4.0-{today}",
-                  'ROUTE': path.as_posix(),
-                  'CROSSREF': required_crossrefs,
-                  'AUTHOR': 'AingZ_Platform',
-                  'DATE': today,
-              }
-
-          def dump_fm(d: dict):
-              lines = ['---']
-              for k in ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]:
-                  if k == 'CROSSREF':
-                      lines.append('CROSSREF:')
-                      for ref in d.get('CROSSREF', []):
-                          lines.append(f"  - {ref}")
-                  else:
-                      lines.append(f"{k}: {d.get(k,'')}")
-              lines.append('---\n')
-              return "\n".join(lines)
-
-          def ensure_output_template(body: str):
-              if re.search(r"^##\s*OutputTemplate\s*$", body, flags=re.M):
-                  return body
-              block = ("\n## OutputTemplate\n"\
-                       "```yaml\nCODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n```\n")
-              return body.rstrip()+"\n"+block
-
-          # Normalizador: convierte date/datetime a str y CROSSREF -> lista de str
-          def to_stringy(x):
-              import datetime as _dt
-              if isinstance(x, (_dt.date, _dt.datetime)):
-                  return x.isoformat()
-              if isinstance(x, list):
-                  return [to_stringy(v) for v in x]
-              if isinstance(x, dict):
-                  out = {}
-                  for k,v in x.items():
-                      if k == 'CROSSREF':
-                          if isinstance(v, list):
-                              out[k] = [str(i) for i in v]
-                          elif isinstance(v, str):
-                              out[k] = [v]
-                          else:
-                              out[k] = []
-                      else:
-                          out[k] = to_stringy(v)
-                  return out
-              return x
-
-          fixes = 0
-          # 0) Debug contexto
-          print(f"required_crossrefs={required_crossrefs}")
-
-          # 1) Forzar FM en harvest_readmes.md (caso especial)
-          if harvest_md.exists():
-              txt = read(harvest_md)
-              fm, body = parse_fm(txt)
-              if not fm:
-                  fm = build_fm(harvest_md)
-                  body = ensure_output_template(body)
-                  write(harvest_md, dump_fm(fm)+body)
-                  fixes += 1
-                  print("fix: added FM to ops/log/harvest_readmes.md")
-
-          # 2) Cargar incoherencias y filtrar CRITICO/ALTO
-          targets = {}
-          crit_alto = 0
-          if rep_json.exists():
-              report = json.loads(rep_json.read_text('utf-8'))
-              for it in report.get('issues', []):
-                  sev = it.get('severity', 'MEDIO')
-                  if sev not in {'CRITICO','ALTO'}:
-                      continue
-                  crit_alto += 1
-                  if it.get('type') not in {
-                      'front_matter_missing','front_matter_incomplete','outputtemplate_missing',
-                      'route_mismatch','crossref_missing','crossref_required_missing','crossref_broken','code_rule'
-                  }:
-                      continue
-                  for rel in it.get('path','').split(', '):
-                      targets.setdefault(rel, set()).add(it.get('type'))
-          print(f"issues CRITICO/ALTO detectados={crit_alto}")
-          print(f"targets={list(targets.keys())[:20]}{' ...' if len(targets)>20 else ''}")
-
-          # 3) Aplicar fixes
-          for rel, types in targets.items():
-              p = ROOT / rel
-              if not p.exists() or not p.is_file():
-                  continue
-              txt = read(p)
-              fm, body = parse_fm(txt)
-              if not fm:
-                  fm = build_fm(p)
-              else:
-                  base = build_fm(p)
-                  for k in REQUIRED:
-                      if k not in fm:
-                          fm[k] = base[k]
-                  # normalizar CODE
-                  code = fm.get('CODE','')
-                  fm['CODE'] = re.sub(r"[^A-Z0-9_]","", (code or '').upper())[:5] or base['CODE']
-                  # ROUTE correcto
-                  fm['ROUTE'] = p.as_posix()
-                  # CROSSREF: limpiar rotos + añadir requeridos
-                  cr = fm.get('CROSSREF')
-                  if isinstance(cr, list):
-                      cr_list = [str(x) for x in cr]
-                  elif isinstance(cr, str):
-                      cr_list = [cr]
-                  else:
-                      cr_list = []
-                  cr_list = [c for c in cr_list if c and (ROOT / c).exists()]
-                  for req in required_crossrefs:
-                      if req not in cr_list:
-                          cr_list.append(req)
-                  fm['CROSSREF'] = cr_list
-              body = ensure_output_template(body)
-              new_txt = dump_fm(fm) + body
-              if new_txt != txt:
-                  write(p, new_txt)
-                  fixes += 1
-
-          # 4) Sincronizar knowledge_index.json (si existe)
-          synced = 0
-          if idx_path.exists():
-              try:
-                  items = json.loads(idx_path.read_text('utf-8'))
-              except Exception:
-                  items = []
-              m = {it.get('path'): it for it in items if isinstance(it, dict) and 'path' in it}
-              for path, it in m.items():
-                  p = ROOT / path
-                  if not p.exists():
-                      continue
-                  text = read(p)
-                  fm, _ = parse_fm(text)
-                  has = bool(fm)
-                  meta = to_stringy(fm or {})
-                  # asegurar lista de strings en CROSSREF
-                  cr = meta.get('CROSSREF', [])
-                  if isinstance(cr, list):
-                      meta['CROSSREF'] = [str(x) for x in cr]
-                  elif isinstance(cr, str):
-                      meta['CROSSREF'] = [cr]
-                  else:
-                      meta['CROSSREF'] = []
-                  it['has_front_matter'] = has
-                  it['meta'] = meta
-                  synced += 1
-              write(idx_path, json.dumps(list(m.values()), indent=2, ensure_ascii=False))
-          print(f"Archivos corregidos automáticamente: {fixes}; entradas index sincronizadas: {synced}")
-          PY
-
-      - name: Create PR
+      - name: Crear Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ steps.app.outputs.token }}
-          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }} (auto-fixes CRITICO/ALTO + index sync v2)"
-          branch: bot/aingz/purge-${{ github.run_id }}
-          title: "Agent: ${{ github.event.inputs.reason }}"
-          body: "Auto-fixes no-destructivos (solo CRITICO/ALTO) + front-matter para ops/log/harvest_readmes.md y sincronización de ops/data/index/knowledge_index.json. Incluye debug y normalización estricta de tipos JSON."
-          base: main
+          commit-message: "chore(purge): Purge Fixes V2 · ${{ env.REASON }}"
+          title: "AingZ Purge Fixes V2 · ${{ env.REASON }}"
+          body: |
+            Origen: workflow `${{ github.workflow }}`.
+            Motivo: `${{ env.REASON }}`.
+            Archivo generado: `${{ steps.gen.outputs.file }}`.
+          branch: ${{ env.BRANCH_BASENAME }}-${{ github.run_id }}
           delete-branch: true
+          labels: |
+            orchestrated
+            purge
+            v4
+
+# ---
+# OutputTemplate (obligatorio / comentado para GH Actions)
+# output_example:
+#   status: OK
+#   id_asset: purge_fixes_v2
+#   generated_by: ai
+#   created_at: 2025-08-10T00:00:00-03:00
+#   params:
+#     - reason: purge-fixes-v2
+#   result:
+#     - pr_title: "AingZ Purge Fixes V2"
+#     - log_file: ops/log/purge/purge_fixes_v2_<stamp>.md
+#   log:
+#     - step1: generate report
+#     - step2: create PR

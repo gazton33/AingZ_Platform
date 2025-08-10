@@ -40,8 +40,10 @@ env:
 
 jobs:
   preflight:
-    name: "Preflight · validación mínima"
+    name: "Preflight · detección y validación mínima"
     runs-on: ubuntu-latest
+    outputs:
+      purge_path: ${{ steps.scan.outputs.purge_path }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -52,53 +54,63 @@ jobs:
           script: |
             const { owner, repo } = context.repo;
             const res = await github.rest.actions.listRepoWorkflows({ owner, repo });
-            core.info(`Workflows detectados: ${res.data.workflows.map(w=>`${w.name} -> ${w.path}`).join('\n')}`);
+            core.info(`Workflows detectados (name → path):\n` + res.data.workflows.map(w=>`${w.name} → ${w.path}`).join('\n'));
 
-      - name: Verificar presencia de workflows requeridos
+      - name: Verificar presencia de workflows requeridos (tolerante purge v2/v_2)
+        id: scan
         uses: actions/github-script@v7
         with:
           script: |
-            const required = [
+            const { owner, repo } = context.repo;
+            const reqFixed = [
               '.github/workflows/aingz_tallado_readmes.yml',
               '.github/workflows/aingz_crossref_fix.yml',
               '.github/workflows/aingz_harvest_knowledge.yml',
-              '.github/workflows/aingz_incoherence_report.yml',
-              '.github/workflows/aingz_purge_fixes_v2.yml'
+              '.github/workflows/aingz_incoherence_report.yml'
             ];
-            const { owner, repo } = context.repo;
+            const purgeCandidates = [
+              '.github/workflows/aingz_purge_fixes_v2.yml',
+              '.github/workflows/aingz_purge_fixes_v_2.yml'
+            ];
             const { data } = await github.rest.actions.listRepoWorkflows({ owner, repo });
             const paths = new Set(data.workflows.map(w=>w.path));
-            const missing = required.filter(p => !paths.has(p));
+
+            const missing = reqFixed.filter(p => !paths.has(p));
+            let purge_path = purgeCandidates.find(p => paths.has(p));
+            if (!purge_path) missing.push(purgeCandidates.join(' | '));
+
             if (missing.length) {
-              core.setFailed(`Faltan workflows requeridos o están deshabilitados: \n${missing.join('\n')}\n` +
-                             `Asegurá que existan y tengan 'on: workflow_dispatch'.`);
+              core.setFailed(`Faltan workflows requeridos o con nombre distinto:\n${missing.join('\n')}\n` +
+                             `Sugerencia: mantener el nombre canónico o ajustar el orquestador.`);
             } else {
-              core.info('OK · Todos los workflows requeridos existen.');
+              core.info(`OK · Todos los workflows requeridos presentes. purge_path=${purge_path}`);
+              core.setOutput('purge_path', purge_path);
             }
 
   orchestrate:
-    name: "Orchestrate · encadenar WFs (dispatch + wait)"
+    name: "Orchestrate · dispatch + wait"
     needs: preflight
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Encadenar workflows
+      - name: Encadenar workflows (espera a finalización)
         id: chain
         uses: actions/github-script@v7
         with:
           script: |
             const { owner, repo } = context.repo;
-            const ref = context.ref.replace('refs/heads/','');
+            const branch = context.ref.replace('refs/heads/','');
             const reason = process.env.ORCH_REASON || 'orchestrate-v4';
+            const purgePath = `${{ toJSON(needs.preflight.outputs.purge_path) }}`; // path resultante del preflight
 
             const chain = [
               '.github/workflows/aingz_tallado_readmes.yml',
               '.github/workflows/aingz_crossref_fix.yml',
               '.github/workflows/aingz_harvest_knowledge.yml',
               '.github/workflows/aingz_incoherence_report.yml',
-              '.github/workflows/aingz_purge_fixes_v2.yml'
+              purgePath
             ];
 
             async function findWorkflowIdByPath(path) {
@@ -109,47 +121,48 @@ jobs:
 
             async function dispatch(wfId) {
               await github.rest.actions.createWorkflowDispatch({
-                owner, repo, workflow_id: wfId, ref,
+                owner, repo, workflow_id: wfId, ref: branch,
                 inputs: { reason }
               });
             }
 
-            async function waitForRun(wfId) {
-              const start = Date.now();
+            async function waitForRun(wfId, startedAt) {
               const timeoutMs = 60 * 60 * 1000; // 60 min
               const sleep = ms => new Promise(r => setTimeout(r, ms));
+              const isAfter = (a, b) => new Date(a).getTime() >= new Date(b).getTime();
 
               let runId = null;
-              // Espera a que aparezca un run
+              const start = Date.now();
+
+              // Espera a que aparezca un run nuevo
               while (Date.now() - start < timeoutMs) {
-                const { data } = await github.rest.actions.listWorkflowRuns({ owner, repo, workflow_id: wfId, branch: ref, per_page: 10 });
-                const run = data.workflow_runs.find(r => r.head_branch === ref);
+                const { data } = await github.rest.actions.listWorkflowRuns({ owner, repo, workflow_id: wfId, branch, per_page: 20 });
+                const run = data.workflow_runs.find(r => r.head_branch === branch && isAfter(r.created_at, startedAt));
                 if (run) { runId = run.id; break; }
                 await sleep(5000);
               }
-              if (!runId) core.setFailed('Timeout esperando inicio de run');
+              if (!runId) core.setFailed('Timeout esperando inicio del run');
 
               // Espera a la finalización
               while (Date.now() - start < timeoutMs) {
                 const { data } = await github.rest.actions.getWorkflowRun({ owner, repo, run_id: runId });
                 core.info(`Estado: ${data.name} -> ${data.status}/${data.conclusion || ''}`);
                 if (data.status === 'completed') {
-                  if (data.conclusion !== 'success') {
-                    core.setFailed(`Concluyó con estado: ${data.conclusion}`);
-                  }
+                  if (data.conclusion !== 'success') core.setFailed(`Concluyó con estado: ${data.conclusion}`);
                   return;
                 }
                 await sleep(15000);
               }
-              core.setFailed('Timeout esperando finalización de run');
+              core.setFailed('Timeout esperando finalización del run');
             }
 
             for (const path of chain) {
               const wfId = await findWorkflowIdByPath(path);
               if (!wfId) core.setFailed(`Workflow no encontrado: ${path}`);
-              core.info(`Dispatch → ${path} @ ${ref} (reason=${reason})`);
+              const startedAt = new Date().toISOString();
+              core.info(`Dispatch → ${path} @ ${branch} (reason=${reason})`);
               await dispatch(wfId);
-              await waitForRun(wfId);
+              await waitForRun(wfId, startedAt);
             }
 
       - name: Resultado
@@ -173,7 +186,7 @@ jobs:
 #       - aingz_crossref_fix.yml
 #       - aingz_harvest_knowledge.yml
 #       - aingz_incoherence_report.yml
-#       - aingz_purge_fixes_v2.yml
+#       - aingz_purge_fixes_v2.yml | aingz_purge_fixes_v_2.yml
 #   log:
 #     - step1: preflight check
 #     - step2: dispatch chain
