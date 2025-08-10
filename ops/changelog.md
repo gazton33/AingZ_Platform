@@ -64,6 +64,8 @@ Example entry format:
 - 2025-08-08 | repo | Moved changelog and lessons_learned to ops bucket and updated references
 - 2025-08-10 | library/intg/readme_library_intg_rw_b_v_3_1.md | Added README for intg bucket
 
+- 2025-08-10 | ops/log/purge/readme_ops_log_purge_v_4.md | Added purge log subbucket README
+
 ## OutputTemplate
 ```yaml
 CODE:
