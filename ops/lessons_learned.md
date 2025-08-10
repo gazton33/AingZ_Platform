@@ -57,6 +57,9 @@ Example entry format:
 
 - 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Temporary plan removed after crossref validation
 - 2025-08-08 | repo | Centralizing changelog and lessons_learned under ops simplifies maintenance of dynamic crossrefs
+- 2025-08-10 | library/intg/readme_library_intg_rw_b_v_3_1.md | Documentar integraciones asegura trazabilidad y metadatos uniformes
+
+- 2025-08-10 | ops/log/purge/readme_ops_log_purge_v_4.md | Documented retention policy and workflow linkage
 
 ## OutputTemplate
 ```yaml

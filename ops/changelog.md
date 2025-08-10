@@ -62,7 +62,13 @@ Example entry format:
 - 2025-08-08 | README.md & pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Metadata validated; no issues
 - 2025-08-08 | pln_primeros_pasos_codex_crossref_update_v_4_20250807.md | Removed temporary plan after crossref updates
 - 2025-08-08 | repo | Moved changelog and lessons_learned to ops bucket and updated references
+
 - 2025-08-10 | ops/BOOTSTRAP_V4_README.md | Removed duplicate in favor of ops/bootstrap_v_4_readme.md and updated references
+
+- 2025-08-10 | library/intg/readme_library_intg_rw_b_v_3_1.md | Added README for intg bucket
+
+- 2025-08-10 | ops/log/purge/readme_ops_log_purge_v_4.md | Added purge log subbucket README
+
 
 ## OutputTemplate
 ```yaml
