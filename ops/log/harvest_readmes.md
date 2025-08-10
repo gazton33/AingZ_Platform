@@ -54,6 +54,7 @@
 - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md | sha1:b71487347b95a53f5e2bd04d8187489495e79f07 | fm:False
 - ops/BOOTSTRAP_V4_README.md | sha1:7156c215d7787901c5f56cad0fb18a7d28653d9c | fm:False
 - ops/bootstrap_v_4_readme.md | sha1:557c5da20d5c5ea6a5a1da25ff829d4d8fe541c3 | fm:True
+- ops/log/harvest_readmes.md | sha1:7d5f1396a5cc04659caaa9f835f823604d63938e | fm:False
 - ops/log/ops_log_readme_v_3_1.md | sha1:4e886bb0bda911a4f8e58b39cff60604de07bfa5 | fm:True
 - ops/ops_readme_v_3_1.md | sha1:109d8921ca8c3ad4ec085b3aab554e7e9f9c4ed7 | fm:True
 - ops/pipelines/ops_pipelines_readme_v_3_1.md | sha1:6160d9a137b2f44d619cd4aac33957321591b69b | fm:True
