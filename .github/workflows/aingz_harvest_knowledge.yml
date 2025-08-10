@@ -1,0 +1,107 @@
+name: AingZ Harvest Knowledge
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: motivo
+        required: true
+        default: "harvest"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: App token
+        id: app
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          installation_id: ${{ secrets.INSTALLATION_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app.outputs.token }}
+
+      - name: Build index & corpus (no-loss)
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib, json
+
+          ROOT = Path('.')
+          out_idx = ROOT/"ops/data/index/knowledge_index.json"
+          out_inv = ROOT/"ops/log/harvest_readmes.md"
+          out_cps = ROOT/"library/intg/Corpus_Platform_V4.md"
+          out_idx.parent.mkdir(parents=True, exist_ok=True)
+          out_inv.parent.mkdir(parents=True, exist_ok=True)
+          out_cps.parent.mkdir(parents=True, exist_ok=True)
+
+          def read(p):
+            return p.read_text(encoding='utf-8', errors='ignore')
+
+          def sha1(s):
+            return hashlib.sha1(s.encode('utf-8')).hexdigest()
+
+          def parse_fm(txt: str):
+            if not txt.startswith('---\n'):
+              return None, txt
+            j = txt.find('\n---', 4)
+            if j == -1:
+              return None, txt
+            fm = txt[4:j]
+            body = txt[j+4:].lstrip('\n')
+            meta = {}
+            for line in fm.splitlines():
+              if ':' in line and not line.strip().startswith('#'):
+                k, v = line.split(':', 1)
+                meta[k.strip()] = v.strip()
+            return meta, body
+
+          items = []
+          inv_lines = ["# Harvest — Inventario\n"]
+          corpus = ["# Corpus_Platform_V4\n"]
+
+          targets = []
+          for p in ROOT.rglob('*.md'):
+            low = p.name.lower()
+            if ('readme' in low) or ('blueprint' in low) or ('master_plan' in low) or ('prompt' in low) or low.startswith('rule_') or low.startswith('ruleset') or low.startswith('rule'):
+              targets.append(p)
+          targets = sorted(targets, key=lambda q: q.as_posix())
+
+          for p in targets:
+            txt = read(p)
+            meta, body = parse_fm(txt)
+            h = sha1(txt)
+            items.append({
+              'path': p.as_posix(),
+              'sha1': h,
+              'bytes': len(txt.encode('utf-8')),
+              'has_front_matter': bool(meta),
+              'meta': meta or {}
+            })
+            inv_lines.append(f"- {p.as_posix()} | sha1:{h} | fm:{bool(meta)}")
+            corpus.append(f"\n## {p.as_posix()}\n")
+            corpus.append(txt)
+
+          out_idx.write_text(json.dumps(items, indent=2), encoding='utf-8')
+          out_inv.write_text("\n".join(inv_lines) + "\n", encoding='utf-8')
+          out_cps.write_text("\n".join(corpus) + "\n", encoding='utf-8')
+          print(f"Indexed {len(items)} files → {out_idx}")
+          PY
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.app.outputs.token }}
+          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
+          branch: bot/aingz/harvest-${{ github.run_id }}
+          title: "Agent: ${{ github.event.inputs.reason }}"
+          body: "Índice + corpus consolidado (sin pérdida). Ver ops/log/harvest_readmes.md y library/intg/Corpus_Platform_V4.md."
+          base: main
+          delete-branch: true
