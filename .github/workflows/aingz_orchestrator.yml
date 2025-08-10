@@ -1,11 +1,11 @@
-name: AingZ Orchestrator
+name: AingZ Orchestrator V4
 on:
   workflow_dispatch:
     inputs:
       reason:
         description: motivo
         required: true
-        default: "orchestrate-v4"
+        default: orchestrate-v4
 
 permissions:
   actions: write
@@ -24,79 +24,81 @@ jobs:
           installation_id: ${{ secrets.INSTALLATION_ID }}
           private_key: ${{ secrets.APP_PRIVATE_KEY }}
 
-      - name: Set repo env
-        run: echo "REPO=${GITHUB_REPOSITORY}" >> $GITHUB_ENV
-
+      # Despachos SEGUROS usando github-script (evita problemas de quoting con curl)
       - name: Dispatch Tallado READMEs V4
-        env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
-          REPO: ${{ env.REPO }}
-        run: |
-          curl -s -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${REPO}/actions/workflows/aingz_tallado_readmes.yml/dispatches" \
-            -d '{"ref":"main","inputs":{"reason":"tallado-readmes"}}'
-
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'aingz_tallado_readmes.yml',
+              ref: 'main',
+              inputs: { reason: 'tallado-readmes' }
+            });
       - name: Wait 60s (tallado)
         run: sleep 60
 
       - name: Dispatch Crossref Fix
-        env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
-          REPO: ${{ env.REPO }}
-        run: |
-          curl -s -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${REPO}/actions/workflows/aingz_crossref_fix.yml/dispatches" \
-            -d '{"ref":"main","inputs":{"reason":"crossref-fix"}}'
-
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'aingz_crossref_fix.yml',
+              ref: 'main',
+              inputs: { reason: 'crossref-fix' }
+            });
       - name: Wait 60s (crossref)
         run: sleep 60
 
       - name: Dispatch Harvest Knowledge
-        env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
-          REPO: ${{ env.REPO }}
-        run: |
-          curl -s -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${REPO}/actions/workflows/aingz_harvest_knowledge.yml/dispatches" \
-            -d '{"ref":"main","inputs":{"reason":"harvest"}}'
-
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'aingz_harvest_knowledge.yml',
+              ref: 'main',
+              inputs: { reason: 'harvest' }
+            });
       - name: Wait 60s (harvest)
         run: sleep 60
 
       - name: Dispatch Incoherence Report
-        env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
-          REPO: ${{ env.REPO }}
-        run: |
-          curl -s -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${REPO}/actions/workflows/aingz_incoherence_report.yml/dispatches" \
-            -d '{"ref":"main","inputs":{"reason":"incoherences-scan"}}'
-
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'aingz_incoherence_report.yml',
+              ref: 'main',
+              inputs: { reason: 'incoherences-scan' }
+            });
       - name: Wait 60s (incoherences)
         run: sleep 60
 
       - name: Dispatch Purge Fixes v2
-        env:
-          GH_TOKEN: ${{ steps.app.outputs.token }}
-          REPO: ${{ env.REPO }}
-        run: |
-          curl -s -X POST \
-            -H "Authorization: Bearer ${GH_TOKEN}" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${REPO}/actions/workflows/aingz_purge_fixes_v2.yml/dispatches" \
-            -d '{"ref":"main","inputs":{"reason":"purge-fixes"}}'
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ steps.app.outputs.token }}
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'aingz_purge_fixes_v2.yml',
+              ref: 'main',
+              inputs: { reason: 'purge-fixes' }
+            });
 
-      - name: Wait 20s (purge dispatch)
-        run: sleep 20
-
+      # Validación inmediata del README.md raíz (front‑matter V4 + CROSSREF canónicos)
       - name: Checkout main for validation
         uses: actions/checkout@v4
         with:
