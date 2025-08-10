@@ -61,6 +61,8 @@ Example entry format:
 
 - 2025-08-10 | ops/log/purge/readme_ops_log_purge_v_4.md | Documented retention policy and workflow linkage
 
+- 2025-08-10 | core/rulset/RULE_CODING_COMPLIANCE_V4.md | Ejemplos claros facilitan adopción de reglas
+
 ## OutputTemplate
 ```yaml
 CODE:
