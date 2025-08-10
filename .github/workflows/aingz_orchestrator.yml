@@ -102,14 +102,14 @@ jobs:
             const { owner, repo } = context.repo;
             const branch = context.ref.replace('refs/heads/','');
             const reason = process.env.ORCH_REASON || 'orchestrate-v4';
-            const purgePath = `${{ toJSON(needs.preflight.outputs.purge_path) }}`; // path resultante del preflight
+            const purgePath = ${{ toJSON(needs.preflight.outputs.purge_path) }}; // path resultante del preflight
 
             const chain = [
               '.github/workflows/aingz_tallado_readmes.yml',
               '.github/workflows/aingz_crossref_fix.yml',
               '.github/workflows/aingz_harvest_knowledge.yml',
               '.github/workflows/aingz_incoherence_report.yml',
-              purgePath
+              (purgePath || '').replace(/^"|"$/g, '')
             ];
 
             async function findWorkflowIdByPath(path) {
