@@ -1,0 +1,236 @@
+name: AingZ Purge Fixes
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: motivo
+        required: true
+        default: "purge-fixes"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: App token
+        id: app
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          installation_id: ${{ secrets.INSTALLATION_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app.outputs.token }}
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyyaml
+
+      - name: Apply non-destructive fixes from incoherencias (CRITICO/ALTO) + sync index
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json, re, datetime, hashlib
+          try:
+              import yaml
+          except Exception:
+              yaml = None
+
+          ROOT = Path('.')
+          rep_json = ROOT / 'ops' / 'reports' / 'incoherencias.json'
+          idx_path = ROOT / 'ops' / 'data' / 'index' / 'knowledge_index.json'
+          harvest_md = ROOT / 'ops' / 'log' / 'harvest_readmes.md'
+
+          # Cargar cache de rutas canónicas para CROSSREF
+          paths_cache = {}
+          cache_path = ROOT / 'ops' / 'paths_cache.json'
+          if cache_path.exists():
+              try:
+                  paths_cache = json.loads(cache_path.read_text('utf-8'))
+              except Exception:
+                  paths_cache = {}
+          required_crossrefs = sorted(set(paths_cache.values())) if isinstance(paths_cache, dict) else []
+
+          REQUIRED = ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]
+          today = datetime.date.today().isoformat()
+
+          def read(p): return p.read_text(encoding='utf-8', errors='ignore')
+          def write(p,s):
+              p.parent.mkdir(parents=True, exist_ok=True)
+              p.write_text(s, encoding='utf-8')
+
+          def parse_fm(txt):
+              if not txt.startswith('---\n'): return None, txt
+              j = txt.find('\n---',4)
+              if j == -1: return None, txt
+              fm = txt[4:j]
+              body = txt[j+4:].lstrip('\n')
+              data = {}
+              if yaml:
+                  try: data = yaml.safe_load(fm) or {}
+                  except Exception: data = {}
+              else:
+                  for line in fm.splitlines():
+                      if ':' in line and not line.strip().startswith('#'):
+                          k,v = line.split(':',1)
+                          data[k.strip()] = v.strip()
+              return data, body
+
+          def build_fm(path: Path):
+              code = re.sub(r"[^A-Za-z0-9_]","", (path.parts[0] if len(path.parts)>1 else path.stem).upper())[:5] or 'DOC'
+              return {
+                  'CODE': code,
+                  'ID': f"{path.stem}_v4",
+                  'VERSION': f"v4.0-{today}",
+                  'ROUTE': path.as_posix(),
+                  'CROSSREF': required_crossrefs,
+                  'AUTHOR': 'AingZ_Platform',
+                  'DATE': today,
+              }
+
+          def dump_fm(d: dict):
+              lines = ['---']
+              for k in ["CODE","ID","VERSION","ROUTE","CROSSREF","AUTHOR","DATE"]:
+                  if k == 'CROSSREF':
+                      lines.append('CROSSREF:')
+                      for ref in d.get('CROSSREF', []):
+                          lines.append(f"  - {ref}")
+                  else:
+                      lines.append(f"{k}: {d.get(k,'')}")
+              lines.append('---\n')
+              return "\n".join(lines)
+
+          def ensure_output_template(body: str):
+              if re.search(r"^##\s*OutputTemplate\s*$", body, flags=re.M):
+                  return body
+              block = ("\n## OutputTemplate\n"\
+                       "```yaml\nCODE:\nID:\nVERSION:\nROUTE:\nCROSSREF:\nAUTHOR:\nDATE:\n```\n")
+              return body.rstrip()+"\n"+block
+
+          fixes = 0
+          # 1) Forzar FM en harvest_readmes.md (caso especial)
+          if harvest_md.exists():
+              txt = read(harvest_md)
+              fm, body = parse_fm(txt)
+              if not fm:
+                  fm = build_fm(harvest_md)
+                  body = ensure_output_template(body)
+                  write(harvest_md, dump_fm(fm)+body)
+                  fixes += 1
+
+          # 2) Cargar incoherencias y filtrar CRITICO/ALTO
+          targets = {}
+          if rep_json.exists():
+              report = json.loads(rep_json.read_text('utf-8'))
+              for it in report.get('issues', []):
+                  sev = it.get('severity', 'MEDIO')
+                  if sev not in {'CRITICO','ALTO'}:
+                      continue
+                  # Tipos auto-corregibles
+                  if it.get('type') not in {
+                      'front_matter_missing','front_matter_incomplete','outputtemplate_missing',
+                      'route_mismatch','crossref_missing','crossref_required_missing','crossref_broken','code_rule'
+                  }:
+                      continue
+                  for rel in it.get('path','').split(', '):
+                      targets.setdefault(rel, set()).add(it.get('type'))
+
+          # 3) Aplicar fixes
+          for rel, types in targets.items():
+              p = ROOT / rel
+              if not p.exists() or not p.is_file():
+                  continue
+              txt = read(p)
+              fm, body = parse_fm(txt)
+              if not fm:
+                  fm = build_fm(p)
+              else:
+                  # completar faltantes
+                  base = build_fm(p)
+                  for k in REQUIRED:
+                      if k not in fm:
+                          fm[k] = base[k]
+                  # normalizar CODE
+                  code = fm.get('CODE','')
+                  fm['CODE'] = re.sub(r"[^A-Z0-9_]","", (code or '').upper())[:5] or base['CODE']
+                  # ROUTE correcto
+                  fm['ROUTE'] = p.as_posix()
+                  # CROSSREF: limpiar rotos + añadir requeridos
+                  cr = fm.get('CROSSREF')
+                  if isinstance(cr, list):
+                      cr_list = [str(x) for x in cr]
+                  elif isinstance(cr, str):
+                      cr_list = [cr]
+                  else:
+                      cr_list = []
+                  cr_list = [c for c in cr_list if c and (ROOT / c).exists()]
+                  for req in required_crossrefs:
+                      if req not in cr_list:
+                          cr_list.append(req)
+                  fm['CROSSREF'] = cr_list
+              body = ensure_output_template(body)
+              new_txt = dump_fm(fm) + body
+              if new_txt != txt:
+                  write(p, new_txt)
+                  fixes += 1
+
+          # 4) Sincronizar knowledge_index.json (si existe)
+          if idx_path.exists():
+              try:
+                  items = json.loads(idx_path.read_text('utf-8'))
+              except Exception:
+                  items = []
+              changed = False
+              def parse_meta(text):
+                  fm, _ = parse_fm(text)
+                  if not fm:
+                      return False, {}
+                  # normalizar CROSSREF a lista
+                  cr = fm.get('CROSSREF')
+                  if isinstance(cr, list):
+                      fm['CROSSREF'] = [str(x) for x in cr]
+                  elif isinstance(cr, str):
+                      fm['CROSSREF'] = [cr]
+                  else:
+                      fm['CROSSREF'] = []
+                  return True, fm
+              # re-scan de paths presentes en index (idempotente)
+              m = {it.get('path'): it for it in items if isinstance(it, dict)}
+              for path, it in m.items():
+                  p = ROOT / path
+                  if not p.exists():
+                      continue
+                  text = read(p)
+                  has, meta = parse_meta(text)
+                  it['has_front_matter'] = has
+                  it['meta'] = meta
+                  changed = True
+              if changed:
+                  write(idx_path, json.dumps(list(m.values()), indent=2))
+
+          print(f"Archivos corregidos automáticamente: {fixes}")
+          PY
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.app.outputs.token }}
+          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }} (auto-fixes CRITICO/ALTO + index sync)"
+          branch: bot/aingz/purge-${{ github.run_id }}
+          title: "Agent: ${{ github.event.inputs.reason }}"
+          body: "Auto-fixes no-destructivos (solo CRITICO/ALTO) + front-matter para ops/log/harvest_readmes.md y sincronización de ops/data/index/knowledge_index.json. Duplicados (ID/CODE/H1) quedan para resolución manual."
+          base: main
+          delete-branch: true
