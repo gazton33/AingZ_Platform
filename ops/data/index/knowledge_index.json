@@ -768,10 +768,18 @@
   },
   {
     "path": "ops/log/harvest_readmes.md",
-    "sha1": "7d5f1396a5cc04659caaa9f835f823604d63938e",
-    "bytes": 8179,
-    "has_front_matter": false,
-    "meta": {}
+    "sha1": "712edabc441cbd438718b8342bb72c49612adbe4",
+    "bytes": 8723,
+    "has_front_matter": true,
+    "meta": {
+      "CODE": "OPS",
+      "ID": "harvest_readmes_v4",
+      "VERSION": "v4.0-2025-08-10",
+      "ROUTE": "ops/log/harvest_readmes.md",
+      "CROSSREF": "",
+      "AUTHOR": "AingZ_Platform",
+      "DATE": "2025-08-10"
+    }
   },
   {
     "path": "ops/log/ops_log_readme_v_3_1.md",

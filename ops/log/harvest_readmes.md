@@ -1,16 +1,3 @@
----
-CODE: OPS
-ID: harvest_readmes_v4
-VERSION: v4.0-2025-08-10
-ROUTE: ops/log/harvest_readmes.md
-CROSSREF:
-  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-AUTHOR: AingZ_Platform
-DATE: 2025-08-10
----
 # Harvest — Inventario
 
 - README.md | sha1:94b0825f8b34a740aa7b06bb751f887b1f1306f9 | fm:True
@@ -67,7 +54,7 @@ DATE: 2025-08-10
 - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md | sha1:b71487347b95a53f5e2bd04d8187489495e79f07 | fm:False
 - ops/BOOTSTRAP_V4_README.md | sha1:7156c215d7787901c5f56cad0fb18a7d28653d9c | fm:False
 - ops/bootstrap_v_4_readme.md | sha1:557c5da20d5c5ea6a5a1da25ff829d4d8fe541c3 | fm:True
-- ops/log/harvest_readmes.md | sha1:7d5f1396a5cc04659caaa9f835f823604d63938e | fm:False
+- ops/log/harvest_readmes.md | sha1:712edabc441cbd438718b8342bb72c49612adbe4 | fm:True
 - ops/log/ops_log_readme_v_3_1.md | sha1:4e886bb0bda911a4f8e58b39cff60604de07bfa5 | fm:True
 - ops/ops_readme_v_3_1.md | sha1:109d8921ca8c3ad4ec085b3aab554e7e9f9c4ed7 | fm:True
 - ops/pipelines/ops_pipelines_readme_v_3_1.md | sha1:6160d9a137b2f44d619cd4aac33957321591b69b | fm:True
@@ -87,14 +74,3 @@ DATE: 2025-08-10
 - snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md | sha1:8f9a5c6d5409bdcbe8682df70251f418b1a24805 | fm:True
 - snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md | sha1:bd897fbd79c5e6939e7aedf07a44010033eaec33 | fm:True
 - snapshots_ctx/snapshots_ctx_readme_v_3_1.md | sha1:e46a55b5ca0f8e16902e3485fedadd8cc6af7425 | fm:True
-
-## OutputTemplate
-```yaml
-CODE:
-ID:
-VERSION:
-ROUTE:
-CROSSREF:
-AUTHOR:
-DATE:
-```
