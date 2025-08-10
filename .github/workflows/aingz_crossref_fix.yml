@@ -1,0 +1,51 @@
+name: AingZ Crossref Fix
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: motivo
+        required: true
+        default: "crossref-fix"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  crossref:
+    runs-on: ubuntu-latest
+    steps:
+      - name: App token
+        id: app
+        uses: tibdex/github-app-token@v2
+        with:
+          app_id: ${{ secrets.APP_ID }}
+          installation_id: ${{ secrets.INSTALLATION_ID }}
+          private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ steps.app.outputs.token }}
+
+      - name: Run update_crossrefs.py
+        run: |
+          if [ -f ops/update_crossrefs.py ]; then
+            python ops/update_crossrefs.py || true
+          elif [ -f ops/scripts/run_codex_baseline_v4_check.py ]; then
+            # fallback o compatibilidad legacy
+            python ops/scripts/run_codex_baseline_v4_check.py || true
+          else
+            echo "No se encontró update_crossrefs.py; skip"
+          fi
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ steps.app.outputs.token }}
+          commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
+          branch: bot/aingz/crossref-${{ github.run_id }}
+          title: "Agent: ${{ github.event.inputs.reason }}"
+          body: "Actualización automática de referencias según ops/paths_cache.json."
+          base: main
+          delete-branch: true
