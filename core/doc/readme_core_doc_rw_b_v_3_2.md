@@ -1,19 +1,15 @@
 ---
-file: readme_core_doc_rw_b_v_3_2.md
-version: v3.2-2025-08-06
-status: active
-role: readme
-owner: AingZ_Platform · RwB
-crossref:
+CODE: CORE
+ID: readme_core_doc_rw_b_v_3_2_v4
+VERSION: v4.0-2025-08-10
+ROUTE: core/doc/readme_core_doc_rw_b_v_3_2.md
+CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-  - core/kns/glossary/rw_b_glosario_code_v_2_20250729.md
-  - core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
-  - ops/templates/template_readme_rw_b_v_4.md
-changelog:
-  - 2025-08-06: Consolidación árbol y README doc/ core v3.2, onboarding y compliance v3.2.
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
 # 📄 core/doc/ — Documentación técnica, onboarding y plantillas modelo (v3.2)
 
@@ -75,3 +71,13 @@ graph TD;
 
 **FIN README core/doc/ v3.2**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

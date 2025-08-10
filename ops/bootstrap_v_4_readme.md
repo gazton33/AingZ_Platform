@@ -1,3 +1,16 @@
+---
+CODE: OPS
+ID: bootstrap_v_4_readme_v4
+VERSION: v4.0-2025-08-10
+ROUTE: ops/bootstrap_v_4_readme.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
+---
 # Bootstrap V4 — Instrucciones rápidas
 
 ## Copiar archivos
@@ -17,5 +30,15 @@ Coloca estos archivos en la **raíz** del repo local, respetando las rutas:
 4) Pulsa **Commit to main** y luego **Push origin**.
 
 ## Ejecutar el workflow del Agent
-En GitHub (web) → **Actions → AingZ Agent PR → Run workflow**. Razón sugerida: `bootstrap`. 
+En GitHub (web) → **Actions → AingZ Agent PR → Run workflow**. Razón sugerida: `bootstrap`.
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

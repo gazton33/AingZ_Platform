@@ -1,13 +1,16 @@
 ---
-
-## file: README.md version: v3.1-2025-08-05 bucket: ops/log blueprint: ../../lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md status: active updated: 2025-08-05 role: documentation owner: AingZ_Platform · RwB
-
-# [RwB] ops/log/ — README (v3.1)
-
-> **Tagline:** Carpeta de logs y bitácoras operativas, registros automáticos/manuales y trazabilidad de todos los procesos críticos.
-
+CODE: OPS
+ID: ops_log_readme_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: ops/log/ops_log_readme_v_3_1.md
+CROSSREF:
+  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
+  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
+  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 ## Índice
 
 1. [Descripción General](#1-descripción-general)
@@ -121,3 +124,13 @@ triggers:
 
 **FIN README ops/log/ v3.1**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```

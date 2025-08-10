@@ -1,19 +1,16 @@
 ---
-file: readme_library_manuals_rw_b_v_3_1.md
-version: v3.1-2025-08-05
-status: active
-role: readme
-owner: AingZ_Platform · RwB
-crossref:
+CODE: LIBRA
+ID: readme_library_manuals_rw_b_v_3_1_v4
+VERSION: v4.0-2025-08-10
+ROUTE: library/manuals/readme_library_manuals_rw_b_v_3_1.md
+CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-  - core/kns/glossary/rw_b_glosario_code_v_2_20250729.md
-  - core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
-  - ops/templates/template_readme_rw_b_v_4.md
+AUTHOR: AingZ_Platform
+DATE: 2025-08-10
 ---
-
 # 📘 README — Subcarpeta `manuals/` (RwB v3.1)
 
 ## 1. Rol y propósito
@@ -48,3 +45,13 @@ Subcarpeta para almacenamiento y gestión de **manuales técnicos, guías y docu
 ---
 **FIN README — manuals/**
 
+## OutputTemplate
+```yaml
+CODE:
+ID:
+VERSION:
+ROUTE:
+CROSSREF:
+AUTHOR:
+DATE:
+```
