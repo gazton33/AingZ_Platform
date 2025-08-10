@@ -811,18 +811,10 @@
   },
   {
     "path": "ops/log/harvest_readmes.md",
-    "sha1": "d002fe73e3631e14aa924c890d166aacf5fdf462",
-    "bytes": 8770,
-    "has_front_matter": true,
-    "meta": {
-      "CODE": "OPS",
-      "ID": "harvest_readmes_v4",
-      "VERSION": "v4.0-2025-08-10",
-      "ROUTE": "/home/runner/work/AingZ_Platform/AingZ_Platform/ops/log/harvest_readmes.md",
-      "CROSSREF": "",
-      "AUTHOR": "AingZ_Platform",
-      "DATE": "2025-08-10"
-    }
+    "sha1": "dd6a19306f7c0dc2e2b079602c2426301ff398c3",
+    "bytes": 8261,
+    "has_front_matter": false,
+    "meta": {}
   },
   {
     "path": "ops/log/ops_log_readme_v_3_1.md",
