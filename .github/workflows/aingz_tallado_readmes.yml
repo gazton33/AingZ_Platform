@@ -15,29 +15,13 @@ jobs:
   tallado:
     runs-on: ubuntu-latest
     steps:
-      - name: App token
-        id: app
-        uses: tibdex/github-app-token@v2
+      - name: Run PR action
+        uses: ./.github/actions/aingz_pr_action
         with:
-          app_id: ${{ secrets.APP_ID }}
-          installation_id: ${{ secrets.INSTALLATION_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ steps.app.outputs.token }}
-
-      - name: Tallar READMEs (V4)
-        run: python ops/scripts/tallar_readmes.py
-
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ steps.app.outputs.token }}
+          reason: ${{ github.event.inputs.reason }}
+          branch-prefix: tallado
           commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
-          branch: bot/aingz/tallado-${{ github.run_id }}
-          title: "Agent: ${{ github.event.inputs.reason }}"
-          body: "Tallado automático de READMEs a formato V4 (front-matter + OutputTemplate + crossref desde paths_cache)."
-          base: main
-          delete-branch: true
+          pr-body: >
+            Tallado automático de READMEs a formato V4 (front-matter + OutputTemplate + crossref desde paths_cache).
+          script: |
+            python ops/scripts/tallar_readmes.py

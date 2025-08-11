@@ -15,39 +15,17 @@ jobs:
   agent-pr:
     runs-on: ubuntu-latest
     steps:
-      - name: Create App token
-        id: app-token
-        uses: tibdex/github-app-token@v2
+      - name: Run PR action
+        uses: ./.github/actions/aingz_pr_action
         with:
-          app_id: ${{ secrets.APP_ID }}
-          installation_id: ${{ secrets.INSTALLATION_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
-      - name: Checkout with app token
-        uses: actions/checkout@v4
-        with:
-          token: ${{ steps.app-token.outputs.token }}
-
-      - name: Make minimal change (heartbeat)
-        run: |
-          mkdir -p ops/log
-          echo "$(date -Is) | reason=${{ github.event.inputs.reason }}" >> ops/log/agent_runs.log
-
-      - name: Clean legacy workflows (safe)
-        run: |
-          # Duplicados/legacy que causan runs rojos
-          rm -f .github/workflows/aingz_agent_pr.yaml || true
-          rm -f .github/workflows/ci_audit.yaml || true
-          rm -f .github/workflows/baseline_check.yml || true
-          rm -f .github/workflows/tests.yml || true
-
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ steps.app-token.outputs.token }}
+          reason: ${{ github.event.inputs.reason }}
+          branch-prefix: agent
           commit-message: "AingZ Agent: ${{ github.event.inputs.reason }}"
-          branch: bot/aingz/${{ github.run_id }}
-          title: "Agent: ${{ github.event.inputs.reason }}"
-          body: "Limpieza de workflows legacy y duplicados (.yaml) + heartbeat."
-          base: main
-          delete-branch: true
+          pr-body: "Limpieza de workflows legacy y duplicados (.yaml) + heartbeat."
+          script: |
+            mkdir -p ops/log
+            echo "$(date -Is) | reason=${{ github.event.inputs.reason }}" >> ops/log/agent_runs.log
+            rm -f .github/workflows/aingz_agent_pr.yaml || true
+            rm -f .github/workflows/ci_audit.yaml || true
+            rm -f .github/workflows/baseline_check.yml || true
+            rm -f .github/workflows/tests.yml || true
