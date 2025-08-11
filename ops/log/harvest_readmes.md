@@ -1,19 +1,6 @@
----
-CODE: OPS
-ID: harvest_readmes_v4
-VERSION: v4.0-2025-08-10
-ROUTE: ops/log/harvest_readmes.md
-CROSSREF:
-  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-AUTHOR: AingZ_Platform
-DATE: 2025-08-10
----
 # Harvest — Inventario
 
-- README.md | sha1:db9399a1d4e78b2e7e7d8528e70b2e7f73d20a4e | fm:True
+- README.md | sha1:a6c3025fbc7e0045945f3583b345f10f42e556c9 | fm:True
 - core/data/dicts/readme_core_data_dicts_rw_b_v_3_2.md | sha1:732877516df64abd10037b59676cbf2cb7f0788d | fm:True
 - core/data/mplan/readme_core_data_mplan_rw_b_v_3_2.md | sha1:a13248af63e8967227a2a88e5d4a0b3d6aedbcd7 | fm:True
 - core/data/mtx/readme_core_data_mtx_rw_b_v_3_2.md | sha1:a44f63620a2d2756ea328678d2edd74694e377dd | fm:True
@@ -47,53 +34,45 @@ DATE: 2025-08-10
 - core/kns/readme_core_kns_rw_b_v_3_2.md | sha1:5f5d7295f26b9132e8d84c6e4b3c132162cec36f | fm:True
 - core/kns/triggers/readme_core_kns_triggers_rw_b_v_3_2.md | sha1:55408423c42af1e348f9d299bf9e2f1321378c64 | fm:True
 - core/readme_core_rw_b_v_3_2.md | sha1:a218cc581a3027c9838fe3ead145c8da2100b263 | fm:True
-- core/rulset/RULE_CODING_COMPLIANCE_V4.md | sha1:9901e745eaf3cbb813a485be5572544fa26f31c0 | fm:True
+- core/rulset/RULE_CODING_COMPLIANCE_V4.md | sha1:af26d773b1df79f55afb314e31fbbea1d715cc29 | fm:True
+- core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md | sha1:b0948c97de6634e56d40cbb62f24ec16e06662f2 | fm:True
 - core/wf/readme_core_wf_rw_b_v_3_2.md | sha1:78afe366e8d4823f3305f47dfe588625b17477ba | fm:True
-- library/books/readme_library_books_rw_b_v_3_1.md | sha1:6261ecae8ab81fa25bb53e33cdd506323beb7587 | fm:True
-- library/datasets/readme_library_datasets_rw_b_v_3_1.md | sha1:8766602f95fa7b7ef523e494d7cb66af091c989a | fm:True
-- library/licencias/readme_library_licencias_rw_b_v_3_1.md | sha1:f3aa2c0e1dd1f37d8992a7ade74e788df5c23686 | fm:True
-- library/manuals/readme_library_manuals_rw_b_v_3_1.md | sha1:aa37b3cd01af81da7b45f19e5df44fc8416e68ff | fm:True
-- library/normas/readme_library_normas_rw_b_v_3_1.md | sha1:3bf541c1d4021d49348c5001897af1ccb3221722 | fm:True
-- library/papers/readme_library_papers_rw_b_v_3_1.md | sha1:cc6e904d35d911cd7a40a3619cf6a3a540b4adf5 | fm:True
+- library/books/readme_library_books_rw_b_v_3_1.md | sha1:94287dda3ae8bcb4d50120c830a49d9b683b168d | fm:True
+- library/datasets/readme_library_datasets_rw_b_v_3_1.md | sha1:b0bc42c8242c9edcb2956c7149e0a227a88a267c | fm:True
+- library/intg/readme_library_intg_rw_b_v_3_1.md | sha1:5ec2ce28587758fa6ef58a4ba9198716d770a99c | fm:True
+- library/licencias/readme_library_licencias_rw_b_v_3_1.md | sha1:0c00ab14ddba111c1187f9cbf304ca942bf79b3b | fm:True
+- library/manuals/readme_library_manuals_rw_b_v_3_1.md | sha1:fb50837e3e53f59d75ed4aa6c56a3ca112dbd2f7 | fm:True
+- library/normas/readme_library_normas_rw_b_v_3_1.md | sha1:2631414e77835d3d61955abd1cf2c578bc2edc56 | fm:True
+- library/papers/readme_library_papers_rw_b_v_3_1.md | sha1:7c56f98227e9dacb7c7927956f40b0efc12ac551 | fm:True
 - library/readme_library_rw_b_v_3_1.md | sha1:80d39b5487ff3ad868931da84b8fea52e4c35b3d | fm:True
-- lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md | sha1:737eeae288eba31057f20edd7bcf25b2e4a57e03 | fm:True
-- lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md | sha1:d59f336d5311f022b320ea95e794b5c47e9b0d74 | fm:True
-- lifecycle/lifecycle_readme_v_3_1.md | sha1:a2f08581fe8e54922545e6371ac5dcd876455b86 | fm:True
-- lifecycle/mig/lifecycle_mig_readme_v_3_1.md | sha1:b50f62464bb58894b8a4601b7868fe99022bd9d5 | fm:True
+- lifecycle/bk_temp/lifecycle_bk_temp_readme_v_3_1.md | sha1:9ccd49ab5637f682b28088dfe7c0502c5f06bc2d | fm:True
+- lifecycle/legacy/lifecycle_legacy_readme_v_3_1.md | sha1:1231b6400f27a8c46db4c4b5e2ea236843d9c06f | fm:True
+- lifecycle/lifecycle_readme_v_3_1.md | sha1:8069eb5212f6fd8054c315f5a5422a98c7aa8f19 | fm:True
+- lifecycle/mig/lifecycle_mig_readme_v_3_1.md | sha1:8ab6fda7265e5c01f1a7e6cc41f9c123725877d7 | fm:True
 - lifecycle/temp/informe_reforzar_readme_crossref_v_4_20250807.md | sha1:3d2091c6e5d24d0a82afab062b10a880c04dbbbd | fm:True
-- lifecycle/temp/lifecycle_temp_readme_v_3_1.md | sha1:1366302c2e01ab4faad4b2bdf60abd0b12cb7178 | fm:True
+- lifecycle/temp/lifecycle_temp_readme_v_3_1.md | sha1:f0a3cbf569056fa4638d188e72b3daf5e26b4cd8 | fm:True
 - lifecycle/temp/prompt_codex_baseline_v_4_check.md | sha1:bc5f6b12d1f4148e85365c94a20fa93658fb078d | fm:True
 - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md | sha1:b1da1a8ebfea29b62d3483843449eaf79646e13e | fm:True
 - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md | sha1:f683624069cf5689d86018e7ed6f32d3ca39a536 | fm:True
 - ops/bootstrap_v_4_readme.md | sha1:f683d5990c631a7fd24000e021b2121afb25ace0 | fm:True
-- ops/log/harvest_readmes.md | sha1:dd6a19306f7c0dc2e2b079602c2426301ff398c3 | fm:False
+- ops/log/harvest_readmes.md | sha1:d44d49b2a13dd2c22d2038e1178ffc637c58189a | fm:True
 - ops/log/ops_log_readme_v_3_1.md | sha1:da654bd5eb4e0e1ffccf55cf41082b4842e611e0 | fm:True
-- ops/ops_readme_v_3_1.md | sha1:076bc10730595459698df990547ab0b05ae7ee00 | fm:True
-- ops/pipelines/ops_pipelines_readme_v_3_1.md | sha1:c26a69167e377d674c71221ee2cad07027f5fdcf | fm:True
+- ops/log/purge/readme_ops_log_purge_v_4.md | sha1:8bb3830d1d725463e69481c9b890b848491d07a7 | fm:True
+- ops/ops_readme_v_3_1.md | sha1:4d40e5be76e1f8ac45c057fd9874efc5ee173df6 | fm:True
+- ops/pipelines/ops_pipelines_readme_v_3_1.md | sha1:3c17fdd1626753cf0e999256b854bc2548bafc69 | fm:True
 - ops/scripts/ops_scripts_readme_v_3_1.md | sha1:337386647b51c12009d5006fdca0e62aaca7dc6a | fm:True
 - ops/templates/template_readme_rw_b_v_3_1.md | sha1:dc2e8741ab201a779bd52814713a45c574d51b16 | fm:True
 - ops/templates/template_readme_rw_b_v_4.md | sha1:5f3fbee445cce75cde4aeb715f83a2951b9c198b | fm:True
-- ops/test/ops_test_readme_v_3_1.md | sha1:0649f0941ecfdba9a285eefecc2b4d92968cc14e | fm:True
-- packages/packages_readme_v_3_1.md | sha1:ca25a9bb71e416f45ac5d54efa3046daeb62ce45 | fm:True
-- packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md | sha1:652b37faa0d2237504c7706e143ed8e3a6f9e62d | fm:True
-- packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md | sha1:551c76cc0d73f77d35370024686516a9c250af40 | fm:True
-- packages/vds_core/templates/vds_core_templates_readme_v_3_1.md | sha1:beb8111a66b4714ebbf1425202c7056497f1ff90 | fm:True
-- packages/vds_core/tests/vds_core_tests_readme_v_3_1.md | sha1:2770720974f398dbb2a9e03eb2462c96fe809038 | fm:True
-- packages/vds_core/vds_core_readme_v_3_1.md | sha1:3721a188dfa9297e3f09e7cf12cfefd7af8bdb35 | fm:True
-- snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md | sha1:482d66579bece45f7a52e75e274512d75dfb517e | fm:True
-- snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md | sha1:b8d592e77c9bd69a7fcb4a0fd3e4f515d50410ca | fm:True
-- snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md | sha1:304f0455aa84fe355cfeef16490a468f548698b0 | fm:True
-- snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md | sha1:5e13ee4572194ff195707dabb10a93a2154c7207 | fm:True
-- snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md | sha1:1c2a105dc1fabd277ed2fed3a49ab8621bf8c79e | fm:True
-- snapshots_ctx/snapshots_ctx_readme_v_3_1.md | sha1:59cc8171d929890d638b9e043c8b4d4b171e296f | fm:True
-
-## OutputTemplate
-```yaml
-CODE:
-ID:
-VERSION:
-ROUTE:
-CROSSREF:
-AUTHOR:
-DATE:
-```
+- ops/test/ops_test_readme_v_3_1.md | sha1:b33ec4cce9003e877b4061aafd1ae272effca82b | fm:True
+- packages/packages_readme_v_3_1.md | sha1:61eddc2bc9041264e30c9c978ab55f9a90962808 | fm:True
+- packages/vds_core/onboarding/vds_core_onboarding_readme_v_3_1.md | sha1:84b7a9cfd41fdaabdee93dd24805d76165661bab | fm:True
+- packages/vds_core/plugins/vds_core_plugins_readme_v_3_1.md | sha1:60fa279f750a03c84647c3214291f7416ed0ec4f | fm:True
+- packages/vds_core/templates/vds_core_templates_readme_v_3_1.md | sha1:7b2875a21341132d755ff0b51d696289282a993b | fm:True
+- packages/vds_core/tests/vds_core_tests_readme_v_3_1.md | sha1:f0385a5291326aefb1aed46fe51ee97cd3b72995 | fm:True
+- packages/vds_core/vds_core_readme_v_3_1.md | sha1:1b6e07a4a56668eb5c3ca4c3b84a5bfa2c96be34 | fm:True
+- snapshots_ctx/codex/snapshots_ctx_codex_readme_v_3_1.md | sha1:d87cdc1247d066384b28670f92b39fd311ad3f26 | fm:True
+- snapshots_ctx/common/snapshots_ctx_common_readme_v_3_1.md | sha1:86af29743bd7682a46f144ec560625632ce8d592 | fm:True
+- snapshots_ctx/gpt_4_1/snapshots_ctx_gpt_4_1_readme_v_3_1.md | sha1:69d774c4e782d9122239d3b7f88f34072661449e | fm:True
+- snapshots_ctx/gpt_4o/snapshots_ctx_gpt_4_o_readme_v_3_1.md | sha1:14f40e29d06459b6bcb24b1096433ad66ed0b7f5 | fm:True
+- snapshots_ctx/gpt_o3/snapshots_ctx_gpt_o_3_readme_v_3_1.md | sha1:abc6e394247a285ee3dba5c50efb01ccc2a4b887 | fm:True
+- snapshots_ctx/snapshots_ctx_readme_v_3_1.md | sha1:4341605a549d84b8bb22f8d738b10c15da6e024b | fm:True
