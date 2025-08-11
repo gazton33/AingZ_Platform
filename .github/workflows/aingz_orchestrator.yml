@@ -62,12 +62,12 @@ jobs:
         with:
           script: |
             const { owner, repo } = context.repo;
-            const reqFixed = [
+            const reqFixed = Array.from(new Set([
               '.github/workflows/aingz_tallado_readmes.yml',
               '.github/workflows/aingz_crossref_fix.yml',
               '.github/workflows/aingz_harvest_knowledge.yml',
               '.github/workflows/aingz_incoherence_report.yml'
-            ];
+            ]));
             const purgeCandidates = [
               '.github/workflows/aingz_purge_fixes_v2.yml',
             ];
@@ -104,13 +104,13 @@ jobs:
             const reason = process.env.ORCH_REASON || 'orchestrate-v4';
             const purgePath = ${{ toJSON(needs.preflight.outputs.purge_path) }}; // path resultante del preflight
 
-            const chain = [
+            const chain = Array.from(new Set([
               '.github/workflows/aingz_tallado_readmes.yml',
               '.github/workflows/aingz_crossref_fix.yml',
               '.github/workflows/aingz_harvest_knowledge.yml',
               '.github/workflows/aingz_incoherence_report.yml',
               (purgePath || '').replace(/^"|"$/g, '')
-            ];
+            ].filter(Boolean)));
 
             async function findWorkflowIdByPath(path) {
               const { data } = await github.rest.actions.listRepoWorkflows({ owner, repo });
