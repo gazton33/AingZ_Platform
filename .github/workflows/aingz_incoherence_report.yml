@@ -15,39 +15,15 @@ jobs:
   report:
     runs-on: ubuntu-latest
     steps:
-      - name: App token
-        id: app
-        uses: tibdex/github-app-token@v2
+      - name: Run PR action
+        uses: ./.github/actions/aingz_pr_action
         with:
-          app_id: ${{ secrets.APP_ID }}
-          installation_id: ${{ secrets.INSTALLATION_ID }}
-          private_key: ${{ secrets.APP_PRIVATE_KEY }}
-
-      - name: Checkout
-        uses: actions/checkout@v4
-        with:
-          token: ${{ steps.app.outputs.token }}
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.11'
-
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install pyyaml
-
-      - name: Build incoherence report (with severity)
-        run: python ops/scripts/incoherence_report.py
-      - name: Create PR
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ steps.app.outputs.token }}
+          reason: ${{ github.event.inputs.reason }}
+          branch-prefix: incoherences
           commit-message: "AingZ Agent: incoherences report"
-          branch: bot/aingz/incoherences-${{ github.run_id }}
-          title: "Agent: incoherences report"
-          body: "Generación automática de `ops/reports/incoherencias.md` (con severidad) + `ops/reports/incoherencias.json` para chequeo integral V4 (no-loss)."
-          base: main
-          delete-branch: true
+          pr-body: >
+            Generación automática de `ops/reports/incoherencias.md` (con severidad) + `ops/reports/incoherencias.json` para chequeo integral V4 (no-loss).
+          script: |
+            python -m pip install --upgrade pip
+            pip install pyyaml
+            python ops/scripts/incoherence_report.py

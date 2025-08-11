@@ -1,0 +1,52 @@
+name: 'AingZ PR Action'
+description: 'Generate app token, checkout, run commands, and create a pull request.'
+inputs:
+  reason:
+    description: 'Reason for the pull request'
+    required: true
+  branch-prefix:
+    description: 'Prefix for the branch'
+    required: true
+  commit-message:
+    description: 'Commit message for the PR'
+    required: true
+  pr-body:
+    description: 'Body content for the pull request'
+    required: false
+    default: ''
+  script:
+    description: 'Shell commands to run after checkout'
+    required: false
+    default: ''
+runs:
+  using: 'composite'
+  steps:
+    - name: Create App token
+      id: app-token
+      uses: tibdex/github-app-token@v2
+      with:
+        app_id: ${{ secrets.APP_ID }}
+        installation_id: ${{ secrets.INSTALLATION_ID }}
+        private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ steps.app-token.outputs.token }}
+
+    - name: Run custom script
+      if: ${{ inputs.script != '' }}
+      shell: bash
+      run: |
+        ${{ inputs.script }}
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ steps.app-token.outputs.token }}
+        commit-message: ${{ inputs.commit-message }}
+        branch: bot/aingz/${{ inputs.branch-prefix }}-${{ github.run_id }}
+        title: "Agent: ${{ inputs.reason }}"
+        body: ${{ inputs.pr-body }}
+        base: main
+        delete-branch: true
