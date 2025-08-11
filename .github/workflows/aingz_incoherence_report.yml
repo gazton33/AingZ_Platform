@@ -1,4 +1,4 @@
-name: AingZ · Incoherence Report V4
+name: "AingZ · Incoherence Report V4"
 on:
   workflow_dispatch: {}
 permissions:
@@ -9,6 +9,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Ensure baseline (fallback)
+        shell: bash
+        run: |
+          if [ ! -f ops/baseline.csv ] && [ ! -f baseline.csv ]; then
+            echo "baseline.csv not found → running litw_sweep (read-only)"
+            python ops/scripts/litw_sweep.py || python3 ops/scripts/litw_sweep.py || true
+          fi
 
       - name: Generate Incoherence Report (read-only)
         shell: bash
