@@ -1,89 +1,49 @@
 ---
-CODE: DOC
-ID: RULE_CODING_COMPLIANCE_V4_v4
-VERSION: v4.0-2025-08-10
-ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/rulset/RULE_CODING_COMPLIANCE_V4.md
-CROSSREF:
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-  - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
-  - core/rulset/RULE_NAMING_METADATA_CROSSREF_V1.md
-AUTHOR: AingZ_Platform
-DATE: 2025-08-10
+file: core/rulset/RULE_CODING_COMPLIANCE_V4.md
+code: RULE
+name: RuleCodingComplianceV4
+version: v4.0
+date: 2025-08-11
+owner: AingZ_Platform · RwB
+status: active
+xrf:
+  blueprint: RwB_Blueprint_V4
+  mplan: RwB_MasterPlan_V4
+  glossary: CODE_Glossary_v2
+  dictionary: CODE_Triggers_v2
+triggers: [TRG_CONSOLIDATE_TL, TRG_AUDIT_TL]
+chg: CHG_main.md#2025-08-11-rule-coding-v4
+chk: CHK_root.md#2025-08-11-rule-coding-v4
 ---
-# RULE_CODING_COMPLIANCE_V4
 
-## Estilo
-- Sigue PEP8 y PEP257.
-- Indenta con cuatro espacios y evita tabuladores.
-- Máximo 88 caracteres por línea y una línea en blanco al final del archivo.
+# Rule — Coding Compliance V4
 
-## Naming
-- Funciones y variables: `snake_case`.
-- Clases y excepciones: `PascalCase`.
-- Constantes y flags: `UPPER_SNAKE_CASE`.
-- Archivos: `lower_snake_case` y extensión acorde (`.py`, `.md`).
+## PreCheck (obligatorio)
+- CODE: `^[A-Z]{1,5}$` y definido en Glosario.
+- Ruta válida en Blueprint; `file:` coincide con ruta real.
+- `xrf` completo (blueprint/mplan/glossary/dictionary).
+- `triggers` incluye `TRG_CONSOLIDATE_TL`.
+- **OutputTemplate** integrado.
 
-### Ejemplo
-```python
-# Conformidad
-def calculate_offset(value: int) -> int:
-    """Devuelve el offset."""
-    return value + 1
+## PostCheck
+- `status: OK` en OutputTemplate.
+- Registro `CHG/CHK/CHKP` actualizado (fecha ISO)
+- Evidencias publicadas (artefacto/commit/Notion).
 
-# Incumplimiento
-def CalculateOffset( value ):
-return value+1  # sin indentación y estilo incorrecto
-```
+## Gates de error
+- `BAD_CODE_FORMAT`, `UNKNOWN_CODE`, `ROUTE_OUT_OF_BLUEPRINT`, `MISSING_XRF`, `MISSING_TRIGGERS`, `NO_OUTPUTTEMPLATE`.
 
-## Metadatos YAML
-- Todo documento debe iniciar con un bloque YAML con claves `CODE`, `ID`, `VERSION`,
-  `ROUTE`, `CROSSREF`, `AUTHOR` y `DATE`.
-- `CROSSREF` lista rutas relativas existentes al _Blueprint_, _Master Plan_,
-  _Prompt Codex_ y reglas relacionadas.
-- Valida metadatos con `python ops/validate_metadata.py <ruta>`.
-
-### Ejemplo
-```yaml
-# Conformidad
-CODE: DOC
-ID: example_v1
-VERSION: v1.0-2025-08-10
-ROUTE: path/to/doc.md
-CROSSREF:
-  - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
-AUTHOR: AingZ_Platform
-DATE: 2025-08-10
-
-# Incumplimiento (faltan claves y rutas inválidas)
-CODE: DOC
-CROSSREF:
-  - missing/path.md
-```
-
-## Crossrefs
-- Toda ruta en `CROSSREF` debe existir y actualizarse al mover archivos.
-- Utiliza `python ops/update_crossrefs.py` para regenerar referencias cuando sea necesario.
-
-### Ejemplo
-```yaml
-# Conformidad
-CROSSREF:
-  - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-
-# Incumplimiento
-CROSSREF:
-  - lifecycle/temp/inexistente.md  # archivo no encontrado
-```
-
-## OutputTemplate
-```yaml
-CODE:
-ID:
-VERSION:
-ROUTE:
-CROSSREF:
-AUTHOR:
-DATE:
-```
+---
+# OutputTemplate (obligatorio)
+rule_coding_compliance_v4:
+  status: OK
+  id_asset: RULE_CODING_V4_2025-08-11T00:00:00Z
+  generated_by: ai
+  created_at: 2025-08-11T00:00:00Z
+  checks:
+    precheck: required
+    postcheck: required
+  log:
+    - step1: declare_rules
+    - step2: enforce_pre
+    - step3: enforce_post

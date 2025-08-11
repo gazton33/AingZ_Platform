@@ -1,0 +1,37 @@
+# file: .github/workflows/aingz_litw_baseline_v4.yml
+name: AingZ · LITW Baseline V4
+on:
+  workflow_dispatch: {}
+permissions:
+  contents: read
+  actions: read
+jobs:
+  litw:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+      - name: Run LITW sweep (read-only)
+        run: |
+          python ops/scripts/litw_sweep.py || python3 ops/scripts/litw_sweep.py || true
+          # Copia opcional si el script genera baseline en root
+          if [ -f baseline.csv ]; then cp baseline.csv ops/baseline.csv; fi
+          if [ -f route_index.json ]; then cp route_index.json ops/route_index.json; fi
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: litw_baseline_outputs
+          path: |
+            baseline.csv
+            ops/baseline.csv
+            route_index.json
+            ops/route_index.json
