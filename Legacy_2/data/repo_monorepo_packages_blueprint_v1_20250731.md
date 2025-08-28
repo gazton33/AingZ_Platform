@@ -28,7 +28,7 @@ Repo Root /
 │       ├── src/
 │       ├── tests/
 │       └── docs/
-├── WF/                        # Workflows globales
+├── Legacy_3/wf/                        # Workflows globales
 ├── DOC/                       # Blueprint, onboarding, manuales
 ├── KNS/                       # Knowledge base compartida
 ├── SCR/                       # Scripts de soporte
@@ -62,7 +62,7 @@ packages/pkg_nombre/
 ## 4. Ciclo de vida y flujos
 
 1. **Desarrollo local** en `packages/pkg_x/src` con seguimiento de tests.
-2. **Auditoría ligera** mediante scripts en `WF/` y registros en `LOG/`.
+2. **Auditoría ligera** mediante scripts en `Legacy_3/wf/` y registros en `LOG/`.
 3. **Consolidación** del package: cuando se estabiliza, se integran snapshots en `bk_temp/`.
 4. **Migración** o integración mayor se gestiona desde `MIG/` siguiendo el DirArchPlan v5.
 

@@ -14,7 +14,7 @@
 
 ## 2. PRINCIPIOS Y REGLAS BASE
 
-- Arquitectura Monorepo Modular: cada package independiente, buckets y recursos compartidos (`WF/`, `DOC/`, `KNS/`, `SCR/`, `DATA/`, `LOG/`, `bk_temp/`, `TMP/`, `MIG/`).
+- Arquitectura Monorepo Modular: cada package independiente, buckets y recursos compartidos (`Legacy_3/wf/`, `DOC/`, `KNS/`, `SCR/`, `DATA/`, `LOG/`, `bk_temp/`, `TMP/`, `MIG/`).
 - Naming obligatorio `SRC·STG·ROLE` (ver Matrix y glosario).
 - Flujos: LEGACY→STAGING→ACTIVO/CORE→bk_temp/ELIMINACIÓN.
 - Prohibido citar legacy en activos, consolidar y eliminar residuos tras merge.
@@ -27,7 +27,7 @@
 ```text
 Repo Root /
 ├── packages/                  # Paquetes independientes (src/tests/docs)
-├── WF/                       # Workflows globales
+├── Legacy_3/wf/                       # Workflows globales
 ├── DOC/                      # Documentación, blueprints, onboarding
 │   ├── MPLN/                 # MasterPlan & Blueprints
 │   └── ONBRD/                # Onboarding
