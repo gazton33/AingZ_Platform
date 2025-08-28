@@ -20,7 +20,6 @@ Coloca estos archivos en la **raíz** del repo local, respetando las rutas:
 - core/rulset/RULE_CODING_COMPLIANCE_V4.md
 - ops/templates/template_readme_rw_b_v_4.md
 - ops/hooks/pre-commit
-- ops/hooks/pre-push
 - ops/paths_cache.json
 
 ## Commit con GitHub Desktop
