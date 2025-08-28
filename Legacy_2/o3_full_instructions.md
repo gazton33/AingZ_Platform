@@ -11,17 +11,17 @@ This document consolidates important instructions, context, and file snapshots f
 ---
 
 ## 1. Archivos clave
-- **README principal** (`readme.md`): describe la estructura general, reglas de operación y comandos básicos de instalación y pruebas.
+- **README principal** (`legacy_5/README.md`): describe la estructura general, reglas de operación y comandos básicos de instalación y pruebas.
  - **Master Plan** (`mpln_master_plan_aingz_rw_b_v_20250730_v_4_activo.md`): hoja de ruta y pilares de evolución.
  - **Blueprint de directorio** (`dir_arch_plan_v_5_integracion_matrix.md`): mapea los buckets principales y sus roles.
- - **Glosario CODE v2** (`kns/glossary/rw_b_glosario_code_v_2_20250729.md`): normativa de códigos y jerarquía de nombres.
-- **Diccionario de Triggers v2** (`rw_b_diccionario_code_triggers_v_2_20250729.md`): lookup rápido para prompts y scripts.
+ - **Glosario CODE v2** (`legacy_5/rw_b_glosario_code_v_2_20250729.md`): normativa de códigos y jerarquía de nombres.
+- **Diccionario de Triggers v2** (`legacy_5/rw_b_diccionario_code_triggers_v_2_20250729.md`): lookup rápido para prompts y scripts.
 - **Workflow de inicio** (`Legacy_3/wf/rw_b_wf_inicio_repo_check_v_1_20250731.md`): rutina de control al comenzar cada sesión.
 - **Checklist de avances** (`rw_b_checklist_avances_v_1_20250730.md`): lista de tareas ejecutadas y pendientes.
 - **Registro de trazabilidad** (`registro_trazabilidad_total.md`): tabla de mapeo legacy → destino.
 - **Scripts** (`scripts/mapping.py`, `scripts/class_scan.py`): utilidades para mapeo y búsqueda.
 - **Pruebas** (`tests/`): unit tests de ambos scripts.
-- **Guía de bienvenida** (`onbrd_welcome_onboarding_gz_rw_b_v_20250725.md`).
+- **Guía de bienvenida** (`legacy_5/onbrd_welcome_onboarding_gz_rw_b_v_20250725.md`).
 - **Reglas de naming** (`template/naming/`).
 
 ## 2. Estructura de carpetas (según DIR_ARCH_PLAN v5)
