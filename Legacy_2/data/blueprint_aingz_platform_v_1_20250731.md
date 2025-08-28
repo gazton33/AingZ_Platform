@@ -30,7 +30,7 @@
 ```text
 AingZ_Platform/
 ├── packages/                   # Paquetes independientes (src/tests/docs/workflows)
-├── WF/                        # Workflows globales y templates
+├── Legacy_3/wf/                        # Workflows globales y templates
 ├── DOC/                       # Documentación, blueprints, onboarding, onboarding apps
 │   ├── MPLN/                  # MasterPlan & Blueprints
 │   └── ONBRD/                 # Onboarding humano y apps
