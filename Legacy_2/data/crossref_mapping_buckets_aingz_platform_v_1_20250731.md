@@ -28,7 +28,7 @@
 | DATA/           | CORE/, TMP/, MIG/     | -                       | -                       | Sí              |
 | SCR/            | CORE/, TMP/, MIG/     | -                       | -                       | Sí              |
 | DOC/            | CORE/                 | -                       | -                       | Sí              |
-| WF/             | CORE/, TMP/, MIG/     | -                       | -                       | Sí              |
+| Legacy_3/wf/             | CORE/, TMP/, MIG/     | -                       | -                       | Sí              |
 | CONNECTORS/     | Personal, pipelines   | APPS/, PIPELINES/       | -                       | Sí              |
 | APPS/           | Personal, pipelines   | CONNECTORS/, PIPELINES/ | -                       | Sí              |
 | PIPELINES/      | Personal, scripts     | CONNECTORS/, APPS/      | -                       | Sí              |
@@ -46,7 +46,7 @@
 - **Referencias laterales:** [./BUCKET_LATERAL1/], [./BUCKET_LATERAL2/]
 - **Buckets destino típicos:** [../DESTINO/]
 - **Crossref central:** [Mapa Global](../DOC/MPLN/crossref_global.md)
-- **Flujos/Pipelines relevantes:** [../WF/pipeline_BUCKET.md], [../PIPELINES/pipeline_BUCKET.md]
+- **Flujos/Pipelines relevantes:** [../Legacy_3/wf/pipeline_BUCKET.md], [../PIPELINES/pipeline_BUCKET.md]
 ```
 
 - Agregar tablas Mermaid (subdir) y links Obsidian si se usa como vault (ej: `[[CORE/]]` para cross-link directo).

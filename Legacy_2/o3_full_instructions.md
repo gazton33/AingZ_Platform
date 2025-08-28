@@ -16,7 +16,7 @@ This document consolidates important instructions, context, and file snapshots f
  - **Blueprint de directorio** (`dir_arch_plan_v_5_integracion_matrix.md`): mapea los buckets principales y sus roles.
  - **Glosario CODE v2** (`kns/glossary/rw_b_glosario_code_v_2_20250729.md`): normativa de códigos y jerarquía de nombres.
 - **Diccionario de Triggers v2** (`rw_b_diccionario_code_triggers_v_2_20250729.md`): lookup rápido para prompts y scripts.
-- **Workflow de inicio** (`WF/rw_b_wf_inicio_repo_check_v_1_20250731.md`): rutina de control al comenzar cada sesión.
+- **Workflow de inicio** (`Legacy_3/wf/rw_b_wf_inicio_repo_check_v_1_20250731.md`): rutina de control al comenzar cada sesión.
 - **Checklist de avances** (`rw_b_checklist_avances_v_1_20250730.md`): lista de tareas ejecutadas y pendientes.
 - **Registro de trazabilidad** (`registro_trazabilidad_total.md`): tabla de mapeo legacy → destino.
 - **Scripts** (`scripts/mapping.py`, `scripts/class_scan.py`): utilidades para mapeo y búsqueda.
@@ -27,7 +27,7 @@ This document consolidates important instructions, context, and file snapshots f
 ## 2. Estructura de carpetas (según DIR_ARCH_PLAN v5)
 ```
 / (root)
-├── WF/
+├── Legacy_3/wf/
 ├── DOC/
 ├── KNS/
 ├── AUDIT_LIGHT/
@@ -64,7 +64,7 @@ This document consolidates important instructions, context, and file snapshots f
 8. `registro_trazabilidad_total.md`
 9. `scripts/mapping.py`
 10. `scripts/class_scan.py`
-11. `WF/rw_b_wf_inicio_repo_check_v_1_20250731.md`
+11. `Legacy_3/wf/rw_b_wf_inicio_repo_check_v_1_20250731.md`
 12. `requirements.txt`
 
 ## 6. Notas finales
@@ -103,7 +103,7 @@ Este README centraliza las referencias, estructura, reglas y logs para operar el
 ---
 
 ## 2. Estructura general del repositorio (RawBase 2025)
-- **WF/** – Workflows activos, logs y bitácora de versiones (`chg_log_wf_purgatorio_20250725.md`)
+- **Legacy_3/wf/** – Workflows activos, logs y bitácora de versiones (`chg_log_wf_purgatorio_20250725.md`)
  - **kns/** – Glosario, contextos y lessons learned (`rw_b_glosario_code_v_2_20250729.md`)
 - **Learn/** – Memoria viva incremental
 - **template/** – Plantillas de naming y README
@@ -118,7 +118,7 @@ Este README centraliza las referencias, estructura, reglas y logs para operar el
 
 ## 3. Reglas y metodología de operación
 - Seguir siempre el glosario core (`kns/glossary/rw_b_glosario_code_v_2_20250729.md`) y plantilla de naming (`template/naming/rw_b_naming_template_v_1.md`).
-- Usar el plan de directorio (`rwb_repo_directory_plan_v_1.md`), workflows (`WF/`), logs y bitácoras como referencia operativa.
+- Usar el plan de directorio (`rwb_repo_directory_plan_v_1.md`), workflows (`Legacy_3/wf/`), logs y bitácoras como referencia operativa.
 - Toda acción (movimiento, auditoría, integración) debe registrar logs en el archivo o carpeta correspondiente y actualizar el changelog maestro.
 - Checklist de cobertura, versionado y referenciación cruzada antes de cada merge, integración o purga.
 - Nunca borrar outputs legacy sin respaldo y registro en logs.
@@ -174,7 +174,7 @@ python scripts/mapping.py
 
 ## 9. Control inicial del repositorio
 Para un chequeo rápido de cambios y referencias cruzadas al comenzar una sesión,
-revisa el workflow [`WF_INICIO_REPO_CHECK`](WF/rw_b_wf_inicio_repo_check_v_1_20250731.md).
+revisa el workflow [`WF_INICIO_REPO_CHECK`](Legacy_3/wf/rw_b_wf_inicio_repo_check_v_1_20250731.md).
 
 ---
 
@@ -214,7 +214,7 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](
 
 ## 🗂️ Integración y dependencias
 - Todos los cambios y nuevos buckets deben referenciarse en [CHGLOG_MAIN_RWB v5](chglog_main_rwb_v_5_20250730_actv.md).
-- El onboarding inicial y workflows activos residen en `/DOC/ONBRD/` y `/WF/`.
+- El onboarding inicial y workflows activos residen en `/DOC/ONBRD/` y `/Legacy_3/wf/`.
 - Los procedimientos de consolidación, migración y auditoría se ejecutan secuencialmente según Matrix v1.
 
 ---
@@ -270,7 +270,7 @@ Este proyecto se distribuye bajo la licencia MIT. Consulta el archivo [LICENSE](
 
 ```text
 Repo Root /
-├── WF/                    # Workflows activos (D01)
+├── Legacy_3/wf/                    # Workflows activos (D01)
 │   └── PURG/              # Workflows legacy
 ├── DOC/                   # Documentación, blueprints, onboarding
 │   ├── MPLN/              # MasterPlan & Blueprints (D03)
@@ -663,7 +663,7 @@ Se complementa con el README consolidado, el MasterPlan (MPLN) y el glosario viv
 ## 2. Primeros pasos y estructura base
 1. Leer el README consolidado (`README_CONSOLIDADO_AINGZ_MAIN_20250725.md`) y el MasterPlan (`MPLN_MASTER_PLAN_AINGZ_RW_B_v_20250725.md`).
 2. Familiarizarse con la estructura de carpetas y naming (ver glosario `rw_b_glosario_code_v_1_core.md`).
-3. Revisar los workflows activos (`WF/`), templates de naming y logs/changelogs de cada ciclo.
+3. Revisar los workflows activos (`Legacy_3/wf/`), templates de naming y logs/changelogs de cada ciclo.
 4. Para onboarding IA/agente: sincronizar glosario, mapeos y reglas del pipeline operativo.
 
 ---
@@ -680,7 +680,7 @@ Se complementa con el README consolidado, el MasterPlan (MPLN) y el glosario viv
 - **Glosario:** `KNOWLEDGES/rw_b_glosario_code_v_1_core.md`
 - **README consolidado:** `README_CONSOLIDADO_AINGZ_MAIN_20250725.md`
 - **MasterPlan:** `MPLN_MASTER_PLAN_AINGZ_RW_B_v_20250725.md`
-- **Workflow auditoría:** `WF/rw_b_wf_auditoria_legacy_v_2_20250724.md` y `WF/rw_b_wf_consolidacion_files_activos_v2_20250725.md`
+- **Workflow auditoría:** `Legacy_3/wf/rw_b_wf_auditoria_legacy_v_3_20250725.md`
 - **Templates y naming:** `template/`, `template/naming/`
 - **Logs/changelog:** `LOG/`, `KNOWLEDGES/LEARN/`
 
@@ -955,7 +955,7 @@ if __name__ == '__main__':
     main()
 ```
 
-### WF/rw_b_wf_inicio_repo_check_v_1_20250731.md
+### Legacy_3/wf/rw_b_wf_inicio_repo_check_v_1_20250731.md
 ```markdown
 # 🔧 [RwB] WF_INICIO_REPO_CHECK — v1 (2025-07-31)
 
