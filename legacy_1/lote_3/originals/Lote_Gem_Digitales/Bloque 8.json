@@ -1,0 +1,65 @@
+ Bloque 8: Sistema de Conocimiento, Modelo Mental y Métodos de Trabajo
+ {
+  "modelo_mental": {
+    "enfoque_sistemico": true,
+    "descripcion": "Pensamiento transversal que integra disciplinas técnicas, saberes populares y experiencia práctica. Fuerte tendencia a observar procesos en términos de sistemas vivos, interdependientes y adaptativos.",
+    "modo_operativo": "Iterativo, exploratorio, fundamentado en aprendizaje continuo y aplicación práctica. Trabajo por ciclos de observación, prototipado, prueba y ajuste, con documentación activa."
+  },
+  "sistema_de_conocimiento": {
+    "fuentes": [
+      "Ingeniería mecánica aplicada",
+      "Instalaciones sustentables off-grid",
+      "Botánica, ecología y saberes ancestrales",
+      "Cartografía y análisis territorial",
+      "Sistemas de información geográfica (SIG)",
+      "Diseño de viviendas bioclimáticas",
+      "Permacultura y agroecología",
+      "Inteligencia artificial y automatización"
+    ],
+    "principios_metodologicos": [
+      "Aprendizaje autodidacta estructurado",
+      "Integración teórico-práctica",
+      "Prototipado vivencial y validación empírica",
+      "Documentación como herramienta cognitiva",
+      "Transmisión pedagógica como consolidación del saber"
+    ],
+    "herramientas_mentales": [
+      "Mapas conceptuales y planimetría",
+      "Curvas de nivel y SIG como lenguaje de diseño",
+      "Bases de datos vivas",
+      "Programación como lógica de modelado",
+      "Metodologías ágiles personalizadas"
+    ]
+  },
+  "forma_de_trabajo": {
+    "modo": "Autónomo, con capacidad de liderar equipos multidisciplinarios",
+    "preferencias": [
+      "Proyectos con impacto real",
+      "Espacios que integren saber técnico y humano",
+      "Condiciones para experimentar y adaptar soluciones"
+    ],
+    "rol_frecuente": [
+      "Facilitador de procesos de aprendizaje",
+      "Diseñador técnico integral",
+      "Referente en soluciones sustentables personalizadas"
+    ]
+  },
+  "experiencias_aplicadas": [
+    {
+      "proyecto": "Diseño y construcción de vivienda bioclimática",
+      "descripcion": "Diseño integral con Alejandra. Construcción experimental con calefacción solar, radiadores, sistemas de captación de agua y arquitectura adaptada al entorno."
+    },
+    {
+      "proyecto": "Instalaciones energéticas off-grid",
+      "descripcion": "Diseño e instalación de tres sistemas solares independientes en el campo, incluyendo inversores, baterías, paneles, y pozos con bombas de agua. Sistemas entre 3.000 y 5.500 Wh."
+    },
+    {
+      "proyecto": "Dirección técnica y pedagógica en proyecto Aeroterra-Santa Fe",
+      "descripcion": "Liderazgo de un equipo de 20 personas en Punilla para tareas de relevamiento satelital con ArcGIS. Capacitación, diseño de workflows, y supervisión durante 3-4 meses para Rentas de Santa Fe. Trabajo exitoso de integración tecnológica y humana."
+    }
+  ],
+  "preguntas_para_validar": [
+    "¿Querés incluir algún marco teórico formal que te represente (cibernética, teoría de sistemas, permacultura como diseño regenerativo, etc.)?",
+    "¿Deseás detallar métodos de toma de decisiones o modelos de aprendizaje personal que usás habitualmente?"
+  ]
+}

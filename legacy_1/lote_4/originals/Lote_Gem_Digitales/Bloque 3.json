@@ -1,0 +1,74 @@
+ Bloque 3: Experiencia Profesional y Emprendimientos
+{
+  "experiencia_profesional": [
+    {
+      "empresa": "Cosmos Ingeniería",
+      "rol": "Fundador y Propietario",
+      "inicio": "2013-09",
+      "fin": null,
+      "ubicacion": "San Esteban, Córdoba",
+      "descripcion": "Consultoría en ingeniería sostenible. Ingeniero mecánico y electricista matriculado. Liderazgo en proyectos de eficiencia energética, energías renovables, dirección técnica y ejecución. Rol asimilable a Project Manager."
+    },
+    {
+      "empresa": "Óleos del Cosmos",
+      "rol": "Fundador y Destilador Principal",
+      "inicio": "2015-08",
+      "fin": null,
+      "ubicacion": "San Esteban, Córdoba",
+      "descripcion": "Gestión integral de emprendimiento de destilación artesanal. Dirección de procesos productivos, logística, comercialización y promoción científica de productos botánicos."
+    },
+    {
+      "empresa": "Aeroterra",
+      "rol": "Ingeniero / Líder de Proyecto",
+      "inicio": "2023-05",
+      "fin": "2024-01",
+      "ubicacion": "Buenos Aires y alrededores",
+      "descripcion": "Diseño y coordinación de soluciones basadas en tecnologías ESRI. Rol activo en gestión y seguimiento de proyectos."
+    },
+    {
+      "empresa": "SPR Sistemas de Dirección Hidráulica",
+      "rol": "Ingeniero de Control y Aseguramiento de Calidad / Coordinador Técnico",
+      "inicio": "2022-12",
+      "fin": "2023-04",
+      "ubicacion": "Morón, Buenos Aires",
+      "descripcion": "Gestión y asesoría en procesos de calidad industrial. Supervisión técnica de procesos y productos."
+    },
+    {
+      "empresa": "Worklift S.A.",
+      "rol": "Inspector Externo Independiente",
+      "inicio": "2020-01",
+      "fin": null,
+      "ubicacion": "Argentina",
+      "descripcion": "Inspección de equipos y maquinaria de izaje: grúas, retroexcavadoras, puentes grúa, etc."
+    }
+  ],
+  "emprendimientos_adicionales": [
+    {
+      "nombre": "AINGZ",
+      "rol": "Fundador y Desarrollador",
+      "inicio": "2024",
+      "fin": null,
+      "descripcion": "Proyecto de integración de Inteligencia Artificial, ingeniería y programación. Desarrollo de soluciones personalizadas, automatización, análisis de datos y formación autodidacta en Python y uso avanzado de modelos IA."
+    },
+    {
+      "nombre": "No Babylon Board",
+      "rol": "Creador",
+      "inicio": "2011",
+      "fin": "2013",
+      "descripcion": "Diseño y fabricación de longboards. Uso de materiales compuestos, diseño 3D, mecanizado y fundición."
+    }
+  ],
+  "actividades_divulgacion": [
+    {
+      "organizacion": "Cooperativa Viarava",
+      "inicio": "2014",
+      "fin": "2023",
+      "descripcion": "Cursos sobre energías renovables, permacultura y tecnología. Participación en programa radial semanal de divulgación científica."
+    }
+  ],
+  "preguntas_para_validar": [
+    "¿Querés que detallemos más el enfoque de AINGZ, como áreas de aplicación o tipo de soluciones que estás desarrollando?",
+    "¿Hay otros roles o funciones recientes que quieras agregar?",
+    "¿Querés destacar logros concretos como certificaciones, publicaciones o proyectos implementados dentro de estas experiencias?"
+  ]
+}

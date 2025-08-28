@@ -1,0 +1,33 @@
+Bloque 1: Identidad y Perfil Profesional
+{
+  "identidad": {
+    "nombre_completo": "Gastón Zelechower",
+    "fecha_nacimiento": "1986-10-17",
+    "direccion": "Costanera Sur S/N, San Ignacio, San Esteban, Punilla, Córdoba, Argentina",
+    "cuit_cuil": "20-32670383-5",
+    "email_principal": "g.zelechower@gmail.com",
+    "emails_secundarios": [],
+    "telefono": "0116-970-1331",
+    "ubicacion_geografica": "Argentina",
+    "codigo_postal": "5182"
+  },
+  "perfil_profesional": {
+    "titulo": "Ingeniero Mecánico",
+    "resumen_profesional": "Ingeniero Mecánico con experiencia en ingeniería sustentable, energías renovables, destilación de aceites esenciales, y divulgación técnica. Fundador de Cosmos Ingeniería y Óleos del Cosmos, con experiencia en empresas como Aeroterra, Worklift y SPR. Fuerte compromiso con el desarrollo sostenible y la innovación técnica.",
+    "industria": "Servicios de Ingeniería",
+    "competencias_destacadas": [
+      "Climatización",
+      "Lectura de planos",
+      "Gestión de proyectos",
+      "Ingeniería de proyectos",
+      "Coordinación de proyectos"
+    ]
+  },
+  "presencia_digital": {
+    "linkedin": "https://www.linkedin.com/in/gastonzelechower"
+  },
+  "preguntas_para_validar": [
+    "¿Querés agregar alguna red social profesional adicional en el futuro?",
+    "¿Cuando completemos el resto del perfil, analizamos si vale sumar un subtítulo profesional?"
+  ]
+}

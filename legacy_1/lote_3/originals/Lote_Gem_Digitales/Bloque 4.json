@@ -1,0 +1,41 @@
+Bloque 4: Redes, Presencia Pública y Visibilidad Profesional
+{
+  "presencia_publica": {
+    "linkedin": {
+      "url": "https://www.linkedin.com/in/gastonzelechower",
+      "contactos": "160+",
+      "activo": true,
+      "descripcion": "Perfil profesional actualizado con foco en ingeniería, sustentabilidad y tecnologías emergentes."
+    }
+  },
+  "documentos_publicos": [
+    {
+      "titulo": "Dispositivo de Aperturas Seguras",
+      "formato": "PDF",
+      "fuente": "Gobierno de Mendoza",
+      "descripcion": "Documento técnico sobre sistema de seguridad en minería con participación técnica de Gastón Zelechower.",
+      "url": "https://www.mendoza.gov.ar/wp-content/uploads/sites/34/2018/03/Exp-N%C2%BA1169-Cuerpo-III-Fs-398-574.pdf",
+      "anio": 2018
+    }
+  ],
+  "participacion_radiocut": [
+    {
+      "plataforma": "RadioCut",
+      "programa": "Columna de Desarrollo Sustentable",
+      "emisor": "Una Radio Muchas Voces (Capilla del Monte)",
+      "detalles": "Recortes semanales de divulgación científica sobre sustentabilidad, disponibles en formato podcast en RadioCut.",
+      "url": "https://radiocut.fm/search/?q=Zelechower"
+    }
+  ],
+  "proyecto_podcast": {
+    "titulo_provisional": "Columna de Desarrollo Sustentable",
+    "plataforma_destino": "Spotify (propuesto)",
+    "estado": "Planeado",
+    "descripcion": "Conversaciones y audios de divulgación científica para convertir en podcast."
+  },
+  "preguntas_para_validar": [
+    "¿Querés incluir otros documentos o artículos en los que participaste como autor, colaborador o citado?",
+    "¿Tenés interés en continuar con la publicación del podcast en Spotify o explorar otros medios?",
+    "¿Querés centralizar tu presencia en un sitio web personal o blog para unificar todo?"
+  ]
+}
