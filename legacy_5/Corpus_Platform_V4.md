@@ -4083,7 +4083,7 @@ DATE: 2025-08-10
 2. **Crossref & Naming Check**: Añadir mandato de ejecutar script `TRG_AUDIT_TL` al cerrar cualquier PR.
 3. **Ruleset sólido**: Crear archivo `core/rulset/RULE_CODING_COMPLIANCE_V4.md` que contenga:
    - Checklist de validación (naming, ruta, metadatos YAML, OutputTemplate, crossref).
-   - Hooks Git (`pre-commit`, `pre-push`) que llamen al prompt Codex + pruebas unitarias.
+   - Hook Git (`pre-commit`) que llame al prompt Codex + pruebas unitarias.
 4. **Compatibilidad GitHub & Codex**:
    - Definir *Workflow GitHub Actions* que instale Python 3.11, ejecute prompt Codex en modo *dry‑run*, compare árbol vs baseline y falle si hay discrepancias.
    - Configurar *CI* para correr unit tests en `ops/tests/` y triggers de auditoría.
@@ -4103,7 +4103,7 @@ MANDATES:
   - Crossrefs obligatorios a Blueprint, MasterPlan, Prompt Codex.
   - Ningún cambio se puede *mergear* si `TRG_AUDIT_TL` ≥ 1 fallo.
   - GitHub Action `ci_audit.yml` debe ejecutarse y aprobar.
-  - Hooks locales (`pre‑commit`, `pre‑push`) ejecutan prompt Codex en modo *scan*.
+  - Hook local (`pre-commit`) ejecuta prompt Codex en modo *scan*.
 TRIGGERS_REQUIRED:
   - TRG_CONSOLIDATE_TL
   - TRG_AUDIT_TL
@@ -4130,7 +4130,7 @@ TRIGGERS_REQUIRED:
 | **GitHub** | Workflow CI con Python 3.11 + prompt Codex *dry‑run* + UnitTests | `.github/workflows/ci_audit.yml` |
 | **Codex**  | Prompt obligatorio (`Prompt_Codex_Baseline_V4_Check.md`) + re‑scan tree | (en README main) |
 | **Python** | Versión mínima 3.11, `requirements.txt` actualizado, virtualenv reproducible | `ops/requirements/` |
-| **Local hooks** | `pre‑commit`, `pre‑push` que invocan prompt Codex + `pytest` | `ops/hooks/` |
+| **Hook local** | `pre-commit` que invoca prompt Codex + `pytest` | `ops/hooks/` |
 
 ---
 
@@ -4634,7 +4634,6 @@ Coloca estos archivos en la **raíz** del repo local, respetando las rutas:
 - core/rulset/RULE_CODING_COMPLIANCE_V4.md
 - ops/templates/template_readme_rw_b_v_4.md
 - ops/hooks/pre-commit
-- ops/hooks/pre-push
 - ops/paths_cache.json
 
 ## Commit con GitHub Desktop
