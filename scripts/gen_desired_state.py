@@ -18,30 +18,43 @@ import argparse
 import re
 from typing import Iterable, List
 
-TREE_CHARS = "│└├─"  # characters used by ``tree`` style drawings
-
 
 def parse_ascii_tree(lines: Iterable[str]) -> List[str]:
-    """Return a list of directory paths parsed from an ASCII tree."""
+    """Return a list of directory paths parsed from an ASCII tree.
+
+    The function supports ``tree``-style drawings that may include branch
+    characters (``├``, ``└``) and inline annotations like ``[CODE]`` or
+    descriptions after the directory name.
+    """
+
     dirs: List[str] = []
     stack: List[str] = []
     for raw in lines:
-        if not raw.strip():
+        line = raw.rstrip()
+        if not line:
             continue
-        # Remove tree drawing characters
-        cleaned = re.sub(f"^[{TREE_CHARS} ]+", "", raw.rstrip())
-        if not cleaned:
-            continue
-        indent = len(raw) - len(raw.lstrip())
-        level = indent // 4  # assume four spaces per level
-        stack = stack[:level]
-        name = cleaned.strip()
-        # Heuristic: ignore entries that look like files
+
+        if "├" in line or "└" in line:
+            # Determine level from the prefix before the branch character.
+            idx = line.find("├") if "├" in line else line.find("└")
+            prefix = line[:idx]
+            level = len(prefix) // 4 + 1
+            cleaned = line[idx + 3 :].strip()
+        else:
+            # Root line (no branch characters)
+            level = 0
+            cleaned = line.strip()
+
+        name = cleaned.split()[0]
         if "." in name:
+            # Skip entries that look like files
             continue
+
+        stack = stack[:level]
         path = "/".join(stack + [name])
         dirs.append(path)
         stack.append(name)
+
     return dirs
 
 

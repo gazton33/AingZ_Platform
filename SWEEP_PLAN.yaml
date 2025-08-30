@@ -1,0 +1,12 @@
+remove:
+  - V5
+  - core
+  - core/doc
+  - core/doc/workbench
+  - legacy
+  - legacy/data oficial
+  - legacy/data oficial/Docs_OpenAi
+  - legacy/data oficial/Help_OpenAi
+  - legacy/rulset
+  - legacy/templates
+  - legacy/templates/3
