@@ -7,6 +7,6 @@ remove:
   - legacy/data oficial
   - legacy/data oficial/Docs_OpenAi
   - legacy/data oficial/Help_OpenAi
-  - legacy/rulset
+  - ruleset/legacy
   - legacy/templates
   - legacy/templates/3

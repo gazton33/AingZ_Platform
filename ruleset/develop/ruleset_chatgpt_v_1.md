@@ -1,5 +1,5 @@
 ---
-file: main/data_base/core_actv/data/develop/ruleset/ruleset_chatgpt_v_1.md code: RSCGP name: RulesetChatGPT version: v1.0.0 date: 2025-08-24 owner: "AingZ_Platform · RwB" status: draft
+file: ruleset/develop/ruleset_chatgpt_v_1.md code: RSCGP name: RulesetChatGPT version: v1.0.0 date: 2025-08-24 owner: "AingZ_Platform · RwB" status: draft
 ---
 
 # Ruleset ChatGPT Platform

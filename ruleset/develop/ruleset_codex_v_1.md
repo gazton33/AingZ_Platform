@@ -1,5 +1,5 @@
 ---
-file: main/data_base/core_actv/data/develop/ruleset/ruleset_codex_v_1.md code: RSCDX name: RulesetCodex version: v1.0.0 date: 2025-08-24 owner: "AingZ_Platform · RwB" status: draft
+file: ruleset/develop/ruleset_codex_v_1.md code: RSCDX name: RulesetCodex version: v1.0.0 date: 2025-08-24 owner: "AingZ_Platform · RwB" status: draft
 ---
 
 # Ruleset Codex Platform

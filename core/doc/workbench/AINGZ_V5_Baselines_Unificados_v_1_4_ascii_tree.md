@@ -20,6 +20,7 @@ checks:
 ```text
 main/data_base
 ├── dir_tree_v_1_4_baseline_locked.md
-├── glossary_baseline_v_1_locked.md
+└── glossary_baseline_v_1_locked.md
+ruleset
 └── ruleset_baseline_v_1_locked.md
 ```

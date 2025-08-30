@@ -29,7 +29,6 @@ create:
   - main/data_base/core_actv/data/ai_learn/training
   - main/data_base/core_actv/data/ai_learn/feedback
   - main/data_base/core_actv/data/develop
-  - main/data_base/core_actv/data/develop/ruleset
   - main/data_base/core_actv/data/develop/config
   - main/data_base/core_actv/data/develop/setup
   - main/data_base/core_actv/data/develop/customization

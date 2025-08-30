@@ -31,7 +31,7 @@ AingZ_Platform/
 │   │   ├── data/
 │   │   │   ├── semantics/        → [glossary, dict_trigger, dict_code, dict_app, dict_prompt, ing_prompt, vocabulary]
 │   │   │   ├── ai_learn/         → [learn, eval, insi, tune, shot, rel, trn, feedback]
-│   │   │   ├── develop/          → [rulset, config, setup, custom, spec, preference, conectors, orquestador]
+│   │   │   ├── develop/          → [ruleset, config, setup, custom, spec, preference, conectors, orquestador]
 │   │   │   ├── out_template/
 │   │   │   │   ├── mtx/          → [matrix, tabla, ficha, mapping, relation, validation, versus]
 │   │   │   │   ├── docs/         → [pendiente]
@@ -71,7 +71,7 @@ AingZ_Platform/
 - `main/data_base/core_actv/docs/onboard/` → notas, mensajes, observaciones · *notes, messages, observations*
 - `main/data_base/core_actv/data/semantics/` → glossary, dict\_trigger, dict\_code, dict\_app, dict\_prompt, ing\_prompt, vocabulary · *glossary, trigger\_dict, code\_dict, app\_dict, prompt\_dict, ingest\_prompts, vocabulary*
 - `main/data_base/core_actv/data/ai_learn/` → learn, eval, insi, tune, shot, rel, trn, feedback · *learning, evaluation, insights, fine\_tuning, few\_shot, relevance, training, feedback*
-- `main/data_base/core_actv/data/develop/` → rulset, config, setup, custom, spec, preference, conectors, orquestador · *ruleset, config, setup, customization, specs, preferences, connectors, orchestrator*
+- `main/data_base/core_actv/data/develop/` → ruleset, config, setup, custom, spec, preference, conectors, orquestador · *ruleset, config, setup, customization, specs, preferences, connectors, orchestrator*
 - `main/data_base/core_actv/data/out_template/mtx/` → matrix, tabla, ficha, mapping, relation, validation, versus · *matrix, table, record\_sheet, mapping, relation, validation, comparison*
 - `main/data_base/core_actv/data/out_template/docs/` → **(pendiente)**
 - `main/data_base/core_actv/data/out_template/workspaces/` → **(pendiente)**
@@ -92,7 +92,7 @@ AingZ_Platform/
 - docs/video/: `presentaciones` (corrige `presentac`)→`presentations` ✅
 - data/semantics/: `ing_prompt`→`ingest_prompts` ✅
 - data/ai\_learn/: `insi`→`insights`, `rel`→`relevance`, `trn`→`training`, `tune`→`fine_tuning`, `shot`→`few_shot` ✅
-- data/develop/: `rulset`→`ruleset`, `custom`→`customization`, `spec`→`specs`, `preference`→`preferences`, `conectors`→`connectors`, `orquestador`→`orchestrator` ✅
+- data/develop/: `ruleset`→`ruleset`, `custom`→`customization`, `spec`→`specs`, `preference`→`preferences`, `conectors`→`connectors`, `orquestador`→`orchestrator` ✅
 - guides/planin/mpln/: `update_objective`→`objective_update`, `validacion`→`validation` ✅
 - guides/planin/brainstorm\_crtv/: normaliza `nodo`→`node`, `nodo_changes`→`node_changes`, typo "Barinstorm"→`Brainstorm` ✅
 - log/: `auditlog`→`audit_log`, `validationlog`→`validation_log` ✅
