@@ -1,5 +1,5 @@
 ---
-file: ruleset/legacy/RULE_CODING_COMPLIANCE_V4.md
+file: legacy/ruleset/RULE_CODING_COMPLIANCE_V4.md
 code: RULE
 name: RuleCodingComplianceV4
 version: v4.0

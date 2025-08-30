@@ -2,9 +2,9 @@
 CODE: DOC
 ID: RULE_NAMING_METADATA_CROSSREF_V1
 VERSION: v1.0-2025-08-10
-ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ruleset/legacy/RULE_NAMING_METADATA_CROSSREF_V1.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/legacy/ruleset/RULE_NAMING_METADATA_CROSSREF_V1.md
 CROSSREF:
-  - ruleset/legacy/RULE_CODING_COMPLIANCE_V4.md
+  - legacy/ruleset/RULE_CODING_COMPLIANCE_V4.md
   - README.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-10
@@ -62,7 +62,7 @@ ROUTE: relative/path.md
 - Evitar URLs externas o rutas rotas.
 
 **Conforme**
-- `CROSSREF: [README.md, ruleset/legacy/RULE_CODING_COMPLIANCE_V4.md]`
+- `CROSSREF: [README.md, legacy/ruleset/RULE_CODING_COMPLIANCE_V4.md]`
 
 **No Conforme**
 - `CROSSREF: [docs/old_readme.md, http://externo.com/doc.md]`

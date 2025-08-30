@@ -2,20 +2,20 @@
 CODE: CORE
 ID: readme_core_data_ruleset_rw_b_v_3_2_v4
 VERSION: v4.0-2025-08-10
-ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/ruleset/legacy/readme_core_data_ruleset_rw_b_v_3_2.md
+ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/legacy/ruleset/readme_core_data_ruleset_rw_b_v_3_2.md
 CROSSREF:
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
-  - ruleset/legacy/RULE_CODING_COMPLIANCE_V4.md
+  - legacy/ruleset/RULE_CODING_COMPLIANCE_V4.md
 AUTHOR: AingZ_Platform
 DATE: 2025-08-10
 ---
-# 🔧 ruleset/legacy/ — Rulesets, Normas y Políticas Universales (v3.2)
+# 🔧 legacy/ruleset/ — Rulesets, Normas y Políticas Universales (v3.2)
 
 ## 1. Descripción, función, objetivos y contexto
 
-La carpeta `ruleset/legacy/` centraliza **todos los rulesets, normas, políticas y marcos regulatorios** que rigen la plataforma AingZ/RwB.
+La carpeta `legacy/ruleset/` centraliza **todos los rulesets, normas, políticas y marcos regulatorios** que rigen la plataforma AingZ/RwB.
 
 ### Funciones principales:
 
@@ -66,7 +66,7 @@ graph TD;
 
 ---
 
-**FIN README ruleset/legacy/ v3.2**
+**FIN README legacy/ruleset/ v3.2**
 
 ## OutputTemplate
 ```yaml
