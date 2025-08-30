@@ -16,6 +16,9 @@ checks: [no_file_refs, wikilinks_only, router_chain_enforced]
 - 02 — RULESET::Router (RREAL)
 - 03 — PIPE::Registry (PIPLT)
 - 04 — QA Lite + CHG/ADR
+- 05 — Master Plan Ops Package v4
+- 06 — Master Plan Ops Package v0
+- 07 — Roadmap Glosario Full V5 (Fase 2)
 
 ---
 file: coverage.report
@@ -238,6 +241,51 @@ adr_log:
   created: 0
   note: "Sin cambio de alcance."
 ```
+
+---
+file: ops.pkg_aingz_v4.masterplan
+code: MPLN4
+name: MasterPlan_OpsPackage_V4
+version: v4.0
+date: 2025-08-12
+owner: AingZ_Platform · RwB
+status: reference
+refs: [DIR::RULE]
+checks: [wikilinks_only]
+---
+# Master Plan — Ops Package v4
+- Documento: ops_packages_pkg_aingz_v_4.md (legacy)
+- Cumplimiento regido por [[DIR::RULE]].
+
+---
+file: ops.pkg_aingz_v0.masterplan
+code: MPLN0
+name: MasterPlan_OpsPackage_V0
+version: v0.1
+date: 2025-08-12
+owner: AingZ_Platform · RwB
+status: reference
+refs: [DIR::RULE]
+checks: [wikilinks_only]
+---
+# Master Plan — Ops Package v0
+- Documento: ops_packages_pkg_aingz_v_0.md (legacy)
+- Cumplimiento regido por [[DIR::RULE]].
+
+---
+file: roadmap.glosario_full_v5_fase2
+code: RMAPV5F2
+name: Roadmap_GlosarioFullV5_Fase2
+version: v0.1
+date: 2025-08-15
+owner: AingZ_Platform · RwB
+status: draft
+refs: [DIR::RULE]
+checks: [wikilinks_only]
+---
+# Roadmap — Glosario Full V5 (Fase 2)
+- Documento: aing_z_v_5_roadmap_glosario_full_barrido_adjuntos_fase_2.md (legacy)
+- Alineado con [[DIR::RULE]].
 
 ---
 OutputTemplate:
