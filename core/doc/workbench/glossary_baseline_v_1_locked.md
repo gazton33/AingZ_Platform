@@ -1,6 +1,6 @@
 ---
 
-file: core/doc/workbench/AINGZ\_V5\_Glossary\_Baseline\_v1\_locked.md code: GBL name: GlossaryBaselineV1 version: v1.0.0 date: 2025-08-18 owner: AingZ\_Platform · RwB status: locked referencias:
+file: core/doc/workbench/glossary_baseline_v_1_locked.md code: GBL name: GlossaryBaselineV1 version: v1.0.0 date: 2025-08-18 owner: AingZ\_Platform · RwB status: locked referencias:
 
 - GREAL (GlossaryRealV1)
 - GTBL (Glossary\_Template\_Baseline\_v1.1\_Locked)
@@ -54,7 +54,7 @@ output_example:
   baseline_id: BL-2025-08-18-Glossary-v1.0.0
   created_at: 2025-08-18T00:00:00-03:00
   result:
-    - files_frozen: [core/doc/workbench/AINGZ_V5_Glossary_Baseline_v1_locked.md]
+    - files_frozen: [core/doc/workbench/glossary_baseline_v_1_locked.md]
   log:
     - step1: qa_pass
     - step2: checkpoint

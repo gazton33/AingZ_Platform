@@ -1,6 +1,6 @@
 ---
 
-file: core/doc/workbench/AINGZ\_V5\_DirTree\_v1\_4\_baseline\_locked.md code: ARBBL name: DirTreeV14BaselineLocked version: v1.4.2 date: 2025-08-18 owner: AingZ\_Platform · RwB status: locked referencias: [DirTreeV14Aligned, aing\_z\_v\_5\_dir\_tree\_v\_1.md] triggers: [TRG\_BASELINE\_LOCK] cambios:
+file: core/doc/workbench/dir_tree_v_1_4_baseline_locked.md code: ARBBL name: DirTreeV14BaselineLocked version: v1.4.2 date: 2025-08-18 owner: AingZ\_Platform · RwB status: locked referencias: [DirTreeV14Aligned, aing\_z\_v\_5\_dir\_tree\_v\_1.md] triggers: [TRG\_BASELINE\_LOCK] cambios:
 
 - 2025-08-18: Freeze de la vista alineada con notas y códigos. checks:
 - Vista ASCII con columnas fijas
@@ -102,7 +102,7 @@ output_example:
   baseline_id: BL-2025-08-18-DirTree-v1.4.2
   created_at: 2025-08-18T00:00:00-03:00
   result:
-    - files_frozen: [core/doc/workbench/AINGZ_V5_DirTree_v1_4_baseline_locked.md]
+    - files_frozen: [core/doc/workbench/dir_tree_v_1_4_baseline_locked.md]
   log:
     - step1: qa_pass
     - step2: checkpoint
