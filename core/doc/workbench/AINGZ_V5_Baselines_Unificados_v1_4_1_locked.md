@@ -22,7 +22,7 @@ checks:
 **Baseline-ID**: BL-2025-08-19-Baselines-v1.4.1  
 **DirTree**: `main/data_base/dir_tree_v_1_4_baseline_locked.md`  
 **Glosario**: `main/data_base/glossary_baseline_v_1_locked.md`  
-**Ruleset**: `main/data_base/ruleset_baseline_v_1_locked.md`
+**Ruleset**: `ruleset/ruleset_baseline_v_1_locked.md`
 
 > Artefacto congelado que referencia los baselines finales del repositorio. Cualquier modificación requiere nueva revisión y lock.
 
@@ -30,7 +30,7 @@ checks:
 
 - [DirTree v1.4.2](../../../main/data_base/dir_tree_v_1_4_baseline_locked.md)
 - [Glosario v1.0.0](../../../main/data_base/glossary_baseline_v_1_locked.md)
-- [Ruleset v1.0.0](../../../main/data_base/ruleset_baseline_v_1_locked.md)
+- [Ruleset v1.0.0](../../../ruleset/ruleset_baseline_v_1_locked.md)
 
 ## OutputTemplate
 
@@ -42,7 +42,7 @@ output_example:
   result:
     dir_tree: main/data_base/dir_tree_v_1_4_baseline_locked.md
     glossary: main/data_base/glossary_baseline_v_1_locked.md
-    ruleset: main/data_base/ruleset_baseline_v_1_locked.md
+    ruleset: ruleset/ruleset_baseline_v_1_locked.md
   log:
     - step1: qa_pass
     - step2: checkpoint

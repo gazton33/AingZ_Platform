@@ -4,7 +4,7 @@
 
 # WF\_ARCH\_CREATE\_V4 — Workflow para crear una **Arquitectura Base** (agentes/IA, 1 dev)
 
-> **Objetivo**: Instanciar una **arquitectura de software** coherente con la **MTX\_Arch\_Patterns\_V4** (patrones + SOLID) y con el **rulset V4**. Produce el **paquete de archivos** (blueprint, masterplan, roadmap, ruleset, checklist, configs, setups) listo para versionar.
+> **Objetivo**: Instanciar una **arquitectura de software** coherente con la **MTX\_Arch\_Patterns\_V4** (patrones + SOLID) y con el **ruleset V4**. Produce el **paquete de archivos** (blueprint, masterplan, roadmap, ruleset, checklist, configs, setups) listo para versionar.
 
 ## 1) Alcance y premisas
 

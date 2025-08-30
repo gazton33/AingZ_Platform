@@ -4,7 +4,7 @@ ID: rw_b_diccionario_code_triggers_v_2_20250729_v4
 VERSION: v4.0-2025-08-10
 ROUTE: /home/runner/work/AingZ_Platform/AingZ_Platform/core/data/dicts/rw_b_diccionario_code_triggers_v_2_20250729.md
 CROSSREF:
-  - core/rulset/RULE_CODING_COMPLIANCE_V4.md
+  - ruleset/legacy/RULE_CODING_COMPLIANCE_V4.md
   - lifecycle/temp/prompt_codex_baseline_v_4_check.md
   - lifecycle/temp/rw_b_blueprint_v_4_extendido_2025_08_06.md
   - lifecycle/temp/rw_b_master_plan_v_4_extendido_2025_08_06.md

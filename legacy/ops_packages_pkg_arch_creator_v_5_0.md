@@ -149,7 +149,7 @@ chk: CHK_root.md#wf_arch_create_v5_0
 ---
 # WF_ARCH_CREATE_V5_0 — Crear Arquitectura Base (agentes/IA, 1 dev)
 
-> **Propósito**: instanciar una arquitectura desde la **MTX V5.0** y el **rulset** del paquete, generando **todos los artefactos** (blueprint/mplan/roadmap/rules/checklist/configs/setup/adr) con rutas correctas y metadatos.
+> **Propósito**: instanciar una arquitectura desde la **MTX V5.0** y el **ruleset** del paquete, generando **todos los artefactos** (blueprint/mplan/roadmap/rules/checklist/configs/setup/adr) con rutas correctas y metadatos.
 
 ## 1) Gates y entradas
 - **VERSION‑GATE (0‑fail)**: ¿Trabajo nuevo o migración?

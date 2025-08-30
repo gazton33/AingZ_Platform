@@ -1,6 +1,6 @@
 ---
 
-## file: ops/templates/readme/README\_TEMPLATE\_V5\_1.md code: RDM name: ReadmeTemplateV5 version: v5.1 date: 2025-08-14 owner: AingZ\_Platform · RwB status: draft xrf: blueprint: BLP\_* mplan: MPLN** roadmap: RDM** rules: - RULES** - core/rulset/RULE\_NAMING\_METADATA\_CROSSREF\_V1.md checklist: CHK** adr: ADR\_0001** cfg: CFG**.yaml triggers: [TRG\_CONSOLIDATE\_TL, TRG\_QA\_GATES, TRG\_AUDIT\_LEGACY, TRG\_PURGE\_AI] chg: CHG\_main.md#readme** chk: CHK\_root.md#readme*\_
+## file: ops/templates/readme/README\_TEMPLATE\_V5\_1.md code: RDM name: ReadmeTemplateV5 version: v5.1 date: 2025-08-14 owner: AingZ\_Platform · RwB status: draft xrf: blueprint: BLP\_* mplan: MPLN** roadmap: RDM** rules: - RULES** - ruleset/legacy/RULE\_NAMING\_METADATA\_CROSSREF\_V1.md checklist: CHK** adr: ADR\_0001** cfg: CFG**.yaml triggers: [TRG\_CONSOLIDATE\_TL, TRG\_QA\_GATES, TRG\_AUDIT\_LEGACY, TRG\_PURGE\_AI] chg: CHG\_main.md#readme** chk: CHK\_root.md#readme*\_
 
 # &#x20;— README ()
 

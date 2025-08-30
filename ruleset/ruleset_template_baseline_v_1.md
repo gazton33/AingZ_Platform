@@ -1,6 +1,6 @@
 ---
 
-file: templates/\_baselines/ruleset/Ruleset\_Template\_Baseline\_v1\_1\_locked.md code: RSTBL name: RulesetTemplateBaselineV1\_1 version: v1.1.0 date: 2025-08-18 owner: AingZ\_Platform · RwB status: locked referencias: [RST11, DTT11, BAT11, PIPLT, PCTRL] triggers: [TRG\_BASELINE\_LOCK, TRG\_RULESET\_ROUTER] cambios:
+file: ruleset/ruleset_template_baseline_v_1.md code: RSTBL name: RulesetTemplateBaselineV1_1 version: v1.1.0 date: 2025-08-18 owner: AingZ_Platform · RwB status: locked referencias: [RST11, DTT11, BAT11, PIPLT, PCTRL] triggers: [TRG_BASELINE_LOCK, TRG_RULESET_ROUTER] cambios:
 
 - 2025-08-18: Congelada la plantilla de router de Ruleset. checks:
 - goto sólo `DIR::`
