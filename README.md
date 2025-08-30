@@ -1,23 +1,54 @@
 ---
-file: README.md code: RDMN name: ReadmeMain version: v5.0.0 date: 2025-08-24 owner: "AingZ_Platform · RwB" status: wip
+file: README.md
+code: RDMN
+name: ReadmeMain
+version: v5.0.0
+date: 2025-08-24
+owner: AingZ_Platform · RwB
+status: locked
+referencias: [RMTPL, DTT11, RST11, PIPLT, PCTRL]
+triggers: [TRG_BASELINE_LOCK, TRG_README_ENTRY]
+cambios:
+- 2025-08-24: Alineación con plantilla bloqueada.
+checks:
+- Sin instrucciones operativas
+- Enlaces sólo a `DIR::`
 ---
 
-# AingZ Platform – Arquitectura V5
+# README — Entrypoint (Template Baseline v1 bloqueado)
 
-Repositorio base para la implementación de la arquitectura V5. Mantiene los baselines bloqueados y las plantillas operativas para el desarrollo sostenible.
+**Objetivo**: actuar como landing y derivar a Ruleset y Pipelines.
 
-## Estructura principal
-- `main/` – contiene la base de datos operativa (glosario, ruleset, dir tree) y artefactos core.
-- `V5/` – plantillas y minipacks oficiales para generar artefactos.
-- `legacy/` – material heredado pendiente de migración o archivado.
+**Notas**: documento minimalista; no describe pasos; garantiza cadena router.
 
-## Reglas generales
-1. Los baselines bloqueados residen en `core/doc/workbench` y son la fuente de verdad.
-2. Toda nueva documentación debe incluir front‑matter válido y un OutputTemplate explícito.
-3. `wf_playbooks` reemplaza a `wf_template` en la estructura V5.
+## Navegación
 
-## Output Template
-```markdown
-# Título
-Contenido...
+- Reglas y políticas → [[DIR::RULE|Ruleset]]
+- Orquestación y ejecución → [[DIR::PIPE|Pipelines]]
+- Árbol del monorepo → [[DIR::ROOT|Monorepo]]
+
+## Garantías
+
+```yaml
+no_instructions_here: true
+links_only_to_buckets: true
+router_chain: [README->RULESET->PIPE]
+```
+
+## Checklist
+
+-
+
+## OutputTemplate
+
+```yaml
+output_example:
+  status: README_TEMPLATE_BASELINE_LOCKED
+  created_at: 2025-08-18T00:00:00-03:00
+  result:
+    - delegates_to: [DIR::RULE, DIR::PIPE]
+  log:
+    - step1: author
+    - step2: validate
+    - step3: freeze
 ```
