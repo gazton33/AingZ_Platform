@@ -28,6 +28,7 @@ compat:
 | `SPECTRUM` | [obsidian_master_template_proposal_spectrum](obsidian_master_template_proposal_spectrum.md) | Gestión de conocimiento y evidencias | Canvas embed + bibliografía dinámica |
 | `ORBIT·SPECTRUM PRIME` | [obsidian_master_template_proposal_orbit_spectrum_prime](obsidian_master_template_proposal_orbit_spectrum_prime.md) | Fusión ciclo-proyecto + knowledge fabric con co-working IA/humano | Dataview híbrido + Handshake AI + Canvas/Excalidraw |
 
+
 ## Criterios de evaluación sugeridos
 
 1. **Alineación con RULESET_MAX**: campos obligatorios (`asset`, `context`, `compat`) y contratos visibles.
