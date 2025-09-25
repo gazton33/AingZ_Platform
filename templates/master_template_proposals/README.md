@@ -26,6 +26,8 @@ compat:
 | `NEXUS` | [obsidian_master_template_proposal_nexus](obsidian_master_template_proposal_nexus.md) | Orquestación integral (estrategia + ejecución) | Tabs CSS + callouts DO/DON'T + Dashboard Dataview |
 | `ORBIT` | [obsidian_master_template_proposal_orbit](obsidian_master_template_proposal_orbit.md) | Ciclo de proyectos sostenibles | Timeline Buttons + Tracker KPIs |
 | `SPECTRUM` | [obsidian_master_template_proposal_spectrum](obsidian_master_template_proposal_spectrum.md) | Gestión de conocimiento y evidencias | Canvas embed + bibliografía dinámica |
+| `ORBIT·SPECTRUM PRIME` | [obsidian_master_template_proposal_orbit_spectrum_prime](obsidian_master_template_proposal_orbit_spectrum_prime.md) | Fusión ciclo-proyecto + knowledge fabric con co-working IA/humano | Dataview híbrido + Handshake AI + Canvas/Excalidraw |
+
 
 ## Criterios de evaluación sugeridos
 
@@ -36,3 +38,8 @@ compat:
 5. **Experiencia de usuario**: claridad visual, modulación por modos (ejecutivo, foco, bitácora).
 
 > Seleccionar 1 propuesta como base maestra e iterar en modo `working`. Las otras pueden preservarse como variantes o componentes modulares.
+
+## Legacy Reference Pool
+
+- Carpeta dedicada: [`legacy_reference_pool`](legacy_reference_pool/)
+- Uso: adjuntar reglas, experimentos y artefactos históricos con frontmatter `legacy_ref: true` para acelerar revisiones.
