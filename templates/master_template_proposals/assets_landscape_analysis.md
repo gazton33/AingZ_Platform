@@ -2,9 +2,15 @@
 asset:
   id: repo_asset_landscape_obsidian_2025_09
   name: ObsidianAssetLandscape
+
   version: 1.1.0
   owner: AingZ_Platform
   status: validated
+
+  version: 0.1.0
+  owner: AingZ_Platform
+  status: draft
+
 context:
   dom: KnowledgeArchitecture
   goals:
@@ -16,7 +22,9 @@ context:
 compat:
   platforms: [Obsidian, GPT5, CODEX]
   connectors: [GitHub]
+
   notes: "Actualizado tras validar el master template Orbit·Spectrum V1."
+
 ---
 
 # Panorama de assets Markdown vigentes
@@ -69,6 +77,7 @@ compat:
 
 ## 7. KPI propuestos para evaluar adopción
 
+
 | KPI | Descripción | Métrica asociada |
 | --- | ----------- | ---------------- |
 | `TemplateCoverage` | % de notas nuevas que usan el master template | `#NotasTemplate / #NotasNuevas` (Dataview). |
@@ -79,3 +88,4 @@ compat:
 ---
 
 > Próximo paso: monitorear KPIs, registrar insights en `legacy_reference_pool` y, si es necesario, preparar una nueva propuesta para revisión formal.
+
