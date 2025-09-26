@@ -62,6 +62,7 @@ compat:
 | [[assets_landscape_analysis.md]] | Análisis integral de assets Markdown | Identificar requisitos y KPIs.
 | [[obsidian_master_template_aingz_master]] | Plantilla validada | Base obligatoria para nuevas notas.
 | [[legacy_reference_pool/README]] | Referencias históricas | Consultar experimentos y reglas previas.
+| [[legacy_reference_pool/kpi_biweekly_changelog]] | Changelog quincenal basado en KPIs | Documentar ajustes y próximas iteraciones.
 
 > [!tip] Mantén sincronizado este índice con GitHub y Obsidian para que Codex/GPT5 accedan siempre a la versión oficial.
 =======
