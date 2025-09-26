@@ -21,7 +21,6 @@ Este contenedor centraliza materiales históricos, reglas previas y artefactos d
 
 ## Workflow sugerido
 - Al incorporar nuevo material, registrar un breve changelog en `templates/master_template_proposals/README.md` dentro de la sección de notas futuras.
-- Consolidar ajustes quincenales basados en KPIs en [[kpi_biweekly_changelog]].
 - Utilizar este folder como staging para insights que la IA (Codex / ChatGPT) y el equipo humano puedan incorporar en sesiones de co-diseño.
 
 > Mantener el contenido curado y etiquetado para habilitar búsquedas rápidas desde Dataview (`WHERE legacy_ref = true`).
