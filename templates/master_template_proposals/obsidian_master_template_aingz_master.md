@@ -210,15 +210,35 @@ lineChart:
 
 ## 50 · Feedback y WK.log
 
+> [!abstract]+ Flujo periódico de cierre de ciclo (quincenal)
+> 1. Cada viernes alternado registra un resumen en la tabla WK.log con el botón inferior (incluye responsable y próximo hito).
+> 2. Actualiza el campo `first_feedback_at` en el YAML cuando registres la primera entrada para sincronizar el KPI [[templates/master_template_proposals/kpi_dashboard#FeedbackLoopTime|FeedbackLoopTime]].
+> 3. Convierte el "Próximo paso" en una tarea con `#feedback/loop` y fecha objetivo para asegurar seguimiento.
+
+```button
+name 🕒 Registrar entrada WK.log
+type append template
+target templates/master_template_proposals/modules/wk_log_entry.md
+color orange
+```
+
 > [!note] Registrar cada intervención de IA/humano con timestamp ISO8601.
 
 | Fecha/Hora | Autor | Rol | Resumen | Próximo paso |
 | ---------- | ----- | --- | ------- | ------------- |
 | <% tp.date.now('YYYY-MM-DDTHH:mm') %> |  |  |  |  |
 
+```tasks
+not done
+path includes <% tp.file.title %>
+tag includes #feedback/loop
+sort by due
+```
+
 > [!todo]- Retroalimentación pendiente
 > - [ ] Validar entregables con responsables humanos
 > - [ ] Documentar aprendizajes clave en RULESET o Legacy si aplica
+> - [ ] Revisar métricas en [[templates/master_template_proposals/kpi_dashboard|Dashboard de KPIs]] y reflejar ajustes en el [[templates/master_template_proposals/legacy_reference_pool/kpi_biweekly_changelog|Changelog quincenal]].
 
 ---
 
