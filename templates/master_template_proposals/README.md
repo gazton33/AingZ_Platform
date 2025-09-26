@@ -1,22 +1,23 @@
----
-asset:
-  id: obsidian_master_template_catalog_2025_09
-  name: ObsidianMasterTemplateCatalog
-  version: 1.0.0
-  owner: AingZ_Platform
-  status: validated
-context:
-  domain: KnowledgeArchitecture
-  goals:
-    - centralize_validated_master_template
-    - document_usage_contracts
-  risks:
-    - drift_against_ruleset
-    - loss_of_interactive_blocks
-compat:
-  platforms: [Obsidian, VSCode, GitHub]
-  connectors: [Codex, GPT5]
-  notes: "Este índice refleja únicamente la versión validada del master template."
+asset_id: obsidian_master_template_catalog_2025_09
+asset_name: ObsidianMasterTemplateCatalog
+asset_version: 1.0.0
+asset_owner: AingZ_Platform
+asset_status: validated
+context_domain: KnowledgeArchitecture
+context_goals:
+  - centralize_validated_master_template
+  - document_usage_contracts
+context_risks:
+  - drift_against_ruleset
+  - loss_of_interactive_blocks
+compat_platforms:
+  - Obsidian
+  - VSCode
+  - GitHub
+compat_connectors:
+  - Codex
+  - GPT5
+compat_notes: "Este índice refleja únicamente la versión validada del master template."
 ---
 
 # Master Template Orbit·Spectrum V1 (Validado)
@@ -38,6 +39,14 @@ compat:
 2. Completar la cabecera YAML antes de editar el cuerpo.
 3. Seguir las instrucciones en [[obsidian_master_template_aingz_master#00 · Setup Rápido]].
 4. Documentar cualquier personalización en [[obsidian_master_template_aingz_master#50 · Feedback y WK.log]] y, si aplica, anexar evidencia al [[legacy_reference_pool/README|Legacy Reference Pool]].
+
+---
+
+## Propuestas Next Gen en evaluación
+
+- Explora `[[next_gen_master_templates/README|Catálogo · Propuestas Next Gen]]` para comparar variantes **Nexus**, **Orbit Continuum** y **Spectrum Knowledge**.
+- Cada propuesta mantiene contratos AI↔humano y maximiza componentes interactivos para Obsidian, VSCode, GitHub y Codex/GPT5.
+- Registrar feedback comparativo en `[[next_gen_master_templates/README#Catálogo · Propuestas Next Gen]]` o directamente en cada plantilla dentro del bloque `Feedback`.
 
 > [!warning] Bloques protegidos
 > No eliminar callouts, botones, queries ni checklists definidos en la plantilla. Son necesarios para la colaboración AI↔humano.

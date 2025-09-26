@@ -1,50 +1,57 @@
----
-asset:
-  id: "<% tp.date.now('YYYYMMDDHHmm') %>_<% tp.file.title.replace(/\s+/g, '_').toUpperCase() %>"
-  name: "<% tp.file.title %>"
-  type: master_template
-  version: "1.0.0"
-  owner: "AingZ_Platform"
-  status: "validated"
-  tags:
-    - obsidian/master
-    - ai-collab
-    - sustainability
-  created: "<% tp.date.now('YYYY-MM-DD') %>"
-  updated: "<% tp.date.now('YYYY-MM-DD') %>"
-context:
-  domain: ""
-  mission: ""
-  goals:
-    - ""
-  stakeholders:
-    - role: ""
-      contact: ""
-  risks:
-    - ""
-compat:
-  platforms: ["Obsidian", "VSCode", "GitHub", "Codex", "GPT5"]
-  plugins:
-    required: ["Dataview", "Templater", "Buttons", "QuickAdd", "Tracker", "Tasks", "Calendar"]
-    optional: ["Canvas", "Excalidraw", "Projects", "BRAT", "Periodic Notes"]
-  notes: "Duplicar con Templater/QuickAdd antes de editar."
-ai_handshake:
-  codex:
-    mode: "structured_markdown"
-    output_contract: "Mantener YAML, callouts y bloques interactivos intactos."
-    prompts:
-      - "Responder con listas accionables"
-      - "Actualizar checklists y WK.log al final de cada intervención"
-  gpt5:
-    mode: "reasoning_markdown"
-    output_contract: "Explicar decisiones en [[#50 · Feedback y WK.log]] con timestamp."
-    prompts:
-      - "Aplicar análisis sistémico con perspectiva de sostenibilidad"
-      - "Proponer optimizaciones cuantificables (KPIs)"
-governance:
-  ruleset: "[[ruleset/ruleset_master_v_1]]"
-  reference_legacy: "[[templates/master_template_proposals/legacy_reference_pool/README|Legacy Reference Pool]]"
-  change_control: "Registrar decisiones estratégicas en [[#50 · Feedback y WK.log]]."
+asset_id: "<% tp.date.now('YYYYMMDDHHmm') %>_<% tp.file.title.replace(/\s+/g, '_').toUpperCase() %>"
+asset_name: "<% tp.file.title %>"
+asset_type: "master_template"
+asset_version: "1.0.0"
+asset_owner: "AingZ_Platform"
+asset_status: "validated"
+asset_tags:
+  - obsidian/master
+  - ai-collab
+  - sustainability
+asset_created: "<% tp.date.now('YYYY-MM-DD') %>"
+asset_updated: "<% tp.date.now('YYYY-MM-DD') %>"
+context_domain: ""
+context_mission: ""
+context_goals:
+  - ""
+context_stakeholders:
+  - "role: ; contact: "
+context_risks:
+  - ""
+compat_platforms:
+  - Obsidian
+  - VSCode
+  - GitHub
+  - Codex
+  - GPT5
+compat_plugins_required:
+  - Dataview
+  - Templater
+  - Buttons
+  - QuickAdd
+  - Tracker
+  - Tasks
+  - Calendar
+compat_plugins_optional:
+  - Canvas
+  - Excalidraw
+  - Projects
+  - BRAT
+  - Periodic Notes
+compat_notes: "Duplicar con Templater/QuickAdd antes de editar."
+ai_handshake_codex_mode: "structured_markdown"
+ai_handshake_codex_contract: "Mantener YAML, callouts y bloques interactivos intactos."
+ai_handshake_codex_prompts:
+  - "Responder con listas accionables"
+  - "Actualizar checklists y WK.log al final de cada intervención"
+ai_handshake_gpt5_mode: "reasoning_markdown"
+ai_handshake_gpt5_contract: "Explicar decisiones en [[#50 · Feedback y WK.log]] con timestamp."
+ai_handshake_gpt5_prompts:
+  - "Aplicar análisis sistémico con perspectiva de sostenibilidad"
+  - "Proponer optimizaciones cuantificables (KPIs)"
+governance_ruleset: "[[ruleset/ruleset_master_v_1]]"
+governance_reference_legacy: "[[templates/master_template_proposals/legacy_reference_pool/README|Legacy Reference Pool]]"
+governance_change_control: "Registrar decisiones estratégicas en [[#50 · Feedback y WK.log]]."
 ---
 
 %% -------------------------------------------------------------
@@ -244,4 +251,4 @@ lineChart:
 - [ ] Estado final comunicado (Codex/GPT5 + humano)
 - [ ] Nota archivada o marcada como `status: completed`
 
-> [!success] Cuando todos los checks estén completos, actualizar `asset.status` a `completed` y mover la nota al archivo correspondiente.
+> [!success] Cuando todos los checks estén completos, actualizar `asset_status` a `completed` y mover la nota al archivo correspondiente.

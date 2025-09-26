@@ -1,15 +1,13 @@
----
-asset:
-  id: "inventory_architecture_assets_v1"
-  type: knowledge_base
-  version: "1.0.0"
-  owner: "AingZ_Platform"
-  status: "active"
-tags:
+asset_id: "inventory_architecture_assets_v1"
+asset_type: "knowledge_base"
+asset_version: "1.0.0"
+asset_owner: "AingZ_Platform"
+asset_status: "active"
+asset_tags:
   - architecture
   - inventory
   - obsidian/reference
-updated: "2024-09-30"
+asset_updated: "2024-09-30"
 ---
 
 # Inventario de Assets · Arquitectura Plataforma AingZ
@@ -52,5 +50,4 @@ updated: "2024-09-30"
 - [ ] Enlazar decisiones registradas en `obsidian_architecture_master_form` una vez activado.
 
 > [!tip] Dataview
-> Convierte esta nota en panel navegable con `TABLE file.link, asset.status WHERE contains(tags, "architecture")` para listar rápidamente todos los formularios activos.
-
+> Convierte esta nota en panel navegable con `TABLE file.link, asset_status WHERE contains(asset_tags, "architecture")` para listar rápidamente todos los formularios activos.

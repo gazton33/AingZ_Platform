@@ -1,43 +1,46 @@
----
-asset:
-  id: "<% tp.date.now('YYYYMMDDHHmm') %>_ARCH_FORM_<% tp.file.title.replace(/\s+/g, '_').toUpperCase() %>"
-  name: "<% tp.file.title %>"
-  type: architecture_form
-  version: "1.0.0"
-  owner: "AingZ_Platform"
-  status: "draft"
-  tags:
-    - architecture
-    - obsidian/form
-    - ai-collab
-  created: "<% tp.date.now('YYYY-MM-DD') %>"
-  updated: "<% tp.date.now('YYYY-MM-DD') %>"
-context:
-  scope: "platform"
-  repos:
-    - name: "AingZ_Platform"
-      url: "https://github.com/AingZ/AingZ_Platform"
-  mission: "Orquestar la arquitectura de la plataforma, directorios y assets críticos."
-  kpis:
-    - ArchitectureCoverage
-    - FeedbackLoopTime
-    - AssetTraceability
-compat:
-  platforms: ["Obsidian", "VSCode", "GitHub", "Codex", "GPT5"]
-  plugins:
-    required: ["Templater", "Buttons", "Excalidraw", "Dataview", "Tasks", "Tracker"]
-    optional: ["Canvas", "Projects", "Periodic Notes"]
-ai_handshake:
-  codex:
-    mode: "structured_markdown"
-    mandate: "Mantener bloques interactivos y wikilinks intactos; documentar comandos ejecutados."
-  gpt5:
-    mode: "reasoning_markdown"
-    mandate: "Explicar decisiones arquitectónicas y sus impactos en sostenibilidad y eficiencia."
-governance:
-  ruleset: "[[ruleset/ruleset_master_v_1]]"
-  legacy_reference: "[[templates/architecture_interactive_forms/architecture_assets_inventory|Inventario Arquitectura]]"
-  change_log: "Registrar eventos clave en [[#80 · WK.log & Feedback]]."
+asset_id: "<% tp.date.now('YYYYMMDDHHmm') %>_ARCH_FORM_<% tp.file.title.replace(/\s+/g, '_').toUpperCase() %>"
+asset_name: "<% tp.file.title %>"
+asset_type: "architecture_form"
+asset_version: "1.0.0"
+asset_owner: "AingZ_Platform"
+asset_status: "draft"
+asset_tags:
+  - architecture
+  - obsidian/form
+  - ai-collab
+asset_created: "<% tp.date.now('YYYY-MM-DD') %>"
+asset_updated: "<% tp.date.now('YYYY-MM-DD') %>"
+context_scope: "platform"
+context_repo_primary: "AingZ_Platform · https://github.com/AingZ/AingZ_Platform"
+context_mission: "Orquestar la arquitectura de la plataforma, directorios y assets críticos."
+context_kpis:
+  - ArchitectureCoverage
+  - FeedbackLoopTime
+  - AssetTraceability
+compat_platforms:
+  - Obsidian
+  - VSCode
+  - GitHub
+  - Codex
+  - GPT5
+compat_plugins_required:
+  - Templater
+  - Buttons
+  - Excalidraw
+  - Dataview
+  - Tasks
+  - Tracker
+compat_plugins_optional:
+  - Canvas
+  - Projects
+  - Periodic Notes
+ai_handshake_codex_mode: "structured_markdown"
+ai_handshake_codex_mandate: "Mantener bloques interactivos y wikilinks intactos; documentar comandos ejecutados."
+ai_handshake_gpt5_mode: "reasoning_markdown"
+ai_handshake_gpt5_mandate: "Explicar decisiones arquitectónicas y sus impactos en sostenibilidad y eficiencia."
+governance_ruleset: "[[ruleset/ruleset_master_v_1]]"
+governance_legacy_reference: "[[templates/architecture_interactive_forms/architecture_assets_inventory|Inventario Arquitectura]]"
+governance_change_log: "Registrar eventos clave en [[#80 · WK.log & Feedback]]."
 ---
 
 # [[Formulario Maestro · Arquitectura Dinámica]]
@@ -196,14 +199,14 @@ summary:
 | AssetTraceability | (% assets con responsable asignado) |  |  |
 
 ```dataview
-TABLE WITHOUT ID file.link AS "Formulario", asset.status AS "Estado"
+TABLE WITHOUT ID file.link AS "Formulario", asset_status AS "Estado"
 FROM "templates/architecture_interactive_forms"
-WHERE asset.type = "architecture_form" and file.name != this.file.name
+WHERE asset_type = "architecture_form" and file.name != this.file.name
 SORT file.ctime desc
 LIMIT 10
 ```
 
-> [!warning] Requiere que las copias del formulario mantengan el frontmatter `asset.status` actualizado.
+> [!warning] Requiere que las copias del formulario mantengan el frontmatter `asset_status` actualizado.
 
 ---
 
@@ -227,5 +230,4 @@ LIMIT 10
 - [ ] Compartir enlace y resumen con stakeholders clave.
 - [ ] Registrar lecciones aprendidas en [[templates/master_template_proposals/legacy_reference_pool/README|Legacy Reference Pool]].
 
-> [!done] Cuando todas las casillas estén marcadas, actualiza `asset.status` a `completed` y archiva una copia inmutable.
-
+> [!done] Cuando todas las casillas estén marcadas, actualiza `asset_status` a `completed` y archiva una copia inmutable.

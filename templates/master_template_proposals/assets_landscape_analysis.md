@@ -1,22 +1,22 @@
----
-asset:
-  id: repo_asset_landscape_obsidian_2025_09
-  name: ObsidianAssetLandscape
-  version: 1.1.0
-  owner: AingZ_Platform
-  status: validated
-context:
-  dom: KnowledgeArchitecture
-  goals:
-    - map_existing_markdown_assets
-    - derive_requirements_for_master_template
-  risks:
-    - outdated_contracts
-    - inconsistent_front_matter
-compat:
-  platforms: [Obsidian, GPT5, CODEX]
-  connectors: [GitHub]
-  notes: "Actualizado tras validar el master template Orbit·Spectrum V1."
+asset_id: repo_asset_landscape_obsidian_2025_09
+asset_name: ObsidianAssetLandscape
+asset_version: 1.1.0
+asset_owner: AingZ_Platform
+asset_status: validated
+context_domain: KnowledgeArchitecture
+context_goals:
+  - map_existing_markdown_assets
+  - derive_requirements_for_master_template
+context_risks:
+  - outdated_contracts
+  - inconsistent_front_matter
+compat_platforms:
+  - Obsidian
+  - GPT5
+  - CODEX
+compat_connectors:
+  - GitHub
+compat_notes: "Actualizado tras validar el master template Orbit·Spectrum V1."
 ---
 
 # Panorama de assets Markdown vigentes
