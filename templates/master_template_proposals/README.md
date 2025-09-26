@@ -49,6 +49,7 @@ compat:
 - Cualquier ajuste mayor debe registrarse como propuesta en `legacy_reference_pool` antes de actualizar la versión validada.
 - Seguir los KPIs definidos en [[assets_landscape_analysis.md#7-kpi-propuestos-para-evaluar-adopción|KPIs de adopción]] para medir efectividad.
 - Cuando se valide una nueva iteración, actualizar este índice y mover la versión previa al repositorio histórico.
+- **Acción futura (2025-09-26)**: revisar [[legacy_reference_pool/20250926_audit_baselines|auditoría de baselines]] y aplicar las propuestas allí listadas (bloques YAML `baselines/approvals`, callouts de locks `DIR::`/`GLOS::`, bloque pendiente del ruleset maestro y recordatorios por plataforma) antes de publicar la siguiente versión de la plantilla.
 
 ---
 
