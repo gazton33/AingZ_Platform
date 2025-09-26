@@ -34,6 +34,7 @@ compat:
 
 ## Cómo utilizar la plantilla
 
+0. Antes de instanciar, replicar la configuración documentada en [[legacy_reference_pool/20240919_interactive_config|Guía interactiva 20240919]] para asegurar que QuickAdd, Buttons, Tasks, Dataview y Tracker estén operativos en el vault.
 1. Ejecutar `QuickAdd → MT · Nueva Nota` o `Templater → Insert template → A·Master Template · Orbit-Spectrum V1`.
 2. Cuando se requiera un módulo específico, seleccionar desde QuickAdd `Orbit · Proyecto` o `Spectrum · Conocimiento` (mapean a `modules/orbit_project.md` y `modules/spectrum_knowledge.md` respectivamente) o insertarlos vía `Templater → modules/...`.
 3. Completar la cabecera YAML antes de editar el cuerpo, asegurando que campos como `context.project_stage` o `context.knowledge_domain` reflejen el uso elegido.
