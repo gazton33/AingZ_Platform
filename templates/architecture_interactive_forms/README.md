@@ -20,4 +20,3 @@ Este paquete concentra formularios y plantillas operativas para diseñar, valida
 
 > [!tip] Integración Obsidian
 > Habilita los plugins **Excalidraw**, **Dataview**, **Buttons**, **Tasks** y **Templater** para aprovechar todo el comportamiento interactivo del formulario.
-
