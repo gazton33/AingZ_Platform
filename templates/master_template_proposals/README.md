@@ -35,9 +35,10 @@ compat:
 ## Cómo utilizar la plantilla
 
 1. Ejecutar `QuickAdd → MT · Nueva Nota` o `Templater → Insert template → A·Master Template · Orbit-Spectrum V1`.
-2. Completar la cabecera YAML antes de editar el cuerpo.
-3. Seguir las instrucciones en [[obsidian_master_template_aingz_master#00 · Setup Rápido]].
-4. Documentar cualquier personalización en [[obsidian_master_template_aingz_master#50 · Feedback y WK.log]] y, si aplica, anexar evidencia al [[legacy_reference_pool/README|Legacy Reference Pool]].
+2. Cuando se requiera un módulo específico, seleccionar desde QuickAdd `Orbit · Proyecto` o `Spectrum · Conocimiento` (mapean a `modules/orbit_project.md` y `modules/spectrum_knowledge.md` respectivamente) o insertarlos vía `Templater → modules/...`.
+3. Completar la cabecera YAML antes de editar el cuerpo, asegurando que campos como `context.project_stage` o `context.knowledge_domain` reflejen el uso elegido.
+4. Seguir las instrucciones en [[obsidian_master_template_aingz_master#00 · Setup Rápido]].
+5. Documentar cualquier personalización en [[obsidian_master_template_aingz_master#50 · Feedback y WK.log]] y, si aplica, anexar evidencia al [[legacy_reference_pool/README|Legacy Reference Pool]].
 
 > [!warning] Bloques protegidos
 > No eliminar callouts, botones, queries ni checklists definidos en la plantilla. Son necesarios para la colaboración AI↔humano.
