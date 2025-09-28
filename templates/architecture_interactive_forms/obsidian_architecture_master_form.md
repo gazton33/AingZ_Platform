@@ -231,4 +231,3 @@ LIMIT 10
 - [ ] Registrar lecciones aprendidas en [[templates/master_template_proposals/legacy_reference_pool/README|Legacy Reference Pool]].
 
 > [!done] Cuando todas las casillas estén marcadas, actualiza `asset_status` a `completed` y archiva una copia inmutable.
-
