@@ -40,7 +40,10 @@ compat_notes: "Este índice refleja únicamente la versión validada del master 
 3. Seguir las instrucciones en [[obsidian_master_template_aingz_master#00 · Setup Rápido]].
 4. Documentar cualquier personalización en [[obsidian_master_template_aingz_master#50 · Feedback y WK.log]] y, si aplica, anexar evidencia al [[legacy_reference_pool/README|Legacy Reference Pool]].
 
----
+> [!important] Política de actualización sin conflictos
+> - Antes de proponer cambios, sincroniza tu fork/branch con `main` y revisa si ya existe un archivo equivalente en el repositorio.
+> - **Nunca** dupliques archivos validados para introducir variaciones menores. En su lugar, edita la versión vigente y registra el razonamiento en [[obsidian_master_template_aingz_master#50 · Feedback y WK.log]].
+> - Si un flujo experimental requiere una nota alternativa, colócala en `legacy_reference_pool` con estado `experiment` y referencia explícita al asset original.
 
 ## Propuestas Next Gen en evaluación
 
@@ -68,5 +71,6 @@ compat_notes: "Este índice refleja únicamente la versión validada del master 
 | [[assets_landscape_analysis.md]] | Análisis integral de assets Markdown | Identificar requisitos y KPIs.
 | [[obsidian_master_template_aingz_master]] | Plantilla validada | Base obligatoria para nuevas notas.
 | [[legacy_reference_pool/README]] | Referencias históricas | Consultar experimentos y reglas previas.
+| [[context_packages/orbit_spectrum_master_template_context_pack_v1]] | Context pack operativo Orbit·Spectrum | Punto de partida para nuevas sesiones sin historial previo.
 
 > [!tip] Mantén sincronizado este índice con GitHub y Obsidian para que Codex/GPT5 accedan siempre a la versión oficial.

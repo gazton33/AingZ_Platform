@@ -4,6 +4,8 @@ asset_type: "master_template"
 asset_version: "1.0.0"
 asset_owner: "AingZ_Platform"
 asset_status: "validated"
+asset_merge_strategy: "inplace_update"
+asset_source_reference: "https://github.com/AingZ/AingZ_Platform/tree/main/templates/master_template_proposals"
 asset_tags:
   - obsidian/master
   - ai-collab
@@ -101,6 +103,7 @@ color purple
 > - Interpretar secciones tituladas con `##` como módulos independientes.
 > - No modificar frontmatter salvo que se solicite explícitamente.
 > - Documentar comandos ejecutados dentro de [[#50 · Feedback y WK.log]].
+> - Ejecutar `git status` antes de cerrar la sesión y confirmar que solo se modificaron archivos existentes.
 
 > [!tip] GPT5
 > - Mantener trazabilidad de decisiones en subtareas `- [ ]` y justificar cambios significativos.
@@ -109,6 +112,7 @@ color purple
 > [!warning] Bloques protegidos
 > - No eliminar los bloques `button`, `dataview`, `tasks`, `tracker` ni las secciones con `%%`.
 > - Respetar los wikilinks internos (`[[#Sección]]`) para asegurar navegabilidad en Obsidian.
+> - Si se requiere contenido nuevo, incorporarlo en secciones existentes o documentarlo en `legacy_reference_pool`.
 
 ---
 
@@ -118,6 +122,7 @@ color purple
 > - `asset.domain`, `context.mission`, `compat.platforms`
 > - `governance.ruleset`, `governance.change_control`
 > - `ai_handshake` actualizado según el modo de colaboración.
+> - `asset_merge_strategy` debe mantenerse en `inplace_update` salvo aprobación explícita.
 
 | Campo | Descripción | Estado |
 | ----- | ----------- | ------ |
@@ -128,6 +133,24 @@ color purple
 
 > [!note] Sincronización automática
 > Usa el botón `♻️ Refrescar Dataview` tras editar frontmatter para actualizar paneles derivados.
+
+---
+
+## 05 · Control de Versionado y Sincronización
+
+> [!check]+ Pasos obligatorios antes de editar
+> - [ ] Ejecutar `git pull --rebase` o sincronizar vault (Obsidian Git) para traer cambios recientes.
+> - [ ] Revisar si existe una nota equivalente en `templates/master_template_proposals` para evitar duplicados.
+> - [ ] Registrar aquí la referencia del commit base: `Base commit: ____`.
+
+```dataview
+TABLE file.ctime as "Creado", file.mtime as "Última edición", file.path as "Ruta"
+FROM "templates/master_template_proposals"
+WHERE file.name = this.file.name
+```
+
+> [!tip]
+> Documenta merge manuales o conflictos resueltos y enlaza al diff correspondiente en GitHub para trazabilidad colectiva.
 
 ---
 

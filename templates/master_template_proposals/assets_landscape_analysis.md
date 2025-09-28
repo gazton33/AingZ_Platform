@@ -57,6 +57,7 @@ compat_notes: "Actualizado tras validar el master template Orbit·Spectrum V1."
 3. **Contratos visibles**: secciones para Inputs/Outputs, checkpoints y logging (`WK.log`).
 4. **Modos de vista**: bloques plegables para modo Focus, Resumen ejecutivo y Detalle técnico.
 5. **Instrumentación KPI**: tablas dinámicas y trackers para métricas de sostenibilidad e impacto.
+6. **Estrategia sin conflictos**: lineamientos explícitos para actualizar assets existentes (`asset_merge_strategy: inplace_update`) y registrar merges en `## 05 · Control de Versionado`.
 
 ## 6. Master template validado
 
