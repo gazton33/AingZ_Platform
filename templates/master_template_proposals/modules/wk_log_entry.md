@@ -1,0 +1,1 @@
+| <% tp.date.now('YYYY-MM-DDTHH:mm') %> | <% tp.system.prompt('Autor / AI Agent') %> | <% tp.system.prompt('Rol o modo (Humano, Codex, GPT5)') %> | <% tp.system.prompt('Resumen de la intervención (breve)') %> | <% tp.system.prompt('Próximo paso + due date (YYYY-MM-DD)') %> |

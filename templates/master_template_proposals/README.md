@@ -45,8 +45,6 @@ compat_notes: "Este índice refleja únicamente la versión validada del master 
 > - **Nunca** dupliques archivos validados para introducir variaciones menores. En su lugar, edita la versión vigente y registra el razonamiento en [[obsidian_master_template_aingz_master#50 · Feedback y WK.log]].
 > - Si un flujo experimental requiere una nota alternativa, colócala en `legacy_reference_pool` con estado `experiment` y referencia explícita al asset original.
 
----
-
 ## Propuestas Next Gen en evaluación
 
 - Explora `[[next_gen_master_templates/README|Catálogo · Propuestas Next Gen]]` para comparar variantes **Nexus**, **Orbit Continuum** y **Spectrum Knowledge**.

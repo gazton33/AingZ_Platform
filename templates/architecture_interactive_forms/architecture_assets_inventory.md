@@ -51,4 +51,3 @@ asset_updated: "2024-09-30"
 
 > [!tip] Dataview
 > Convierte esta nota en panel navegable con `TABLE file.link, asset_status WHERE contains(asset_tags, "architecture")` para listar rápidamente todos los formularios activos.
-
